@@ -14577,78 +14577,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ensure_and_move_to_folder</span><span class="p">(</span><span class="n">folder_name</span><span class="p">):</span>
-  <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-  <span class="n">target_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">current_dir</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">)</span>
-
-  <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">target_path</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">target_path</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Folder &#39;</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">&#39; created successfully.&quot;</span><span class="p">)</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Folder &#39;</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">&#39; already exists.&quot;</span><span class="p">)</span>
-
-  <span class="c1">#os.chdir(target_path)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">glob</span>
-
-<span class="n">folder_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei2&#39;</span>
-<span class="n">ensure_and_move_to_folder</span><span class="p">(</span><span class="n">folder_name</span><span class="p">)</span>
-
-<span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 
 <span class="k">try</span><span class="p">:</span>
   <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;../Python/QCKentei2&#39;</span><span class="p">)</span>
 <span class="k">except</span><span class="p">:</span>
   <span class="k">pass</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">glob</span>
-
-<span class="n">folder_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei2&#39;</span>
-<span class="n">ensure_and_move_to_folder</span><span class="p">(</span><span class="n">folder_name</span><span class="p">)</span>
-
 <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-
-<span class="k">try</span><span class="p">:</span>
-  <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;../Python/QCKentei2&#39;</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span>
-  <span class="k">pass</span>
-
-<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14656,45 +14595,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#os.chdir(&#39;/Users/takanohiroshi/Library/CloudStorage/OneDrive-YokohamaInternationalExchangeAssociation/Python&#39;)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">folder_name</span> <span class="o">=</span> <span class="s1">&#39;Data_2&#39;</span>
-<span class="n">ensure_and_move_to_folder</span><span class="p">(</span><span class="n">folder_name</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14717,9 +14623,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">client</span> <span class="o">=</span> <span class="n">gspread</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="n">credentials</span><span class="p">)</span>
 
 <span class="c1"># スプレッドシートを開く（URLまたはスプレッドシートIDを使用）</span>
-<span class="c1">#SPREADSHEET_ID = &quot;1Ma7ehT4TAnkUwJjspP-C3mwJA1hYmbJr8B9GJSFI0lU&quot;  # スプレッドシートのID</span>
 <span class="n">SPREADSHEET_ID</span> <span class="o">=</span> <span class="s2">&quot;1Ma7ehT4TAnkUwJjspP-C3mwJA1hYmbJr8B9GJSFI0lU&quot;</span>
-<span class="c1">#SPREADSHEET_ID = &quot;1kqN4PUhamo1jwqudnaHuaUSWvNX4tIbVTY5YU4g9r3A&quot;</span>
 <span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet16&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
 
 <span class="c1"># データを取得</span>
@@ -14741,28 +14645,37 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([ 9, 10, 10, 10, 12, 15, 26, 26, 26, 26, 33, 33, 35, 40, 42])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#os.chdir(&#39;/Users/takanohiroshi/Library/CloudStorage/OneDrive-YokohamaInternationalExchangeAssociation/Python&#39;)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
@@ -14801,6 +14714,50 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Moda (valor más frecuente): 26
+Primer cuartil (Q1): 11.0
+Tercer cuartil (Q3): 33.0
+Rango intercuartilico (IQR): 22.0
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+class="
+jp-needs-light-background
+"
+>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

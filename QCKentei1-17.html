@@ -14572,7 +14572,34 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Actividades-pr%C3%A1cticas-relacionadas-con-el-control-de-calidad">Actividades pr&#225;cticas relacionadas con el control de calidad<a class="anchor-link" href="#Actividades-pr%C3%A1cticas-relacionadas-con-el-control-de-calidad">&#182;</a></h1><h2 id="17-01-Actividades-pr%C3%A1cticas-relacionadas-con-el-control-de-calidad">17-01 Actividades pr&#225;cticas relacionadas con el control de calidad<a class="anchor-link" href="#17-01-Actividades-pr%C3%A1cticas-relacionadas-con-el-control-de-calidad">&#182;</a></h2><h3 id="1.-Marketing">1. Marketing<a class="anchor-link" href="#1.-Marketing">&#182;</a></h3><ul>
+<li>Marketing masivo</li>
+<li>Marketing basado en bases de datos</li>
+<li>Marketing uno a uno</li>
+</ul>
+<h3 id="2.-Gesti%C3%B3n-de-relaciones-con-clientes">2. Gesti&#243;n de relaciones con clientes<a class="anchor-link" href="#2.-Gesti%C3%B3n-de-relaciones-con-clientes">&#182;</a></h3><ul>
+<li>CRM</li>
+<li>IT</li>
+<li>SNS</li>
+<li>Big data</li>
+</ul>
+<h3 id="3.-Miner%C3%ADa-de-datos,-Miner%C3%ADa-de-textos">3. Miner&#237;a de datos, Miner&#237;a de textos<a class="anchor-link" href="#3.-Miner%C3%ADa-de-datos,-Miner%C3%ADa-de-textos">&#182;</a></h3><ul>
+<li>Aprendizaje profundo</li>
+<li>Aprendizaje automático</li>
+<li>Minería de textos</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14580,30 +14607,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-17.ipynb&#39;</span>
+<span class="n">notebook_name_html</span> <span class="o">=</span> <span class="n">notebook_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.ipynb&quot;</span><span class="p">,</span><span class="s2">&quot;.html&quot;</span><span class="p">)</span>
 
-<span class="k">try</span><span class="p">:</span>
-  <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;../Python/QCKentei&#39;</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span>
-  <span class="k">pass</span>
-
-<span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span>
+<span class="o">!</span>jupyter nbconvert --to html <span class="o">{</span>notebook_name<span class="o">}</span>
 </pre></div>
 
      </div>
@@ -14621,181 +14628,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;/Users/takanohiroshi/Library/CloudStorage/OneDrive-YokohamaInternationalExchangeAssociation/Python/QCKentei&#39;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">gspread</span> 
-<span class="kn">from</span> <span class="nn">google.oauth2.service_account</span> <span class="kn">import</span> <span class="n">Credentials</span>
-
-<span class="c1"># 認証情報の設定</span>
-<span class="n">SERVICE_ACCOUNT_FILE</span> <span class="o">=</span> <span class="s2">&quot;my-project-vscode-452201-249bdb033f8c.json&quot;</span>  <span class="c1"># JSONファイルのパス</span>
-<span class="n">SCOPES</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;https://www.googleapis.com/auth/spreadsheets&quot;</span><span class="p">]</span>
-
-<span class="n">credentials</span> <span class="o">=</span> <span class="n">Credentials</span><span class="o">.</span><span class="n">from_service_account_file</span><span class="p">(</span><span class="n">SERVICE_ACCOUNT_FILE</span><span class="p">,</span> <span class="n">scopes</span><span class="o">=</span><span class="n">SCOPES</span><span class="p">)</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">gspread</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="n">credentials</span><span class="p">)</span>
-
-<span class="c1"># スプレッドシートを開く（URLまたはスプレッドシートIDを使用）</span>
-<span class="n">SPREADSHEET_ID</span> <span class="o">=</span> <span class="s2">&quot;1RkO0VL4WR6cbPBfBEjz693Lo4SdUAoSvRHV491ggXTo&quot;</span>
-
-<span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet6&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
-
-<span class="c1"># データを取得</span>
-<span class="n">list_of_lists</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">get_all_values</span><span class="p">()</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">list_of_lists</span><span class="p">)</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">)</span>
-
-
-
-<span class="n">df</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-      <th>6</th>
-      <th>7</th>
-      <th>8</th>
-      <th>9</th>
-    </tr>
-    <tr>
-      <th>0</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>樹脂材料</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>A</th>
-      <td>60.0</td>
-      <td>50.0</td>
-      <td>51.0</td>
-      <td>42.0</td>
-      <td>55.0</td>
-      <td>46.0</td>
-      <td>49.0</td>
-      <td>52.0</td>
-      <td>43.0</td>
-    </tr>
-    <tr>
-      <th>B</th>
-      <td>40.0</td>
-      <td>76.0</td>
-      <td>48.0</td>
-      <td>64.0</td>
-      <td>59.0</td>
-      <td>63.0</td>
-      <td>73.0</td>
-      <td>56.0</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[NbConvertApp] Converting notebook QCKentei1-17.ipynb to html
+[NbConvertApp] Writing 576732 bytes to QCKentei1-17.html
+</pre>
 </div>
 </div>
 
 </div>
 
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div>

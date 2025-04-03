@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>QCKentei3-6</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>QCKentei3-8</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,8 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="%C3%8Dndice-de-capacidad-del-proceso">&#205;ndice de capacidad del proceso<a class="anchor-link" href="#%C3%8Dndice-de-capacidad-del-proceso">&#182;</a></h1><p>Para llevar a cabo el control de calidad y avanzar en la mejora, primero es necesario conocer la realidad del proceso de fabricación de los productos, entre otros. La capacidad del proceso se refiere a la habilidad del proceso para garantizar que la calidad del producto cumpla con los valores especificados. Como endicador para comprender esta capacidad del proceso, se utiliza el índice de capacidad del proceso.</p>
-
+<h1 id="Enfoque-y-pensamiento-basado-en-el-Control-de-Calidad-(QC)">Enfoque y pensamiento basado en el Control de Calidad (QC)<a class="anchor-link" href="#Enfoque-y-pensamiento-basado-en-el-Control-de-Calidad-(QC)">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -14589,7 +14588,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14607,24 +14606,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14632,44 +14613,36 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="06-01-%C3%8Dndice-de-capacidad-del-proceso">06-01 &#205;ndice de capacidad del proceso<a class="anchor-link" href="#06-01-%C3%8Dndice-de-capacidad-del-proceso">&#182;</a></h2><h3 id="1.-%C2%BFQu%C3%A9-es-el-%C3%ADndice-de-capacidad-del-proceso?">1. &#191;Qu&#233; es el &#237;ndice de capacidad del proceso?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-el-%C3%ADndice-de-capacidad-del-proceso?">&#182;</a></h3><ul>
-<li><p>Cp: Capability Index (Process Capability Indes)</p>
-</li>
-<li><p>Cpk: Capability Index (Process Capability Index) with Centering</p>
-</li>
-</ul>
-<p>El índice de capacidad del proceso es un indicador (índice) que mide la capacidad cualitativa del proceso.</p>
-<h3 id="2.-M%C3%A9todo-de-c%C3%A1lculo-de-%C3%ADndice-de-capacidad-del-proceso">2. M&#233;todo de c&#225;lculo de &#237;ndice de capacidad del proceso<a class="anchor-link" href="#2.-M%C3%A9todo-de-c%C3%A1lculo-de-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><ul>
-<li><p>$ S_U $: Limite de especificación superior</p>
-</li>
-<li><p>$ S_L $: Límite de especificación inferior</p>
-</li>
-<li><p>$ C_p $ Índice de capacidad del proceso</p>
-</li>
-</ul>
-<h4 id="(1)-Cuando-el-centro-de-la-especificaci%C3%B3n-y-el-valor-promedio-coinciden">(1) Cuando el centro de la especificaci&#243;n y el valor promedio coinciden<a class="anchor-link" href="#(1)-Cuando-el-centro-de-la-especificaci%C3%B3n-y-el-valor-promedio-coinciden">&#182;</a></h4><ul>
-<li><p>Cuando existen tanto un límite superior como un límite inferior de especificación</p>
+<h2 id="09-01-Satisfacci%C3%B3n-del-cliente">09-01 Satisfacci&#243;n del cliente<a class="anchor-link" href="#09-01-Satisfacci%C3%B3n-del-cliente">&#182;</a></h2><h3 id="1.-Satisfacci%C3%B3n-del-cliente">1. Satisfacci&#243;n del cliente<a class="anchor-link" href="#1.-Satisfacci%C3%B3n-del-cliente">&#182;</a></h3><p><strong>Customer Satisfaction: QC</strong></p>
+<p>Es el estado en el que el cliente siente que sus necesidades y estándares de requisitos están satisfechos con respecto a un producto o servicio ofrecido.</p>
 <ul>
-<li>$ C_p = \frac{1}{6_s} (S_U - S_L) $</li>
+<li>TQM</li>
+<li>Market-in</li>
+<li>Market'out</li>
+<li>Win-Win</li>
 </ul>
-</li>
-<li><p>Cuando solo esxiste un límite superior de especificación</p>
+<h3 id="2.-La-calidad-es-lo-primero">2. La calidad es lo primero<a class="anchor-link" href="#2.-La-calidad-es-lo-primero">&#182;</a></h3><p><strong>Quality First</strong></p>
+<p>Se trata de priorizar la calidad ante todo y crear productos o servicios de alta satisfacción, con garantía de calidad, que atraigan a los clientes, los motiven a comprarlos, y les brinden alegría al usarlos.</p>
+<h3 id="3.-Tratamos-la-siguiente-fase-del-proceso-como-a-un-cliente">3. Tratamos la siguiente fase del proceso como a un cliente<a class="anchor-link" href="#3.-Tratamos-la-siguiente-fase-del-proceso-como-a-un-cliente">&#182;</a></h3><p>Se trata de que cada proceso considere al siguiente como a un cliente y garantice la calidad del trabajo realizado en su propia etapa antes de entregarlo a la siguiente.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="08-02-Enfoque-en-el-proceso">08-02 Enfoque en el proceso<a class="anchor-link" href="#08-02-Enfoque-en-el-proceso">&#182;</a></h2><h3 id="1.-Caracteristicas-y-factores">1. Caracteristicas y factores<a class="anchor-link" href="#1.-Caracteristicas-y-factores">&#182;</a></h3><p><strong>Característica</strong>: Se refiere a una propiedad única que posee un objeto en particular.</p>
+<p><strong>Característia de calidad</strong>: Se refiere a los elementos (características) que componen la calidad</p>
 <ul>
-<li>$ C_p = \frac{1}{3_s} (S_U -\bar{x}) $</li>
+<li>Característica de calidad</li>
 </ul>
-</li>
-<li><p>Cuando solo existen un límite inferior de especificación</p>
+<p><strong>Factor</strong>: Es aquello que puede influir en el resultado del trabajo y se refiere de manera general a las causas que generan variabilidad o cambios en los datos. En el análisis de datos, es importente identificar qué factores afectan a una característica y en qué medida contribuyen a la variabilidad del resultado. De entre los factores, aquellos que se han identificado como causante de un fenómeno específico se denomina <strong>causas</strong>.</p>
 <ul>
-<li>$ C_p = \frac{1}{3_s} (\bar{x} - S_L) $</li>
-</ul>
-</li>
-</ul>
-<h4 id="(2)-Cuando-existen-l%C3%ADmites-de-especificaci%C3%B3n-superior-e-inferior-y-el-promedio-est%C3%A1-desviado-del-centro">(2) Cuando existen l&#237;mites de especificaci&#243;n superior e inferior y el promedio est&#225; desviado del centro<a class="anchor-link" href="#(2)-Cuando-existen-l%C3%ADmites-de-especificaci%C3%B3n-superior-e-inferior-y-el-promedio-est%C3%A1-desviado-del-centro">&#182;</a></h4><ul>
-<li><p>Eligir el valor menor</p>
-<ul>
-<li>$ C_{pk} = \bigl( \frac{\bar{x} - S_L}{3s} , \frac{S_U - \bar{x} }{3s}\bigr) $</li>
-</ul>
-</li>
+<li>Relación de causa y efecto</li>
 </ul>
 
 </div>
@@ -14682,44 +14655,75 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="6.1">6.1<a class="anchor-link" href="#6.1">&#182;</a></h2><p>次の①～④について、工程能力を計算せよ。</p>
-<p>①
-上限規格 $ S_U = 61.5 $ cm、
-下限規格 $ S_L = 58.5 $ cm、
-標準偏差 $ s = 0.4 $ cm、
-平均 $ \bar{x} = 60.6 $ cm</p>
-<p>②
-上限規格 $ S_U = 61.5 $ cm、
-標準偏差 $ s = 0.4 $ cm、
-平均 $ \bar{x} = 60.6 $ cm</p>
-<p>③
-下限規格 $ S_L = 58.5 $ cm、
-標準偏差 $ s = 0.4 $ cm、
-平均 $ \bar{x} = 60.6 $ cm</p>
-<p>④ 平均値が規格の中央からずれていると考えられるとき</p>
-<p>上限規格 $ S_U = 61.5 $ cm、
-下限規格 $ S_L = 58.5 $ cm、
-標準偏差 $ s = 0.4 $ cm、
-平均 $ \bar{x} = 60.6 $ cm</p>
-<p>Calcule la capacidad del proceso para los siguientes casos ①～④</p>
-<p>① Cuando
-el límite superior de especifición: $ S_U = 61.5 $ cm,
-el límite inferior de especificación: $ S_L = 58.5 $ cm,
-la desviación estánar: $ s = 0.4 $ cm,
-y promedio: $ \bar{x} = 60.6 $ cm</p>
-<p>② Cuando
-el límite superior de especifición: $ S_U = 61.5 $ cm,
-la desviación estánar: $ s = 0.4 $ cm,
-y promedio: $ \bar{x} = 60.6 $ cm</p>
-<p>③ Cuando
-el límite inferior de especificación: $ S_L = 58.5 $ cm,
-la desviación estánar: $ s = 0.4 $ cm,
-y promedio: $ \bar{x} = 60.6 $ cm</p>
-<p>④ Cuando se consider que el valor promedio está desviado del centro de la especificación</p>
-<p>el límite superior de especifición: $ S_U = 61.5 $ cm,
-el límite inferior de especificación: $ S_L = 58.5 $ cm,
-la desviación estánar: $ s = 0.4 $ cm,
-y promedio: $ \bar{x} = 60.6 $ cm</p>
+<h3 id="2.-Respuesta-de-emergencia,-prevenci%C3%B3n-de-recurrencias,-prevenci%C3%B3n-proactiva-y-prevenci%C3%B3n-predictiva">2. Respuesta de emergencia, prevenci&#243;n de recurrencias, prevenci&#243;n proactiva y prevenci&#243;n predictiva<a class="anchor-link" href="#2.-Respuesta-de-emergencia,-prevenci%C3%B3n-de-recurrencias,-prevenci%C3%B3n-proactiva-y-prevenci%C3%B3n-predictiva">&#182;</a></h3><p><strong>Medidas de emergencia</strong>: Son las acciones tomadas ante una anomalía cuyo origen es desconocido o, aunque conocido, no se puede abordar directamente debido a ciertas restricciones. Estas medidas se aplican para evitar que las pérdidas asociadas aumenten, es decir , son soluciones temporales o medidas provisionales.</p>
+<p><strong>Recurrence Prevention</strong>: Es una medida que elimina la causa del problema o su impacto para evitar que se repita. Es decir, la prevención de recurrencias consiste en tomar medidas para asegurarse de que el mismo problema no ocurra nuevamente debido a la misma causa. La prevención de recurrencias se puede dividir en tres etapas: medidas individuales, eliminación de causa similares mediante la expansión horizontal y eliminación de la causa raíz.</p>
+<p><strong>Prevention</strong>: Consite en identificar de antemano los problemas que se podrían generar durante la implementación, en la face de planificación, y ltomar las medidas correctivas o preventivas corresondientes.</p>
+<p><strong>Prevención predictiva</strong>: Es la acción de anticipar la aparición de un problema y tomar medidas para prevenirlo. La prevención proactiva se consiera una de las herramientas de la prevención predictitiva.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3.-Gesti%C3%B3n-de-origen">3. Gesti&#243;n de origen<a class="anchor-link" href="#3.-Gesti%C3%B3n-de-origen">&#182;</a></h3><p><strong>Gestión de origen</strong>: Consiste en identificar la calidad de los productos y servicios que satisfacen al cliente, retrocediendo hacia el inicio del flujo de trabajo (origen) o el objetivo dentro de las responsabilidades (origen), analizando las funciones y las causas de la calidad y los servicios, y gestionando ese origen. Es decir, se trata de una gestión en la que se abordan los problemas en las etapas anteriores del proceso.</p>
+<h3 id="4.-Enfoque-en-el-proceso">4. Enfoque en el proceso<a class="anchor-link" href="#4.-Enfoque-en-el-proceso">&#182;</a></h3><p><strong>Enfoque en el proceso</strong>: Es la filosofía de gestión del proceso que pone énfasis en la forma de trabajo (proceso) que genera buena claidad.</p>
+<ul>
+<li>La calidad se construye en el proceso</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="08-03-Enfoque-en-los-objetivos">08-03 Enfoque en los objetivos<a class="anchor-link" href="#08-03-Enfoque-en-los-objetivos">&#182;</a></h2><h3 id="1.-Enfoque-en-los-objetivos">1. Enfoque en los objetivos<a class="anchor-link" href="#1.-Enfoque-en-los-objetivos">&#182;</a></h3><p><strong>Enfoque en los objetivos</strong>: Es una expresión que significa dirigir la conciencia hacia los objetivos. Al realizar un trabajo, se debe reflexionar sobre el propósito de cada tarea. ¿Por qué hacerlo? ¿Puedo visualizar clarametne mi objetivo final en mi mente? Este es el primer paso en el pensamiento y la acción orientados a los objetivos.</p>
+<h3 id="2.-QCD+PSME">2. QCD+PSME<a class="anchor-link" href="#2.-QCD+PSME">&#182;</a></h3><p><strong>QCD</strong>: Quality, Cost, Delivery</p>
+<p><strong>PSME</strong>: Productivity, Safety, Morale/Moral, Environmento</p>
+<ul>
+<li>Safty First</li>
+</ul>
+<h3 id="3.-Enfoque-en-los-puntos-clave">3. Enfoque en los puntos clave<a class="anchor-link" href="#3.-Enfoque-en-los-puntos-clave">&#182;</a></h3><p><strong>Enfoque en los puntos clave</strong>: En la resolución de problemas, se considera que no se puede lograr una solución fundamental si se comienza por abordar las tareas fáciles. En lugar de eso, se da prioiridad a las causas que, aunque dificiles de resolver, tienen un mayor impacto en los resultados. La idea es abordar primero los problemas de mayor prioridad y trabajar en su resolución.</p>
+<ul>
+<li>Diagrama de Pareto</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="08-04-Gesti%C3%B3n-basada-en-hechos">08-04 Gesti&#243;n basada en hechos<a class="anchor-link" href="#08-04-Gesti%C3%B3n-basada-en-hechos">&#182;</a></h2><h3 id="1.-Principio-de-los-tres-gen-(Genba-Genbutsu-Genjitsu)">1. Principio de los tres gen (Genba-Genbutsu-Genjitsu)<a class="anchor-link" href="#1.-Principio-de-los-tres-gen-(Genba-Genbutsu-Genjitsu)">&#182;</a></h3><p><strong>Principio de los tres gen</strong>: Es un enfoque que pone énfasis en los tres gen_Genba (el lugar donde ocurre el trabajo), Genbutsu (el objeto o material relacionado con el trabajo), y Genjitsu (la realidad de la situación). Se dice que, sin prestar atención a estos tres gen, es difícil captar la esencial de las cosas.</p>
+<h3 id="2.-Visualizaci%C3%B3n">2. Visualizaci&#243;n<a class="anchor-link" href="#2.-Visualizaci%C3%B3n">&#182;</a></h3><p><strong>Visualización</strong>: Es el proceso de hacer que todos los involucrados puedan confirmar de manera visible el estado de un problema con el objetivo de su pronta detección y resolución. Generalmente, se utiliza la visualización mediante gráficos y diagramas. Se espera que, al hacer visible la situación, las personas tomen conciencia, reflexionen y actúen. A diferencia de la gestión visual que se enfocaba principalmente en los entornos de fabricación, la visualización abarca no solo los lugares de producción, sino también todos los departamentos, incluidos la tecnología de producción, el desarrollo, la gestión de producción, la administración general y otros departamentos administrativos e indirectos.</p>
+<h3 id="3.-Enfoque-en-la-variabilidad">3. Enfoque en la variabilidad<a class="anchor-link" href="#3.-Enfoque-en-la-variabilidad">&#182;</a></h3><p><strong>Gestión de la variabilidad</strong>: Consiste en centrarse en la variabilidad de los datos y controlarla. Es decir, dado que la variabilidad es inevitable, se debe mantener dentro de límites permitidos.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="08-05-Participaci%C3%B3n-de-todos">08-05 Participaci&#243;n de todos<a class="anchor-link" href="#08-05-Participaci%C3%B3n-de-todos">&#182;</a></h2><h3 id="1.-Participaci%C3%B3n-de-todos-los-departamentos-y-empleados">1. Participaci&#243;n de todos los departamentos y empleados<a class="anchor-link" href="#1.-Participaci%C3%B3n-de-todos-los-departamentos-y-empleados">&#182;</a></h3><p><strong>Participación de todos los departamentos y empleados</strong>: Es una actividad realizada con la participación de todos los niveles y empleados. La gestión de la calidad con la participación de todos los departamentos y empleados es una característica destacada de la gestión japonesa.</p>
+<h3 id="2.-Respeto-por-la-humanidad-y-satisfacci%C3%B3n-de-los-empleados">2. Respeto por la humanidad y satisfacci&#243;n de los empleados<a class="anchor-link" href="#2.-Respeto-por-la-humanidad-y-satisfacci%C3%B3n-de-los-empleados">&#182;</a></h3><p><strong>Respeto por la huminidad</strong>: Consiste en valorar y respetar la esencia del ser humano, permitido que cada persona desarrolle a máximo sus capacidades. Las empresas deben reducir al mínimo las tareas innecesarias y crear un entorno que fomente el pensamiento creativo y aproveche la sabiduría del lugar de trabajo. Como resultado, todas las personas que trabajan pueden desempeñar el 100% de su capacidad, aportar ideas y mejorar continuamente por si mismas.</p>
+<p><strong>Satisfacción de los empleados</strong>: Es la idea de que, para mejorar el desempeño de la empresa y aumentar la satisfacción del cliente, primero es necesario elevar la satisfacción de los empleados. Si se mejora la satisfacción de los empleados y cada persona trabaja con un alto nivel de motivación, la empresa se volverá más atractiva, lo que a su vez conducirá a un mayor nivel de satisfacción del cliente.</p>
 
 </div>
 </div>
@@ -14729,209 +14733,10 @@ y promedio: $ \bar{x} = 60.6 $ cm</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate_cpk_and_cp</span><span class="p">(</span><span class="n">usl</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lsl</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="mf">60.6</span><span class="p">,</span> <span class="n">std_dev</span><span class="o">=</span><span class="mf">0.4</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    usl: (Upper Specification Limit)</span>
-<span class="sd">    lsl: (Lower Specification Limit)</span>
-<span class="sd">    mean: (Sample Mean)</span>
-<span class="sd">    std_dev: (Standard Deviation)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">usl</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">lsl</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">cp</span> <span class="o">=</span> <span class="p">(</span><span class="n">usl</span> <span class="o">-</span> <span class="n">lsl</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">6</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>  <span class="c1"># Cpの計算</span>
-        <span class="n">cpu</span> <span class="o">=</span> <span class="p">(</span><span class="n">usl</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>
-        <span class="n">cpl</span> <span class="o">=</span> <span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">lsl</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>
-        <span class="n">cpk</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">cpu</span><span class="p">,</span> <span class="n">cpl</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">usl</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">cp</span> <span class="o">=</span> <span class="p">(</span><span class="n">usl</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>  <span class="c1"># 上限規格のみの場合のCp</span>
-        <span class="n">cpk</span> <span class="o">=</span> <span class="p">(</span><span class="n">usl</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">lsl</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">cp</span> <span class="o">=</span> <span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">lsl</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>  <span class="c1"># 下限規格のみの場合のCp</span>
-        <span class="n">cpk</span> <span class="o">=</span> <span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">lsl</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">std_dev</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Debe especificar al menos unos de los límites superior o inferior de especificación&quot;</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">cp</span><span class="p">,</span> <span class="n">cpk</span>
-
-<span class="c1"># 問題の計算</span>
-<span class="n">cases</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span><span class="s2">&quot;usl&quot;</span><span class="p">:</span> <span class="mf">61.5</span><span class="p">,</span> <span class="s2">&quot;lsl&quot;</span><span class="p">:</span> <span class="mf">58.5</span><span class="p">,</span> <span class="s2">&quot;mean&quot;</span><span class="p">:</span> <span class="mf">60.6</span><span class="p">,</span> <span class="s2">&quot;std_dev&quot;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">},</span>  <span class="c1"># ①</span>
-    <span class="p">{</span><span class="s2">&quot;usl&quot;</span><span class="p">:</span> <span class="mf">61.5</span><span class="p">,</span> <span class="s2">&quot;lsl&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;mean&quot;</span><span class="p">:</span> <span class="mf">60.6</span><span class="p">,</span> <span class="s2">&quot;std_dev&quot;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">},</span> <span class="c1"># ②</span>
-    <span class="p">{</span><span class="s2">&quot;usl&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;lsl&quot;</span><span class="p">:</span> <span class="mf">58.5</span><span class="p">,</span> <span class="s2">&quot;mean&quot;</span><span class="p">:</span> <span class="mf">60.6</span><span class="p">,</span> <span class="s2">&quot;std_dev&quot;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">},</span> <span class="c1"># ③</span>
-    <span class="p">{</span><span class="s2">&quot;usl&quot;</span><span class="p">:</span> <span class="mf">61.5</span><span class="p">,</span> <span class="s2">&quot;lsl&quot;</span><span class="p">:</span> <span class="mf">58.5</span><span class="p">,</span> <span class="s2">&quot;mean&quot;</span><span class="p">:</span> <span class="mf">60.6</span><span class="p">,</span> <span class="s2">&quot;std_dev&quot;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">}</span>  <span class="c1"># ④</span>
-<span class="p">]</span>
-
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">case</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cases</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="n">cp</span><span class="p">,</span> <span class="n">cpk</span> <span class="o">=</span> <span class="n">calculate_cpk_and_cp</span><span class="p">(</span><span class="o">**</span><span class="n">case</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Caso </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: Cp = </span><span class="si">{</span><span class="n">cp</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, Cpk = </span><span class="si">{</span><span class="n">cpk</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Caso 1: Cp = 1.2500, Cpk = 0.7500
-Caso 2: Cp = 0.7500, Cpk = 0.7500
-Caso 3: Cp = 1.7500, Cpk = 1.7500
-Caso 4: Cp = 1.2500, Cpk = 0.7500
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="c1">#</span>
-<span class="n">usl</span> <span class="o">=</span> <span class="mf">61.5</span>  <span class="c1"># USL</span>
-<span class="n">lsl</span> <span class="o">=</span> <span class="mf">58.5</span>  <span class="c1"># LSL</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="mf">60.6</span>  <span class="c1"># Mean</span>
-<span class="n">std_dev</span> <span class="o">=</span> <span class="mf">0.4</span>  <span class="c1"># Std dev</span>
-<span class="n">sample_size</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1">#</span>
-
-<span class="c1">#</span>
-<span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">std_dev</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">sample_size</span><span class="p">)</span>
-
-<span class="c1">#</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-
-<span class="c1">#</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sample Data&#39;</span><span class="p">)</span>
-
-<span class="c1"># USL, LSL</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">usl</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;USL = </span><span class="si">{</span><span class="n">usl</span><span class="si">}</span><span class="s1"> cm&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">lsl</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;LSL = </span><span class="si">{</span><span class="n">lsl</span><span class="si">}</span><span class="s1"> cm&#39;</span><span class="p">)</span>
-
-<span class="c1">#</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">mean</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mean = </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s1"> cm&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Sample Data Distribution with Specification Limits&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Value (cm)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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1KlcffXVjBo1isWLF9OiRQvGjRuXa9iF7ObLmJiYnOfZr7OysoBjrxIMf+2co3///rz66qtFjjl5zRr6Dx/Opk2bmDBhAosWLaJBgwYkJibmOTxEYZcLipKwMLWq1eJAzIGgwxARqfCyO5snL38cgISBvy/zGI7XQb2yWrt2LTExMZx22mkAJCcnc+qpp+YkKI0aNWLfvn28/vrrDBs2rEjb3rx5MwsWLKB3797MmDGDc889N9f8s88+m9GjR7Nhwwbatm3L/v37+f7772nXrl2+23TO8ffp0/lh504GDhzI6tWrqVOnDieccALbt2/n3XffJSEhAYDY2FjS09Np1KgRe/fuzXe58kBJWJh3r3tX44SJiERAdmfzcdfWAYhox/PCOl4H9cpq37593HnnnaSlpVG1alXatm3L888/T/369bnllls444wzOOmkk+jZs2eRt92+fXsmT57MzTffTMeOHRk5cmSu+Y0bN2bKlClcc801HDx4EIDx48fnmYTde++9PProo2RkZHD22Wfz5vvvU716dbp27Uq3bt04/fTTczV/Atx6660MHDgwp29YfsuVB0rCREREAta8aZOIJozNmzYpcP6ZZ57J/Pnz85w3fvx4xo8ff8z00AqK7GbM8HkpKSlUrVqVl19+ucD1L7jgAhYtWlRgjNl91EKlp6cXOB/gzjvv5M477zzucuWBkrAwj376KJu+26RxwkREpMyoybQQtm6l+qFDEFtex8wvOiVhYeZumqtxwkRERIqhZcuWrFy5snQ2np5OFb/zf7TQEBUiIiIiAVASJiIiIhIAJWEiIiIiAVCfsDANazfk6P6jQYchIiIioapUyTVifjRQTViY2cNn80inR4IOQ0REpNSkpKRwxhln5Jo2btw4JkyYAHi3FjrrrLOIj4+nQ4cOjBs3DvCGe7jjjjsiGsvy5cvp3bs3nTp1onPnzjkDxv7v//4vLVq0+PnG3m3bknnyyce8j1q1ahEfH098fDy33357RGMrbaoJExERkVxuvPFGZs2aRdeuXTly5Ahr164tlf1kZWUxYsQIpk+fTteuXdm9ezfVqlUDYPDgwdxxxx05o/rnp02bNiQnJ5dKfKVNSViY33/0ezZv3lyubmsgIiJSlnbs2EGzZs0A7x6THTt2LJX9fPDBB3Tp0oWuXbsC0LBhw5x5Z599du6FU1OLPU7Y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3U/Pnj1/7tjvS0xMJDExMed1SkpKvvNKW1ldHfk5YPnM7lcWMRTWpIGTyk0nThEREfGdckquccKigUbMFxEREQlAmQ9RUd6N+PcItm/frivSREREypNvv6VmVlbOOGHRQElYmNS9qaQdTAs6DBEREQl1+DBWzq5uLCk1R4qIiIgEQEmYiIiISACUhImIiFRCZsaIESNyXmdlZdG4cWMuvfTSAKM61ubNm7nooovoMGgQXS67LGdIiU2bNnHWWWfRtm1brrrqKg4dOpTn+suXL6d379506tSJzp07k5mZWYbRF0xJWJjecb3pVK9T0GGIiIiUqjp16rBy5cqc8b8+/PDDQo+OX5ZuuOEG7r33XlZ/+imfzZlDkyZNAPjd737H2LFj2bBhAw0aNOAf//jHMetmZWUxYsQInn32WVatWkVSUhLVqlUr67eQLyVhYR6/8HFuaX1L0GGIiIiUukGDBvH22969NV999VWuueaanHn79+/n5ptvplevXnTr1o3//te7qU1KSgrnnXce3bt3p3v37syfPx/4+d6Yw4YN4/TTT+e6667DuTxvCV1o33zzDVlZWfTv3x/i4qjesiW1a9fGOcfHH3/MsGHDALjxxhuZM2fOMet/8MEHdOnSha5duwLQsGFDqlSpcsxyixYtok+fPnTt2pVevXqRnp7OlClTuPzyy+nfvz8tW7bkqaeeYuLEiXTr1o2zzz6bH3/8sUTvDXR1pIiISKDGjIHk5MhuMz4eJk06/nJXX301jzzyCJdeeinLly/n5ptv5rPPvJuB//GPf+SCCy7gpZdeIi0tjV69enHhhRfSpEkTPvzwQ2rWrMn69eu55pprWLx4MQDLli1j1apVNG/enHPOOYcvvviCc889N9c+i3Kj73Xr1lG/fn2uvPJKNm3axPnnn8/EiRP56aefqF+/PlWremlMXFwc33///THbXLduHWbGgAED2LlzJ1dffTW//e1vcy1z6NAhrrrqKmbOnEnPnj3Zu3cvtWrVAmDlypUsW7aMzMxM2rZtyxNPPMGyZcsYO3Ys06ZNY8yYMccv5AIoCQszdNZQdu7cybyEeUGHIiIiUqq6dOlCSkoKr776KoMGDco174MPPuCNN95gwoQJAGRmZrJ582aaN2/OHXfcQXJyMlWqVMm52TZAr169cu4vGR8fT0pKyjFJ2L333su9995bqPiy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"
-class="
-jp-needs-light-background
-"
->
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Determinaci%C3%B3n-del-%C3%ADndice-de-capacidad-del-proceso">2. Determinaci&#243;n del &#237;ndice de capacidad del proceso<a class="anchor-link" href="#2.-Determinaci%C3%B3n-del-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>$ 1.67 \leq C_p $ : La capacidad del proceso es más que suficiente</p>
-<p>$ 1.33 \geq C_p \geq 1.67 $ : La capacidad del proceso es suficiente</p>
-<p>$ 1.00 \geq C_p \geq 1.33 $ : La capacidad del proceso es razonablemente suficiente</p>
-<p>$ 0.67 \geq C_p \geq 1.00 $ : La capacidad del proceso es insuficiente</p>
-<p>$ C_p \geq 0.67 $ : La capacidad del proceso es muy insuficente</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="6.2">6.2<a class="anchor-link" href="#6.2">&#182;</a></h2><p>例題６．１で求めた工程能力指数を判定せよ。</p>
-<p>Determine el índice de capacidad del proceso calculado en el Ejemplo 6.1</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>① $ C_p = 1.25 $ =&gt; La capacidad del proceso es razonablemente suficiente</p>
-<ul>
-<li>Sin embargo, dado que la mediana de las especificaciones y la media están desplazadas, es mejor usar el Cpk de la opción ④ parala evalación.</li>
-</ul>
-<p>② $ C_p = 0.75 $ =&gt; La capacidad del proceso es insuficiente</p>
-<p>③ $ C_p = 1.75 $ =&gt; La capacidad del proceso es más que suficiente</p>
-<p>④ $ C_{pk} = 0.75 $ =&gt; La capacidad del proceso es insuficiente</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei3-6.ipynb&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei3-8.ipynb&#39;</span>
 <span class="n">notebook_name_html</span> <span class="o">=</span> <span class="n">notebook_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.ipynb&quot;</span><span class="p">,</span><span class="s2">&quot;.html&quot;</span><span class="p">)</span>
 
 <span class="o">!</span>jupyter nbconvert --to html <span class="o">{</span>notebook_name<span class="o">}</span>
@@ -14956,8 +14761,8 @@ jp-needs-light-background
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[NbConvertApp] Converting notebook QCKentei3-6.ipynb to html
-[NbConvertApp] Writing 625612 bytes to QCKentei3-6.html
+<pre>[NbConvertApp] Converting notebook QCKentei3-8.ipynb to html
+[NbConvertApp] Writing 574656 bytes to QCKentei3-8.html
 </pre>
 </div>
 </div>

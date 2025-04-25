@@ -14589,7 +14589,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2849]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[591]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14612,7 +14612,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2850]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[592]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14622,6 +14622,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 
 <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
 <span class="kn">from</span> <span class="nn">statsmodels.formula.api</span> <span class="kn">import</span> <span class="n">ols</span>
 <span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
 
@@ -14641,9 +14642,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>14.3
+Se estableció el factor A en cuatro niveles y se realizó un experimento de clasificación única con cuatro repeticiones en orden aleatorio, obteniéndose los resultados de la Tabla 14.1. Realice un análisis de varianza y obtenga la estimación puntual y el intervalo de confianza del 95% para la media poblacional de cada nivel.</p>
+<h1 id="Dise%C3%B1o-de-experimentos">Dise&#241;o de experimentos<a class="anchor-link" href="#Dise%C3%B1o-de-experimentos">&#182;</a></h1><p>El diseño de experimentos consiste en cómo estructurar el entorno experimental, cómo asignar los factores, y cómo analizar los datos obtenidos a través del experimento para obtener la información necesaria.</p>
 <h2 id="Dise%C3%B1o-de-experimentos">Dise&#241;o de experimentos<a class="anchor-link" href="#Dise%C3%B1o-de-experimentos">&#182;</a></h2><h3 id="1.-%C2%BFQu%C3%A9-es-el-dise%C3%B1o-de-experimentos?">1. &#191;Qu&#233; es el dise&#241;o de experimentos?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-el-dise%C3%B1o-de-experimentos?">&#182;</a></h3><p><strong>El diseño de experimentos</strong> es un término general para la metodología estadística que indica cómo recolectar datos de manera planificada y cómo analizarlos.</p>
 <h3 id="2.-Procedimiento-de-experimentaci%C3%B3n-y-an%C3%A1lisis:">2. Procedimiento de experimentaci&#243;n y an&#225;lisis:<a class="anchor-link" href="#2.-Procedimiento-de-experimentaci%C3%B3n-y-an%C3%A1lisis:">&#182;</a></h3><ol>
-<li>Determinar el objetovo de experimento y la característica de calidad (valor característico).</li>
+<li>Determinar el objetivo de experimento y la característica de calidad (valor característico).</li>
 <li>Seleccionar los factores a considerar, por ejemplo, a partir de un diagrama de causa y efecto.</li>
 <li>Establecer los niveles de los factores.</li>
 <li>Asignar los factores al diseño experimental.</li>
@@ -14653,16 +14657,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>Derivar conclusiones a partir de los resultados del análisis y la información técnica.</li>
 </ol>
 <h3 id="3.-Tipos-de-experimentos:">3. Tipos de experimentos:<a class="anchor-link" href="#3.-Tipos-de-experimentos:">&#182;</a></h3><ol>
-<li><strong>Experimento de un solo factor</strong> (Dseño de un solo factor)</li>
+<li><strong>Experimento de un solo factor</strong> (Diseño de un solo factor)</li>
 <li><strong>Experimento de dos factores</strong> (Diseño de dos factores)</li>
 <li><strong>Experimento multifactorial</strong> (Diseño multifactorial)</li>
 </ol>
 <ul>
-<li>Aleatorización completa / Aleatorización totalmente al azar </li>
+<li>Aleatorización completa / Aleatorización totalmente al azar</li>
 </ul>
 <ol>
 <li>Método de división (Diseño dividido o diseño en parcelas divididas)</li>
-<li>Experimento con tablas ortogonales (Diseño basado en materices ortogonales)</li>
+<li>Experimento con tablas ortogonales (Diseño basado en matrices ortogonales)</li>
 </ol>
 <h3 id="4.-T%C3%A9rminos-del-dise%C3%B1o-de-experimentos:">4. T&#233;rminos del dise&#241;o de experimentos:<a class="anchor-link" href="#4.-T%C3%A9rminos-del-dise%C3%B1o-de-experimentos:">&#182;</a></h3><ol>
 <li>Factor　（因子）</li>
@@ -14685,7 +14689,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li><strong>Aleatorización</strong> (Randomización)</li>
 </ol>
 <ul>
-<li>Asignar tratamiento o condiciones experimentales de manera alatoria para evitar sesgos sistemáticos.</li>
+<li>Asignar tratamiento o condiciones experimentales de manera aleatoria para evitar sesgos sistemáticos.</li>
 </ul>
 <ol>
 <li><strong>Bloqueo</strong> (Bloques o diseño en bloques)</li>
@@ -14742,7 +14746,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2851]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[593]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SERVICE_ACCOUNT_FILE</span> <span class="o">=</span> <span class="s2">&quot;my-project-vscode-452201-249bdb033f8c.json&quot;</span>  <span class="c1"># JSONファイルのパス</span>
@@ -14808,7 +14812,7 @@ ground_mean: 14.0
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2851]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[593]:</div>
 
 
 
@@ -14877,15 +14881,15 @@ ground_mean: 14.0
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2852]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df0</span>
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
      </div>
@@ -14893,86 +14897,12 @@ ground_mean: 14.0
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2852]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>x1</th>
-      <th>x2</th>
-      <th>x3</th>
-    </tr>
-    <tr>
-      <th>A</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>A1</th>
-      <td>16.0</td>
-      <td>12.0</td>
-      <td>14.0</td>
-    </tr>
-    <tr>
-      <th>A2</th>
-      <td>13.0</td>
-      <td>12.0</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>A3</th>
-      <td>18.0</td>
-      <td>16.0</td>
-      <td>14.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2853]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[594]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df0_numpy</span> <span class="o">=</span> <span class="n">df0</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
@@ -15038,7 +14968,7 @@ SST:42.0 SSA:24.0 SSE:18.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2854]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[595]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
@@ -15096,7 +15026,7 @@ SST:42.0 SSA:24.0 SSE:18.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2855]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[596]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -15150,7 +15080,7 @@ Residual  6.0    18.0      3.0  NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2856]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[597]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 可視化：箱ひげ図</span>
@@ -15210,7 +15140,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2857]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[598]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df0</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -15281,7 +15211,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2857]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[598]:</div>
 
 
 
@@ -15359,7 +15289,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2858]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[599]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span>  <span class="c1"># 有意水準</span>
@@ -15431,7 +15361,7 @@ A3: 点推定 = 16.00, 95%CI = (13.55, 18.45)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2859]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[600]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">bartlett</span><span class="p">,</span> <span class="n">levene</span>
@@ -15502,7 +15432,7 @@ A3: 点推定 = 16.00, 95%CI = (13.55, 18.45)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="7.1">7.1<a class="anchor-link" href="#7.1">&#182;</a></h2><p>電子部品の重要な特性の一つに導体抵抗（単位：オーム）がある。添加剤の種類（$ A_1 - A_3 $）により導体の抵抗に変化があるかどうかを調べるために、それぞれの添加剤ごとに繰り返し４回、計１２回の実験をランダムに実施した。その結果を表７．７にしめす。分散分析を行い、要因効果の有無を検討せよ。</p>
-<p>Una de las caraterísticas importantes de los componentes electrónicos es la resistencia del conductor (unidad: ohomios).</p>
+<p>Una de las características importantes de los componentes electrónicos es la resistencia del conductor (unidad: ohmios).</p>
 <p>Para investigar si el tipo de aditivo ($ A_1 - A_3 $) influye en la resistencia del conductor, se realizaron 12 experimentos en total, con 4 repeticiones para cada tipo de aditivo, ejecutados de forma aleatoria.</p>
 <p>Los resultados se muestran en la Tabla 7.7.</p>
 <p>Realice un análisis de varianza (ANOVA) y evalúe si el factor tiene un efecto significativo.</p>
@@ -15515,7 +15445,7 @@ A3: 点推定 = 16.00, 95%CI = (13.55, 18.45)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2860]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[601]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet17&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -15565,7 +15495,7 @@ A3: 点推定 = 16.00, 95%CI = (13.55, 18.45)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2860]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[601]:</div>
 
 
 
@@ -15671,7 +15601,7 @@ A3: 点推定 = 16.00, 95%CI = (13.55, 18.45)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2861]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[602]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">records</span> <span class="o">=</span> <span class="p">[]</span>
@@ -15766,7 +15696,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2862]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[603]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_anova</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">anova_table</span> <span class="p">)</span>
@@ -15828,7 +15758,7 @@ jp-needs-light-background
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="7.2">7.2<a class="anchor-link" href="#7.2">&#182;</a></h2><p>家庭用プラスチック製品Pにおいて、強度（単位：MPa）が重要な特性である。強度に大きく影響をあたえると思われる要因として、２種類の原価剤QとRの混合比を取り上げ、実験を行うこととした。混合比を要因Aとして４水準設定し、繰り返し５回、計２０回の実験をランダムに行い、表７．９のデータを得た。ただし、A4水準の実験ではトラブルが発生し４個のデータしか得られなかった。２種類の添加剤の混合比QとRは、A1がQ：R=8：２，A2が７：３，A3が６：４，A4が５：５である。分散分析を行い、要因効果の有無を検証せよ。また、現行条件はA1である。最適条件と現行条件との母平均の差を推定せよ。</p>
-<p>En el producto doméstico de plástico P, la resistencia (unidad: MPa) es una característica importante. Se decidió realizar un experimento considerando como factor el porcentaje de mezcla de dos aditivos príncipales, Q y R, ya que piensa que esta influye significativamente en la resistencia. Se establecieron cuatro niveles para el facot A (la proporción de mexcla), y se llevaron a cabo 20 experimentos en total, con cinco repeticiones para cada nivel, de forma aleatoria. Sin embargo, en el nivel A4 ocurrió un problema y solo se obtuvieron cuatro datos. Las proporciones de mezcula de los aditivos Q y R son las siguientes: A1 = Q:R = 8:2, A2 = 7:3, A3 = 6:4, y A4 = 5:5. Realiza un análisis de varianza (ANOVA) para verificar si el factor tiene un efecto significativo. Además, considerando que la condición actual es A1, estima la diferencia entre la media poblacional bajo la condición óptima y la condición actual.</p>
+<p>En el producto doméstico de plástico P, la resistencia (unidad: MPa) es una característica importante. Se decidió realizar un experimento considerando como factor el porcentaje de mezcla de dos aditivos principales, Q y R, ya que se piensa que esta influye significativamente en la resistencia. Se establecieron cuatro niveles para el factor A (la proporción de mezcla), y se llevaron a cabo 20 experimentos en total, con cinco repeticiones para cada nivel, de forma aleatoria. Sin embargo, en el nivel A4 ocurrió un problema y solo se obtuvieron cuatro datos. Las proporciones de mezcla de los aditivos Q y R son las siguientes: A1 = Q:R = 8:2, A2 = 7:3, A3 = 6:4, y A4 = 5:5. Realiza un análisis de varianza (ANOVA) para verificar si el factor tiene un efecto significativo. Además, considerando que la condición actual es A1, estima la diferencia entre la media poblacional bajo la condición óptima y la condición actual.</p>
 
 </div>
 </div>
@@ -15838,7 +15768,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2863]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[604]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet18&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -15890,7 +15820,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2863]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[604]:</div>
 
 
 
@@ -15999,7 +15929,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2864]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[605]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># DataFrame</span>
@@ -16055,7 +15985,193 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2865]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[606]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_long</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[606]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Nivel</th>
+      <th>Repetición</th>
+      <th>Resistencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>A1</td>
+      <td>x1</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>A2</td>
+      <td>x1</td>
+      <td>34.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>A3</td>
+      <td>x1</td>
+      <td>40.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>A4</td>
+      <td>x1</td>
+      <td>38.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>A1</td>
+      <td>x2</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>A2</td>
+      <td>x2</td>
+      <td>39.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>A3</td>
+      <td>x2</td>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>A4</td>
+      <td>x2</td>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>A1</td>
+      <td>x3</td>
+      <td>38.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>A2</td>
+      <td>x3</td>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>A3</td>
+      <td>x3</td>
+      <td>45.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>A4</td>
+      <td>x3</td>
+      <td>41.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>A1</td>
+      <td>x4</td>
+      <td>31.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>A2</td>
+      <td>x4</td>
+      <td>38.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>A3</td>
+      <td>x4</td>
+      <td>42.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>A4</td>
+      <td>x4</td>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>A1</td>
+      <td>x5</td>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>A2</td>
+      <td>x5</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>A3</td>
+      <td>x5</td>
+      <td>39.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>A4</td>
+      <td>x5</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[607]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ejecución del ANOVA</span>
@@ -16126,7 +16242,7 @@ Residual  119.200000  15.0       NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2866]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[608]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_anova</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">anova_table</span> <span class="p">)</span>
@@ -16187,7 +16303,7 @@ Residual  119.200000  15.0       NaN       NaN
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Paso 9: Estimación de la media poblacional enel nivel con la mayor resistencia.</p>
+<p>Paso 9: Estimación de la media poblacional en el nivel con la mayor resistencia.</p>
 <ul>
 <li>Estimar la diferencia de medias poblacionales entre la condición óptima A3 y condición actual A1</li>
 </ul>
@@ -16200,7 +16316,7 @@ Residual  119.200000  15.0       NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2867]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[609]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
@@ -16286,7 +16402,7 @@ Estimación por intervalo de la diferencia de medias: [2.6, 10.2]
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="07-03-Experimento-factorial-de-dos-factores">07-03 Experimento factorial de dos factores<a class="anchor-link" href="#07-03-Experimento-factorial-de-dos-factores">&#182;</a></h2><h3 id="1.-%C2%BFQu%C3%A9-es-un-experimento-factorial-de-dos-factores?">1. &#191;Qu&#233; es un experimento factorial de dos factores?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-un-experimento-factorial-de-dos-factores?">&#182;</a></h3><p>Un experimento factorial de dos factores consiste en considerar dos factores: el factor A con $ l $ niveles y el factor B con $ m $ niveles, realizando experimentos en todas las combinaciones posibles de niveles de ambos factores, es decir en $ l \times  m $ condiciones.</p>
-<p>Un diseño en el que se realiza un solo experimento por cada combinación de niveles se denomina experimento factorial de dos factores sin repetición, mientras que un diseño en el que se realizan múlitiples repeticiones por cada combianación se denomina experimento factorial de dos factores con repetición.</p>
+<p>Un diseño en el que se realiza un solo experimento por cada combinación de niveles se denomina experimento factorial de dos factores sin repetición, mientras que un diseño en el que se realizan múltiples repeticiones por cada combinación se denomina experimento factorial de dos factores con repetición.</p>
 <h3 id="2.-Formato-de-datos-de-un-experimento-factorial-de-dos-valores">2. Formato de datos de un experimento factorial de dos valores<a class="anchor-link" href="#2.-Formato-de-datos-de-un-experimento-factorial-de-dos-valores">&#182;</a></h3><ul>
 <li>Formato de datos obtenido en un experimento factorial de dos factores con replicación</li>
 </ul>
@@ -16299,7 +16415,7 @@ Estimación por intervalo de la diferencia de medias: [2.6, 10.2]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2868]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[610]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;./Data2/7-12.png&#39;</span><span class="p">)</span>
@@ -16362,7 +16478,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2869]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[611]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;./Data2/7-13.png&#39;</span><span class="p">)</span>
@@ -16426,10 +16542,10 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="(8)-Procedimiento-del-an%C3%A1lisis-de-varianza-para-un-experimento-factorial-de-dos-factores-con-repeticiones">(8) Procedimiento del an&#225;lisis de varianza para un experimento factorial de dos factores con repeticiones<a class="anchor-link" href="#(8)-Procedimiento-del-an%C3%A1lisis-de-varianza-para-un-experimento-factorial-de-dos-factores-con-repeticiones">&#182;</a></h4><h2 id="7.3">7.3<a class="anchor-link" href="#7.3">&#182;</a></h2><p>機能性フィルム製品Qにおいて、フィルム張り合わせ時の接着特性（剥離強度）を高めるために、製造条件を改善することになった。A因子：硬化剤比率（２水準）、B因子：加熱温度（４水準）で繰り返し２回、計１６回の実験をランダムに行い表７．１７のデータを得た。値は大きい方が望ましい。分散分析を行い、要因効果の有無を検討するとともに、最適条件での母平均の点推定と区間推定（信頼率９５％）を行え。</p>
-<p>En el producto de película funcional Q, se decidió mejorar las condiciones de fabricación para aumentar las propiedades adhesivas (resistencial al desprendimiento) durante la laminación de las películas. Se realizaron 16 experímentos aleatorios con dos repeticiones para cada combinación de los siguientes factores:</p>
+<p>En el producto de película funcional QUE, se decidió mejorar las condiciones de fabricación para aumentar las propiedades adhesivas (resistencia al desprendimiento) durante la laminación de las películas. Se realizaron 16 experimentos aleatorios con dos repeticiones para cada combinación de los siguientes factores:</p>
 <p>Factor A: Proporción de endurecedor (2 niveles)</p>
 <p>Factor B: temperatura de calentamiento (4 niveles)</p>
-<p>Se obtuvieron los datos de la Tabla 7.17. Se desea que los valores sean lo más altos posilbe.</p>
+<p>Se obtuvieron los datos de la Tabla 7.17. Se desea que los valores sean lo más altos posible.</p>
 <p>Realice un análisis de varianza (ANOVA) para examinar si los factores tienen efectos significativos, y estime el valor medio poblacional bajo las condiciones óptimas, proporcionando tanto la estimación puntual como el intervalo de confianza al 95%.</p>
 
 </div>
@@ -16440,7 +16556,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2870]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[612]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet19&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -16498,7 +16614,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2870]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[612]:</div>
 
 
 
@@ -16579,7 +16695,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2871]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[613]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">records</span><span class="p">)</span>
@@ -16638,7 +16754,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2872]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[614]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">records</span><span class="p">)</span>
@@ -16710,7 +16826,7 @@ Residual    36.00  8.0        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2873]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[615]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">anova_table</span><span class="p">)</span>
@@ -16781,11 +16897,11 @@ Optimal Mean: 17.50
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="7.4">7.4<a class="anchor-link" href="#7.4">&#182;</a></h2><p>アルミ製品Rにおいて、コスト低減のために導入したプレス穴加工機でのダレ量が大きく問題になっている。そこでA因子：パンチの形状（４水準）、B因子：穴あけ順序（３水準）で繰り返し２回の実験をランダムに行い表7.22のデータを得た。値は小さい方が望ましい。分散分析を行い、プーリングの有無を検討するとともに、最適条件での母平均の点推定と区間推定（信頼率９５％）を行え。</p>
 <p>En el producto de aluminio R, la cantidad de rebaba generada por la prensa perforadora introducida para reducir costos se ha convertido en un problema importante.</p>
-<p>Se realizaron experimentos aleatorios dos repeteciones para cada combinación de los siguientes tactores:</p>
+<p>Se realizaron experimentos aleatorios dos repeticiones para cada combinación de los siguientes factores:</p>
 <p>Factor A: forma del punzón (4 niveles)</p>
-<p>Factor B: orden de perforación (3 sniveles)</p>
+<p>Factor B: orden de perforación (3 niveles)</p>
 <p>Se obtuvieron los datos de la Tabla 7.22. Se desea que los valores sean lo más pequeños posible.</p>
-<p>Realice un análisis de varianza (ANOVA), examine la necesidad de hacer pooling (agrupación) y estime la media poblacional bajo las condicines óptimas, proporcionando tanto la estimación puntual como el intervalo de confianza al 95%.</p>
+<p>Realice un análisis de varianza (ANOVA), examine la necesidad de hacer pooling (agrupación) y estime la media poblacional bajo las condiciones óptimas, proporcionando tanto la estimación puntual como el intervalo de confianza al 95%.</p>
 
 </div>
 </div>
@@ -16795,7 +16911,7 @@ Optimal Mean: 17.50
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2874]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[616]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet20&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -16854,7 +16970,7 @@ Optimal Mean: 17.50
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2874]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[616]:</div>
 
 
 
@@ -16953,7 +17069,7 @@ Optimal Mean: 17.50
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2875]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[617]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">records</span><span class="p">)</span>
@@ -17014,7 +17130,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2876]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[618]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">records</span><span class="p">)</span>
@@ -17069,7 +17185,7 @@ Residual   1.540000  12.0        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2877]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[619]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Elementos a agrupar（p &gt; 0.05）</span>
@@ -17184,7 +17300,7 @@ Residual   1.540000  12.0        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2878]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[620]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">t</span>
@@ -17267,7 +17383,7 @@ Residual   1.540000  12.0        NaN       NaN
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4.-Procedimiento-para-el-an%C3%A1lisis-de-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">4. Procedimiento para el an&#225;lisis de un experimento factorial de dos factores sin replicaci&#243;n<a class="anchor-link" href="#4.-Procedimiento-para-el-an%C3%A1lisis-de-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">&#182;</a></h3><h4 id="(1)-Estructura-del-modelo-de-datos">(1) Estructura del modelo de datos<a class="anchor-link" href="#(1)-Estructura-del-modelo-de-datos">&#182;</a></h4><h4 id="(2)-Efectos-principales-e-interacci%C3%B3n">(2) Efectos principales e interacci&#243;n<a class="anchor-link" href="#(2)-Efectos-principales-e-interacci%C3%B3n">&#182;</a></h4><h4 id="(3)-Descomposici%C3%B3n-de-la-variabilidad-y-c%C3%A1lculo-de-la-suma-de-cuadrados">(3) Descomposici&#243;n de la variabilidad y c&#225;lculo de la suma de cuadrados<a class="anchor-link" href="#(3)-Descomposici%C3%B3n-de-la-variabilidad-y-c%C3%A1lculo-de-la-suma-de-cuadrados">&#182;</a></h4><h4 id="(4)-Elaboraci%C3%B3n-de-la-tabla-de-an%C3%A1lisis-de-varianza-(ANIVA)">(4) Elaboraci&#243;n de la tabla de an&#225;lisis de varianza (ANIVA)<a class="anchor-link" href="#(4)-Elaboraci%C3%B3n-de-la-tabla-de-an%C3%A1lisis-de-varianza-(ANIVA)">&#182;</a></h4><h4 id="(5)-Estimaci%C3%B3n-del-valor-medio-poblacional-seg%C3%BAn-la-combinaci%C3%B3n-de-condiciones">(5) Estimaci&#243;n del valor medio poblacional seg&#250;n la combinaci&#243;n de condiciones<a class="anchor-link" href="#(5)-Estimaci%C3%B3n-del-valor-medio-poblacional-seg%C3%BAn-la-combinaci%C3%B3n-de-condiciones">&#182;</a></h4><h4 id="(6)-Procedimiento-del-an%C3%A1lisis-de-varianza-(ANOVA)-para-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">(6) Procedimiento del an&#225;lisis de varianza (ANOVA) para un experimento factorial de dos factores sin replicaci&#243;n<a class="anchor-link" href="#(6)-Procedimiento-del-an%C3%A1lisis-de-varianza-(ANOVA)-para-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">&#182;</a></h4>
+<h3 id="4.-Procedimiento-para-el-an%C3%A1lisis-de-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">4. Procedimiento para el an&#225;lisis de un experimento factorial de dos factores sin replicaci&#243;n<a class="anchor-link" href="#4.-Procedimiento-para-el-an%C3%A1lisis-de-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">&#182;</a></h3><h4 id="(1)-Estructura-del-modelo-de-datos">(1) Estructura del modelo de datos<a class="anchor-link" href="#(1)-Estructura-del-modelo-de-datos">&#182;</a></h4><h4 id="(2)-Efectos-principales-e-interacci%C3%B3n">(2) Efectos principales e interacci&#243;n<a class="anchor-link" href="#(2)-Efectos-principales-e-interacci%C3%B3n">&#182;</a></h4><h4 id="(3)-Descomposici%C3%B3n-de-la-variabilidad-y-c%C3%A1lculo-de-la-suma-de-cuadrados">(3) Descomposici&#243;n de la variabilidad y c&#225;lculo de la suma de cuadrados<a class="anchor-link" href="#(3)-Descomposici%C3%B3n-de-la-variabilidad-y-c%C3%A1lculo-de-la-suma-de-cuadrados">&#182;</a></h4><h4 id="(4)-Elaboraci%C3%B3n-de-la-tabla-de-an%C3%A1lisis-de-varianza-(ANOVA)">(4) Elaboraci&#243;n de la tabla de an&#225;lisis de varianza (ANOVA)<a class="anchor-link" href="#(4)-Elaboraci%C3%B3n-de-la-tabla-de-an%C3%A1lisis-de-varianza-(ANOVA)">&#182;</a></h4><h4 id="(5)-Estimaci%C3%B3n-del-valor-medio-poblacional-seg%C3%BAn-la-combinaci%C3%B3n-de-condiciones">(5) Estimaci&#243;n del valor medio poblacional seg&#250;n la combinaci&#243;n de condiciones<a class="anchor-link" href="#(5)-Estimaci%C3%B3n-del-valor-medio-poblacional-seg%C3%BAn-la-combinaci%C3%B3n-de-condiciones">&#182;</a></h4><h4 id="(6)-Procedimiento-del-an%C3%A1lisis-de-varianza-(ANOVA)-para-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">(6) Procedimiento del an&#225;lisis de varianza (ANOVA) para un experimento factorial de dos factores sin replicaci&#243;n<a class="anchor-link" href="#(6)-Procedimiento-del-an%C3%A1lisis-de-varianza-(ANOVA)-para-un-experimento-factorial-de-dos-factores-sin-replicaci%C3%B3n">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -17279,7 +17395,7 @@ Residual   1.540000  12.0        NaN       NaN
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="7.5">7.5<a class="anchor-link" href="#7.5">&#182;</a></h2><p>特殊レンズの透過性を向上させるため、A：添加物の種類、B：燒結温度を各３水準にとって、すべての水準組み合わせで１回ずつ、計９回の実験をランダムな順序で行った。実験の結果得られた特定波長での透過率（％）のデータを表７．２８に示す。分散分析を行い、各要因の効果を検討せよ。そして、この実験条件のうちで等価性を最も高められ条件での透過性の母平均を信頼性９５％で推定せよ。</p>
-<p>Con el fin de mejorar la transmitancia de una lente especial, se realizaron experimentos tomando como factores A: tipo de aditivo y B: temperatura de sinterización, ambos con 3 niveles. Se llevaron a cabo una vez cada combinación de niveles, en un orden aleatorio, para un total de 9 experimentos. Los datos obtenidos de la transmitancia (%) en una longitud de onda especifica se presentan en la Tabla 7.28.</p>
+<p>Con el fin de mejorar la transmitancia de una lente especial, se realizaron experimentos tomando como factores A: tipo de aditivo y B: temperatura de sinterización, ambos con 3 niveles. Se llevaron a cabo una vez cada combinación de niveles, en un orden aleatorio, para un total de 9 experimentos. Los datos obtenidos de la transmitancia (%) en una longitud de onda específica se presentan en la Tabla 7.28.</p>
 <p>Realice un análisis de varianza (ANOVA) y examine el efecto de cada factor. Luego, estime el valor medio poblacional de la transmitancia con un nivel de confianza del 95% bajo la condición experimental que maximiza la equivalencia óptica.</p>
 
 </div>
@@ -17290,7 +17406,7 @@ Residual   1.540000  12.0        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2879]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[621]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet21&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -17343,7 +17459,7 @@ Residual   1.540000  12.0        NaN       NaN
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2879]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[621]:</div>
 
 
 
@@ -17412,7 +17528,7 @@ Residual   1.540000  12.0        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2880]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[622]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -17473,7 +17589,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2881]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[623]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -17566,7 +17682,7 @@ Residual   6.444444  4.0       NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2882]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[624]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -17604,7 +17720,7 @@ Residual   6.444444  4.0       NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2883]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[625]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span><span class="o">=</span> <span class="s1">&#39;https://drive.google.com/file/d/1iByEgijHaktfbqsBBQbUbC2LpYNKvfGv/view?usp=drive_link&#39;</span>
@@ -17646,7 +17762,7 @@ Residual   6.444444  4.0       NaN       NaN
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1iByEgijHaktfbqsBBQbUbC2LpYNKvfGv
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-YokohamaInternationalExchangeAssociation/Python/QCKentei2/Data2/7-12.png
-100%|██████████| 16.6k/16.6k [00:00&lt;00:00, 355kB/s]
+100%|██████████| 16.6k/16.6k [00:00&lt;00:00, 14.0MB/s]
 </pre>
 </div>
 </div>
@@ -17677,7 +17793,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2884]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[626]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span><span class="o">=</span> <span class="s1">&#39;https://drive.google.com/file/d/1W6C-V-_axYIy2xCMaRNAavkcCbjV4vMn/view?usp=drive_link&#39;</span>
@@ -17719,7 +17835,7 @@ class="
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1W6C-V-_axYIy2xCMaRNAavkcCbjV4vMn
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-YokohamaInternationalExchangeAssociation/Python/QCKentei2/Data2/7-13.png
-100%|██████████| 22.5k/22.5k [00:00&lt;00:00, 653kB/s]
+100%|██████████| 22.5k/22.5k [00:00&lt;00:00, 14.3MB/s]
 </pre>
 </div>
 </div>
@@ -17752,10 +17868,866 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="14.3">14.3<a class="anchor-link" href="#14.3">&#182;</a></h2><p>因子Aを４水準に設定し、繰り返し４回の一元配置実験をランダムな順序でおこなって、表１４．１の結果を得た。分散分析を行い、各水準の母平均の点推定と９５％区間推定を行え。</p>
+<p>Se estableció el factor A en cuatro niveles y se realizó un experimento de clasificación única con cuatro repeticiones en orden aleatorio, obteniéndose los resultados de la Tabla 14.1. Realice un análisis de varianza y obtenga la estimación puntual y el intervalo de confianza del 95% para la media poblacional de cada nivel.</p>
 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[627]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">worksheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet27&quot;</span><span class="p">)</span>
+
+<span class="n">set_with_dataframe</span><span class="p">(</span><span class="n">worksheet</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[628]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet25&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
+
+<span class="c1"># データを取得</span>
+<span class="n">list_of_lists</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">get_all_records</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">list_of_lists</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">list_of_lists</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;exp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Nivel&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cumcount</span><span class="p">()</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="n">df_wide</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;exp&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;Nivel&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;Valor&quot;</span><span class="p">)</span>
+<span class="n">df_wide</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[628]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nivel</th>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+    </tr>
+    <tr>
+      <th>exp</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>6</td>
+      <td>8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>3</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[629]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 一元配置分散分析</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;Valor ~ C(Nivel)&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">anova_table</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">anova_lm</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">anova_table</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[629]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sum_sq</th>
+      <th>df</th>
+      <th>F</th>
+      <th>PR(&gt;F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>C(Nivel)</th>
+      <td>24.0</td>
+      <td>3.0</td>
+      <td>4.8</td>
+      <td>0.020188</td>
+    </tr>
+    <tr>
+      <th>Residual</th>
+      <td>20.0</td>
+      <td>12.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[630]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">means</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Nivel&#39;</span><span class="p">)[</span><span class="s1">&#39;Valor&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">conf_intervals</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">conf_int</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">model</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+
+<span class="c1"># 描画</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Nivel&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Valor&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Nivel&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot por Nivel&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAAGoCAYAAABL+58oAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjEsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvc2/+5QAAAAlwSFlzAAALEwAACxMBAJqcGAAAGaNJREFUeJzt3Qu0pWdZH/D/IwG5hGRCwSlgNHZh8ZLWKFNbkNoJSFUUtJRpoCKCrhVdjorUrEoEKgoDIqH1wnRptBoRJHFi8IJKSdUDZVVhJYgYbooKchUQYjIR5eLT9ZEvehjnkkxm7++c9/x+a+119tn729/7zN7v2d9/3ve7VHcHAGAkn7Z0AQAAp5qAAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHOCUq6quqvtlAFX1WVV1uKrucDvXs7eq3nXqKgOOR8CBgVXV26vqI/MG+sNV9etVdXa2iKp6QlW9eguEsT+sqr//PqyqZ1XVZdP97v7z7j69uz+xZJ3AbSPgwPgeMW2gk9w7yV8k+fHsQFV12nGevk+Sx6yxHGDFBBzYIbr7b5JcmeQLbnmsqs6sqhdW1Qeq6h1V9bRpJKOq7jFNp1TVI+blTq+qt1XV4+ffL6uqn6iqq6vqxqp6ZVV99tHaPU4bn5/kJ5I8cB5huv4Yr9+oqudU1Wur6oaq+pWpvk3PP7Kq3ji9fl72848YwfreqnpDkpuOE3J+OMkPHO35qjpnHuU5raouqKprjnj+yVX1q/P9T6+qS6rqz6vqL+b36C636gMCTikBB3aIqrprkguS/N6mh6fRnDOT/LMk/y7JFGCe2N0fSvLNSX6qqj4jyf9I8vrufuGm135Dkmcmuef0XJIXH6PpY7Xx5iTfluR35ymgXccp//FzPdMo1MeT/Nj8b/rnSV6S5LuT3CvJbyT5taq606bXPjbJ1yTZ1d3Ta4/mqiQ3JHnCCd7GX0ty/6r63E2P/eckvzDf/6EkU03nJZn2Qbpvkv92gnUCKyDgwPh+eR4d+askD0vyvOnBeafZaVrm4u6+sbvfnuT5Sb5xer67X5HkUJLfSvLwJN96xHp/vbtf1d1/m+Sp80jMp+zfc6I2boOf7+7ruvumJE9P8p/mdV8w13F1d38sySVJphGTB2167Y919zu7+yPHWX/P6336EeHoUxfq/uskvzKHpsxB5/OS/GpVVZILkzx5CojTvzfJs019wTIEHBjf18+jI3dO8h1JpumkfzqPvNwxyTs2LfuOedThFpcmOTfJZd39l0es95233Onuw0k+NO/LstmtaePWeOcRr7/jvO77bF53d//dvOx9j/HaY+ruafTnXUcJckf6hVsCzjx688tz8JlGkKZRsmvn6bIpVL58fhxYMwEHdojpKKDunqZipqOBHpzkg0mmUY/N+858VpJ3T3fmEZIp4EzTUt9+lMO+/360ZtpHJ8m0X8x7jljmuG3MIye3xtlHvP5j87rfs3nd8yjK2ZvWf1vayDwS9X1zUDmWq6fQUlXnzUHnlumpqZ5plOgLp0A5386cd/AG1kzAgR1i2vhX1dclOSvJm+fDnn8xyYGquvu8k/B/SfKi+SXfN4eDb56ntV54xLlgHl5VD56ndKZ9cX5vmgra3OataGM6quszjzctNHtcVX3BvB/RD047S29a99dU1UOrahrV+Z4k05TZ/zuZ96i7N5Jcl+SbjrPMx+apu+fNoe7qTaNHPzXtrzTvtzS95/etqq88mVqA20fAgfFNO90enneiPTBtvLv7jfNz3zkdXZTkT5O8eh6N+JmqesAcRB4/B4nnzmHnKZvWOy37/fPU1LT8447R/lHbmJ/77SRTLe+rqmkE5Fh+fpomm5abp9q+a3qwu986tzvtyDy9/hHzYfEfvR3v19Pm4HI807/hK6agc8SOy9+b5G1T2JuO+Eryf6adkm9HLcBJqu7bMnoLcPNh4tP+Kt39tDW0NY2qvKi7f3rVbQHjMIIDAAxHwAEAhmOKCgAYjhEcAGA4x7v43Nrd85737HPOOSc72U033ZS73e1uS5fBFqE/sJn+wGb6w82uvfbaD3b3vbZ0wJnCzTXXfMp17HacjY2N7N27d+ky2CL0BzbTH9hMf7jZdBHfHIUpKgBgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMZ6UBp6qeXFVvrKrrquolVXXnVbYHALDSgFNV903yXUn2dPe5Se6Q5DHedgBgu09RnZbkLlU1/bxrkvesuD0AgFR3r27lVU9KciDJR5K8oru/4SjLXJhkumX37t0PuPzyy7OTHT58OKeffvrSZbBF6A/bw6FDhzKaffv2LV0CJ+D74Wbnn3/+td29J+sKOFV1VpJfSnJBkuun74AkV3b3i471mj179vQ111yTnWxjYyN79+5dugy2CP2Bzfbv35+DBw8uXQZbhO+Hm1XVUQPOKqeoviLJn3X3B7r7Y0muSvKgFbYHALDygPPnSf5NVd21qirJQ5O8eYXtAQCsNuB092umKakkr0vyh3Nbl66qPQCAW0xHN61Md39/kukGALA2zmQMAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDOW3pAgBW4alPfVquv/7DGc3+/fszkl27zsqBA89augwGJOAAQ5rCzQWP/o6ly+AErrjyBUuXwKBMUQEAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAw1lZwKmq+1fV6zfdbqiq715VewAAK79UQ3e/Ncl50/2qukOSdyd56araAwBY9xTVQ5P8SXe/Y03tAQA72LoutvmYJC852hNVdWGS6Zbdu3dnY2MjO9nhw4d3/HvAP9Af2An08ZPj+2HhgFNVd0ryyCQXH+357r40yXTLnj17eu/evdnJps66098D/oH+cPIOHTq0dAncSvr4yfH9sPwU1VcneV13/8Ua2gIAWEvAeeyxpqcAALZdwKmquyV5WJKrVtkOAMDa9sHp7puS/JNVtgEAcCRnMgYAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMJzTli4AYFWuuPIFS5cALETAAYZ1waO/Y+kSOAEhlFUxRQUADEfAAQCGI+AAAMMRcACA4Qg4AMBwBBwAYDgCDgAwHAEHABiOgAMADEfAAQCGI+AAAMMRcACA4Qg4AMBwBBwAYDgCDgAwHAEHABiOgAMADEfAAQCGI+AAAMMRcACA4Qg4AMBwBBwAYDgrDThVtauqrqyqt1TVm6vqgatsDwBgctqK34YfTfLy7n50Vd0pyV297QDAtg04VXVmki9P8oTp9+7+aJLpBgCwbUdwPifJB5L8bFV9UZJrkzypu2/avFBVXZhkumX37t3Z2NjITnb48OEd/x5sB4cOHRqyrX379q2tLbiF77yTY3uxXMCZ1v0lSb6zu19TVdN01VOSPH3zQt19aZLplj179vTevXuzk02ddae/B9vBuj6j/fv35+DBg2tpazTrDIbcPr7zTo7txXI7Gb9ruk3hZv79yjnwAABsz4DT3e9L8s6quv/80EOTvGlV7QEArOsoqu9M8uL5CKo/TfLEFbcHALDagNPdr592rVllGwAAR3ImYwBgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHBWfSZjgEXs2nVWrrjyBUuXwa34nGAVBBxgSAcOPCujcXV5uPVMUQEAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwzlt6QLgVHr605+aD33o+oxk//79Gck97rErz3zmgaXLAAYn4DCUKdxccsmjli6D47jooquWLgHYAUxRAQDDEXAAgJ0VcKrq06rqQesrBwBgxQGnu/8uycFT0A4AwJaaovqtqvqPVVVrqAcAYC0B51uTHEry0aq6oapunH7e/qYBABY6TLy7776itgEAljsPTlU9MsmXz79udPfLVlMOAMAapqiq6oeSPCnJm+bbk6rqOaegbQCAxUZwHp7kvPmIqinw/FyS309y8YleWFVvT3Jjkk8k+Xh37zklVQMAnIJLNeyazoI/3z8zt8353f3B2/gaAICVBpxpOur3q+p3pkGZeV+cp5x8kwAAyx9F9ZKq2kjyr+aHvre733cr199JXlFV08+f7O5Lj1ygqi5MMt2ye/fubGxMTW09hw4dGrKtffv2ra0tuMVW/TvfDn+z67q6vO+Grd8X1tnevm3YH44ZcKrqS4546F3zz/tU1X26+3W3Yv0P7u53V9VnJLm6qt7S3a/avMAcej4ZfPbs2dN79+7NVrSuuqYvr4MHnTx6u3y5cHK26t/5Vv/3TMFwtPduNOv8fGwvTn4E5/nHeW4akXnICdY9hZd3zz/fX1UvTfKlST4l4AAArC3gdPf5t2fFVXW36TD07r5xvv/vk/zg7VknAMCpPNHfuUm+IMmdb3msu194gpftTvLS+RJWUzu/0N0vv1VVAQCsMuBU1fdP04pzwPmNJF+d5NVJjhtwuvtPk3zR7SkOAGBVF9t8dJKHJnlfdz9xDi239Vw4AABbKuD8zXwW449X1RlJ3p/k7DXUBgBwyg8Tn449e0mS11bVdCbjn0pybZLDSX735JoDAFh2H5w/SvK86bw3SW6aw87DkpzR3W9YQ20AAKd2iqq7f7S7HzhfmuEvk/xMkukoqP9QVZ97cs0BAGyBfXC6+x3d/dzu/uIkj03y9UnesobaAABWE3Cq6rSqekRVvTjJbyZ5a5JHnVxzAADL7mT8sHnE5uHTjsZJLp8uitnd0/44AADbcifji6ezDyf5nu7+8BprAgBY2bWoTngxTQCA7XqiPwCAbUXAAQCGI+AAAMMRcACA4Qg4AMBwBBwAYDgCDgAwHAEHABiOgAMADEfAAQCGI+AAAMMRcACAHXU1cdiWLrroqqVLAGBhAg7DueSSRy1dAschgALrYIoKABiOgAMADEfAAQCGI+AAAMMRcACA4Qg4AMBwBBwAYDgCDgAwHAEHABiOgAMADEfAAQCGs+2vRfV9T31q/ur66zOS/fv3ZyRn7tqVZx84sHQZwA72tIsvzodvuCGjGWl7cdYZZ+RZz3nOKVvftg84U7g59wkXLF0Gx3HdZVcsXQKww03h5hn3u/fSZXAcz3jbe3MqmaICAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIaz8oBTVXeoqt+vqpetui0AgHWN4DwpyZu93QDAEAGnqj4zydck+elVtgMAsM6Lbf5Ikv+a5O7HWqCqLkwy3bJ79+5sbGysuCSW4HNlM/3h5Bw+fNh7x9A2TmH/XlnAqaqvTfL+7r62qvYea7nuvjTJdMuePXt6795jLnpUhw4dOgXVsmq39XM9WfrD9rCu/jDil7/37uT4btgeTmX/XuUU1ZcleWRVvT3J5UkeUlUvWmF7AACrDTjdfXF3f2Z3n5PkMUl+u7sft6r2AABu4Tw4AMBwVr2T8Sd197TXkD3jAIC1MIIDAAxHwAEAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYzlpO9Afrco977MpFF121dBmc4DMCWDUBh6E885kHMpL9+/fn4MGDS5cBsO2YogIAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOEIOADAcIa42OZ1l12xdAkAbHHPeNt7ly6BNRoi4Jz7hAuWLoHjEECBreAZ97v30iWwxgBqigoAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHBWFnCq6s5V9dqq+oOqemNV/cCq2gIA2Oy0rM7fJnlIdx+uqjsmeXVV/WZ3/94K2wQAWF3A6e5Ocnj+9Y7zbXoMAGDbjuBM01R3SHJtkvslOdjdrznKMhcmmW7ZvXt3NjY2VlkSCxntcz106NDa2tq/f//a2tq3b9/a2uK2O3z48HB/S7DZqezfKw043f2JJOdV1a4kL62qc7v7uiOWuTTJdMuePXt67969W3ZDw8m7rZ/rVreuf8/0xz7ae8fJ0x9Onm3F9nAq+/dajqLq7uuT/E6Sr1pHewDAzrbKo6juNY/cTPfvkuRhSd6yqvYAANYxRXXvJD8374czBalf7O6XrbA9AICVH0X1hiRfvKr1AwAcizMZAwDDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhrPSi22uw5m7duW6y65YugxO8BkBLOmsM87IM9723qXL4ASf0am07QPOsw8cyEj279+fgwcPLl0GwFCe9ZznZDS2F8dnigoAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAwxFwAIDhCDgAwHAEHABgOAIOADAcAQcAGI6AAwAMR8ABAIYj4AAAw1lZwKmqs6vqd6rqTVX1xqp60qraAgDY7LSszseTfE93v66q7p7k2qq6urvftMI2AQBWN4LT3e+dws18/8Ykb05y31W1BwBwi+rurFpVnZPkVUnO7e4bjnjuwiTTLbt3737A5Zdfnq3o0KFDGdG+ffuWLoHjOHz4cE4//fSly2CL0B+2PtuK9Tv//POv7e49aw84VTX9Nb4yyYHuvup4y+7Zs6evueaa7GQbGxvZu3fv0mWwRegPbKY/sJn+cLOqOmrAWelRVFV1xyS/lOTFJwo3AADb4SiqSvK/pn1vuvu/r6odAIB1juB8WZJvTPKQqnr9fHv4CtsDAFjtYeLd/eppIGdV6wcAOBZnMgYAhiPgAADDEXAAgOEIOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAEAhiPgAADDEXAAgOFUd2erqKoPJHlHdrZ7Jvng0kWwZegPbKY/sJn+cLPP7u57ZSsHHD4Z8q7p7j1L18HWoD+wmf7AZvrD8ZmiAgCGI+AAAMMRcLaeS5cugC1Ff2Az/YHN9IfjsA8OADAcIzgAwHAEHABgOALOwqrq66uqq+rzNj328qq6vqpetmx1LN0fquq8qvrdqnpjVb2hqi5YukYW6wufXVWvq6rXz/3h25aukWW3FfPjZ1TVu6rqBctVtzUJOMt7bJJXzz9v8bwk37hgTWyd/vDXSR7f3V+Y5KuS/EhV7Vq4RpbpC+9N8sDuPi/Jv07ylKq6z8I1suy2YvLMJK9aqKYtTcBZUFWdnuTBSb4lyWNueby7fyvJjctWx1boD939R939x/P99yR5f5J/dMZOdkRf+Gh3/+28yKf7/t45jrWtqKoHJNmd5BXLVrg1+QNZ1tclefm0EUvyl3NnZec6bn+oqi9Ncqckf7JciSzZF6rq7GmqMsk7kzx3Dr3swP5QVdP2+/lJLlq6uK1KwFnWNNR4+Xz/8qMMPbKzHLM/VNW9k/x8kid2998tVyJL9oXufmd3/8sk90vyTVU1/e+dndkfvj3Jb3T3uxaubctyHpyFVNU9kkwdc7rA6PQh3GH+OV00bNqRbO+UzLv7a5eulWX7Q5K7J9lI8uzuvnLpWln2u2HTcj8zb+D0iZ3ZH/5vkn+bZPoPz+nz6O7/7O6nLF3zVmEEZzmPnv5H3t3Tl9Y53X12kj+bOyw7z/H6w0uTvNCGbMc4Zl+oqrtMC1TVWfM+GW9dulgW6w8/2d2fNT02T1NN3xHCzSYCznIeO2+4Nvul6fGqmpL5oSQPnQ//+8qFamT5/vBzSb48yRPmw4On23QUDTuvL/xkktdU1R8keWWSS7r7DxeqkS2wrVionm3DFBUAMBwjOADAcAQcAGA4Ag4AMBwBBwAYjoADAAxHwAHWbr4q8vM3/X5RVT1jvv9tVfX4k1zvZVU1nTcE2OEEHGAJ00UjH1VV9zzyie7+ie5+4TJlAaMQcIAlfDzJpUmefOQT00jOPKLzeVX12k2Pn1NVnzyx3XyxwVdW1bVV9b/na3UB/D0BB1jKwSTfUFVnHu3J7n7LdH2dqvqc+aELklxRVXdM8uPTKey7e7rK9nRNpgPrLR3Y6k5bugBgZ+ruG6pqmor6riQfOcZivzgHmx+af063+yc5N8nVVZX54oPvXW/1wFYn4ABL+pEkr0vys8d4/orpumxVddXNmaj/uKr+RZI3dvcD11wrsI2YogIW090fmkdpvuUYz/9Jkk8kefocdjJfQfteVfXJgDNNWVXVF661cGDLE3CApU2Hi/+jo6k2mYLN4+YgNIWej0773yR57nxl7dcnedD6ygW2A1cTBwCGYwQHABiOgAMADEfAAQCGI+AAAMMRcACA4Qg4AMBwBBwAIKP5/1zyTsUkABLAAAAAAElFTkSuQmCC"
+class="
+jp-needs-light-background
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="14.4">14.4<a class="anchor-link" href="#14.4">&#182;</a></h2><p>因子Aを４水準、繰り返し４回の一元配置実験をランダムな順序で行い、表１４．２のような結果を得た。下記を行え。</p>
+<ol>
+<li>分散分析</li>
+<li>A３水準の母平均の点推定と、９５％区間推定</li>
+<li>A1とA3の母平均の差の点推定と９５％区間推定</li>
+</ol>
+<p>Se fijó el factor A en cuatro niveles y se realizó un experimento de clasificación única con cuatro repeticiones en orden aleatorio, obteniéndose los resultados mostrados en la Tabla 14.2. Realice lo siguiente.</p>
+<ol>
+<li>Análisis de varianza.</li>
+<li>Estimación puntual y el intervalo de confianza del 95% para la media poblacional del nivel A3.</li>
+<li>Estimación puntual y el intervalo de confianza del 95% para la diferencia de las medias poblacionales entre los niveles A1 y A3.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[631]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet30&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
+
+<span class="c1"># データを取得</span>
+<span class="n">list_of_lists</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">get_all_records</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">list_of_lists</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">list_of_lists</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;exp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Nivel&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cumcount</span><span class="p">()</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="n">df_wide</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;exp&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;Nivel&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;Valor&quot;</span><span class="p">)</span>
+<span class="n">df_wide</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[631]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nivel</th>
+      <th>A1</th>
+      <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+    </tr>
+    <tr>
+      <th>exp</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2.0</td>
+      <td>7.0</td>
+      <td>8.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[632]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;Valor ~ C(Nivel)&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">anova_table</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">anova_lm</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">anova_table</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>          sum_sq    df         F    PR(&gt;F)
+C(Nivel)    23.0   3.0  4.960784  0.020395
+Residual    17.0  11.0       NaN       NaN
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[633]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 描画</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Nivel&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Valor&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Nivel&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot por Nivel&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+class="
+jp-needs-light-background
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[634]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Estimación de la medida poblacional</span>
+<span class="n">new_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Nivel&#39;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nivel&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()})</span>
+<span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+<span class="n">ci_df</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">summary_frame</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="n">ci_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">new_data</span><span class="p">,</span> <span class="n">ci_df</span><span class="p">[[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;mean_ci_lower&#39;</span><span class="p">,</span> <span class="s1">&#39;mean_ci_upper&#39;</span><span class="p">]]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">【Estimación de la medida poblacional】</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ci_df</span><span class="p">)</span>
+
+<span class="c1"># Estimación de la diferencia entre las medidas de A1 y A3</span>
+<span class="kn">from</span> <span class="nn">statsmodels.stats.weightstats</span> <span class="kn">import</span> <span class="n">ttest_ind</span>
+
+<span class="n">a1_vals</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nivel&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A1&#39;</span><span class="p">][</span><span class="s1">&#39;Valor&#39;</span><span class="p">]</span>
+<span class="n">a3_vals</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Nivel&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A3&#39;</span><span class="p">][</span><span class="s1">&#39;Valor&#39;</span><span class="p">]</span>
+
+<span class="c1">#</span>
+<span class="n">t_stat</span><span class="p">,</span> <span class="n">p_val</span><span class="p">,</span> <span class="n">ci_diff</span> <span class="o">=</span> <span class="n">ttest_ind</span><span class="p">(</span><span class="n">a1_vals</span><span class="p">,</span> <span class="n">a3_vals</span><span class="p">,</span> <span class="n">usevar</span><span class="o">=</span><span class="s1">&#39;pooled&#39;</span><span class="p">)</span>
+<span class="n">mean_diff</span> <span class="o">=</span> <span class="n">a3_vals</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">a1_vals</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">mean_diff</span><span class="p">,</span> <span class="n">ci_diff</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+【Estimación de la medida poblacional】
+   Nivel  mean  mean_ci_lower  mean_ci_upper
+0    A1   3.5       2.131908       4.868092
+1    A2   5.5       4.131908       6.868092
+2    A3   7.0       5.420264       8.579736
+3    A4   4.5       3.131908       5.868092
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[634]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(3.5, 5.0)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="14.5">14.5<a class="anchor-link" href="#14.5">&#182;</a></h2><p>因子A, Bの特性値への影響の有無を検証するために、因子Aについて２水準、因子Bについて４水準の繰り返しなしの二元配置実験をランダムな順序で行い表１４．３を得た。次のを行え。</p>
+<ol>
+<li>分散分析表の作成</li>
+<li>第２水準における因子Aの効果 $ \hat{a}_2 $の推定</li>
+<li>因子Aの第一水準、第２水準における効果の推定値 $ \hat{a}_1 $、 $ \hat{a}_2 $ の平均平方 $ V_A $ の期待値</li>
+<li>第２水準における因子Bの効果 $ \hat{b}_2 $の推定値</li>
+<li>因子Aが第２水準、因子Bが第２水準における実験誤差 $ \epsilon_{22} $ の推定</li>
+</ol>
+<p>Para verificar la presencia o ausencia de influencia de los factores A y B en los valores característicos, se llevó a cabo un experimento factorial de dos vías sin repetición en orden aleatorio, con dos niveles para factor A y cuatro niveles para el factor B, obteniéndose los resultados mostrados en la Tabla 14.3. Realice lo siguiente:</p>
+<ol>
+<li>Elaboración de la tabla de análisis de varianza.</li>
+<li>Estimación del efecto del factor A en el segundo nivel $ \hat{a}_2 $.</li>
+<li>Estimación de los efectos del factor A en el primer y segundo nivel  $ \hat{a}_1 $ y $ \hat{a}_2 $ y el valor esperado del cuadrado medio de A, $ V_A $.</li>
+<li>Estimación del efecto del factor B en el segundo nivel  $ \hat{b}_2 $.</li>
+<li>Estimación del error experimental $ \epsilon_{22} $ cuando el factor A está en el segundo nivel y el factor B está en el segundo nivel.</li>
+</ol>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[635]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet31&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
+
+<span class="c1"># データを取得</span>
+<span class="n">list_of_lists</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">get_all_records</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">list_of_lists</span><span class="p">)</span>
+
+<span class="n">df_wide</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;Value&quot;</span><span class="p">)</span>
+<span class="n">df_wide</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[635]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>B</th>
+      <th>B1</th>
+      <th>B2</th>
+      <th>B3</th>
+      <th>B4</th>
+    </tr>
+    <tr>
+      <th>A</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>A1</th>
+      <td>6.0</td>
+      <td>10.0</td>
+      <td>8.0</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>A2</th>
+      <td>8.0</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>A3</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5.0</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[636]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Elaboración del modelo de análisis de varianza</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="s1">&#39;Value ~ C(A) + C(B)&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">anova_table</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">anova_lm</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;【ANOVA】&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">anova_table</span><span class="p">)</span>
+
+<span class="c1"># Estimación del efecto de cada ninvel</span>
+<span class="n">grand_mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">a1_mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A1&#39;</span><span class="p">][</span><span class="s1">&#39;Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">a2_mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A2&#39;</span><span class="p">][</span><span class="s1">&#39;Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="n">a1_mean</span> <span class="o">-</span> <span class="n">grand_mean</span>
+<span class="n">a2</span> <span class="o">=</span> <span class="n">a2_mean</span> <span class="o">-</span> <span class="n">grand_mean</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">【Estimación del efecto del facotr A】&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a^1 (Estimación del efecto de A1): </span><span class="si">{</span><span class="n">a1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a^2 (Estimación del erecto de A2): </span><span class="si">{</span><span class="n">a2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Suma de cuadrados y cuadrados medios</span>
+<span class="n">SSA</span> <span class="o">=</span> <span class="n">anova_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;C(A)&#39;</span><span class="p">,</span> <span class="s1">&#39;sum_sq&#39;</span><span class="p">]</span>
+<span class="n">VA</span> <span class="o">=</span> <span class="n">SSA</span> <span class="o">/</span> <span class="n">anova_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;C(A)&#39;</span><span class="p">,</span> <span class="s1">&#39;df&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">【Valor esperado del cuadrado medio del factor A (VA)】</span><span class="se">\n</span><span class="s2">VA = </span><span class="si">{</span><span class="n">VA</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Estimación del efecto del segundo nivel B2 del factor B</span>
+<span class="n">b2_mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;B2&#39;</span><span class="p">][</span><span class="s1">&#39;Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">b2</span> <span class="o">=</span> <span class="n">b2_mean</span> <span class="o">-</span> <span class="n">grand_mean</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">【EStimación del efecto del segundo nivel B2 del factor B】&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;b^2 = </span><span class="si">{</span><span class="n">b2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Estimación del errr experimental ε22</span>
+<span class="n">epsilon_22</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A2&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;B2&#39;</span><span class="p">)][</span><span class="s1">&#39;Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">grand_mean</span> <span class="o">-</span> <span class="n">a2</span> <span class="o">-</span> <span class="n">b2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">【Estimación del error ε22 】&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ε22 = </span><span class="si">{</span><span class="n">epsilon_22</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">pointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Value&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">markers</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Valores de respuesta por nivel de los factores A y B&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>【ANOVA】
+             sum_sq   df     F    PR(&gt;F)
+C(A)      34.666667  2.0  26.0  0.012739
+C(B)      34.000000  3.0  17.0  0.021856
+Residual   2.000000  3.0   NaN       NaN
+
+【Estimación del efecto del facotr A】
+a^1 (Estimación del efecto de A1): -1.1111111111111107
+a^2 (Estimación del erecto de A2): 1.8888888888888893
+
+【Valor esperado del cuadrado medio del factor A (VA)】
+VA = 17.33
+
+【EStimación del efecto del segundo nivel B2 del factor B】
+b^2 = 2.8888888888888893
+
+【Estimación del error ε22 】
+ε22 = -0.8888888888888893
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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"
+class="
+jp-needs-light-background
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[637]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gspread_dataframe</span> <span class="kn">import</span> <span class="n">set_with_dataframe</span>
+
+<span class="n">worksheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet27&quot;</span><span class="p">)</span>
+
+<span class="n">set_with_dataframe</span><span class="p">(</span><span class="n">worksheet</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -17777,7 +18749,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2886]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[638]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei2-7.ipynb&#39;</span>
@@ -17806,7 +18778,7 @@ class="
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei2-7.ipynb to html
-[NbConvertApp] Writing 1044898 bytes to QCKentei2-7.html
+[NbConvertApp] Writing 1142369 bytes to QCKentei2-7.html
 </pre>
 </div>
 </div>

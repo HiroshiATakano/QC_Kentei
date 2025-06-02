@@ -14579,8 +14579,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="An%C3%A1lisis-de-correlaci%C3%B3n-y-an%C3%A1lisis-de-regresi%C3%B3n">An&#225;lisis de correlaci&#243;n y an&#225;lisis de regresi&#243;n<a class="anchor-link" href="#An%C3%A1lisis-de-correlaci%C3%B3n-y-an%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h1><p>En el control de calidad, es importante investigar la relación entre dos variables, como lo factores y las características.</p>
-<p>Para ello, se utilizan el análisis de correlación, que examina la relación entre variables, y el análisis de regresión, que explica los cambios en una variable objectivo en función de otra variable.</p>
+<h1 id="An%C3%A1lisis-de-correlaci%C3%B3n-y-an%C3%A1lisis-de-regresi%C3%B3n">An&#225;lisis de correlaci&#243;n y an&#225;lisis de regresi&#243;n<a class="anchor-link" href="#An%C3%A1lisis-de-correlaci%C3%B3n-y-an%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h1><p>En el control de calidad, es importante investigar la relación entre dos variables, como los factores y las características.</p>
+<p>Para ello, se utilizan el análisis de correlación, que examina la relación entre variables, y el análisis de regresión, que explica los cambios en una variable objetivo en función de otra variable.</p>
 
 </div>
 </div>
@@ -14590,7 +14590,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14613,7 +14613,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14642,16 +14642,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="08-01-An%C3%A1lisis-de-correlaci%C3%B3n">08-01 An&#225;lisis de correlaci&#243;n<a class="anchor-link" href="#08-01-An%C3%A1lisis-de-correlaci%C3%B3n">&#182;</a></h2><h3 id="1.-El-an%C3%A1lisis-de-correcalci%C3%B3n-es:">1. El an&#225;lisis de correcalci&#243;n es:<a class="anchor-link" href="#1.-El-an%C3%A1lisis-de-correcalci%C3%B3n-es:">&#182;</a></h3><p>$ r = S_{xy} / \sqrt{S_{xx} S_{yy}}$</p>
+<h2 id="08-01-An%C3%A1lisis-de-correlaci%C3%B3n">08-01 An&#225;lisis de correlaci&#243;n<a class="anchor-link" href="#08-01-An%C3%A1lisis-de-correlaci%C3%B3n">&#182;</a></h2><h3 id="1.-El-an%C3%A1lisis-de-correlaci%C3%B3n-es:">1. El an&#225;lisis de correlaci&#243;n es:<a class="anchor-link" href="#1.-El-an%C3%A1lisis-de-correlaci%C3%B3n-es:">&#182;</a></h3><p>Cuando las mediciones emparejadas de dos tipos, $ x $ e $ y $, muestran que la media poblacional de $ y $ cambia linealmente en respuesta a los cambios en $ x $, se dice que existe una <strong>correlación</strong> entre ambas. El método estadístico para determinar la presencia de esta correlación se denomina <strong>análisis de correlación</strong>. La existencia y fuerza de una relación correlacional pueden apreciarse aproximadamente mediante un diagrama de dispersión, pero para su determinación estadística se utiliza el <strong>coeficiente de correlación r</strong>.</p>
+<ul>
+<li><p>$ r = S_{xy} / \sqrt{S_{xx} S_{yy}}$</p>
+</li>
+<li><p>El coeficiente de correlación $ r $ toma valores de -1 a +1. Cuanto más se acerca a -1, más fuerte es la correlación negativa. Cuanto más se acerca a +1, más fuerte es la correlación positiva. Además, cuanto nás se aproxima a 0, más débil es la correlación, llegando a ser <strong>no correlacionado</strong>.</p>
 <ul>
 <li>Correlación positiva</li>
 <li>Correlación negativa</li>
 <li>Sin correlación / Correlación nula</li>
-<li>Valor atípico / No lineal</li>
-<li>Curvilíneo / No línear</li>
-<li>Distribución normal</li>
-<li>Correlación positiva fuerte</li>
-<li>Correlación negativa fuerte</li>
+</ul>
+</li>
+<li><p>El coeficiente de correlación mide el grado en que $ x $ e $ y $ tienen una <strong>relación lineal</strong>. Si hay <strong>valores atipicos</strong> en el conjunto de datos o si la relación es <strong>curvilínea</strong>, calcular el coeficiente de correlación carece de sentido.</p>
+</li>
+<li><p>El coeficiente de correlación tiene sentido cuando tanto $ x $ como $ y $ siguen una <strong>distribución normal</strong>.</p>
+</li>
 </ul>
 
 </div>
@@ -14664,17 +14669,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-C%C3%A1lculo-del-coeficiente-de-coffelaci%C3%B3n-y-prueba-de-no-correlaci%C3%B3n">2. C&#225;lculo del coeficiente de coffelaci&#243;n y prueba de no correlaci&#243;n<a class="anchor-link" href="#2.-C%C3%A1lculo-del-coeficiente-de-coffelaci%C3%B3n-y-prueba-de-no-correlaci%C3%B3n">&#182;</a></h3><h4 id="(1)-C%C3%A1lculo-del-coeficiente-de-correlaci%C3%B3n.">(1) C&#225;lculo del coeficiente de correlaci&#243;n.<a class="anchor-link" href="#(1)-C%C3%A1lculo-del-coeficiente-de-correlaci%C3%B3n.">&#182;</a></h4><h4 id="(2)-Prueba-de-hip%C3%B3tesis-para-el-coeficiente-de-ccorrelaci%C3%B3n-poblacional-(Prueba-de-no">(2) Prueba de hip&#243;tesis para el coeficiente de ccorrelaci&#243;n poblacional (Prueba de no<a class="anchor-link" href="#(2)-Prueba-de-hip%C3%B3tesis-para-el-coeficiente-de-ccorrelaci%C3%B3n-poblacional-(Prueba-de-no">&#182;</a></h4><p>correlación)</p>
-<p>Paso 1: EStablecimiento del objetivo de la pureba</p>
-<p>Paso 2: Esbablecimiento de la hipótesis nula H0 y la hipótesis alternativa H1.</p>
-<p>Paso 3: Selección del estadistico de prueba.</p>
-<p>Paso 4: Eastablecimiento del nivel de significancia.</p>
-<p>Paso 5: Determinación de la región de rechazo.</p>
-<p>Paso 6: Cálculo del estadístico de prueba.</p>
-<p>Paso 7: Decisión sobre el resultado de la prueba.</p>
-<p>Paso 8: Conclusión.</p>
-<h2 id="8.1">8.1<a class="anchor-link" href="#8.1">&#182;</a></h2><p>特殊金属材料についてQ成分含有量 x(ppm) と伸び y(%) との関係を調査し、表８．２を得た。ｘとｙの関係について相関分析をおこなえ。</p>
-<p>Se investigó la relación entre el contenido del componente Q, x (ppm), y la elongación, y(%), en un matarial metálico especial, y se obtuvo la Tabal 8.2. Realice un análisis de correlación sobre la relación entre x e y.</p>
+<h3 id="2.-C%C3%A1lculo-del-coeficiente-de-correlaci%C3%B3n-y-prueba-de-no-correlaci%C3%B3n">2. C&#225;lculo del coeficiente de correlaci&#243;n y prueba de no correlaci&#243;n<a class="anchor-link" href="#2.-C%C3%A1lculo-del-coeficiente-de-correlaci%C3%B3n-y-prueba-de-no-correlaci%C3%B3n">&#182;</a></h3><h2 id="8.1">8.1<a class="anchor-link" href="#8.1">&#182;</a></h2><p>特殊金属材料についてQ成分含有量 x(ppm) と伸び y(%) との関係を調査し、表８．２を得た。ｘとｙの関係について相関分析をおこなえ。</p>
+<p>Se investigó la relación entre el contenido del componente Q, x (ppm), y la elongación, y(%), en un material metálico especial, y se obtuvo la Tabala 8.2. Realice un análisis de correlación sobre la relación entre x e y.</p>
 
 </div>
 </div>
@@ -14684,7 +14680,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SERVICE_ACCOUNT_FILE</span> <span class="o">=</span> <span class="s2">&quot;my-project-vscode-452201-249bdb033f8c.json&quot;</span>  <span class="c1"># JSONファイルのパス</span>
@@ -14737,7 +14733,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[129]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
 
 
 
@@ -14948,7 +14944,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
@@ -15005,40 +15001,8 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Paso 1:</p>
-<ul>
+<h4 id="(1)-C%C3%A1lculo-del-coeficiente-de-correalci%C3%B3n">(1) C&#225;lculo del coeficiente de correalci&#243;n<a class="anchor-link" href="#(1)-C%C3%A1lculo-del-coeficiente-de-correalci%C3%B3n">&#182;</a></h4><ul>
 <li>$ r = S_{xy} / \sqrt{S_{xx} S_{yy} } = 0.885 $</li>
-</ul>
-<p>Paso 2:</p>
-<ul>
-<li><p>$ H_0 : \rho = 0 $</p>
-</li>
-<li><p>$ H_1 : \rho \neq 0 $</p>
-</li>
-</ul>
-<p>Paso 3:</p>
-<ul>
-<li>$ t_0 = r \sqrt{n-2} / \sqrt{1-r^2}$</li>
-</ul>
-<p>Paso 4:</p>
-<ul>
-<li>$ \alpha = 0.05 $</li>
-</ul>
-<p>Paso 5:</p>
-<ul>
-<li>$ R : | t_0 | \geq t(\phi, \alpha) = t(n-2, \alpha) = t(28, 0.05) = 2.048 $</li>
-</ul>
-<p>Paso 6:</p>
-<ul>
-<li>$ $ t_0 = 10.06</li>
-</ul>
-<p>Paso 7:</p>
-<ul>
-<li>$ | t_0 | = 10.06 &gt; t(28, 0.05) = 2.048 $</li>
-</ul>
-<p>Paso 8:</p>
-<ul>
-<li>La hipótesis nula H0 fue rechazada y la hipótesis alternativa H1 fue aceptada. Con un nivel de significancia del 5%, se puede decir que existe una relación de correración entre x e y.</li>
 </ul>
 
 </div>
@@ -15049,23 +15013,14 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del coeficiente de correlación</span>
 <span class="n">r</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">pearsonr</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">])</span>
 
-<span class="c1"># Prueba del coeficiente de coeficiente de correlación poblacional</span>
-<span class="c1"># Estadístoco de prueba t = r * sqrt(n-2) / sqrt(1 - r^2)</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="n">t_stat</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">df_t</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span>
-<span class="n">p_two_tailed</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">stats</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">t_stat</span><span class="p">),</span> <span class="n">df</span><span class="o">=</span><span class="n">df_t</span><span class="p">))</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Coeficiente de correlación de Pearson (r): </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estadístico de prueba t: </span><span class="si">{</span><span class="n">t_stat</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grados de libertad (df): </span><span class="si">{</span><span class="n">df_t</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valor p (dos colas): </span><span class="si">{</span><span class="n">p_two_tailed</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-value: </span><span class="si">{</span><span class="n">p_value</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15088,9 +15043,7 @@ jp-needs-light-background
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Coeficiente de correlación de Pearson (r): 0.885
-Estadístico de prueba t: 10.07
-Grados de libertad (df): 28
-Valor p (dos colas): 8.1950890518101e-11
+p-value: 0.000
 </pre>
 </div>
 </div>
@@ -15106,7 +15059,106 @@ Valor p (dos colas): 8.1950890518101e-11
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.-Autocorrelaci%C3%B3n-de-series">3. Autocorrelaci&#243;n de series<a class="anchor-link" href="#3.-Autocorrelaci%C3%B3n-de-series">&#182;</a></h3><h4 id="(1)-Prueba-de-los-signos">(1) Prueba de los signos<a class="anchor-link" href="#(1)-Prueba-de-los-signos">&#182;</a></h4><h4 id="(2)-Prueba-de-correlaci%C3%B3n-para-ondas-grandes">(2) Prueba de correlaci&#243;n para ondas grandes<a class="anchor-link" href="#(2)-Prueba-de-correlaci%C3%B3n-para-ondas-grandes">&#182;</a></h4><h4 id="(3)-Pueba-de-correlaci%C3%B3n-para-ondas-peque%C3%B1as">(3) Pueba de correlaci&#243;n para ondas peque&#241;as<a class="anchor-link" href="#(3)-Pueba-de-correlaci%C3%B3n-para-ondas-peque%C3%B1as">&#182;</a></h4>
+<h4 id="(2)-Prueba-de-hip%C3%B3tesis-para-el-coeficiente-de-correlaci%C3%B3n-poblacional-(Prueba-de-no-correlaci%C3%B3n)">(2) Prueba de hip&#243;tesis para el coeficiente de correlaci&#243;n poblacional (Prueba de no correlaci&#243;n)<a class="anchor-link" href="#(2)-Prueba-de-hip%C3%B3tesis-para-el-coeficiente-de-correlaci%C3%B3n-poblacional-(Prueba-de-no-correlaci%C3%B3n)">&#182;</a></h4><p>Paso 1: EStablecimiento del objetivo de la prueba</p>
+<p>Se realiza una prueba bilateral para determinar si existe una relación de correlación entre  $ x $ e $ y $</p>
+<p>Paso 2: Establecimiento de la hipótesis nula H0 y la hipótesis alternativa H1.</p>
+<ul>
+<li><p>$ H_0 : \rho = 0 $</p>
+</li>
+<li><p>$ H_1 : \rho \neq 0 $</p>
+</li>
+</ul>
+<p>Paso 3: Selección del estadístico de prueba.</p>
+<ul>
+<li>$ t_0 = r \sqrt{n-2} / \sqrt{1-r^2}$</li>
+</ul>
+<p>Paso 4: Establecimiento del nivel de significancia.</p>
+<ul>
+<li>$ \alpha = 0.05 $</li>
+</ul>
+<p>Paso 5: Determinación de la región de rechazo.</p>
+<ul>
+<li>$ R : | t_0 | \geq t(\phi, \alpha) = t(n-2, \alpha) = t(28, 0.05) = 2.048 $</li>
+</ul>
+<p>Paso 6: Cálculo del estadístico de prueba.</p>
+<ul>
+<li>$ $ t_0 = 10.06</li>
+</ul>
+<p>Paso 7: Decisión sobre el resultado de la prueba.</p>
+<ul>
+<li>$ | t_0 | = 10.06 &gt; t(28, 0.05) = 2.048 $</li>
+</ul>
+<p>Paso 8: Conclusión.</p>
+<ul>
+<li>La hipótesis nula H0 fue rechazada y la hipótesis alternativa H1 fue aceptada. Con un nivel de significancia del 5%, se puede decir que existe una relación de correlación entre x e y.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">t</span>
+
+<span class="c1"># Prueba del coeficiente de coeficiente de correlación poblacional</span>
+<span class="c1"># Estadístoco de prueba t = r * sqrt(n-2) / sqrt(1 - r^2)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">df_t</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span>    <span class="c1"># 有意水準</span>
+
+<span class="c1"># 両側検定の棄却域（α/2 の両端）</span>
+<span class="n">t_critical_two_tailed</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">df_t</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Región de rechazo R : |t0| &gt; </span><span class="si">{</span><span class="n">t_critical_two_tailed</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">t_stat</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estadístico de prueba t0: </span><span class="si">{</span><span class="n">t_stat</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Región de rechazo R : |t0| &gt; 2.048
+Estadístico de prueba t0: 10.07
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="3.-Autocorrelaci%C3%B3n-de-series">3. Autocorrelaci&#243;n de series<a class="anchor-link" href="#3.-Autocorrelaci%C3%B3n-de-series">&#182;</a></h3><p>Cuando se investiga la relación de correlación entre dos variables, y la distribución de cada variable se desvía de la normalidad c existen valores atípicos cuyo no puede ignorarse, a veces se realizan las <strong>pruebas de correlación de grandes olas y de pequeñas olas</strong>. Ambas se llevan a cabo mediante una prueba de signos.</p>
+<h4 id="(1)-Prueba-de-los-signos">(1) Prueba de los signos<a class="anchor-link" href="#(1)-Prueba-de-los-signos">&#182;</a></h4><h4 id="(2)-Prueba-de-correlaci%C3%B3n-para-ondas-grandes">(2) Prueba de correlaci&#243;n para ondas grandes<a class="anchor-link" href="#(2)-Prueba-de-correlaci%C3%B3n-para-ondas-grandes">&#182;</a></h4><h4 id="(3)-Prueba-de-correlaci%C3%B3n-para-ondas-peque%C3%B1as">(3) Prueba de correlaci&#243;n para ondas peque&#241;as<a class="anchor-link" href="#(3)-Prueba-de-correlaci%C3%B3n-para-ondas-peque%C3%B1as">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15117,19 +15169,12 @@ Valor p (dos colas): 8.1950890518101e-11
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="08-02-An%C3%A1lisis-de-regresi%C3%B3n">08-02 An&#225;lisis de regresi&#243;n<a class="anchor-link" href="#08-02-An%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h2><h3 id="1.-Qu%C3%A9-es-una-equaci%C3%B3n-de-regresi%C3%B3n">1. Qu&#233; es una equaci&#243;n de regresi&#243;n<a class="anchor-link" href="#1.-Qu%C3%A9-es-una-equaci%C3%B3n-de-regresi%C3%B3n">&#182;</a></h3><ul>
-<li>Análisis de regresión simple</li>
-<li>Análisis de regresión múltiple</li>
-<li>Variable dependiente / Variable de respuesta / Variable objetivo</li>
-<li>Variable independiente /  Variable predictora / Regresor</li>
-<li>Constante (Intercepto) / Término  independiente</li>
-<li>Coeficiente de pendiente / Coeficiente de regrasión (para la variable especifica)</li>
-<li>Línea de regresión</li>
-<li>Coeficiente de regresión (en general)</li>
-<li>Método de minimos cuadrados</li>
-<li>Predicción</li>
-</ul>
-<h3 id="2.-Ecuaci%C3%B3n-de-regrasi%C3%B3nd">2. Ecuaci&#243;n de regrasi&#243;nd<a class="anchor-link" href="#2.-Ecuaci%C3%B3n-de-regrasi%C3%B3nd">&#182;</a></h3><ul>
+<h2 id="08-02-An%C3%A1lisis-de-regresi%C3%B3n">08-02 An&#225;lisis de regresi&#243;n<a class="anchor-link" href="#08-02-An%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h2><h3 id="1.-Qu%C3%A9-es-una-ecuaci%C3%B3n-de-regresi%C3%B3n">1. Qu&#233; es una ecuaci&#243;n de regresi&#243;n<a class="anchor-link" href="#1.-Qu%C3%A9-es-una-ecuaci%C3%B3n-de-regresi%C3%B3n">&#182;</a></h3><p>Mientras que el análisis de correlación es una técnica para analizar la relación entre dos variables, el análisis de regresión tiene como objetivo estimar el cambio en una variable objetivo basándose en el valor de la otra variable.</p>
+<p>Se llama <strong>análisis de regresión simple</strong> cuando hay una sola variable explicativa, y <strong>análisis de regresión múltiple</strong> cuando hay dos o más variables explicativas.</p>
+<p>Se puede decir que el análisis de regresión es un método para encontrar la ecuación de relación (<strong>ecuación de regresión</strong>) entre una variable objetivo (<strong>variable dependiente</strong>) y una variable explicativa (<strong>variable independiente</strong>).</p>
+<p>La <strong>ecuación de regresión</strong> se determina al encontrar la <strong>pendiente</strong> y la <strong>intersección</strong> de la recta de manera que la suma de los cuadrados de las diferencia entre los valores del eje vertical de los puntos en el diagrama de dispersión (valores observados) y los valores del eje vertical en la recta de regresión correspondientes a los valores del eje horizontal (valores observados ) sea la mínima posible (para todos los punto del diagram de dispersión). Este método se conoce como <strong>método de mínimos cuadrados</strong>.</p>
+<h3 id="2.-Ecuaci%C3%B3n-de-regresi%C3%B3nn">2. Ecuaci&#243;n de regresi&#243;nn<a class="anchor-link" href="#2.-Ecuaci%C3%B3n-de-regresi%C3%B3nn">&#182;</a></h3><p>El análisis de regresión tiene como objetivo realizar predicciones y control sobre una <strong>variable objetivo</strong> utilizando las <strong>variables explicativas</strong>.</p>
+<ul>
 <li><p>$ y_i = a + b x_i + \epsilon_i $</p>
 </li>
 <li><p>Variable dependiente / Variable de respuesta / Variable objetivo</p>
@@ -15165,7 +15210,7 @@ Valor p (dos colas): 8.1950890518101e-11
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[132]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">])</span>
@@ -15231,7 +15276,12 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4.-Descomposici%C3%B3n-de-la-suma-de-cuadrados-y-an%C3%A1lisis-de-varianza">4. Descomposici&#243;n de la suma de cuadrados y an&#225;lisis de varianza<a class="anchor-link" href="#4.-Descomposici%C3%B3n-de-la-suma-de-cuadrados-y-an%C3%A1lisis-de-varianza">&#182;</a></h3>
+<h3 id="4.-Descomposici%C3%B3n-de-la-suma-de-cuadrados-y-an%C3%A1lisis-de-varianza">4. Descomposici&#243;n de la suma de cuadrados y an&#225;lisis de varianza<a class="anchor-link" href="#4.-Descomposici%C3%B3n-de-la-suma-de-cuadrados-y-an%C3%A1lisis-de-varianza">&#182;</a></h3><p>Se puede utilizar el análisis de varianza (ANIVA) para analizar si la regresión es significativa.</p>
+<p>La suma total de cuadrados se puede descomoner en la suma de cuadrados de la regresión y la suma de cuadrados residual.</p>
+<ul>
+<li>$ S_{yy} = S_E + S_{R} $</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -15244,7 +15294,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="8.3">8.3<a class="anchor-link" href="#8.3">&#182;</a></h2><p>表８．２のデータから分散分析を行い、さらに寄与率を求めよ。</p>
 <p>Realice un análisis de varianza utilizando los datos de la tabla 8.2 y calcule también la tasa de contribución.</p>
-<p>Paso 1: Cálculo de la suma de caudrados</p>
+<p>Paso 1: Cálculo de la suma de cuadrados</p>
 <ul>
 <li>$ S_T = S_{yy} = 1975.4 $</li>
 <li>$ S_R = S_{xy^2} / S_{xx} = 1548.2 $</li>
@@ -15264,10 +15314,10 @@ jp-needs-light-background
 <ul>
 <li><p>$ R : F_0 = 101.45 \geq F(\phi_R, \phi_E:\alpha) = 4.20$</p>
 </li>
-<li><p>Con un nivel de significa del 5%, la regresión es signicativa.</p>
+<li><p>Con un nivel de significado del 5%, la regresión es significativa.</p>
 </li>
 </ul>
-<p>Paso 5: Cálculo del coeficiente de determinación / Cálculo de la proporción de varianza exxplicada</p>
+<p>Paso 5: Cálculo del coeficiente de determinación / Cálculo de la proporción de varianza explicada</p>
 <ul>
 <li>$ R^2 = S_R / S_E = 0.784 $</li>
 </ul>
@@ -15280,7 +15330,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[133]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -15350,12 +15400,14 @@ Coeficiente de determinación R² = 0.7837
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Paso 6: Consideración de los residuos / Análisis de los residuos / Examen de los residuos</p>
+<p>Cuando el coeficiente de determinación (o $ R^2 $) es bajo, significa que los residuos, que son las diferencias de los puntos de datos a la línea de regresión, son grandes. En el análisis de regresión, es crucial examinar detenidamente el diagrama de dispersión con la línea de regresión, así como realizar una análisis de los residuos como se detalla a continuación.</p>
 <ul>
 <li>Histograma</li>
 <li>REsiduo
 ]* Gráfico de series de tiempo / Diagrama de series temporales</li>
 <li>Diagrama de dispersión / Gráfico de dispersión</li>
 </ul>
+<p>Si hay valores atípicos en el histograma de residuos, se debe investigar esos datos. Si se observan anomalías en el gráfico de series de tiempo, se podría considerar la influencia del orden de medición. Si se aprecia una relación curvilínea en el diagrama de dispersión de los residuos contra la variable explicativa, es necesario considerar la inclusión de un término cuadrático de la variable explicativa.</p>
 
 </div>
 </div>
@@ -15365,7 +15417,7 @@ Coeficiente de determinación R² = 0.7837
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[134]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo de los residuos</span>
@@ -15474,7 +15526,7 @@ jp-needs-light-background
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="15.3">15.3<a class="anchor-link" href="#15.3">&#182;</a></h2><p>製品Pの製造工程において、圧縮強度と引っ張り強さは重要な管理項目となっている。最近の生産量より、ランダムに n= 52 のサンプルを抜き取り、それぞれのサンプルから圧縮強度 (x) と引っ張り強さ (y) を測定したところ、以下の統計量が得られた。圧縮強度と引っ張り強さの間に、相関関係が存在するかどうか、有意水準５％で検定せよ。</p>
-<p>En el proceso de fabricación del producto P, la resistencia a la compresión y la resistencia a la tracción son elementos de control importantes. Basándonos en la producción reciente, se tomó una muestra aleatoria de n = 52 unidades, y de cada muestra se midió la resistencia a la compresión (x) y la resistencia a la tracción (y), obteniéndose las siguinetes estadisticas. Determine si existe una correlación significativa entre la resistencia a la compresión y la resistencia a la tracción, con un nivel de significancia del 5%.</p>
+<p>En el proceso de fabricación del producto P, la resistencia a la compresión y la resistencia a la tracción son elementos de control importantes. Basándonos en la producción reciente, se tomó una muestra aleatoria de n = 52 unidades, y de cada muestra se midió la resistencia a la compresión (x) y la resistencia a la tracción (y), obteniéndose las siguientes estadísticas. Determine si existe una correlación significativa entre la resistencia a la compresión y la resistencia a la tracción, con un nivel de significancia del 5%.</p>
 <p>n = 52,</p>
 <p>$ \sum x = 281.00 \qquad \sum x^2 = 1668.00 \qquad \bar{x}  = 5.404  \qquad S_{xx} = 149.519 $</p>
 <p>$ \sum y = 4160.00 \qquad \sum y^2 = 332864.00 \qquad \bar{y}= 80.00 \qquad S_{yy} = 63.923 $</p>
@@ -15489,7 +15541,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[135]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15534,7 +15586,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[136]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span>
@@ -15552,7 +15604,7 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Paso 3: Establecimiento de la region de rechazo</p>
+<p>Paso 3: Establecimiento de la región de rechazo</p>
 <p>$ R: |r| \geq r(\phi,\alpha) = r(50,0.05) = 0.2732 $</p>
 
 </div>
@@ -15563,7 +15615,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[137]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo de los grados de libertad y valor p</span>
@@ -15625,7 +15677,7 @@ Región de rechazo R: 0.2732
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[138]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del coeficiente de correlación r</span>
@@ -15682,7 +15734,7 @@ Coeficiente de correlación r: 0.696
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[139]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 有意水準5%での判断</span>
@@ -15725,7 +15777,7 @@ Coeficiente de correlación r: 0.696
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[140]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 検算</span>
@@ -15774,7 +15826,7 @@ Coeficiente de correlación r: 0.696
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[140]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[89]:</div>
 
 
 
@@ -15797,7 +15849,7 @@ Coeficiente de correlación r: 0.696
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[141]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -15894,7 +15946,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="15.4">15.4<a class="anchor-link" href="#15.4">&#182;</a></h2><p>製品HKの製造工程において、水分含有量と不純物量は重要な管理項目となっている。最近の生産品より、ランダムに $ n = 32 $ のサンプルを抜き取り、それぞれのサンプルから水分含有量 (x) と不純物量 (y) を測定したところ、以下の統計量が得られた。</p>
 <p>水分含有量 (x) と不純物量 (y) の間に直線関係が存在するか否か、回帰分析を行え。有意水準５％とする。またその時の直線式（母回帰式）を推定せよ。</p>
-<p>En el proceso de fabricación del producto HK, el contenido de humedad y la cantidad de impurezas son elementos de control importantes. Recientemente, se extrajo una muestra aleatoria de $ n = 32 $ unidades de la producción y se medió el contenido de humedad (x) y la cantidad de impurezas (y) de cada muestra, obteniéndose los siguientes estadísticos. Realice un análisis de regresión para determinar si existe una relación lineal entre el contenido de humedad (x) y la cantidad de impurezas (y). Utilice un nivel de significancia del 5%. Además, estime la ecuación de la recta (ecuación de regresión poblacional) en esse caso.</p>
+<p>En el proceso de fabricación del producto HK, el contenido de humedad y la cantidad de impurezas son elementos de control importantes. Recientemente, se extrajo una muestra aleatoria de $ n = 32 $ unidades de la producción y se midió el contenido de humedad (x) y la cantidad de impurezas (y) de cada muestra, obteniéndose los siguientes estadísticos. Realice un análisis de regresión para determinar si existe una relación lineal entre el contenido de humedad (x) y la cantidad de impurezas (y). Utilice un nivel de significancia del 5%. Además, estime la ecuación de la recta (ecuación de regresión poblacional) en ese caso.</p>
 <p>n = 32,</p>
 <p>$ \sum x = 164.00 \qquad \sum x^2 = 950.00 \qquad \bar{x}  = 5.125  \qquad S_{xx} = 109.50 $</p>
 <p>$ \sum y = 1280.0 \qquad \sum y^2 = 147.00 \qquad \bar{y}= 40.00 \qquad S_{yy} = 97.00 $</p>
@@ -15909,7 +15961,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[142]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15959,7 +16011,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[143]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span>
@@ -15988,7 +16040,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[144]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo de la región de rechazo</span>
@@ -16039,7 +16091,7 @@ Región de rechazo R: 2.042
 <p>$ S_{xx} = 109.05 \qquad S_{yy} = 97.00 \qquad S_{xy} = 90.00 $</p>
 <p>Suma de cuadrados de los residuos (SCR) $ S_{\epsilon} $</p>
 <p>$ S_{\epsilon} = S_{yy} - (S_{xy})^2 / S_{xx} = 23.00 $</p>
-<p>Vaianza residual $ V_{\epsilon} $</p>
+<p>Varianza residual $ V_{\epsilon} $</p>
 <p>$ V_{\epsilon} = S_{\epsilon} / (n-2) = 0.77 $</p>
 <p>Cálculo del estadístico de prueba</p>
 <p>$ t_0 = S_{xy} / \sqrt{S_{xx} V_{\epsilon}} = 9.81 $</p>
@@ -16052,7 +16104,7 @@ Región de rechazo R: 2.042
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del coeficiente de regresión</span>
@@ -16127,7 +16179,7 @@ Prueba t: 9.82
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[146]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 分析結果の出力</span>
@@ -16179,7 +16231,7 @@ Se considera que el modelo se ajusta bien.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[147]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># サンプルデータの生成</span>
@@ -16294,7 +16346,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[148]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Estadístico de prueba dado</span>
@@ -16377,7 +16429,7 @@ Tabla de análisis de varianza (ANOVA):
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[148]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[97]:</div>
 
 
 
@@ -16455,7 +16507,7 @@ Tabla de análisis de varianza (ANOVA):
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Como resultado del análisis de varianza,</p>
 <p>$ F_0 = 96.3 &gt; F(1,30:0.05) = 4.17 $</p>
-<p>con un nivel de significancia del 5%, la variación debido a la regresión es eignificativa. Es decir, existe una relación lineal entre el contenido de humedad (x) y la cantidad de impuezas (y).</p>
+<p>con un nivel de significancia del 5%, la variación debido a la regresión es significativa. Es decir, existe una relación lineal entre el contenido de humedad (x) y la cantidad de impurezas (y).</p>
 
 </div>
 </div>
@@ -16465,7 +16517,7 @@ Tabla de análisis de varianza (ANOVA):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[149]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">f</span>
@@ -16533,7 +16585,7 @@ Coeficiente de determinación: 76.26%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[150]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei2-8.ipynb&#39;</span>
@@ -16562,7 +16614,6 @@ Coeficiente de determinación: 76.26%
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei2-8.ipynb to html
-[NbConvertApp] Writing 845130 bytes to QCKentei2-8.html
 </pre>
 </div>
 </div>

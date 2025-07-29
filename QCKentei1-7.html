@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Dise%C3%B1o-Experimental">Dise&#241;o Experimental<a class="anchor-link" href="#Dise%C3%B1o-Experimental">&#182;</a></h1><p><strong>Diseño experimental</strong> es una serie de métodos para analizar estadísticamente si los factores, llamados <strong>variables</strong>, afectan los <strong>valores característicos</strong>.</p>
+<h1 id="Dise%C3%B1o-Experimental">Dise&#241;o Experimental<a class="anchor-link" href="#Dise%C3%B1o-Experimental">&#182;</a></h1><p>La <strong>ingeniería de diseño experimental</strong> (o diseño de experimentos) es un conjunto de métodos que utilizan el análisis estadístico para determinar si ciertos <strong>factores</strong>, llamados factores, influyen en las <strong>características de un proceso o producto</strong>.</p>
 
 </div>
 </div>
@@ -14596,64 +14596,45 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li><strong>Prueba</strong> de efectos de factores</li>
 </ol>
 <ul>
-<li>Determinar, entre los muchos factores, cuáles tienen un impacto significativamente grande en los valores característicos.</li>
+<li>Se trata de verificar cuáles de los muchos factores tienen una influencia signifcativa (no despreciable) en las caraterísticas.</li>
 </ul>
 <ol>
 <li><strong>Estimación</strong> de efectos de factores</li>
 </ol>
 <ul>
-<li>Estimar la magnitud del impacto de esos factores.</li>
+<li>Se trata de evaluar la magnitud de la influencia de esos factores.</li>
 </ul>
 <ol>
 <li><strong>Estimación</strong> de errores</li>
 </ol>
 <ul>
-<li>Estimar el impacto global de los factores restantes, excluyendo aquellos con una influencia significativa.</li>
+<li>Se trata de estimar la influencia combinada de los factores restantes, excluyendo aquellos con una influencia significativa.</li>
 </ul>
-<h4 id="(1)-Procedimiento-de-an%C3%A1lisis-para-un-experimento-factorial-de-dos-v%C3%ADas-con-repeticiones.">(1) Procedimiento de an&#225;lisis para un experimento factorial de dos v&#237;as con repeticiones.<a class="anchor-link" href="#(1)-Procedimiento-de-an%C3%A1lisis-para-un-experimento-factorial-de-dos-v%C3%ADas-con-repeticiones.">&#182;</a></h4><p>Se realizó un experimento con repeticiones, utilizando los factores de parámetros A (l niveles) y B (m niveles). 
-El experimento se llevó a cabo de forma aleatoria para las $ l \times m \times r $ combinaciones, y se obtuvieron los datos. Se asume que un valor mayor de la característica es más deseable.</p>
-<p>Paso 1: Fórmula de la estructura de los datos.</p>
+<h4 id="(1)-Procedimient-de-an%C3%A1lisis-para-un-experimento-de-dise%C3%B1o-de-dos-factores-con-repeticiones-(o-con-r%C3%A9plicas).">(1) Procedimient de an&#225;lisis para un experimento de dise&#241;o de dos factores con repeticiones (o con r&#233;plicas).<a class="anchor-link" href="#(1)-Procedimient-de-an%C3%A1lisis-para-un-experimento-de-dise%C3%B1o-de-dos-factores-con-repeticiones-(o-con-r%C3%A9plicas).">&#182;</a></h4><p>Se llevó a cabo un experimento con dos factores de efectos fijos: el factor A (con $ l $ niveles) y el factor B (con $ m $ niveles), realizando $ r $ repeticiones. Los datos se obtuvieron ejecutando aleatoriamente todas las $ x \times m \times r $ combinaciones de los órdenes experimentales. Se desea que los valores de la característica sean lo más grandes posible.</p>
+<p>Paso 1: Fórmula de la estructura de los datos (o Modelo estadístico para los datos).</p>
+<p>$ x_{ijk} = \mu + a_i + b_j + (ab)_{ij} + \epsilon_{ijk} $</p>
+<p>$ \sum_{i=1}^l a_i = 0 $</p>
+<p>$ \sum_{j=1}^m b_j = 0 $</p>
+<p>$ \sum_{i=1}^l (ab)_{ij} = \sum_{j=1}^m (ab)_{ij} = 0 $</p>
+<p>$ \epsilon_{ijk} \sim N(0, \sigma^2 )$</p>
+<p>Paso 2: Cálculo de la suma de cuadrados</p>
+<p>Paso 3: Cálculo de los grados de libertad</p>
+<p>Paso 4: Creación de la tabla de análisis de varianza (o Construcción de la tabla ANOVA)</p>
+<p>Paso 5: Consideración sobre la agrupación (pooling) y creación de la tabla de análisis de varianza posterior a la agrupación.</p>
+<p>En la tabla de análisis de varianza, cuando la interacción AxB <strong>no es significativa</strong> y <strong>F0 es pequeño</strong> y se considera desprecioable:</p>
 <ul>
-<li>$ x_{ijk} = \mu + a_i + b_j + (ab)_{ij} + \epsilon_{ijk} $</li>
-</ul>
-<p>Restricciones:</p>
-<ul>
-<li>$ \sum_{i=1}^l a_i = 0 $</li>
-<li>$ \sum_{j=1}^m b_j = 0 $</li>
-<li>$ \sum_{i=1}^l (ab)_{ij} =  \sum_{j=1}^m (ab)_{ij} = 0 $</li>
-<li>$ \epsilon_{ijk} \sim N(0, \sigma^2) $</li>
-</ul>
-<p>Paso 2: Cálculo de la <strong>suma de cuadrados</strong></p>
-<p>Paso 3: Cálculo de los <strong>grados de libertad</strong></p>
-<p>Paso 4: Creación de la <strong>tabla ANOVA</strong></p>
-<p>Paso 5: Consideración sobre el <strong>pooling</strong> y creación de la tabla ANOVA del pooling</p>
-<ul>
-<li><p>En una tabla ANOVA, cuando la interacción $ A \times B $ no es significativa y el $ F_0 $ es pequeño y se considera despreciable, se combina el $ S_{A \times B} $ con el $ S_E $ para obtener el S_{E'} $</p>
-</li>
-<li><p>La guía para el agrupamiento es que el valor de F0 sea inferior a 2, o que no sea significativo con un nivel de significancia de aproximadamente el 20%.</p>
-</li>
+<li>La guía para el agrupamiento es que el valor de <strong>F0 sea inferior a 2</strong>, o que <strong>no sea significativo con un nivel de significancia de aproximadamente el 20%</strong>.</li>
 </ul>
 <p>Paso 6: Estimación de la media poblacional bajo condiciones óptimas</p>
-<ul>
-<li>Fórmula de la estructura de los datos <strong>después del pooling</strong><ul>
-<li>$ x_{ijk} = \mu + a_i + b_j + \epsilon_{ijk} $</li>
-</ul>
-</li>
-<li>Estimación de la media poblacional bajo condiciones óptimas<ul>
-<li>$ \hat{\mu}(A_2 B_2) = \bar{x}_{2**} + \bar{x}_{*2*} - \bar{x} $</li>
-</ul>
-</li>
-<li>Estimación Puntual y por Intervalos en Condiciones Óptimas<ul>
-<li>$ \hat{\mu}(A_2 B_2) \pm t(\phi_{E'}, \alpha) \sqrt{V_{E'}/n_e} $</li>
-</ul>
-</li>
-<li>$ n_e: $ Número Efectivo de Repeticiones (Fórmulas de Ina y Taguchi)</li>
-</ul>
-<h5 id="Estimaci%C3%B3n-cuando-no-se-ignora-la-interacci%C3%B3n">Estimaci&#243;n cuando no se ignora la interacci&#243;n<a class="anchor-link" href="#Estimaci%C3%B3n-cuando-no-se-ignora-la-interacci%C3%B3n">&#182;</a></h5><ul>
-<li>$ x_{ijk} = \mu + a_i + b_j + (ab)_{ij} + \epsilon_{ijk} $</li>
-<li>$ \mu (A_3 B_2) \bar{x}_{32} - \bar{x} $</li>
-<li>$ \hat{\mu} (A_3 B_2) \pm t(\phi_{E'}, \alpha) \sqrt{V_E/r} $</li>
-</ul>
+<p>La fórmula estructura del los datos después de la agrupación, ignorando la interacció AxB, es:</p>
+<p>$ x_{ijk} = \mu + a_i + b_j + \epsilon_{ijk} $</p>
+<p>Estimación puntual en condiciones óptimas:</p>
+<p>$ \hat{\mu}(A_2 B_2) = \hat{(\mu + a_2 + b_2)} = \hat{(\mu + a_2)} + \hat{(\mu + b_2)} - \mu $</p>
+<p>Estimación por intervalo en condiciones óttimas:</p>
+<p>Calcular el <strong>número efectivo de repeticiones</strong> $ n $, o número efectivo de réplicas, a partir de la suma de los coeficientes utiliazdos en la estimación puntual (<strong>fórmul a de Ina</strong>).
+El número efectivo de repeticiones tamibién se puede calcular mediante la <strong>fórmula de Taguchi</strong>.</p>
+<p>$ \frac{1}{n_e} = \frac{1}{m_r} + \frac{1}{l_r} - \frac{1}{lmr} $</p>
+<p>$ \hat{\mu}(A_2 B_2) \pm t(\phi_{E^*}, \alpha) \sqrt{\frac{V_{E^*}}{n_e}} $</p>
 
 </div>
 </div>
@@ -14678,51 +14659,49 @@ El experimento se llevó a cabo de forma aleatoria para las $ l \times m \times 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="07-02-Experimento-de-dise%C3%B1o-ortogonal">07-02 Experimento de dise&#241;o ortogonal<a class="anchor-link" href="#07-02-Experimento-de-dise%C3%B1o-ortogonal">&#182;</a></h2><h3 id="1.Experimento-de-dise%C3%B1o-de-tablas-ortogonales">1.Experimento de dise&#241;o de tablas ortogonales<a class="anchor-link" href="#1.Experimento-de-dise%C3%B1o-de-tablas-ortogonales">&#182;</a></h3><p>En las etapas iniciales de la resolución de problemas, a menudo se consideran y examinan muchos factores simultáneamente. 
-Sin embargo, el número total de experimentos aumenta rápidamente si se incrementa la cantidad de factores a considerar y el número de niveles.
-Sin embargo, los grados de libertad utilizados para la prueba de los efectos principales son limitados, y la mayorïa de los grados de libertad se dedican a la prueba de las interacciones de otros factores.
-En estos casos, se suelen utilizar los <strong>experimentos con tablas de arreglos ortogonales</strong>, que permiten probar los <strong>efectos principales</strong> y las <strong>interacciones deseados</strong> con un número reducido de experimentos.</p>
-<p>Características de los experimentos con tablas de arreglos ortogonales:</p>
+<h2 id="07-02-Experimento-de-dise%C3%B1o-ortogonal">07-02 Experimento de dise&#241;o ortogonal<a class="anchor-link" href="#07-02-Experimento-de-dise%C3%B1o-ortogonal">&#182;</a></h2><h3 id="1.Experimento-de-dise%C3%B1o-de-tablas-ortogonales">1.Experimento de dise&#241;o de tablas ortogonales<a class="anchor-link" href="#1.Experimento-de-dise%C3%B1o-de-tablas-ortogonales">&#182;</a></h3><p>Se puede realizar la prueba de los efectos principales y de las interacciones que se desean analizar con un número reducido de experimentos.</p>
+<p>Características de los experimentos con tablas ortogonales:</p>
 <ul>
-<li>Se puede realizar la prueba de los efectos principales y de las interacciones que se desean analizar con un número reducido de experimentos.</li>
-<li>Se pueden probar los efectos principales de los factores considerados y sus interacciones (generalmente limitadas a interacciones de dos factores).</li>
+<li>Permite estudiar muchos factores con un número reducido de experimentos.</li>
+<li>Se pueden probar los efectos principales de los factores considerados y sus interacciones (limitadas, en principio, a interacciones de dos factores).</li>
 <li>Es necesario clasificar de antemano las interacciones en aquellas que se deben considerar y las que se deben ignorar.</li>
 </ul>
-<p><strong>Tabla ortogonal de dos niveles</strong></p>
-<p><strong>Tabla ortogonal de tres niveles</strong></p>
-<h3 id="2.-Experimento-de-dise%C3%B1o-de-tablas-ortogonales-de-dos-niveles">2. Experimento de dise&#241;o de tablas ortogonales de dos niveles<a class="anchor-link" href="#2.-Experimento-de-dise%C3%B1o-de-tablas-ortogonales-de-dos-niveles">&#182;</a></h3><h4 id="(1)-Experimento-de-dise%C3%B1o-de-tabla-ortogonal-de-dos-niveles">(1) Experimento de dise&#241;o de tabla ortogonal de dos niveles<a class="anchor-link" href="#(1)-Experimento-de-dise%C3%B1o-de-tabla-ortogonal-de-dos-niveles">&#182;</a></h4><p>En los <strong>experimentos con tablas de arreglos ortogonales de dos niveles</strong>, se manejan <strong>factores de dos niveles</strong>.</p>
+<p>Existen tablas ortogonales para manejar factores de dos niveles (conocidas como <strong>tabla ortogonal de dos niveles</strong>) y tablas orgonales para manejar factores de tres niveles (conocidas como <strong>tabla ortogonal de tres niveles</strong>).</p>
+<h3 id="2.-Experimento-de-dise%C3%B1o-de-tablas-ortogonales-de-dos-niveles">2. Experimento de dise&#241;o de tablas ortogonales de dos niveles<a class="anchor-link" href="#2.-Experimento-de-dise%C3%B1o-de-tablas-ortogonales-de-dos-niveles">&#182;</a></h3><h4 id="(1)-Experimento-de-dise%C3%B1o-de-tabla-ortogonal-de-dos-niveles">(1) Experimento de dise&#241;o de tabla ortogonal de dos niveles<a class="anchor-link" href="#(1)-Experimento-de-dise%C3%B1o-de-tabla-ortogonal-de-dos-niveles">&#182;</a></h4><p>$ L_8(2^7) $ : Símbolo de la matriz</p>
 <ul>
-<li>$ L_8(2^7) $ : Símbolo de la matriz<ul>
 <li>8: Número de filas (número de experimentos)</li>
 <li>2: Dos niveles</li>
-<li>7: Número de columnas (número máximo de factores que incluyen el error)</li>
-</ul>
-</li>
-<li>Los símbolos de los componentes son necesarios para determinar, entre otras cosas, las columnas donde aparecen las interacciones.</li>
+<li>7: Número de columnas (número máximo de factores que incluyen el error</li>
 </ul>
 <ol>
-<li>Asignar el nombre del factor (símbolos como A, B etc.) a cada columna.</li>
-<li>Al asignar los factores, se conocen las combinaciones de niveles de los factores con las que se realizará el experimento. (En la tabla, 1 y 2 representan los número de nivel)</li>
-<li>Las columnas a las que no se les ha asignado un factor y en las que no aparecen las interacciones consideradas, se convierten en columnas de error.</li>
-<li>Calcular la <strong>suma de cuadrados de cada columna</strong>. La suma de cuadrados de cada columna se denomina <strong>suma de cuadrados de columna</strong>.</li>
-<li>La suma de cuadrados y los grados de libertad del efecto principal de un factor corresponden a la suma de cuadrados y los grados de libertad de la columna a la que se le asignó dicho factor.</li>
-<li>La suma de cuadrados y los grados de libertad de una interacción corresponden  a la suma de cuadrados y los grados de libertad de la columna donde aparece esta interacción.</li>
-<li>La suma de cuadrados del error ($ S_E $) es la suma de las sumas de cuadrados de las columnas de error, y los grados de libertad el error ($ \phi_E $) son la suma de los grados de libertad de las columnas de error.</li>
-<li>La suma total de cuadrados ($ S_T $) es igual a la suma de las sumas de cuadrados de todas las columnas, y los grados de libertad totales ($ \phi_T $) son iguales a la suma de los grados de libertad de todas las columnas.</li>
+<li><p>Asignar a cada columna el nomobre de un factor (símbolos com A, B, etc.).</p>
+</li>
+<li><p>Al asignar los factores, se determinan las combinaciones de niveles para cada factor a ser ensayado en el experimento (donde 1 y 2 en la tabla repreesentan los números de nivel).</p>
+</li>
+<li><p>Las columnas a las qeu no se les ha asignado ningún factor, y en las que tampoco aparecen las interacciones consideradas, se convierten en columnas de error.</p>
+</li>
+<li><p>Calcular la suma de cuadrados de cada columna. La suma de cuadrados de cada columna se denomina suma de cuadrados de la columna.</p>
+</li>
+<li><p>La suma de cuadrados y los grados de libertad del <strong>efecto principal</strong> de un factor corresponden a la suma de cuadrados y los grados de libertad de la columna a la que se le asignó ese factor.</p>
+</li>
+<li><p>La suma de cuadrados y los grados de libertad de una <strong>interacción corresponden</strong> a la suma de cuadrados y los grados de libertad de la columna en la que aparece esa interacción.</p>
+</li>
+<li><p>La suma de cuadrado del errro $ S_E $ es la suma de las sumas de cuadrados de las columnas de error, y los grados de libertad del error $ \phi_E $ son las suma de los grados libertad de las columnas de error.</p>
+</li>
+<li><p>La suma total de cuadrados $ S_T $ es igual a la suma de las sumas de cuadrados de todas las columnas, y los grados de libertad totales $ \phi_T $ son iguales a la suma de los grados de libertad de todas las columnas.</p>
+</li>
 </ol>
-<h4 id="(2)-Tratamiento-de-interacciones">(2) Tratamiento de interacciones<a class="anchor-link" href="#(2)-Tratamiento-de-interacciones">&#182;</a></h4><p>Si solo se consideran los efectos principales y no es necesario tener encuenta ninguna interacción, los factores considerados pueden asignarse a cualquier columna.</p>
-<p>Si es necesario considerar las interacciones, se deben tener en cuenta los siguientes puntos:</p>
-<ul>
+<h4 id="(2)-Tratamiento-de-interacciones">(2) Tratamiento de interacciones<a class="anchor-link" href="#(2)-Tratamiento-de-interacciones">&#182;</a></h4><p>Si solo se consideran los efectos principales y no es necesario tener en cuanta ninguna interacción, los factores seleccionados pueden asignarse a cualquier columna.</p>
+<ol>
 <li>Solo se considera la interacción de dos factores.</li>
 <li>La presencia o ausencia de la interacción debe determinarse previamente.</li>
-<li><p>La interacción de dos factores aparece en una sola columna.</p>
-<ul>
-<li>Cuando los símbolos de componente de las columnas asignadas a los factores Y y Z son p y q, respectivamente, la interacción YxZ aparece en la columna cuyo símbolo de componente es pxq. Sin embargo, se asume que <strong>$ a^2 = b^2 = c^2 ... = ... = 1 $</strong>.</li>
+<li>La interacción de dos factores aparece en una sola columna.<ul>
+<li>Cuando los componentes de las columnas asignadas a los factore Y y Z son p y q respectivamente, la interacción YxZ aparece en la columna cuyo simblo de componente es p x q. (Se asume que $ a^2 = b^2 = c^2 = ... = 1 $).</li>
 </ul>
 </li>
-<li>Los grados de libertad de la interacción son 1 x 1 = 1.</li>
-<li>Se debe idear una forma de asignación general para evitar que los efectos principales se asignen a columnas donde aparecen interacciones (para evitar la confusión o "aliasing").</li>
-</ul>
+<li>Los grados de libertad de la interacción son 1 x 1 =1.</li>
+<li>Se debe diseñar cuidadosamente la asignación general de manera que no se asignen otros efectos principales a las columnas donde aparecen las interacciones (para evitar la confusión o el solapamiento).</li>
+</ol>
 
 </div>
 </div>
@@ -14734,12 +14713,16 @@ En estos casos, se suelen utilizar los <strong>experimentos con tablas de arregl
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="(3)-Asignaci%C3%B3n">(3) Asignaci&#243;n<a class="anchor-link" href="#(3)-Asignaci%C3%B3n">&#182;</a></h3><ul>
+<h4 id="(3)-Asignaci%C3%B3n">(3) Asignaci&#243;n<a class="anchor-link" href="#(3)-Asignaci%C3%B3n">&#182;</a></h4><ul>
 <li>Uso de la diagrama de puntos y líneas</li>
 <li>Experimento de arreglo ortogonal L16 (muestreo aleatorio)</li>
 </ul>
-<p>En situaciones donde no es posible realizar un diseño factoraial completo (como en la mayoría de los experimentos en la vida real), y se dispone de un número limitado de experimentos (mediante tablas ortogonales), el diseñador debe ajustar una tabla de asignación mediante prueba y error para asegurar que los efectos principales e interacciones que se desean analizar no se confundan.</p>
-<p>Para lograr esto, el diseñador utiliza herramientas como diagramas de líneas y puntos, clasificación lógica, números de grupo y simulaciones.</p>
+<ol>
+<li>Elegir un diagrama de líneas y puntos (o gráfico de líneas y puntos) de entre los varios tipos disponibles que pueda representar los factores (efectos principales ) y las interacciones seleccionadas.</li>
+<li>Encontrar los números de columna a los que se asignan los factores relacionados con una interacción y los números de columna en los que qparecen esas interaciones.</li>
+<li>los factores que no están relacionados con interacciones se asignan a las columnas vacías.</li>
+<li>Todas las columnas a las que no se les ha asignado un factor y en las que no aparece ninguna interacción se convierten en columnas de error.</li>
+</ol>
 
 </div>
 </div>
@@ -17267,7 +17250,7 @@ jp-needs-light-background
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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"
+<img src="data:image/png;base64,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"
 class="
 jp-needs-light-background
 "
@@ -22894,7 +22877,7 @@ Estimación del componete de varianza M：4.2
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei1-7.ipynb to html
-[NbConvertApp] Writing 1326431 bytes to QCKentei1-7.html
+[NbConvertApp] Writing 1329912 bytes to QCKentei1-7.html
 </pre>
 </div>
 </div>

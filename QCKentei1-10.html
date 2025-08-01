@@ -14609,7 +14609,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <ul>
 <li>Presencia o ausencia de la <strong>variable dependiente</strong> (criterio externo)</li>
 <li>Atributos de la <strong>variable dependiente</strong> y las <strong>variables explicativas</strong> (criterio interno)</li>
-<li><strong>Variables cuntitativas</strong> (escala de intervalo) o <strong>variables cualitativas</strong> (escala nominal), etc.</li>
+<li><strong>Variables contitativas</strong> (escala de intervalo) o <strong>variables cualitativas</strong> (escala nominal), etc.</li>
 <li>Presencia o ausencia de variables latentes (variables ficticias) est.</li>
 </ul>
 <p>Las técnicas de clasificación de variables <strong>cualitativas</strong> incluyen la <strong>teoría de cuantificación</strong>.</p>
@@ -14629,23 +14629,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="3.-An%C3%A1lisis-de-componentes-principales-(PCA:-Principal-Componentes-Analysis)">3. An&#225;lisis de componentes principales (PCA: Principal Componentes Analysis)<a class="anchor-link" href="#3.-An%C3%A1lisis-de-componentes-principales-(PCA:-Principal-Componentes-Analysis)">&#182;</a></h2><p><strong>PCA</strong>: Es una técnica que facilita la comprensión de los datos al reducir muchas variables explicativas cualitativas en un número reducido de variables con baja correlación entre ellas (<strong>reducción</strong>).</p>
 <p>Generalmente, al proyectar las variables sobre un eje y <strong>reducir los datos</strong>, se pierde la información que estos contenían.
-Por lo tanto, es importante resumir las variables en un número reducido sin perder la mayor cantidas posible de la información original.</p>
+Por lo tanto, es importante resumir las variables en un número reducido sin perder la mayor cantidad posible de la información original.</p>
 <h3 id="(1)-An%C3%A1lisis-de-componentes-principales">(1) An&#225;lisis de componentes principales<a class="anchor-link" href="#(1)-An%C3%A1lisis-de-componentes-principales">&#182;</a></h3><p>$ z = w_1 x_1 + w_2 x_2 + ... + w_p x_p $</p>
-<p>Se crea una variable compuesta $ z $ mediante una combinación línear de la variable $ x_1, x_2, ... x_p $</p>
+<p>Se crea una variable compuesta $ z $ mediante una combinación linear de la variable $ x_1, x_2, ... x_p $</p>
 <p>A <strong>$ z $</strong> se le denomina <strong>componente principal</strong>, y se determina $ w $ para que la <strong>varianza</strong> de dicho componente sea <strong>máxima</strong>.
-Soble $ w = (w_1, w_2, ... w_p) $,</p>
-<p>se establece la restr la restricci[on de que $ w_1^2 + w_2^2 ... + w_p^2 = 1 $</p>
+Double $ w = (w_1, w_2, ... w_p) $,</p>
+<p>se establece la restricción de que $ w_1^2 + w_2^2 ... + w_p^2 = 1 $</p>
 <h3 id="(2)-Fundamentos-matem%C3%A1ticos">(2) Fundamentos matem&#225;ticos<a class="anchor-link" href="#(2)-Fundamentos-matem%C3%A1ticos">&#182;</a></h3><p>Es equivalente a calcular los <strong>valores propios</strong> y los <strong>vectores propios de la matriz de varianza-covarianza</strong> o de la <strong>matriz de correlación</strong> de los datos.</p>
 <p>Los coeficientes de la combinación lineal del componente principal, representados por $ w = (w_1, w_2, .. w_p) $, son los <strong>vectores propios</strong>, y la varianza del componente principal represent a los <strong>valores propios</strong>.</p>
 <h3 id="(3)-Primer-componente-principal-/-Segundo-componete-principal">(3) Primer componente principal / Segundo componete principal<a class="anchor-link" href="#(3)-Primer-componente-principal-/-Segundo-componete-principal">&#182;</a></h3><p>Se denomina <strong>primer componete principal</strong> a la función compuesta que utiliza el vector propio cuyo valor propio maximiza la varianza de los componentes principales.
-La función compuesta que utiliza el vector propio, <strong>perpendicular</strong> al primer componete principal y que maximiza la varianza bajo las mismas condiciones de restricción, se denomina <strong>segunda componentes principa</strong>.</p>
+La función compuesta que utiliza el vector propio, <strong>perpendicular</strong> al primer componente principal y que maximiza la varianza bajo las mismas condiciones de restricción, se denomina <strong>segunda componentes principa</strong>.</p>
 <h3 id="(4)-Tasa-de-contribuci%C3%B3n-/-Varianza-explicada">(4) Tasa de contribuci&#243;n / Varianza explicada<a class="anchor-link" href="#(4)-Tasa-de-contribuci%C3%B3n-/-Varianza-explicada">&#182;</a></h3><p>Se denomina <strong>tasa de contribución</strong> al valor obtenido al dividir el valor obtenido al dividir el valor propio de un componente principal por la suma de todos los valores propios. La <strong>tasa acumulada de contribución</strong> se refiere a la suma de las tasa de contribución en orden descendente.</p>
 <h3 id="(5)-Criterio-para-determinar-el-n%C3%BAmero-de-componentes-principales">(5) Criterio para determinar el n&#250;mero de componentes principales<a class="anchor-link" href="#(5)-Criterio-para-determinar-el-n%C3%BAmero-de-componentes-principales">&#182;</a></h3><ul>
-<li>La tasa acumulada de contribución está esnte 0.7 y 0.9.</li>
+<li>La tasa acumulada de contribución está entre 0.7 y 0.9.</li>
 <li>Criterio de Kaiser</li>
-<li>Hast ael componente principal en el que el que el valor propia cambia significativamente</li>
+<li>Has el componente principal en el que el que el valor propia cambia significativamente</li>
 </ul>
-<h3 id="(6)-Puntuaciones-de-los-componentes-principales">(6) Puntuaciones de los componentes principales<a class="anchor-link" href="#(6)-Puntuaciones-de-los-componentes-principales">&#182;</a></h3><p>Se domina <strong>puntuación de los componentes principales</strong> al valor obtenido al sustituir los datos en los componetes principales obtenidos.</p>
+<h3 id="(6)-Puntuaciones-de-los-componentes-principales">(6) Puntuaciones de los componentes principales<a class="anchor-link" href="#(6)-Puntuaciones-de-los-componentes-principales">&#182;</a></h3><p>Se domina <strong>puntuación de los componentes principales</strong> al valor obtenido al sustituir los datos en los componentes principales obtenidos.</p>
 <h3 id="(7)-Carga-factorial">(7) Carga factorial<a class="anchor-link" href="#(7)-Carga-factorial">&#182;</a></h3><p>Se denomina <strong>carga factorial</strong> al <strong>coeficiente de correlación</strong> entre las puntuaciones de los componentes principales y las variables originales, y toma valores entre <strong>-1 y 1</strong>.</p>
 <h3 id="(8)-Interpretaci%C3%B3n-de-los-componentes-principales">(8) Interpretaci&#243;n de los componentes principales<a class="anchor-link" href="#(8)-Interpretaci%C3%B3n-de-los-componentes-principales">&#182;</a></h3><p>Se realiza la <strong>interpretación</strong> de los componentes principales a partir de los vectores propios obtenidos, la magnitud de las cargas factoriales y sus signos.</p>
 <p>Cuando las cargas factoriales del primer componente principal tienen el <strong>mismo signo</strong> y <strong>casi la misma magnitud</strong>,ese primer componente principal puede interpretarse como una <strong>característica global</strong> de las variables originales.</p>
@@ -14658,7 +14658,7 @@ La función compuesta que utiliza el vector propio, <strong>perpendicular</stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[160]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[223]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14681,7 +14681,7 @@ La función compuesta que utiliza el vector propio, <strong>perpendicular</stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[161]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[224]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14705,7 +14705,7 @@ La función compuesta que utiliza el vector propio, <strong>perpendicular</stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[162]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[225]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Generar datos didimensionales correlacionados (matriz de covarianza definida positiva)</span>
@@ -14761,7 +14761,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[163]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="kn">import</span> <span class="n">eig</span>
@@ -14855,7 +14855,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[164]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -14957,7 +14957,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[165]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[228]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 認証情報の設定</span>
@@ -14991,7 +14991,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[166]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[229]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
@@ -15049,7 +15049,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[166]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[229]:</div>
 
 
 
@@ -15137,7 +15137,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[167]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[230]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de vectores propios</span>
@@ -15188,7 +15188,7 @@ Tabla 10.4: Vector propio
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[167]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[230]:</div>
 
 
 
@@ -15288,7 +15288,7 @@ Tabla 10.4: Vector propio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[231]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calcular la raiz cuadrada de los valores propios</span>
@@ -15333,7 +15333,7 @@ Tabla 10.5 Carga factorial del componente principal
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[168]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[231]:</div>
 
 
 
@@ -15484,7 +15484,7 @@ $ \qquad \mu^{..} = \frac{1}{2}(\mu_A - \mu_B) $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet8&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -15512,7 +15512,7 @@ $ \qquad \mu^{..} = \frac{1}{2}(\mu_A - \mu_B) $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tabla 10.7 Tiempo de estudio y Resultado&#39;</span><span class="p">)</span>
@@ -15546,7 +15546,7 @@ $ \qquad \mu^{..} = \frac{1}{2}(\mu_A - \mu_B) $</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[170]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
@@ -15659,7 +15659,7 @@ $ \qquad \hat{\mu_B} = \bar{x_B} = 13.250 $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[171]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 各グループの統計量を計算</span>
@@ -15736,7 +15736,7 @@ mean          16.8125  33.669643            235.6875
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span> <span class="k">as</span> <span class="n">LDA</span>
@@ -15817,7 +15817,7 @@ Tasa de erro: 0.1875
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[173]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Representar el diagrama de dispersión</span>
@@ -15909,7 +15909,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[174]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.cluster.hierarchy</span> <span class="kn">import</span> <span class="n">dendrogram</span><span class="p">,</span> <span class="n">linkage</span><span class="p">,</span> <span class="n">fcluster</span>
@@ -15969,7 +15969,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 図2: 元データとクラスタ結果（色で表示）</span>
@@ -16036,7 +16036,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[176]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_blobs</span>
@@ -16114,7 +16114,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[177]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># スプレッドシートを開く（URLまたはスプレッドシートIDを使用）</span>
@@ -16188,7 +16188,7 @@ std   11.53  16.1   5.58   8.84
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[178]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -16255,7 +16255,7 @@ std   11.53  16.1   5.58   8.84
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[178]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
@@ -16342,7 +16342,7 @@ std   11.53  16.1   5.58   8.84
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>第一主成分と第二主成分に集約して、主成分得点と因子負荷量の散布図を作成する。</p>
-<p>Agrupar en el primer y segundo componente principal, y crear un diagrama de dispersióon de las puntuaciones de los componetes principales y las cargas factoriales.</p>
+<p>Agrupar en el primer y segundo componente principal, y crear un diagrama de dispersión de las puntuaciones de los componentes principales y las cargas factoriales.</p>
 
 </div>
 </div>
@@ -16352,7 +16352,7 @@ std   11.53  16.1   5.58   8.84
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[179]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ejecución del análisis de componentes principales (PCA)</span>
@@ -16511,6 +16511,7 @@ class="
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei1-10.ipynb to html
+[NbConvertApp] Writing 988315 bytes to QCKentei1-10.html
 </pre>
 </div>
 </div>

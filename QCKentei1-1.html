@@ -14579,7 +14579,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="C%C3%B3mo-recopilar-y-organizar-los-datos">C&#243;mo recopilar y organizar los datos<a class="anchor-link" href="#C%C3%B3mo-recopilar-y-organizar-los-datos">&#182;</a></h1><p>El la gestión de calidad, es crucial basarse en hechos, y para ello, es fundamental tomar muestras adecuadas de la población y procesar estadísticamente los datos obtenidos de manera correcta.</p>
+<h1 id="C%C3%B3mo-recopilar-y-organizar-los-datos">C&#243;mo recopilar y organizar los datos<a class="anchor-link" href="#C%C3%B3mo-recopilar-y-organizar-los-datos">&#182;</a></h1><p>En la gestión de calidad, es crucial basarse en hechos, y para ello, es fundamental tomar muestras adecuadas de la población y procesar estadísticamente los datos obtenidos de manera correcta.</p>
+<p>En este capítulo, aprenderemos sobre la recopilación y el resumen de datos, con el objetivo de que el estudiante sea capaz de hacer lo siguinte:</p>
+<ul>
+<li><p>Explicar el muestreo de una población final (distribución hipergeomética).</p>
+</li>
+<li><p>Describir los tipos de muestreo (muestreo en dos etapas, muestreo estratificado, muestreo por conglomerados, muestreo sistemático, etc.) y la configuración del muestreo, incluyendo errores y costos.</p>
+</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1SEmorOiwYV0Iy8d5meXeBdzAObuBzEej/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14589,7 +14597,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14612,7 +14620,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14635,10 +14643,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="01-01-Distribuci%C3%B3n-hipergeom%C3%A9trica">01-01 Distribuci&#243;n hipergeom&#233;trica<a class="anchor-link" href="#01-01-Distribuci%C3%B3n-hipergeom%C3%A9trica">&#182;</a></h2><ul>
-<li><strong>Distribución hipergeométrica</strong>: La población se puede dividir en dos grupos, aquellos que tienen una cierta característica y aquellos que no la tienen (como productos conformes- no conformes, etc.)</li>
-<li>Muestreo con reemplazo: Seguir una <strong>distribución binomial</strong></li>
-<li><p>Muestreo sin reemplazo: Seguir una <strong>distribución hipergeométrica</strong></p>
+<h2 id="01-01-Distribuci%C3%B3n-hipergeom%C3%A9trica">01-01 Distribuci&#243;n hipergeom&#233;trica<a class="anchor-link" href="#01-01-Distribuci%C3%B3n-hipergeom%C3%A9trica">&#182;</a></h2><p>超幾何分布</p>
+<ul>
+<li><p><strong>Distribución hipergeométrica</strong>: La población se puede dividir en dos grupos, aquellos que tienen una cierta característica y aquellos que no la tienen (como productos conformes- no conformes, etc.)</p>
+</li>
+<li><p>Muestreo con reemplazo 復元抽出:
+Seguir una <strong>distribución binomial</strong> 二項分布</p>
+</li>
+<li><p>Muestreo sin reemplazo 非復元抽出:
+Seguir una <strong>distribución hipergeométrica</strong> 超幾何分布</p>
 </li>
 <li><p>La <strong>probabilidad Pr(x)</strong> de que aparezcan <strong>x unidades no conformes</strong> en una <strong>muestra de tamaño n</strong> extraida alatoriamente de <strong>un lote de tamaño N</strong> con una <strong>proporción de unidades no conformes P</strong> es:</p>
 <ul>
@@ -14657,10 +14670,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>$ V(x) = np(1-np)\bigl( \frac{N-n}{N-1} \bigr) $</li>
 </ul>
 </li>
-<li><p>Corrección para población finita</p>
+<li><p>Corrección para población finita
+有限修正</p>
 <ul>
 <li>$ \bigl( \frac{N-n}{N-1} \bigr) $</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1mEqTtGS0RSzHf4WuMtp0CobNy00xIVer/view?usp=drive_link">Audio_2</a></p>
 </li>
 </ul>
 
@@ -14672,7 +14687,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">hypergeom</span>
@@ -14741,11 +14756,13 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="01-02-Muestreo-de-una-poblaci%C3%B3n-finita">01-02 Muestreo de una poblaci&#243;n finita<a class="anchor-link" href="#01-02-Muestreo-de-una-poblaci%C3%B3n-finita">&#182;</a></h2><h3 id="1.-Prop%C3%B3sito-del-muestreo">1. Prop&#243;sito del muestreo<a class="anchor-link" href="#1.-Prop%C3%B3sito-del-muestreo">&#182;</a></h3><h4 id="(1)-Tipos-de-datos">(1) Tipos de datos<a class="anchor-link" href="#(1)-Tipos-de-datos">&#182;</a></h4><ul>
+<h2 id="01-02-Muestreo-de-una-poblaci%C3%B3n-finita">01-02 Muestreo de una poblaci&#243;n finita<a class="anchor-link" href="#01-02-Muestreo-de-una-poblaci%C3%B3n-finita">&#182;</a></h2><p>有限母集団からのサンプリング</p>
+<h3 id="1.-Prop%C3%B3sito-del-muestreo">1. Prop&#243;sito del muestreo<a class="anchor-link" href="#1.-Prop%C3%B3sito-del-muestreo">&#182;</a></h3><h4 id="(1)-Tipos-de-datos">(1) Tipos de datos<a class="anchor-link" href="#(1)-Tipos-de-datos">&#182;</a></h4><ul>
 <li><strong>Valores medibles</strong> (valores continuos)</li>
 <li><strong>Valores contables</strong> (valores discretos o discontinuos)</li>
 </ul>
-<h4 id="(2)-Poblaci%C3%B3n-y-Muestreo">(2) Poblaci&#243;n y Muestreo<a class="anchor-link" href="#(2)-Poblaci%C3%B3n-y-Muestreo">&#182;</a></h4><p>La idea más fundamental del pensamiento estadístico es el <strong>concepto de población</strong>.
+<h4 id="(2)-Poblaci%C3%B3n-y-Muestreo">(2) Poblaci&#243;n y Muestreo<a class="anchor-link" href="#(2)-Poblaci%C3%B3n-y-Muestreo">&#182;</a></h4><p>母集団とサンプル</p>
+<p>La idea más fundamental del pensamiento estadístico es el <strong>concepto de población</strong>.
 Cuando se investiga algún problema, se <strong>toma una muestra de esa población</strong> y <strong>se realizan observaciones e investigaciones sobre ella</strong>.
 Y basándose en los hechos obtenidos sobre la muestra, se <strong>realiza una estimación de la población</strong>.</p>
 <p>Tipos de muestreo:</p>
@@ -14755,21 +14772,35 @@ Y basándose en los hechos obtenidos sobre la muestra, se <strong>realiza una es
 </ul>
 <p>Método de Muestreo</p>
 <ul>
-<li>Muestreo aleatorio simple</li>
-<li>Muestreo en dos etapas</li>
-<li>Muestreo estratificado</li>
-<li>Muestreo por conglomerados</li>
-<li>Muestreo sistemático</li>
+<li><p>Muestreo aleatorio simple
+単純ランダムサンプリング</p>
+</li>
+<li><p>Muestreo en dos etapas
+２段サンプリング</p>
+</li>
+<li><p>Muestreo estratificado
+層別サンプリング</p>
+</li>
+<li><p>Muestreo por conglomerados
+集落サンプリング</p>
+</li>
+<li><p>Muestreo sistemático
+系統サンプリング</p>
+</li>
 </ul>
 <p>Diseño del método de muestreo (precisión y costo)</p>
-<h4 id="(3)-Estructura-del-error">(3) Estructura del error<a class="anchor-link" href="#(3)-Estructura-del-error">&#182;</a></h4><h3 id="2.-Muestreo-aleatorio-simple">2. Muestreo aleatorio simple<a class="anchor-link" href="#2.-Muestreo-aleatorio-simple">&#182;</a></h3><p>Método de muestreo en el que todas las combinaciones posibles de tomar una muestra de la población tienen la misma probabilidad de ser seleccionadas.</p>
+<h4 id="(3)-Estructura-del-error">(3) Estructura del error<a class="anchor-link" href="#(3)-Estructura-del-error">&#182;</a></h4><p>誤差の構造</p>
+<p>$ x = \mu + s + m $</p>
+<p>$ \sigma^2 = \sigma_s^2 + \sigma_m^2 $</p>
+<h3 id="2.-Muestreo-aleatorio-simple">2. Muestreo aleatorio simple<a class="anchor-link" href="#2.-Muestreo-aleatorio-simple">&#182;</a></h3><p>Método de muestreo en el que todas las combinaciones posibles de tomar una muestra de la población tienen la misma probabilidad de ser seleccionadas.</p>
 <p>$ V(\bar{x}) = \frac{N - n}{N - 1} \cdot \frac{\sigma^2}{n} \fallingdotseq (1 - \frac{n}{N}) \cdot \frac{\sigma^2}{n} $</p>
 <h3 id="3.-Muestreo-en-dos-etapas">3. Muestreo en dos etapas<a class="anchor-link" href="#3.-Muestreo-en-dos-etapas">&#182;</a></h3><p>El muestreo en dos etapas (también conocido como muestreo bi-etápico o muestreo por etapas) es un método de muestreo probabilístico que se utiliza cuando la población está organizada en grupos o unidades primarias. Consiste en dos fases de muestreo aleatorio.</p>
 <p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} + \frac{N - n}{N -1} \cdot \frac{\sigma_w^2}{mn}$</p>
 <h3 id="4.-Muestreo-estratificado">4. Muestreo estratificado<a class="anchor-link" href="#4.-Muestreo-estratificado">&#182;</a></h3><p>Cuando una población está compuesta por múltiples elementos heterogéneos, se estratifica (o divide en estratos/unidades primarias), y se denomina muestreo estratificado al método de muestreo en el que se realiza un muestreo aleatorio de unidades secundarias de cada uno de estos estratos.</p>
 <p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} + \frac{N - n}{N -1} \cdot \frac{\sigma_w^2}{Mn} = \frac{N - n}{N - 1} \cdot \frac{\sigma_w^2}{Mn} $</p>
 <h3 id="5.-Muestreo-por-conglomerados">5. Muestreo por conglomerados<a class="anchor-link" href="#5.-Muestreo-por-conglomerados">&#182;</a></h3><p>Cuando se realiza una investigación social que abarca una amplia zona geográfica, el método de muestreo por conglomerados (o muestreo por racimos) consiste en considerar ciudades, pueblos o aldeas como unidades de muestreo únicas (conglomerados: unidades primarias). Se seleccionan aleatoriamente varios de estos conglomerados, y luego se investiga a la totalidad de los elementos dentro de esos conglomerados (unidades secundarias).</p>
-<p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} + \frac{N - n}{N -1} \cdot \frac{\sigma_w^2}{mn}  \frac{M - m}{M - 1} \cdot \frac{\sigma_b^2}{m} $</p>
+<p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} + \frac{N - n}{N -1} \cdot \frac{\sigma_w^2}{mn}  = \frac{M - m}{M - 1} \cdot \frac{\sigma_b^2}{m} $</p>
+<p><a href="https://drive.google.com/file/d/1qUXOcRq_C-18P4R8Y7QKYyAe9Y3uYatr/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -14798,7 +14829,7 @@ Y basándose en los hechos obtenidos sobre la muestra, se <strong>realiza una es
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Parámetros definidos</span>
@@ -14867,7 +14898,7 @@ Costo total cuando todos los jabones faciales se seleccionan de una sola caja: 3
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Método de muestreo 2: Muestreo en dos etapas</span>
@@ -14949,7 +14980,7 @@ Costo total de método de muestreo en dos etapas: 1200 Yen
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">hypergeom</span>
@@ -15059,7 +15090,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">binom</span>
@@ -15212,7 +15243,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configuración de constantes</span>
@@ -15269,7 +15300,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Las medias poblacionales de cada caja（distribución normal：Varianza entre cajas σ_b^2）</span>
@@ -15415,7 +15446,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">2</span>
@@ -15461,7 +15492,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Se seleccionanaleatoriamente m cajas (o conglomerados)</span>
@@ -15603,7 +15634,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
@@ -15649,7 +15680,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#</span>
@@ -15800,7 +15831,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">240</span>       <span class="c1"># 単純ランダムサンプル数</span>
@@ -15847,7 +15878,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -15917,7 +15948,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-1.ipynb&#39;</span>
@@ -15948,7 +15979,7 @@ jp-needs-light-background
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>QCKentei1-1.ipynb  -&gt;  QCKentei1-1.html
 [NbConvertApp] Converting notebook QCKentei1-1.ipynb to html
-[NbConvertApp] Writing 625709 bytes to QCKentei1-1.html
+[NbConvertApp] Writing 916146 bytes to QCKentei1-1.html
 </pre>
 </div>
 </div>

@@ -14580,6 +14580,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Prueba-y-Estimaci%C3%B3n">Prueba y Estimaci&#243;n<a class="anchor-link" href="#Prueba-y-Estimaci%C3%B3n">&#182;</a></h1><p>Utilizando los datos obtenidos de las muestras recolectadas, se realiza la <strong>prueba de hipótesis</strong> para verificar suposiciones sobre la distribución de la población, y la <strong>estimación</strong> para calcular los parámetros poblacionales.</p>
+<p>En este capítulo, estudiaremos la prueba de hipótesis y la estimación, con el objetivo de que el estudiante sea capaz de hacer lo siguiente:</p>
+<ul>
+<li><p>Explicar los procedimientos para la prueba de hipótesis y la estimación basados en varios tipos de datos de medición (variables continuas).</p>
+</li>
+<li><p>Explicar y calcular la potencia de una prueba.</p>
+</li>
+<li><p>Explicar los procedimientos para la prueba de hipótesis y la estimación basados en varios tipos de datos de recuento(variables discretas).</p>
+</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1ttT5XWjGeHgwxip10hpQZyyxviBp4RqB/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14635,13 +14645,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="04-01-Prueba-y-Estimaci%C3%B3n">04-01 Prueba y Estimaci&#243;n<a class="anchor-link" href="#04-01-Prueba-y-Estimaci%C3%B3n">&#182;</a></h2><h3 id="1.-%C2%BFQu%C3%A9-es-una-prueba?">1. &#191;Qu&#233; es una prueba?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-una-prueba?">&#182;</a></h3><p>La prueba de hipótesis consiste en establecer una <strong>proposición (hipótesis) sobre una población</strong> de acuerdo con un objetivo específico, y luego usar los datos obtenidos de una muestra para determinar si es razonable considerar que dicha proposición es válida.</p>
+<h2 id="04-01-Prueba-y-Estimaci%C3%B3n">04-01 Prueba y Estimaci&#243;n<a class="anchor-link" href="#04-01-Prueba-y-Estimaci%C3%B3n">&#182;</a></h2><p>検定と推定</p>
+<h3 id="1.-%C2%BFQu%C3%A9-es-una-prueba?">1. &#191;Qu&#233; es una prueba?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-una-prueba?">&#182;</a></h3><p>La prueba de hipótesis consiste en establecer una <strong>proposición (hipótesis) sobre una población</strong> de acuerdo con un objetivo específico, y luego usar los datos obtenidos de una muestra para determinar si es razonable considerar que dicha proposición es válida.</p>
 <p>En una proeba de <strong>hipótesis alternativa: H1</strong>, y la hipótesis que niega esta afirmación se denomina <strong>hipótesis nula: H0</strong>.</p>
 <p>En cuanto a la hipótesis alternativa, existen la <strong>hipótesis bilateral</strong> y la <strong>hipótesisi unilateral</strong>.
 Los tests correspondientes para cada caso se denominan test bilateral y test unilateral, respectivamente.</p>
 <p>Se conoce como <strong>error de Tipo I</strong> al error de rechazar la hipótesis nula a pesar de que esta sea correcta.
 La probabilidad de cometer este error se denomina nivel de significancia o riesgo, y  el símbolo <strong>$ \alpha $</strong>.</p>
 <p>El error de no rechazar la hipótesis nula a pesar de que la hipótesis alternativa es correcta se denomina <strong>error de Tipo II</strong>, y su probabilidad se representa con el símbolo <strong>$ \beta $</strong>.</p>
+<p><a href="https://drive.google.com/file/d/1o8MbmJXfYo-XhtGnZOVhIfyI9y5SMkMZ/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -14701,37 +14713,52 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Procedimiento-de-la-prueba">2. Procedimiento de la prueba<a class="anchor-link" href="#2.-Procedimiento-de-la-prueba">&#182;</a></h3><p>Paso 1: Establecimiento de la hipótesis de la prueba</p>
-<p>Paso 2: Establecimiento de la hipótesis nula $ H_0 $ y la hipótesis alternativa $ H_1 $</p>
-<p>Paso 3: Selección del estadístico de prueba</p>
+<h3 id="2.-Procedimiento-de-la-prueba">2. Procedimiento de la prueba<a class="anchor-link" href="#2.-Procedimiento-de-la-prueba">&#182;</a></h3><p>検定の手順</p>
+<p>Paso 1: Establecimiento de la hipótesis de la prueba</p>
+<p>Paso 2: Establecimiento de la hipótesis nula $ H_0 $ y la hipótesis alternativa $ H_1 $
+帰無仮説H0と対立仮説H1の設定</p>
+<p>Paso 3: Selección del estadístico de prueba
+検定推定量の選定</p>
 <ul>
 <li>En la prueba de la media de una población, cuando la varianza de la población es conocida, la población sigue una distribución normal $ N(\mu, \sigma^2) $. La media de una muestra de tamaño $ n $ extraída de esta población sigue una distribución normal $ N(\mu, \sigma^2 / n) $. Al estandarizar esto $ u= \frac{\bar{x} - \mu}{\sqrt{\sigma^2/n}}$ sigue una distribución normal estándar $ N(0, 1^2) $.</li>
 </ul>
-<p>Paso 4: Establecimiento del nivel de significancia</p>
-<p>Paso 5: Establecimiento de la región de rechazo</p>
-<p>Paso 6: Cálculo del estadístico de prueba</p>
-<p>Paso 7: Decisión sobre el resultado de la prueba</p>
+<p>Paso 4: Establecimiento del nivel de significancia
+有意水準の設定</p>
+<p>Paso 5: Establecimiento de la región de rechazo
+棄却域の設定</p>
+<p>Paso 6: Cálculo del estadístico de prueba
+検定統計量の計算</p>
+<p>Paso 7: Decisión sobre el resultado de la prueba
+検定結果の判定</p>
 <ul>
 <li>Calcula el valor de la estadística de prueba y compáralo con el valor de área de rechazo para tomar una decisión sobre la prueba. Si el valor está dentro del área de rechazo, se considera significativo; si no lo está, se considera no significativo.</li>
 </ul>
-<p>Paso 8: Concusión</p>
+<p>Paso 8: Concusión
+結論</p>
 <ul>
 <li>Como resultado de la prueba, si es significativo, se rechaza la hipótesis nula y se acepta la hipótesis alternativa. Si no es significativo, la hipótesis nula no se rechaza.</li>
 </ul>
-<h3 id="3.-%C2%BFQu%C3%A9-es-una-estimaci%C3%B3n?">3. &#191;Qu&#233; es una estimaci&#243;n?<a class="anchor-link" href="#3.-%C2%BFQu%C3%A9-es-una-estimaci%C3%B3n?">&#182;</a></h3><ul>
-<li>La estimación consiste en estimar los parámetros de la población, como la media poblacional o la varianza poblacional, de una distribución de la población objetivo. Existen dos tipos de estimación: la estimación puntual, que estima el parámetro utilizando un solo estimador, y la estimación por intervalo, que estima el parámetro utilizando un intervalo. En la estimación por intervalo, el ancho del intervalo (intervalo de confianza) se determina en función de la tasa de confianza $ (1-\alpha) $, que es la probabilidad de que el intervalo contenga el verdadero parámetro de la población. El límite superior del intervalo de confianza se llama límite superior de confianza y el límite inferior se llama límite inferior de confianza.</li>
+<h3 id="3.-%C2%BFQu%C3%A9-es-una-estimaci%C3%B3n?">3. &#191;Qu&#233; es una estimaci&#243;n?<a class="anchor-link" href="#3.-%C2%BFQu%C3%A9-es-una-estimaci%C3%B3n?">&#182;</a></h3><p>推定とは</p>
+<ul>
+<li>La estimación consiste en estimar los parámetros de la población, como la media poblacional o la varianza poblacional, de una distribución de la población objetivo.
+Existen dos tipos de estimación: la estimación puntual, que estima el parámetro utilizando un solo estimador, y la estimación por intervalo, que estima el parámetro utilizando un intervalo. En la estimación por intervalo, el ancho del intervalo (intervalo de confianza) se determina en función de la tasa de confianza $ (1-\alpha) $, que es la probabilidad de que el intervalo contenga el verdadero parámetro de la población.
+El límite superior del intervalo de confianza se llama límite superior de confianza y el límite inferior se llama límite inferior de confianza.</li>
 </ul>
-<h3 id="4.-Procedimiento-de-la-estimaci%C3%B3n">4. Procedimiento de la estimaci&#243;n<a class="anchor-link" href="#4.-Procedimiento-de-la-estimaci%C3%B3n">&#182;</a></h3><p>Paso 1: Estimación puntual</p>
+<h3 id="4.-Procedimiento-de-la-estimaci%C3%B3n">4. Procedimiento de la estimaci&#243;n<a class="anchor-link" href="#4.-Procedimiento-de-la-estimaci%C3%B3n">&#182;</a></h3><p>推定の手順</p>
+<p>Paso 1: Estimación puntual
+点推定</p>
 <ul>
 <li>La estimación puntual consiste en inferir parámetros como la media poblacional $ \mu $ o la varianza poblacional $ \sigma^2 $ mediante un único valor. Se utilizan estimadores insesgados como la media muestral $ \bar{x} $ y la varianza muestral $ V $.</li>
 <li>$ \hat{x} = \bar{\mu} $</li>
 </ul>
-<p>Paso 2: Estimación por intervalo</p>
+<p>Paso 2: Estimación por intervalo
+区間推定</p>
 <ul>
 <li>Variable aleatoria $ u = \frac{\bar{x} - \mu}{\sqrt{\sigma^2}/n}$</li>
 <li>Límite superior de confianza $ \mu_U = \bar{x} + u(0.05) \sqrt{\sigma^2/n} $</li>
 <li>Límite inferior de confianza $ \mu_L = \bar{x} - u(0.05) \sqrt{\sigma^2/n} $</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1OVZjjJIUJAOXDCSmNOqlfVAI21UflYcu/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -14754,13 +14781,26 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1.-Pruebas-y-estimaciones-sobre-una-o-dos-poblaciones">1. Pruebas y estimaciones sobre una o dos poblaciones<a class="anchor-link" href="#1.-Pruebas-y-estimaciones-sobre-una-o-dos-poblaciones">&#182;</a></h3><ul>
-<li>Distribución normal estándar</li>
-<li>Distribución t</li>
-<li>Distribución ji-cuadrado</li>
-<li>Prueba de Welch</li>
-<li>Distribución F</li>
+<h3 id="1.-Pruebas-y-estimaciones-sobre-una-o-dos-poblaciones">1. Pruebas y estimaciones sobre una o dos poblaciones<a class="anchor-link" href="#1.-Pruebas-y-estimaciones-sobre-una-o-dos-poblaciones">&#182;</a></h3><p>１つまたは２つの母集団に関する検定と推定</p>
+<p>Existen muchos tipos de pruebas y estimaciones basadas en datos de valores mediados.</p>
+<ul>
+<li><p>Distribución normal estándar
+標準正規分布</p>
+</li>
+<li><p>Distribución t
+ｔ分布</p>
+</li>
+<li><p>Distribución ji-cuadrado
+χ二乗分布</p>
+</li>
+<li><p>Prueba de Welch
+ウェルチの検定</p>
+</li>
+<li><p>Distribución F
+Ｆ分布</p>
+</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/18DaNGdCjk1SydwUUZefUA7UAxWDCURPa/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -14772,7 +14812,10 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Pruebas-sobre-varianzas-de-tres-o-m%C3%A1s-poblaciones">2. Pruebas sobre varianzas de tres o m&#225;s poblaciones<a class="anchor-link" href="#2.-Pruebas-sobre-varianzas-de-tres-o-m%C3%A1s-poblaciones">&#182;</a></h3><p>Existen varios métodos para probar la <strong>homogeneidad de las varianzas poblacionales</strong> en tres o más poblaciones. En estos casos, la <strong>hipótesis nula</strong> (H0) es que <strong>todas las varianzas poblacionales son iguales</strong>, y la <strong>hipótesis alternativa</strong> (H1) es que <strong>hay al menos  una varianza que no es igual entre las k varianzas poblacionales</strong>.</p>
+<h3 id="2.-Pruebas-sobre-varianzas-de-tres-o-m%C3%A1s-poblaciones">2. Pruebas sobre varianzas de tres o m&#225;s poblaciones<a class="anchor-link" href="#2.-Pruebas-sobre-varianzas-de-tres-o-m%C3%A1s-poblaciones">&#182;</a></h3><p>３つ以上の母分散に関する推定</p>
+<p>Existen varios métodos para probar la <strong>homogeneidad de las varianzas poblacionales</strong> en tres o más poblaciones.
+En estos casos, la <strong>hipótesis nula</strong> (H0) es que <strong>todas las varianzas poblacionales son iguales</strong>, y la <strong>hipótesis alternativa</strong> (H1) es que <strong>hay al menos  una varianza que no es igual entre las k varianzas poblacionales</strong>.</p>
+<p><a href="https://drive.google.com/file/d/13Pk0984RzCjtvzuYAeciVaslopKWTlon/view?usp=drive_link">Audio_5</a></p>
 
 </div>
 </div>
@@ -14937,7 +14980,9 @@ Pundo cirtico de C（nivel de significancia 0.05）: 0.4291
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.-Potencia-de-la-prueba-sobre-la-media-poblacional">3. Potencia de la prueba sobre la media poblacional<a class="anchor-link" href="#3.-Potencia-de-la-prueba-sobre-la-media-poblacional">&#182;</a></h3>
+<h3 id="3.-Potencia-de-la-prueba-sobre-la-media-poblacional">3. Potencia de la prueba sobre la media poblacional<a class="anchor-link" href="#3.-Potencia-de-la-prueba-sobre-la-media-poblacional">&#182;</a></h3><p>母平均に関する検定の検出力</p>
+<p><a href="https://drive.google.com/file/d/1mzAeAic6E4pFQyaUJ_qc04_IL62KLuqT/view?usp=drive_link">Audio_6</a></p>
+
 </div>
 </div>
 </div>
@@ -15192,7 +15237,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4.-Potencia-de-la-prueba-sobre-la-varianza-poblcacional">4. Potencia de la prueba sobre la varianza poblcacional<a class="anchor-link" href="#4.-Potencia-de-la-prueba-sobre-la-varianza-poblcacional">&#182;</a></h3>
+<h3 id="4.-Potencia-de-la-prueba-sobre-la-varianza-poblacional">4. Potencia de la prueba sobre la varianza poblacional<a class="anchor-link" href="#4.-Potencia-de-la-prueba-sobre-la-varianza-poblacional">&#182;</a></h3><p>母分散に関する検定の検出力</p>
+<p><a href="https://drive.google.com/file/d/1itk53IUIQKyzMsV8DhzjhS2LrR-rgLVA/view?usp=drive_link">Audio_7</a></p>
+
 </div>
 </div>
 </div>
@@ -15495,27 +15542,32 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="04-03-Pruebas-y-estimaciones-basadas-en-datos-de-conteo">04-03 Pruebas y estimaciones basadas en datos de conteo<a class="anchor-link" href="#04-03-Pruebas-y-estimaciones-basadas-en-datos-de-conteo">&#182;</a></h2><ol>
-<li>Análisis del número y la tasa de productos no conformes (número y tasa de defectuosos)</li>
+<h2 id="04-03-Pruebas-y-estimaciones-basadas-en-datos-de-conteo">04-03 Pruebas y estimaciones basadas en datos de conteo<a class="anchor-link" href="#04-03-Pruebas-y-estimaciones-basadas-en-datos-de-conteo">&#182;</a></h2><p>計数値データに基づく検定と推定</p>
+<ol>
+<li>Análisis del número y la tasa de productos no conformes (número y tasa de defectuosos)
+不適合品数・不適合品率（不良個数・不良率）の解析</li>
 </ol>
 <ul>
 <li>Prueba y estimación de la tasa de productos defectuosos P en una población.</li>
 <li>Prueba y estimación de la diferencia entre las tasas de productos defectuosos $ P_A $ y $ P_B $ en dos poblaciones.</li>
 </ul>
 <ol>
-<li>Análisis del número de no conformidades(número de defectos)</li>
+<li>Análisis del número de no conformidades(número de defectos)
+不適合数（欠点数）の解析</li>
 </ol>
 <ul>
 <li>Prueba y estimación del número de defectos $ \lambda $ en una población.</li>
 <li>Prueba y estimación de la diferencia entre los números de defectos $ \lambda_A $ y $ \lambda_B $ en dos poblaciones.</li>
 </ul>
 <ol>
-<li>Análisis de datos de frecuencias clasificados por categoría</li>
+<li>Análisis de datos de frecuencias clasificados por categoría
+項目ごとに分類された度数データの解析</li>
 </ol>
 <ul>
 <li>Prueba de bondad de ajuste</li>
 <li>Prueba mediante tabla de contingencia</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1c1oSU1fIkwsnePRN3aRSTZ9uYHis_tKi/view?usp=drive_link">Audio_8</a></p>
 
 </div>
 </div>
@@ -18853,12 +18905,12 @@ class="
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-4.ipynb&#39;</span>
@@ -18871,6 +18923,31 @@ class="
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>QCKentei1-4.ipynb  -&gt;  QCKentei1-4.html
+[NbConvertApp] Converting notebook QCKentei1-4.ipynb to html
+[NbConvertApp] Writing 1439061 bytes to QCKentei1-4.html
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

@@ -14580,6 +14580,20 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Diagrama-de-control">Diagrama de control<a class="anchor-link" href="#Diagrama-de-control">&#182;</a></h1><p>Las gráficas de control son un método útil para determinar si un proceso está bajo control, y se utilizan ampliamente como una técnica de análisis y gestión de procesos.</p>
+<p>En este capítulo, estudiaremos los gráficos de control y los índices de capacidad del proceso, con el objetivo de que el estudiante sea capaz de hacer lo siguiente:</p>
+<ul>
+<li><p>Comprender la idea y la interpretación de los gráficos de control.</p>
+</li>
+<li><p>Explicar los tipos y características de los gráficos de control.</p>
+</li>
+<li><p>Comprender la base matemática de los gráficos de control (variación dentro de los subgrupos y entre los subgrupos).</p>
+</li>
+<li><p>Calcular los índices de capacidad del proceso.</p>
+</li>
+<li><p>Realizar la estimación por intervalos de los índices de capacidad del proceso.</p>
+</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1C4g7OoBeIpQLo33GmHAkiPiLFZS_no-5/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14589,7 +14603,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
@@ -14613,7 +14627,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14639,13 +14653,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="05-01-Tipos-de-diagramas-de-control">05-01 Tipos de diagramas de control<a class="anchor-link" href="#05-01-Tipos-de-diagramas-de-control">&#182;</a></h2><h3 id="1.-Qu%C3%A9-es-un-diagrama-de-control">1. Qu&#233; es un diagrama de control<a class="anchor-link" href="#1.-Qu%C3%A9-es-un-diagrama-de-control">&#182;</a></h3><p>El diagrama de control es una herramienta creada por W.A. Shewhatt para analizar y controlar la variabilidad de un proceso.</p>
+<h2 id="05-01-Tipos-de-diagramas-de-control">05-01 Tipos de diagramas de control<a class="anchor-link" href="#05-01-Tipos-de-diagramas-de-control">&#182;</a></h2><p>管理図の種類</p>
+<h3 id="1.-Qu%C3%A9-es-un-diagrama-de-control">1. Qu&#233; es un diagrama de control<a class="anchor-link" href="#1.-Qu%C3%A9-es-un-diagrama-de-control">&#182;</a></h3><p>El diagrama de control es una herramienta creada por W.A. Shewhatt para analizar y controlar la variabilidad de un proceso.</p>
 <p>El objetivo en el control de calidad es eliminar de forma fiable las <strong>causas asignables</strong> y procurar un <strong>estado de control estadístico</strong> regido únicamente por <strong>causas comunes</strong>.</p>
 <ul>
 <li>Causas comunes: Variabilidad inevitable</li>
 <li>Causas asignables: Variabilidad que no se puede pasar por alto</li>
 <li>Estado de control estadístico: Para determinar si un proceso está en un estado de control estadístico, se asume que los datos siguen una distribución normal, lo que significa que el proceso transcurre sin cambios en la media y la desviación estándar.</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/12id7leDxE6p4xauua9JLZgZcrUBfnpLh/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -14659,7 +14675,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="2.-Tipos-de-diagramas-de-control">2. Tipos de diagramas de control<a class="anchor-link" href="#2.-Tipos-de-diagramas-de-control">&#182;</a></h3><ul>
 <li>Diagrama de control de la media y el rango: Diagrama de control $ \bar{X}-R $</li>
-<li>Diagrama de control del la mediana y e rango: Diagrama de control $ Me-R $</li>
+<li>Diagrama de control de la mediana y el rango: Diagrama de control $ Me-R $</li>
 <li>Diagrama de control de la media y el error estándar: Diagrama de control $ \bar{X}-s $</li>
 <li>Diagrama de control de los datos individuales y el rango móvil: Diagrama de control $ X - Rm $</li>
 <li>Diagrama de control de la tasa de defectos: Diagrama de control $ p $</li>
@@ -14667,6 +14683,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>Diagrama de control del número de defectos por unidad: Diagrama de control $ u $</li>
 <li>Diagrama de control del número de defectos: Diagrama de control $ c $</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1ZUlfi0x5sae1qHs7tlRt0CzmrAWQB5BX/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -14676,7 +14693,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gspread</span> 
@@ -14750,7 +14767,7 @@ n
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">webbrowser</span>
@@ -14769,7 +14786,7 @@ n
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">logging</span> <span class="kn">import</span> <span class="n">error</span>
@@ -14824,6 +14841,7 @@ n
 <li>Límite de control superior (LCS): $ UCL = D_4 \bar{R} $</li>
 <li>Límite de control inferior (LCI): $ LCL = D_3 \bar{R} $</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1FH0s3rs5jf_7LYcwwIqwdIe9JYEX0zNy/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -14835,7 +14853,8 @@ n
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Diagrama-de-control-de-la-mediana-y-el-rango-(Diagrama-$-Me-R-$)">2. Diagrama de control de la mediana y el rango (Diagrama $ Me-R $)<a class="anchor-link" href="#2.-Diagrama-de-control-de-la-mediana-y-el-rango-(Diagrama-$-Me-R-$)">&#182;</a></h3><p>La gráfica de control de medianas (Me) es una variación de la gráfica $ \bar{X} - R $, donde la $ \bar{X} $ (media) se sustituye por la $ Me $ (mediana), y presenta las siguientes características.</p>
+<h3 id="2.-Diagrama-de-control-de-la-mediana-y-el-rango-(Diagrama-$-Me-R-$)">2. Diagrama de control de la mediana y el rango (Diagrama $ Me-R $)<a class="anchor-link" href="#2.-Diagrama-de-control-de-la-mediana-y-el-rango-(Diagrama-$-Me-R-$)">&#182;</a></h3><p>メディアン管理図</p>
+<p>La gráfica de control de medianas (Me) es una variación de la gráfica $ \bar{X} - R $, donde la $ \bar{X} $ (media) se sustituye por la $ Me $ (mediana), y presenta las siguientes características.</p>
 <ol>
 <li>Se puede reducir el impacto de los valores atípicos dentro del grupo.</li>
 <li>Si el tamaño del grupo es impar, no es necesario calcular Me, lo que lo hace más sencillo.</li>
@@ -14846,6 +14865,7 @@ n
 <li>Límite de control superior (LCS): $ UCL = \bar{M2} + A_4 \bar{R} $</li>
 <li>Límite de control inferior (LCI): $ LCL = \bar{Me} - A_4 \bar{R} $</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1sxZ-fV83UnniD0UMEIOe7Arj0BbrAwsq/view?usp=drive_link">Audio_5</a></p>
 
 </div>
 </div>
@@ -14887,7 +14907,7 @@ n
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos proporcionados</span>
@@ -15016,9 +15036,12 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="05-03-Teor%C3%ADa-de-los-diagramas-de-control">05-03 Teor&#237;a de los diagramas de control<a class="anchor-link" href="#05-03-Teor%C3%ADa-de-los-diagramas-de-control">&#182;</a></h2><h3 id="1.-C%C3%A1lculo-de-las-l%C3%ADneas-de-control-en-el-diagrama-$-%5Cbar%7BX%7D-R-$">1. C&#225;lculo de las l&#237;neas de control en el diagrama $ \bar{X}-R $<a class="anchor-link" href="#1.-C%C3%A1lculo-de-las-l%C3%ADneas-de-control-en-el-diagrama-$-%5Cbar%7BX%7D-R-$">&#182;</a></h3><p>En los diagramas de control, se establecen límites de control como criterio de juicio para determinar si el proceso está en estado de control. Cálculo de los límites de control.</p>
+<h2 id="05-03-Teor%C3%ADa-de-los-diagramas-de-control">05-03 Teor&#237;a de los diagramas de control<a class="anchor-link" href="#05-03-Teor%C3%ADa-de-los-diagramas-de-control">&#182;</a></h2><p>管理図の数理</p>
+<h3 id="1.-C%C3%A1lculo-de-las-l%C3%ADneas-de-control-en-el-diagrama-$-%5Cbar%7BX%7D-R-$">1. C&#225;lculo de las l&#237;neas de control en el diagrama $ \bar{X}-R $<a class="anchor-link" href="#1.-C%C3%A1lculo-de-las-l%C3%ADneas-de-control-en-el-diagrama-$-%5Cbar%7BX%7D-R-$">&#182;</a></h3><p>管理限界線の求め方</p>
+<p>En los diagramas de control, se establecen límites de control como criterio de juicio para determinar si el proceso está en estado de control. Cálculo de los límites de control.</p>
 <p>$ (medio) \pm 3 \times (desviación \cdot estándar)$</p>
 <p>A este tipo de diagrama de control se llama <strong>diagrama de control de tres sigmas</strong>.</p>
+<p><a href="https://drive.google.com/file/d/19f-riTrwyd0GZ-H2TuiapN9C-awLAyYJ/view?usp=drive_link">Audio_6</a></p>
 
 </div>
 </div>
@@ -15030,18 +15053,21 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Determinaci%C3%B3n-del-estado-de-control-estad%C3%ADstico">2. Determinaci&#243;n del estado de control estad&#237;stico<a class="anchor-link" href="#2.-Determinaci%C3%B3n-del-estado-de-control-estad%C3%ADstico">&#182;</a></h3><p>El estado de control estadístico se refiere a cuando el proceso está influenciado solo por causas aleatorias</p>
+<h3 id="2.-Determinaci%C3%B3n-del-estado-de-control-estad%C3%ADstico">2. Determinaci&#243;n del estado de control estad&#237;stico<a class="anchor-link" href="#2.-Determinaci%C3%B3n-del-estado-de-control-estad%C3%ADstico">&#182;</a></h3><p>統計的管理状態の判定</p>
+<p>El estado de control estadístico se refiere a cuando el proceso está influenciado solo por causas aleatorias</p>
 <p>Para determinar si un proceso está en un **estado de control estadístico a partir de una gráfica de control, se utilizan los siguientes criterios:</p>
 <ol>
 <li>Ningún punto está fuera de los límites de control.</li>
 <li>La disposición y dispersión de los puntos no presentan patrones inusuales.</li>
 </ol>
-<h3 id="3.-Vaiabilidad-intragrupo-y-Variabilidad-itergrupo.">3. Vaiabilidad <strong>intragrupo</strong> y Variabilidad <strong>itergrupo</strong>.<a class="anchor-link" href="#3.-Vaiabilidad-intragrupo-y-Variabilidad-itergrupo.">&#182;</a></h3><p>En las gráficas de control, la variabilidad de los datos se puede dividir en variación intragrupo y variación intergrupo.</p>
+<h3 id="3.-Vaiabilidad-intragrupo-y-Variabilidad-itergrupo.">3. Vaiabilidad <strong>intragrupo</strong> y Variabilidad <strong>itergrupo</strong>.<a class="anchor-link" href="#3.-Vaiabilidad-intragrupo-y-Variabilidad-itergrupo.">&#182;</a></h3><p>郡内変動、群間変動</p>
+<p>En las gráficas de control, la variabilidad de los datos se puede dividir en variación intragrupo y variación intergrupo.</p>
 <p>$ \sigma_{\bar{x}}^2 = \sigma_w^2 + \sigma_b^2 / n \qquad (\sigma_{x}^2 = \sigma_w^2 + \sigma_b^2)$</p>
 <p>De esta manera, $ \bar{X} $ se ve influenciada tanto por la variación intergrupal como por la variación intragrupal.</p>
 <p>Así, si se logra agrupar de modo que la variabilidad debida a causas comunes quede dentro de los grupos, y la magnitud de esta variación sea constante, entonces la variación $ \bar{X} $ se manifestará como variación intergrupal debida a causas asignables.</p>
 <p>La agrupación es un paso crucial en el proceso de creación de gráficas de control. A partir de estas gráficas, es posible discernir qué tipo de variabilidad (intragrupo o intergrupo) está presente.</p>
 <p>Además, en muchos casos, la estratificación puede proporcionar información útil, permitiendo a veces determinar la agrupación más adecuada.</p>
+<p><a href="https://drive.google.com/file/d/1T_pCH56qHWCZ8sIZijmCOVajIHQ04Tc1/view?usp=drive_link">Audio_7</a></p>
 
 </div>
 </div>
@@ -15053,13 +15079,14 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4.-Estimaci%C3%B3n-de-los-componentes-de-varianza-en-los-datos-de-un-experimento-de-anidamiento">4. Estimaci&#243;n de los componentes de varianza en los datos de un experimento de anidamiento<a class="anchor-link" href="#4.-Estimaci%C3%B3n-de-los-componentes-de-varianza-en-los-datos-de-un-experimento-de-anidamiento">&#182;</a></h3><p>Cuando se construye una gráfica de control a partir de datos obtenidos mediante un experimento de anidamiento (o branched experimento), que consiste en muestrear $ m $ unidades del $ l $ lotes de un cierto producto y realizar $ n $ mediciones, es posible estimar los componentes de la varianza de la característica X del producto, dependiendo de cómo se lijan los subgrupos.</p>
+<h3 id="4.-Estimaci%C3%B3n-de-los-componentes-de-varianza-en-los-datos-de-un-experimento-de-anidamiento">4. Estimaci&#243;n de los componentes de varianza en los datos de un experimento de anidamiento<a class="anchor-link" href="#4.-Estimaci%C3%B3n-de-los-componentes-de-varianza-en-los-datos-de-un-experimento-de-anidamiento">&#182;</a></h3><p>枝分かれ実験データでの分散分析の推定</p>
+<p>Cuando se construye una gráfica de control a partir de datos obtenidos mediante un experimento de anidamiento (o branched experimento), que consiste en muestrear $ m $ unidades del $ l $ lotes de un cierto producto y realizar $ n $ mediciones, es posible estimar los componentes de la varianza de la característica X del producto, dependiendo de cómo se lijan los subgrupos.</p>
 <ol>
 <li>Error de medición:</li>
 </ol>
 <ul>
 <li>$ \hat{\sigma}_M^2 = (\bar{R}_{ij}/d_2)^2 $</li>
-<li>$ \bar{R}_{ij} $ : El promedio de los rangos cuando cada muestra individual se considera un subgrupo.</li>
+<li>$ \bar{R}_{ij} $ : El promedio de los rangos cundo cada muestra individual se considera un subgrupo.</li>
 </ul>
 <ol>
 <li>Error de muestreo:</li>
@@ -15075,6 +15102,7 @@ jp-needs-light-background
 <li>$ \hat{\sigma}_L^2 = V - \frac{1}{m} \hat{\sigma}_S^2 - \frac{1}{mn} \hat{\sigma}_M^2 $</li>
 <li>$ V $: Varianza calculada a partir de todos los datos</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1Ot-VM5ISZY8j59RgKs1yUs09qqEaLqUz/view?usp=drive_link">Audio_8</a></p>
 
 </div>
 </div>
@@ -15107,7 +15135,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gspread</span> 
@@ -15157,19 +15185,150 @@ jp-needs-light-background
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Input <span class="ansi-green-fg">In [1]</span>, in <span class="ansi-cyan-fg">&lt;cell line: 18&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span> <span style="color: rgb(95,135,135)"># データを取得</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> list_of_lists <span style="color: rgb(98,98,98)">=</span> sheet<span style="color: rgb(98,98,98)">.</span>get_all_values()
-<span class="ansi-green-fg">---&gt; 18</span> df <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">pd</span><span style="color: rgb(98,98,98)">.</span>DataFrame(list_of_lists)
-<span class="ansi-green-intense-fg ansi-bold">     20</span> df<span style="color: rgb(98,98,98)">.</span>columns <span style="color: rgb(98,98,98)">=</span> df<span style="color: rgb(98,98,98)">.</span>iloc[<span style="color: rgb(98,98,98)">0</span>]
-<span class="ansi-green-intense-fg ansi-bold">     21</span> df <span style="color: rgb(98,98,98)">=</span> df<span style="color: rgb(98,98,98)">.</span>drop(index<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">0</span>)
 
-<span class="ansi-red-fg">NameError</span>: name &#39;pd&#39; is not defined</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>X1</th>
+      <th>X2</th>
+      <th>X3</th>
+      <th>X4</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1-Sep</th>
+      <td>20.0</td>
+      <td>23.0</td>
+      <td>25.0</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>2-Sep</th>
+      <td>19.0</td>
+      <td>18.0</td>
+      <td>23.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>3-Sep</th>
+      <td>24.0</td>
+      <td>24.0</td>
+      <td>26.0</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>4-Sep</th>
+      <td>23.0</td>
+      <td>20.0</td>
+      <td>25.0</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>5-Sep</th>
+      <td>17.0</td>
+      <td>19.0</td>
+      <td>18.0</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <th>6-Sep</th>
+      <td>26.0</td>
+      <td>23.0</td>
+      <td>21.0</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <th>7-Sep</th>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>24.0</td>
+      <td>26.0</td>
+    </tr>
+    <tr>
+      <th>8-Sep</th>
+      <td>20.0</td>
+      <td>21.0</td>
+      <td>23.0</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>9-Sep</th>
+      <td>21.0</td>
+      <td>24.0</td>
+      <td>23.0</td>
+      <td>26.0</td>
+    </tr>
+    <tr>
+      <th>10-Sep</th>
+      <td>18.0</td>
+      <td>24.0</td>
+      <td>23.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>11-Sep</th>
+      <td>24.0</td>
+      <td>25.0</td>
+      <td>26.0</td>
+      <td>28.0</td>
+    </tr>
+    <tr>
+      <th>12-Sep</th>
+      <td>23.0</td>
+      <td>24.0</td>
+      <td>25.0</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <th>13-Sep</th>
+      <td>19.0</td>
+      <td>20.0</td>
+      <td>25.0</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>14-Sep</th>
+      <td>21.0</td>
+      <td>17.0</td>
+      <td>24.0</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>15-Sep</th>
+      <td>25.0</td>
+      <td>23.0</td>
+      <td>26.0</td>
+      <td>27.0</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -15199,7 +15358,7 @@ Input <span class="ansi-green-fg">In [1]</span>, in <span class="ansi-cyan-fg">&
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -15434,7 +15593,7 @@ Input <span class="ansi-green-fg">In [1]</span>, in <span class="ansi-cyan-fg">&
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># En el caso de los constantes de control (n=4)</span>
@@ -15562,7 +15721,7 @@ Between-group variation (BV): 0.842
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Convertir a 30 filas y 2 coumnas</span>
@@ -15875,7 +16034,7 @@ Between-group variation (BV): 0.842
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># En el caso de los constantes de control (n¿2)</span>
@@ -15986,8 +16145,11 @@ Between-group variation (BV): 1.959
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="05-04-%C3%8Dndice-de-capacidad-del-proceso">05-04 &#205;ndice de capacidad del proceso<a class="anchor-link" href="#05-04-%C3%8Dndice-de-capacidad-del-proceso">&#182;</a></h2><h3 id="1.-Qu%C3%A9-es-el-%C3%ADndice-de-capacidad-del-proceso">1. Qu&#233; es el &#237;ndice de capacidad del proceso<a class="anchor-link" href="#1.-Qu%C3%A9-es-el-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>El índice de capacidad del proceso es un indicador que mide la capacidad cualitativa del proceso para producir productos. Se utilizan los índices de capacidad del proceso $ C_p $ y $ C_{pk} $, que se calculan a partir de la relación entre la variabilidad del proceso y el rango de las especificaciones del producto.</p>
-<h3 id="2.-C%C3%B3mo-calcular-el-%C3%ADndice-de-capacidad-del-proceso">2. C&#243;mo calcular el &#237;ndice de capacidad del proceso<a class="anchor-link" href="#2.-C%C3%B3mo-calcular-el-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>Índice de capacidad del proceso para especificaciones bilaterales</p>
+<h2 id="05-04-%C3%8Dndice-de-capacidad-del-proceso">05-04 &#205;ndice de capacidad del proceso<a class="anchor-link" href="#05-04-%C3%8Dndice-de-capacidad-del-proceso">&#182;</a></h2><p>工程能力指数</p>
+<h3 id="1.-Qu%C3%A9-es-el-%C3%ADndice-de-capacidad-del-proceso">1. Qu&#233; es el &#237;ndice de capacidad del proceso<a class="anchor-link" href="#1.-Qu%C3%A9-es-el-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>工程能力指数とは</p>
+<p>El índice de capacidad del proceso es un indicador que mide la capacidad cualitativa del proceso para producir productos. Se utilizan los índices de capacidad del proceso $ C_p $ y $ C_{pk} $, que se calculan a partir de la relación entre la variabilidad del proceso y el rango de las especificaciones del producto.</p>
+<h3 id="2.-C%C3%B3mo-calcular-el-%C3%ADndice-de-capacidad-del-proceso">2. C&#243;mo calcular el &#237;ndice de capacidad del proceso<a class="anchor-link" href="#2.-C%C3%B3mo-calcular-el-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>工程能力指数の求めかた</p>
+<p>Índice de capacidad del proceso para especificaciones bilaterales</p>
 <p>$ C_p = \frac{S_u - S_L}{6 \sigma} $</p>
 <p>En el caso de solo límite superior de especificación:</p>
 <p>$ C_p = \frac{S_U - \bar{X}}{3\sigma}$</p>
@@ -15996,7 +16158,9 @@ Between-group variation (BV): 1.959
 <p>Índice de capacidad del proceso considerando el sesgo:</p>
 <p>El menor de los dos</p>
 <p>$ C_p = \frac{S_U - \bar{X}}{3\sigma}$,  $  C_p = \frac{\bar{X}-S_L}{3\sigma} $</p>
-<h3 id="3.-La-evaluaci%C3%B3n-del-%C3%ADndice-de-capacidad-del-proceso">3. La evaluaci&#243;n del &#237;ndice de capacidad del proceso<a class="anchor-link" href="#3.-La-evaluaci%C3%B3n-del-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>Generalmente, si $ C_p \gt 1.33 $, se considera que la capacidad del proceso es suficiente.</p>
+<h3 id="3.-La-evaluaci%C3%B3n-del-%C3%ADndice-de-capacidad-del-proceso">3. La evaluaci&#243;n del &#237;ndice de capacidad del proceso<a class="anchor-link" href="#3.-La-evaluaci%C3%B3n-del-%C3%ADndice-de-capacidad-del-proceso">&#182;</a></h3><p>工程能力指数の判定</p>
+<p>Generalmente, si $ C_p \gt 1.33 $, se considera que la capacidad del proceso es suficiente.</p>
+<p><a href="https://drive.google.com/file/d/13TKZCsVhNEkESu5LeD_a5YwoIWF3nj6i/view?usp=drive_link">Audio_9</a></p>
 
 </div>
 </div>
@@ -16033,7 +16197,7 @@ Between-group variation (BV): 1.959
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Confiburación de los valores: l´mite superior de especificación Su、</span>
@@ -16092,7 +16256,9 @@ Cpk: 0.95
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4.-Hasta-ahora,-hemos-tratado-el-%C3%ADndice-de-capacidad-del-proceso-$-C_p-$-como-un-estad%C3%ADstico.-Sin-embargo,-si-lo-consideramos-un-par%C3%A1metro,-entoces-$-C_p-=-%5Cfrac%7BS_U---S_L%7D-%7B6-%5Csigma-%7D-$.-No-obstante,-dado-que-la-varianza-poblacional-$-%5Csigma%5E2-$-es-generalmente-desconocida,-se-reemplaza-por-el-estad%C3%ADstico-de-la-desviaci%C3%B3n-est%C3%A1ndar-$-s-$.">4. Hasta ahora, hemos tratado el &#237;ndice de capacidad del proceso $ C_p $ como un estad&#237;stico. Sin embargo, si lo consideramos un par&#225;metro, entoces $ C_p = \frac{S_U - S_L} {6 \sigma } $. No obstante, dado que la varianza poblacional $ \sigma^2 $ es generalmente desconocida, se reemplaza por el estad&#237;stico de la desviaci&#243;n est&#225;ndar $ s $.<a class="anchor-link" href="#4.-Hasta-ahora,-hemos-tratado-el-%C3%ADndice-de-capacidad-del-proceso-$-C_p-$-como-un-estad%C3%ADstico.-Sin-embargo,-si-lo-consideramos-un-par%C3%A1metro,-entoces-$-C_p-=-%5Cfrac%7BS_U---S_L%7D-%7B6-%5Csigma-%7D-$.-No-obstante,-dado-que-la-varianza-poblacional-$-%5Csigma%5E2-$-es-generalmente-desconocida,-se-reemplaza-por-el-estad%C3%ADstico-de-la-desviaci%C3%B3n-est%C3%A1ndar-$-s-$.">&#182;</a></h3><p>Dado que el índice de capacidad del proceso calculado utilizando la desviación estándar $ s $ es un valor estimado, cuando el número de datos es pequeño, en ocasiones se realiza una estimación por intervalos y el índice de capacidad del proceso se estima a partir de su límite inferior de confianza.</p>
+<h3 id="4.-Estimaci%C3%B3n-por-intervalos-del-%C3%ADndice-de-capacidad-del-proceso.">4. Estimaci&#243;n por intervalos del &#237;ndice de capacidad del proceso.<a class="anchor-link" href="#4.-Estimaci%C3%B3n-por-intervalos-del-%C3%ADndice-de-capacidad-del-proceso.">&#182;</a></h3><p>工程能力指数の区間推定</p>
+<p>Hasta ahora, hemos tratado el índice de capacidad del proceso $ C_p $ como un estadístico. Sin embargo, si lo consideramos un parámetro, entoces $ C_p = \frac{S_U - S_L} {6 \sigma } $. No obstante, dado que la varianza poblacional $ \sigma^2 $ es generalmente desconocida, se reemplaza por el estadístico de la desviación estándar $ s $.</p>
+<p>Dado que el índice de capacidad del proceso calculado utilizando la desviación estándar $ s $ es un valor estimado, cuando el número de datos es pequeño, en ocasiones se realiza una estimación por intervalos y el índice de capacidad del proceso se estima a partir de su límite inferior de confianza.</p>
 <p>Además, en el caso de $ C_p $ para especificaciones unilaterales o $ C_{pk} $ que considera el sesgo, se utiliza la media $ \bar{X} $ como estadístico adicional a la desviación estándar $ s $, lo que hace que la estimación por intervalos sea más compleja.</p>
 <p>Intervalo de confianza del $ 100(1-\alpha) $% para el índice de capacidad del proceso $ C_p $:</p>
 <ol>
@@ -16127,9 +16293,11 @@ Cpk: 0.95
 <li>$ \hat{C}_{pk} + u(\alpha)\sqrt{\frac{\hat{C}_{pk}^2}{2(n-1)}+ \frac{1}{9n}} $</li>
 </ul>
 </li>
-<li>Límite inferior de confianza<ul>
+<li><p>Límite inferior de confianza</p>
+<ul>
 <li>$ \hat{C}_{pk} - u(\alpha)\sqrt{\frac{\hat{C}_{pk}^2}{2(n-1)}+ \frac{1}{9n}} $</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1k33CjTcXj1BEgOtwqIPkdxd8jQeMlkeV/view?usp=drive_link">Audio_10</a></p>
 </li>
 </ul>
 
@@ -16170,7 +16338,7 @@ Cpk: 0.95
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
@@ -16284,7 +16452,7 @@ Intervalo de confianza del 95%: (0.73, 1.94)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
@@ -16366,7 +16534,7 @@ $ Var(C_p) = C_p^2 \cdot \frac{2}{n-1} + \frac{1}{9n} $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Límite inferior de especificación</span>
@@ -16465,7 +16633,7 @@ Intervalo de confianza del 95%: (0.29, 2.3816)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de entrada</span>
@@ -16532,7 +16700,7 @@ Intervalo de confianza del 95%: (0.73, 1.94)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-5.ipynb&#39;</span>
@@ -16563,7 +16731,7 @@ Intervalo de confianza del 95%: (0.73, 1.94)
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>QCKentei1-5.ipynb  -&gt;  QCKentei1-5.html
 [NbConvertApp] Converting notebook QCKentei1-5.ipynb to html
-[NbConvertApp] Writing 904390 bytes to QCKentei1-5.html
+[NbConvertApp] Writing 917129 bytes to QCKentei1-5.html
 </pre>
 </div>
 </div>

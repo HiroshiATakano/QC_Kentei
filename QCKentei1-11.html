@@ -14580,6 +14580,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Ingenier%C3%ADa-de-la-confiabilidad">Ingenier&#237;a de la confiabilidad<a class="anchor-link" href="#Ingenier%C3%ADa-de-la-confiabilidad">&#182;</a></h1><p>La confiabilidad es un aspecto de la calidad que representa la estabilidad a lo largo del tiempo, y la ingeniería de confiabilidad es la tecnología (ingeniería) relacionada con la confiabilidad de sistemas y elementos.</p>
+<p>En este capítulo aprenderás sobre la ingeniería de la fiabilidad y deberás ser capaz de:</p>
+<ul>
+<li>Explicar y calcular las actividades de fiabilidad y los tres elementos de la fiabilidad, así como el significado de las medidas.</li>
+<li>Explicar y calcular el análisis de Weibull de los datos de fiabilidad y el significado de los tres parámetros.</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1aYk2KaHzd9jfjs3AeIICHJg1CawYIzCa/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14589,7 +14595,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[173]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14612,7 +14618,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[174]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14639,18 +14645,24 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="11-01-Ingenier%C3%ADa-de-la-confiabilidad">11-01 Ingenier&#237;a de la confiabilidad<a class="anchor-link" href="#11-01-Ingenier%C3%ADa-de-la-confiabilidad">&#182;</a></h2><h3 id="1.-Ingenier%C3%ADa-de-la-confiabilidad">1. Ingenier&#237;a de la confiabilidad<a class="anchor-link" href="#1.-Ingenier%C3%ADa-de-la-confiabilidad">&#182;</a></h3><p>La <strong>confiabilidad</strong> se define como la capacidad de un artículo para desempeñar su función durante un período determinado sin fallar, bajo condiciones específicas.</p>
+<h2 id="11-01-Ingenier%C3%ADa-de-la-confiabilidad">11-01 Ingenier&#237;a de la confiabilidad<a class="anchor-link" href="#11-01-Ingenier%C3%ADa-de-la-confiabilidad">&#182;</a></h2><p>信頼性工学</p>
+<h3 id="1.-Ingenier%C3%ADa-de-la-confiabilidad">1. Ingenier&#237;a de la confiabilidad<a class="anchor-link" href="#1.-Ingenier%C3%ADa-de-la-confiabilidad">&#182;</a></h3><p>La <strong>confiabilidad</strong> se define como la capacidad de un artículo para desempeñar su función durante un período determinado sin fallar, bajo condiciones específicas.</p>
 <p>La confiabilidad es una faceta de la calidad que representa la propiedad de <strong>estabilidad a lo largo del tiempo</strong>.
-Lo importante de la definición anterior es dejar claro: 1. qué es un <strong>articulo</strong>, 2. qué son las <strong>condiciones dadas</strong>, 3. qué es el <strong>tiempo dado</strong>, 4. qué es la <strong>falla</strong>.</p>
+Lo importante de la definición anterior es dejar claro:</p>
+<ol>
+<li>qué es un <strong>articulo</strong>,</li>
+<li>qué son las <strong>condiciones dadas</strong>,</li>
+<li>qué es el <strong>tiempo dado</strong>,</li>
+<li><p>qué es la <strong>falla</strong>.</p>
 <p>La <strong>confiabilida</strong> $ R $ se refiere a la probabilidad de que un artículo realice su función correctamente durante el intervalo de tiempo $ (t_1, t_2) $, bajo condiciones dadas, y se expresa como $ R = 1-F $ (donde F es la no confiabilidad)</p>
 <ul>
-<li><p>Confiabilidad de un <strong>sistema en serie</strong></p>
-<p>$ R = R_1 \times R_2 \times ... \times R_n $</p>
-</li>
-<li><p>Confiabilidad de un <strong>sistema en paralelo</strong></p>
-<p>$ R = 1 - (1 - R_1) \times (1-R_2) \times ... \times (1 - R_n) $</p>
-</li>
+<li>Confiabilidad de un <strong>sistema en serie</strong></li>
 </ul>
+<p>$ R = R_1 \times R_2 \times ... \times R_n $</p>
+<ul>
+<li>Confiabilidad de un <strong>sistema en paralelo</strong></li>
+</ul>
+<p>$ R = 1 - (1 - R_1) \times (1-R_2) \times ... \times (1 - R_n) $</p>
 <ol>
 <li>Un <strong>artículo</strong> es el objeto de estudio.
 Por ejemplo, un sistema, un producto, un componente o un material.
@@ -14660,6 +14672,9 @@ No se incluyen entornos de uso anormales ni usos incorrectos.</li>
 <li>El <strong>periodo de tiempo dado</strong> se refiere al tiempo o algo equivalente al tiempo, como el número de operaciones o el número de ciclos.</li>
 <li>Una <strong>falla</strong> es el estado en el que no se puede llevar a cabo el efecto o la función esperada.</li>
 </ol>
+</li>
+</ol>
+<p><a href="https://drive.google.com/file/d/10WxQtQ7NX_2I7QAcWoR-dUG0Cpdnu-87/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -14682,7 +14697,7 @@ No se incluyen entornos de uso anormales ni usos incorrectos.</li>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[175]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Confiabilidad cuando tres componentes A con una confiabilidad del 80% están conectado en serie.</span>
@@ -14780,6 +14795,7 @@ Este enfoque busca prevenir estos problemas de manera proactiva y mejorar el niv
 <p>DR es una actividad en la que expertos de diferentes campos revisan, pero se puede esperar que sea aún más efectiva si se utiliza una <strong>lista de verificación*</strong> para evitar omisiónes o inconsistencias.
 Sería útil tener listas de verificación que cubran, además de las funciones y el rendimiento, aspectos como la confiabilidad, la seguridad y la ergonomía.</p>
 <p>Al realizar DR y predicciones de problemas, es recomendable enfocarse en los puntos nuevos y los cambios.</p>
+<p><a href="https://drive.google.com/file/d/1XAEUYFNRLYjOX2ePZBCFQHiuLAqaHS6J/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -14791,8 +14807,10 @@ Sería útil tener listas de verificación que cubran, además de las funciones 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Durabilidad,-Mantenibilidad-y-Fiabilidad-del-dese%C3%B1o">2. Durabilidad, Mantenibilidad y Fiabilidad del dese&#241;o<a class="anchor-link" href="#2.-Durabilidad,-Mantenibilidad-y-Fiabilidad-del-dese%C3%B1o">&#182;</a></h3><h4 id="(1)-Durabilidad:">(1) Durabilidad:<a class="anchor-link" href="#(1)-Durabilidad:">&#182;</a></h4><p>La durabilidad (confiabilidad en sentido estricto) es la característica de tener pocas fallas o una larga vida útil, en otras palabras, es la <strong>resistencia a romperse</strong>.</p>
-<p>Para expresar la <strong>resistencia a la rotura</strong>, es crucial tener en cuenta la escala de tiempo y mostrar la relación enter la falla y el tiempo.</p>
+<h3 id="2.-Durabilidad,-Mantenibilidad-y-Fiabilidad-del-dise%C3%B1o">2. Durabilidad, Mantenibilidad y Fiabilidad del dise&#241;o<a class="anchor-link" href="#2.-Durabilidad,-Mantenibilidad-y-Fiabilidad-del-dise%C3%B1o">&#182;</a></h3><p>耐久性、保全性、設計信頼性</p>
+<h4 id="(1)-Durabilidad:">(1) Durabilidad:<a class="anchor-link" href="#(1)-Durabilidad:">&#182;</a></h4><p>耐久性</p>
+<p>La durabilidad (confiabilidad en sentido estricto) es la característica de tener pocas fallas o una larga vida útil, en otras palabras, es la <strong>resistencia a romperse</strong>.</p>
+<p>Para expresar la <strong>resistencia a la rotura</strong>, es crucial tener en cuenta la escala de tiempo y mostrar la relación entre la falla y el tiempo.</p>
 <ul>
 <li><p>Robustez</p>
 </li>
@@ -14807,7 +14825,8 @@ Sería útil tener listas de verificación que cubran, además de las funciones 
 <li><p><strong>MTBF</strong> (Tiempo Medio Entre Fallos): El tiempo promedio entre fallas (MTBF, por sus siglas en inglés) es el tiempo promedio entre la reparación y la siguiente falla. Es el recíproco de la tasa de fallas.</p>
 </li>
 </ul>
-<h4 id="(2)-Mantenibilidad:">(2) Mantenibilidad:<a class="anchor-link" href="#(2)-Mantenibilidad:">&#182;</a></h4><p>La <strong>mantenibilidad</strong> es la <strong>facilidad de reparación</strong>.
+<h4 id="(2)-Mantenibilidad:">(2) Mantenibilidad:<a class="anchor-link" href="#(2)-Mantenibilidad:">&#182;</a></h4><p>保全性</p>
+<p>La <strong>mantenibilidad</strong> es la <strong>facilidad de reparación</strong>.
 Se puede clasificar en dos tipos: la facilidad de reparación (<strong>mantenimiento correctivo</strong>) y la supresión de fallas de antemano (<strong>mantenimiento preventivo</strong>).</p>
 <ul>
 <li><p><strong>Índice de mantenibilidad</strong> $ R $: La probabilidad de que una reparación se completa en un tiempo $ t $.</p>
@@ -14817,17 +14836,15 @@ Se puede clasificar en dos tipos: la facilidad de reparación (<strong>mantenimi
 </ul>
 <p>La mantenibilidad es un elemento que complementa la curabilidad para mejorar la confiabilidad de un sistema.
 La propiedad que permite un fácil acceso a las partes de un sistema, como los puntos de fallo, para tareas de mantenimiento como inspección y reparación, se conoce como <strong>accesibilidad</strong>.</p>
-<h4 id="(3)-Fiabilidad-del-dise%C3%B1o:">(3) Fiabilidad del dise&#241;o:<a class="anchor-link" href="#(3)-Fiabilidad-del-dise%C3%B1o:">&#182;</a></h4><p>La fiabilidad del diseño es una fiabilidad que incluye la facilidad de uso y los fallos de funcionamiento, y se vuelve importante cuando se tiene en cuenta a quienes utilizan el producto o sistema.</p>
+<h4 id="(3)-Fiabilidad-del-dise%C3%B1o:">(3) Fiabilidad del dise&#241;o:<a class="anchor-link" href="#(3)-Fiabilidad-del-dise%C3%B1o:">&#182;</a></h4><p>設計信頼性</p>
+<p>La fiabilidad del diseño es una fiabilidad que incluye la facilidad de uso y los fallos de funcionamiento, y se vuelve importante cuando se tiene en cuenta a quienes utilizan el producto o sistema.</p>
 <ol>
-<li><p>Prevención de errores: Tarea la causa.</p>
-</li>
-<li><p>Sistemas a prueba de fallos: Seguridad después del fallo.</p>
-</li>
-<li><p>Fallo suave (sin daño completo): Manejo de las consecuencias.</p>
-</li>
-<li><p>Fallo suave (progresivo): Prevención de la propagación.</p>
-</li>
+<li>Prevención de errores: Tarea la causa.</li>
+<li>Sistemas a prueba de fallos: Seguridad después del fallo.</li>
+<li>Fallo suave (sin daño completo): Manejo de las consecuencias.</li>
+<li>Fallo suave (progresivo): Prevención de la propagación.</li>
 </ol>
+<p><a href="https://drive.google.com/file/d/1aD1QvyEbTVmc4dShWMQ612SKeJNczPUf/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -14850,7 +14867,7 @@ La propiedad que permite un fácil acceso a las partes de un sistema, como los p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[176]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Vida útil promedio y desviación estándar</span>
@@ -14910,7 +14927,7 @@ La propiedad que permite un fácil acceso a las partes de un sistema, como los p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[102]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[177]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de fallos</span>
@@ -15041,7 +15058,7 @@ $ \qquad ( 0 \leq t &lt; \gamma, \gamma \leq t ) $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[178]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gspread</span> 
@@ -15079,7 +15096,7 @@ $ \qquad ( 0 \leq t &lt; \gamma, \gamma \leq t ) $</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[179]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">linregress</span>
@@ -15217,7 +15234,7 @@ Dado que  $ \beta = 1.5 $ es un tipo de distribución de fallos por degradación
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[105]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[180]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">gamma</span>
@@ -15270,7 +15287,7 @@ Parámetro de escala λ = 1107.73
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[106]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[181]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">weibull_min</span>
@@ -15361,7 +15378,8 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.-Datos-censurados-a-mitad-de-periodo">2. Datos censurados a mitad de periodo<a class="anchor-link" href="#2.-Datos-censurados-a-mitad-de-periodo">&#182;</a></h2><h3 id="(1)-Datos-censurados">(1) Datos censurados<a class="anchor-link" href="#(1)-Datos-censurados">&#182;</a></h3><p>Hasta ahora, hemos considerado el caso en el que todas las muestras fallan.
+<h2 id="2.-Datos-censurados-a-mitad-de-periodo">2. Datos censurados a mitad de periodo<a class="anchor-link" href="#2.-Datos-censurados-a-mitad-de-periodo">&#182;</a></h2><p>中途打ち切りデータ</p>
+<h3 id="(1)-Datos-censurados">(1) Datos censurados<a class="anchor-link" href="#(1)-Datos-censurados">&#182;</a></h3><p>Hasta ahora, hemos considerado el caso en el que todas las muestras fallan.
 Sin embargo, en ocasiones, la prueba se detiene por razones como la duración del ensayo o la disponibilidad del equipo. Los datos obtenidos en ese momento se denominan <strong>datos censurados</strong>.</p>
 <ul>
 <li><p>Datos censurados a tiempo (Tipo I): Datos de una prueba que se detuvo en un tiempo predeterminado $ t_0 $.</p>
@@ -15371,7 +15389,8 @@ Sin embargo, en ocasiones, la prueba se detiene por razones como la duración de
 <li><p>Datos censurados aleatoriamente: Datos observados en los que los datos de muestras no fallidas se intercalan entre los datos de muestras fallidas, al ordenarlos de menor a mayor.</p>
 </li>
 </ul>
-<h3 id="(2)-An%C3%A1lisis-de-Weibull-de-datos-censurados.">(2) An&#225;lisis de Weibull de datos censurados.<a class="anchor-link" href="#(2)-An%C3%A1lisis-de-Weibull-de-datos-censurados.">&#182;</a></h3><ul>
+<h3 id="(2)-An%C3%A1lisis-de-Weibull-de-datos-censurados.">(2) An&#225;lisis de Weibull de datos censurados.<a class="anchor-link" href="#(2)-An%C3%A1lisis-de-Weibull-de-datos-censurados.">&#182;</a></h3><p>中途打ち切りデータのワイブル解析</p>
+<ul>
 <li>El análisis de Weibull para datos censurados por tiempo y datos censurados por número de fallos es básicamente el mismo que para los datos completos.</li>
 <li><p>El análisis de Weibull de datos censurados aleatoriamente se realiza utilizando el método del riesgo acumulado (método del riesgo acumulado de Nelson), que emplea un papel de riesgo acumulado de tipo Weibull.</p>
 <ul>
@@ -15379,6 +15398,7 @@ Sin embargo, en ocasiones, la prueba se detiene por razones como la duración de
 </ul>
 </li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1uPA3Ao6inHfvLmjw2GBgNtqS23Nuinqg/view?usp=drive_link">Audio_6</a></p>
 
 </div>
 </div>
@@ -15409,7 +15429,7 @@ Sin embargo, en ocasiones, la prueba se detiene por razones como la duración de
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[107]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[182]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data</span>
@@ -15519,7 +15539,7 @@ Sin embargo, en ocasiones, la prueba se detiene por razones como la duración de
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[108]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[183]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/Fig_16_1.png&#39;</span><span class="p">)</span>
@@ -15559,6 +15579,62 @@ class="
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[184]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">fsolve</span>
+
+<span class="n">RA</span> <span class="o">=</span> <span class="mf">0.90</span>
+
+<span class="c1"># 左辺を計算</span>
+<span class="n">lhs</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">RA</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+
+<span class="c1"># 解きたい関数：右辺 - 左辺 &gt; 0 を満たすような RB を探す</span>
+<span class="k">def</span> <span class="nf">equation</span><span class="p">(</span><span class="n">rb</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">rb</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">lhs</span>
+
+<span class="c1"># 初期値を適当に設定（例えば0.5）</span>
+<span class="n">initial_guess</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+<span class="c1"># fsolveで方程式が0になる点を探す</span>
+<span class="n">rb_solution</span> <span class="o">=</span> <span class="n">fsolve</span><span class="p">(</span><span class="n">equation</span><span class="p">,</span> <span class="n">initial_guess</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Es necesario que R_B sea mayor o igual que  </span><span class="si">{</span><span class="n">rb_solution</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Es necesario que R_B sea mayor o igual que  0.97
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15577,7 +15653,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[109]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[185]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/Fig16_2.png&#39;</span><span class="p">)</span>
@@ -15622,7 +15698,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[186]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 値の計算</span>
@@ -15711,7 +15787,7 @@ d = 0.9790
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[187]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de tiempo de fallo</span>
@@ -15786,7 +15862,7 @@ d = 0.9790
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[188]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Media poblacional y Desviación estándar poblacional</span>
@@ -15892,7 +15968,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[189]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tasa de fallas (fallas/día)</span>
@@ -15984,7 +16060,7 @@ Disponibilidad promedio: 0.833
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[190]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de cada medida</span>
@@ -16083,7 +16159,7 @@ La medida más efectiva: Medida 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[191]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de días de fallo</span>
@@ -16177,7 +16253,7 @@ La medida más efectiva: Medida 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[192]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tiempo de fallo</span>
@@ -16281,7 +16357,7 @@ Intervalo de confianza: (192.8, 1550.7) horas
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[193]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tiempo de fallo</span>
@@ -16354,7 +16430,7 @@ Intervalo de confianza: (183.6, 1477.2) horas
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[194]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -16392,7 +16468,7 @@ Intervalo de confianza: (183.6, 1477.2) horas
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[195]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 対象のURL</span>
@@ -16436,7 +16512,7 @@ Intervalo de confianza: (183.6, 1477.2) horas
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1UA6RTUM_auXOPxphiJlmE_VWStIpKmHT
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-個人用/Documenten/Python/QCKentei/Graph3/Fig_16_1.png
-100%|██████████| 15.9k/15.9k [00:00&lt;00:00, 166kB/s]
+100%|██████████| 15.9k/15.9k [00:00&lt;00:00, 3.54MB/s]
 </pre>
 </div>
 </div>
@@ -16467,7 +16543,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[196]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 対象のURL</span>
@@ -16511,7 +16587,7 @@ class="
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1hUt5OUkcIvCw2vWzD_JJzokzLBbhySJe
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-個人用/Documenten/Python/QCKentei/Graph3/Fig16_2.png
-100%|██████████| 32.6k/32.6k [00:00&lt;00:00, 435kB/s]
+100%|██████████| 32.6k/32.6k [00:00&lt;00:00, 3.55MB/s]
 </pre>
 </div>
 </div>
@@ -16542,7 +16618,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[197]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-11.ipynb&#39;</span>
@@ -16571,7 +16647,7 @@ class="
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei1-11.ipynb to html
-[NbConvertApp] Writing 980435 bytes to QCKentei1-11.html
+[NbConvertApp] Writing 980366 bytes to QCKentei1-11.html
 </pre>
 </div>
 </div>

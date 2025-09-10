@@ -14580,6 +14580,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="An%C3%A1lisis-de-correlaci%C3%B3n-y-An%C3%A1lisis-de-regresi%C3%B3n">An&#225;lisis de correlaci&#243;n y An&#225;lisis de regresi&#243;n<a class="anchor-link" href="#An%C3%A1lisis-de-correlaci%C3%B3n-y-An%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h1><p>El análisis de correlación y el análisis de regresión son dos de los métodos más representativos en el control de calidad para analizar la relación entre dos o más conjuntos de datos emparejados.</p>
+<p>En este capítulo aprenderás sobre el análisis de correlación y el análisis de regresión, y deberás ser capaz de realizar lo siguiente:</p>
+<ul>
+<li>Prueba y estimación del coeficiente de correlación poblacional.</li>
+<li>Prueba y estimación de los parámetros de regresión del análisis de regresión simple.</li>
+<li>Análisis de regresión simple en casos con repeticiones.</li>
+<li>Estimación de la ecuación de regresión múltiple.</li>
+<li>Prueba y estimación de los parámetros de regresión del análisis de regresión múltiple.</li>
+<li>Comprender el diagnóstico de regresión y el enfoque de selección de variables.</li>
+<li>Comprender varias ecuaciones de regresión.</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1FbThIWZKSdstIa0ed2Sv7WmiFz9Wm1TT/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14589,7 +14600,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[293]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[208]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ensure_and_move_to_folder</span><span class="p">(</span><span class="n">folder_name</span><span class="p">):</span>
@@ -14615,7 +14626,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[294]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[209]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
@@ -14664,7 +14675,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[295]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[210]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14705,7 +14716,7 @@ El <strong>coeficiente de correlación</strong> se emplea como un indicador para
 <li><p>$ S_{xy} = \sum xy  - \frac{1}{n} \sum x \times \sum y $</p>
 </li>
 </ul>
-<p>En contraste, el coeficiente de correlación de una población se denomina coeficiente de correlación poblacional (se utiliza el simpolo $ \rho $)</p>
+<p>En contraste, el coeficiente de correlación de una población se denomina coeficiente de correlación poblacional (se utiliza el simbolo $ \rho $)</p>
 <h3 id="(2)-Prueba-de-no-correlaci%C3%B3n">(2) Prueba de no correlaci&#243;n<a class="anchor-link" href="#(2)-Prueba-de-no-correlaci%C3%B3n">&#182;</a></h3><p>La prueba de no correlación (o prueba de ausencia de correlación) es un test que se realiza para verificar si el coeficiente de correlación poblacional $ \rho $ es cero.</p>
 <ol>
 <li>Calcular el coeficiente de correlación muestral r.</li>
@@ -14745,6 +14756,7 @@ El <strong>coeficiente de correlación</strong> se emplea como un indicador para
 <li><p>$ \rho_L = tanh(Z_L) $</p>
 </li>
 </ul>
+<p><a href="https://drive.google.com/file/d/19lO2Ld5lDsA30n4sRIRS_Dwpi-cRGt1X/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -14790,7 +14802,7 @@ El <strong>coeficiente de correlación</strong> se emplea como un indicador para
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[296]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[211]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gspread</span> 
@@ -14858,7 +14870,7 @@ El <strong>coeficiente de correlación</strong> se emplea como un indicador para
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[296]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[211]:</div>
 
 
 
@@ -15092,7 +15104,7 @@ El <strong>coeficiente de correlación</strong> se emplea como un indicador para
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[297]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[212]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">])</span>
@@ -15158,7 +15170,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[298]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[213]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">]</span>
@@ -15256,7 +15268,7 @@ r = 0.818
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[299]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[214]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># t0</span>
@@ -15314,7 +15326,7 @@ r = 0.818
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[300]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[215]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">inverse_tanh</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
@@ -15409,7 +15421,7 @@ r = 0.818
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[301]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[216]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calcula el coeficiente de correlación y el valor p</span>
@@ -15470,26 +15482,33 @@ r = 0.818
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="09-02-An%C3%A1lisis-de-regresi%C3%B3n-simple">09-02 An&#225;lisis de regresi&#243;n simple<a class="anchor-link" href="#09-02-An%C3%A1lisis-de-regresi%C3%B3n-simple">&#182;</a></h1><h4 id="1.-An%C3%A1lisis-de-regresi%C3%B3n">1. An&#225;lisis de regresi&#243;n<a class="anchor-link" href="#1.-An%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h4><p><strong>Análisis de regresión</strong> es una técnica para explicar, predecir y controlar las relaciones entre múltiples variables.
+<h1 id="09-02-An%C3%A1lisis-de-regresi%C3%B3n-simple">09-02 An&#225;lisis de regresi&#243;n simple<a class="anchor-link" href="#09-02-An%C3%A1lisis-de-regresi%C3%B3n-simple">&#182;</a></h1><p>単回帰分析</p>
+<h4 id="1.-An%C3%A1lisis-de-regresi%C3%B3n">1. An&#225;lisis de regresi&#243;n<a class="anchor-link" href="#1.-An%C3%A1lisis-de-regresi%C3%B3n">&#182;</a></h4><p><strong>Análisis de regresión</strong> es una técnica para explicar, predecir y controlar las relaciones entre múltiples variables.
 Cuando se asume una relación causal, la variable que es la causa se denomina <strong>Variable explicativa</strong> o  <strong>Variable independiente</strong>
 La variable resultante se denomina <strong>Variable dependiente</strong> o  <strong>Variable dependiente</strong>.</p>
 <p>El <strong>análisis de regresión simple</strong> es un tipo de análisis de regresión que involucra una única <strong>variable explicativa</strong> y una única <strong>variable de respuesta</strong>.</p>
 <p>$ y_i = \mu_i + \epsilon_i = \beta_0 + \beta_1 x_i + \epsilon_i $</p>
 <p>Se asume que el error $ \epsilon $ cumple las siguientes cuatro suposiciones:</p>
 <ol>
-<li>Insesgadez: $ E(\epsilon_i) = 0 $</li>
-<li>Homocedasticidad: $ V(\epsilon_i) = \sigma^2 $</li>
-<li>Independencia: $ Cov(\epsilon_i, \epsilon_j) = 0, i \ne j $</li>
-<li>Normalidad: Sigue una distribución normal.</li>
+<li>Insesgadez: $ E(\epsilon_i) = 0 $
+不偏性</li>
+<li>Homocedasticidad: $ V(\epsilon_i) = \sigma^2 $
+等分散性</li>
+<li>Independencia: $ Cov(\epsilon_i, \epsilon_j) = 0, i \ne j $
+独立性</li>
+<li>Normalidad: Sigue una distribución normal.
+正規性</li>
 </ol>
-<p>$ \beta_0 $ se denomina <strong>intersección</strong> y $ \beta_1 $ se conoce como <strong>coeficiente de regresión</strong>. Ambos $ \beta_0 $ y $ \beta_1 $, también se llaman <strong>parámetros de regresión</strong>. Además la línea que se dibuja con $ E(y) = \mu - \beta_0 + \beta_1 x $ se denomina <strong>línea de regresión</strong>.</p>
-<p>El <strong>método de minimos cuadrados</strong> es un método de cálculo que minimiza la suma de los cuadrados de los residuos (suma de los cuadrados de los errores) de la ecuación de regresión.</p>
+<p>$ \beta_0 $ se denomina <strong>intersección</strong> 切片 y $ \beta_1 $ se conoce como <strong>coeficiente de regresión</strong> 回帰係数.
+Ambos $ \beta_0 $ y $ \beta_1 $, también se llaman <strong>parámetros de regresión</strong> 回帰母数. Además la línea que se dibuja con $ E(y) = \mu - \beta_0 + \beta_1 x $ se denomina <strong>línea de regresión</strong> 回帰直線.</p>
+<p>El <strong>método de mínimos cuadrados</strong> 最小二乗法 es un método de cálculo que minimiza la suma de los cuadrados de los residuos (suma de los cuadrados de los errores) de la ecuación de regresión.</p>
 <ul>
 <li><p>$ \hat{\beta}_1 = S_{xy}/S_{xx} $</p>
 </li>
 <li><p>$ \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} = \bar{y} - (S_{xy}/S_{xx}) \bar{x} $</p>
 </li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1oqqF6CIu5BnUkGeaKplIRDb4e9IorLLc/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -15506,6 +15525,7 @@ La variable resultante se denomina <strong>Variable dependiente</strong> o  <str
 <p>Suma de cuadrados total $ ST: \sum(y_i - \bar{y})^2 = S_{yy}$</p>
 <p>Suma de Cuadrados de la Regresión $ SR: \sum(\hat{y} - \bar{y})^2 = \beta_1^2 S_{xx} = S_{xy}^2 / S_{xx} $</p>
 <p>Suma de Cuadrados de los Residuao $ SE: \sum(y_i - \hat{y})^2 = S_{yy} - S_{xy}^2 / S_{xx} $</p>
+<p><a href="https://drive.google.com/file/d/1E9Qnd6Ci2UezvZbjzlzZpyI6W3k9kqBo/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -15515,7 +15535,7 @@ La variable resultante se denomina <strong>Variable dependiente</strong> o  <str
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[302]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[217]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
@@ -15563,9 +15583,11 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Utilizando estos elementos, se puede crear una tabla de análisis de varianza (ANOVA) y emplear la prueba F para determinar si la regresión es estadisticamente significativa.</p>
-<p><strong>Coeficiente de determinación</strong></p>
+<p>Utilizando estos elementos, se puede crear una tabla de análisis de varianza (ANOVA) y emplear la prueba F para determinar si la regresión es estadísticamente significativa.</p>
+<p><strong>Coeficiente de determinación</strong>
+寄与率</p>
 <p>$ R^2 = R_R / S_T = r_{xy}^2 $</p>
+<p><a href="https://drive.google.com/file/d/1_qbkbwJWb7OeVtkv-1gspZ4zhEatQh_P/view?usp=drive_link">Audio_5</a></p>
 
 </div>
 </div>
@@ -15612,7 +15634,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[303]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[218]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_by_key</span><span class="p">(</span><span class="n">SPREADSHEET_ID</span><span class="p">)</span><span class="o">.</span><span class="n">worksheet</span><span class="p">(</span><span class="s2">&quot;Sheet2&quot;</span><span class="p">)</span> <span class="c1"># 最初のシートを取得</span>
@@ -15668,7 +15690,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[303]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[218]:</div>
 
 
 
@@ -15949,7 +15971,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[304]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[219]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_of_squares</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -16011,7 +16033,7 @@ Sxy = 447.12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[305]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[220]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_of_squares</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -16087,7 +16109,7 @@ Sxy = 447.12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[306]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[221]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">beta_1</span> <span class="o">=</span> <span class="n">Sxy</span><span class="o">/</span><span class="n">Sxx2</span>
@@ -16142,7 +16164,7 @@ beta_0 = -31.813
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[307]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[222]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -16203,8 +16225,8 @@ Resultados del análisis de regresión:
 Dep. Variable:                      y   R-squared:                       0.470
 Model:                            OLS   Adj. R-squared:                  0.446
 Method:                 Least Squares   F-statistic:                     20.36
-Date:                Thu, 10 Jul 2025   Prob (F-statistic):           0.000157
-Time:                        18:09:36   Log-Likelihood:                -69.276
+Date:                Tue, 09 Sep 2025   Prob (F-statistic):           0.000157
+Time:                        18:21:50   Log-Likelihood:                -69.276
 No. Observations:                  25   AIC:                             142.6
 Df Residuals:                      23   BIC:                             145.0
 Df Model:                           1                                         
@@ -16399,7 +16421,7 @@ Intervalo de confianza del 95% para los coeficientes.</li>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[308]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[223]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
@@ -16466,7 +16488,7 @@ Ecuación de regresión: y = -31.813 + 0.740X
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[309]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[224]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calcular manualmente el análisis de varianza</span>
@@ -16548,7 +16570,7 @@ Coeficiente de determinaci:on R^2: 0.470
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[310]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[225]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -16591,14 +16613,18 @@ Coeficiente de correlacion: 0.685
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Pruebas-y-estimaciones-de-los-par%C3%A1metros-de-regresi%C3%B3n">Pruebas y estimaciones de los par&#225;metros de regresi&#243;n<a class="anchor-link" href="#Pruebas-y-estimaciones-de-los-par%C3%A1metros-de-regresi%C3%B3n">&#182;</a></h2><h3 id="(1)-Prueba-de-los-par%C3%A1metros-de-regresi%C3%B3n">(1) Prueba de los par&#225;metros de regresi&#243;n<a class="anchor-link" href="#(1)-Prueba-de-los-par%C3%A1metros-de-regresi%C3%B3n">&#182;</a></h3><p>El objetivo de la prueba.</p>
+<h2 id="2.-Pruebas-y-estimaciones-de-los-par%C3%A1metros-de-regresi%C3%B3n">2. Pruebas y estimaciones de los par&#225;metros de regresi&#243;n<a class="anchor-link" href="#2.-Pruebas-y-estimaciones-de-los-par%C3%A1metros-de-regresi%C3%B3n">&#182;</a></h2><p>回帰母数に関する検定と推定</p>
+<h3 id="(1)-Prueba-de-los-par%C3%A1metros-de-regresi%C3%B3n">(1) Prueba de los par&#225;metros de regresi&#243;n<a class="anchor-link" href="#(1)-Prueba-de-los-par%C3%A1metros-de-regresi%C3%B3n">&#182;</a></h3><p>回帰母数の検定</p>
+<p>El objetivo de la prueba.</p>
 <ol>
-<li>Si $ \beta_1 $ es igual a cero (prueba de la hipótesis nula=.</li>
-<li>¿Es $ \beta_1 $ diferente de un valor especifico $ \beta_{10} $?</li>
-<li>¿Es $ \beta_0 $ diferente de un valor especifico $ \beta_{00} $?</li>
-<li>¿Es $ \beta_0 $ diferente de un valor especifico $ \beta_{00} $ cuando $ x = \bar{x} $</li>
+<li>Si $ \beta_1 $ es igual a cero (prueba de la hipótesis nula).</li>
+<li>¿Es $ \beta_1 $ diferente de un valor específico $ \beta_{10} $?</li>
+<li>¿Es $ \beta_0 $ diferente de un valor específico $ \beta_{00} $?</li>
+<li>¿Es $ \beta_0 $ diferente de un valor específico $ \beta_{00} $ cuando $ x = \bar{x} $</li>
 </ol>
-<h3 id="(2)-Estimaci%C3%B3n-de-los-par%C3%A1metros-de-regresi%C3%B3n,-estimaci%C3%B3n-por-intervalo-de-la-regresi%C3%B3n-poblacional-y-predicci%C3%B3n-de-datos.">(2) Estimaci&#243;n de los par&#225;metros de regresi&#243;n, estimaci&#243;n por intervalo de la regresi&#243;n poblacional y predicci&#243;n de datos.<a class="anchor-link" href="#(2)-Estimaci%C3%B3n-de-los-par%C3%A1metros-de-regresi%C3%B3n,-estimaci%C3%B3n-por-intervalo-de-la-regresi%C3%B3n-poblacional-y-predicci%C3%B3n-de-datos.">&#182;</a></h3><p>La anchura de la estimación por intervalo de la regresión poblacional varía de x especificado $ x_0 $. Tiene la propiedad de ser minima cuando $ x_0 = \bar{x} $ y de aumentar a medida que $ x_0 $ se aleja de $ \bar{x} $.</p>
+<h3 id="(2)-Estimaci%C3%B3n-de-los-par%C3%A1metros-de-regresi%C3%B3n,-estimaci%C3%B3n-por-intervalo-de-la-regresi%C3%B3n-poblacional-y-predicci%C3%B3n-de-datos.">(2) Estimaci&#243;n de los par&#225;metros de regresi&#243;n, estimaci&#243;n por intervalo de la regresi&#243;n poblacional y predicci&#243;n de datos.<a class="anchor-link" href="#(2)-Estimaci%C3%B3n-de-los-par%C3%A1metros-de-regresi%C3%B3n,-estimaci%C3%B3n-por-intervalo-de-la-regresi%C3%B3n-poblacional-y-predicci%C3%B3n-de-datos.">&#182;</a></h3><p>回帰母数の推定、母回帰の区間推定、データ予測</p>
+<p>La anchura de la estimación por intervalo de la regresión poblacional varía de x especificado $ x_0 $. Tiene la propiedad de ser mínima cuando $ x_0 = \bar{x} $ y de aumentar a medida que $ x_0 $ se aleja de $ \bar{x} $.</p>
+<p><a href="https://drive.google.com/file/d/1YH6Ui_pJVqFaSwjTS_584A1y0g39Il6N/view?usp=drive_link">Audio_6</a></p>
 
 </div>
 </div>
@@ -16659,7 +16685,7 @@ Coeficiente de correlacion: 0.685
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[311]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">t</span>
@@ -16743,7 +16769,7 @@ Se rechaza la hipótesis nula: β₀ es diferente de 0.30
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[312]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">beta_0_hypothesis</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Valor que se desea contrastar</span>
@@ -16826,7 +16852,7 @@ Rechazamos la hipótesis nula:  β₀ es diferente de 0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[313]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[228]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">conf_int_beta</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">conf_int</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>  <span class="c1"># Intervalo de confiaza del 95%.</span>
@@ -16883,7 +16909,7 @@ x       0.400513  1.078646
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[314]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[229]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configurar la columna de la intersección y x=75.</span>
@@ -16947,7 +16973,7 @@ Intervalo de confianza: [21.45, 25.86]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[315]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[230]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># obtener los coeficientes de regresióon</span>
@@ -17028,7 +17054,8 @@ Intervalo de confianza del 95% para x = 80 : [18.531, 36.176]
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3.-An%C3%A1lisis-de-regresi%C3%B3n-simple-con-repeticiones">3. An&#225;lisis de regresi&#243;n simple con repeticiones<a class="anchor-link" href="#3.-An%C3%A1lisis-de-regresi%C3%B3n-simple-con-repeticiones">&#182;</a></h2><p>Con repeticiones significa que existen múltiples valores de $ y $ para un $ x $ específico.
+<h2 id="3.-An%C3%A1lisis-de-regresi%C3%B3n-simple-con-repeticiones">3. An&#225;lisis de regresi&#243;n simple con repeticiones<a class="anchor-link" href="#3.-An%C3%A1lisis-de-regresi%C3%B3n-simple-con-repeticiones">&#182;</a></h2><p>くり返しのある場合の単回帰分析</p>
+<p>Con repeticiones significa que existen múltiples valores de $ y $ para un $ x $ específico.
 Tener repeticiones permite estimar el error dentro de los niveles (o dentro de los grupos). Este tipo de análisis de regresión simple se denomina análisis de regresión simple con repeticiones.</p>
 <p>A la variación dentro del mismo nivel se le denomina <strong>variación intraclase</strong> (o variación dentro de los grupos) y su suma de cuadrados se escribe como $ S_E $. A la variación entre niveles se le denomina <strong>variación interclase</strong> (o variación entre los grupos) y su suma de cuadrados se escribe como $ S_A $.</p>
 <p>Cuando la <strong>suma de cuadrados de los residuos</strong> es $ S_R $ y la <strong>suma de cuadrados de la regresión</strong> es $ S_e $.</p>
@@ -17039,6 +17066,7 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 <p>En el modelo de regresión simple, se establece la suposición de que la media poblacional de cada nivel se expresa mediante una ecuación lineal de $ x $.</p>
 <p>Podemos determinar si es apropiado asumir un <strong>modelo de regresión simple</strong> para los datos dados a partir de la <strong>suma de cuadrados de la falta de ajuste</strong>.</p>
 <p>En el análisis de regresión simple con repeticiones, al crear una tabla ANOVA como la Tabla 9.7., es posible realizar pruebas para la variación entre niveles y la falta de ajuste. Si la falta de ajuste no es significativa y el valor de $ F_0 $ es pequeño, se agrupa con el error para realizar la prueba de regresión lineal.</p>
+<p><a href="https://drive.google.com/file/d/1fWLV-_V9e71WjxAx4NMKImBTbPyomJmp/view?usp=drive_link">Audio_7</a></p>
 
 </div>
 </div>
@@ -17061,7 +17089,7 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[316]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[231]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Obtener los datos (como lista)</span>
@@ -17091,7 +17119,7 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[317]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[232]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># xでグループ化し、各グループをリストにして列にする</span>
@@ -17151,7 +17179,7 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[318]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[233]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#</span>
@@ -17224,12 +17252,30 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[234]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">anova</span> <span class="c1"># type: ignore</span>
+<span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">anova</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">anova</span> <span class="kn">import</span> <span class="n">Anova66</span> <span class="c1"># type: ignore</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[319]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[235]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">anova</span> <span class="o">=</span> <span class="n">Anova66</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -17360,7 +17406,7 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[320]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[236]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">anova</span> <span class="o">=</span> <span class="n">Anova66</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -17493,7 +17539,7 @@ Tener repeticiones permite estimar el error dentro de los niveles (o dentro de l
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[321]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[237]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;y ~ x&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
@@ -17540,7 +17586,7 @@ Residual  13.0   370.4    28.492308        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[322]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[238]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;C&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
@@ -17589,7 +17635,7 @@ Residual  10.0   350.0     35.0        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[323]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[239]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.formula.api</span> <span class="kn">import</span> <span class="n">mixedlm</span>
@@ -17679,7 +17725,7 @@ Group 5: -0.002865
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[324]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[240]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del valor predicho</span>
@@ -17739,7 +17785,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[325]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[241]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span>
@@ -17797,8 +17843,8 @@ Resultados del análisis de regresión:
 Dep. Variable:                      y   R-squared:                       0.831
 Model:                            OLS   Adj. R-squared:                  0.818
 Method:                 Least Squares   F-statistic:                     64.06
-Date:                Thu, 10 Jul 2025   Prob (F-statistic):           2.22e-06
-Time:                        18:09:37   Log-Likelihood:                -45.333
+Date:                Tue, 09 Sep 2025   Prob (F-statistic):           2.22e-06
+Time:                        18:21:51   Log-Likelihood:                -45.333
 No. Observations:                  15   AIC:                             94.67
 Df Residuals:                      13   BIC:                             96.08
 Df Model:                           1                                         
@@ -17863,7 +17909,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="09-03-Regresi%C3%B3n-m%C3%BAltiple">09-03 Regresi&#243;n m&#250;ltiple<a class="anchor-link" href="#09-03-Regresi%C3%B3n-m%C3%BAltiple">&#182;</a></h1><h2 id="1.-Regresi%C3%B3n-m%C3%BAltiple">1. Regresi&#243;n m&#250;ltiple<a class="anchor-link" href="#1.-Regresi%C3%B3n-m%C3%BAltiple">&#182;</a></h2><p>$ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p + \epsilon $</p>
+<h1 id="09-03-Regresi%C3%B3n-m%C3%BAltiple">09-03 Regresi&#243;n m&#250;ltiple<a class="anchor-link" href="#09-03-Regresi%C3%B3n-m%C3%BAltiple">&#182;</a></h1><p>重回帰分析</p>
+<h2 id="1.-Regresion-m%C3%BAltiple">1. Regresion m&#250;ltiple<a class="anchor-link" href="#1.-Regresion-m%C3%BAltiple">&#182;</a></h2><p>La <strong>regresión múltiple</strong> es un tipo de regresión que utiliza <strong>múltiples variables explicativas</strong> para predecir una única <strong>variable dependiente</strong>.</p>
+<p>$ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p + \epsilon $</p>
 <p>$ \beta_0 $ : término constante</p>
 <p>$ \beta_1, \beta_2, .. \beta_p $: coeficiente de regresión parcial</p>
 <ul>
@@ -17871,6 +17919,7 @@ jp-needs-light-background
 <li>Tasa de contribución</li>
 <li>Tasa de contribución ajustada por los grados de libertad</li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1bwq3tNo2Kud5aoHcKy3CCZmxVBC5FA67/view?usp=drive_link">Audio_8</a></p>
 
 </div>
 </div>
@@ -17903,7 +17952,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[326]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[242]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Obtener los datos (como lista)</span>
@@ -17936,7 +17985,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[327]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[243]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -17965,7 +18014,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[328]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[244]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_formatted</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -18002,7 +18051,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[328]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[244]:</div>
 
 
 
@@ -18328,7 +18377,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[329]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[245]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">pearsonr</span>
@@ -18434,8 +18483,8 @@ Partial correlation between x2 and y controlling for x1: -0.757
 Dep. Variable:                      y   R-squared:                       0.600
 Model:                            OLS   Adj. R-squared:                  0.553
 Method:                 Least Squares   F-statistic:                     12.77
-Date:                Thu, 10 Jul 2025   Prob (F-statistic):           0.000412
-Time:                        18:09:38   Log-Likelihood:                -49.120
+Date:                Tue, 09 Sep 2025   Prob (F-statistic):           0.000412
+Time:                        18:21:52   Log-Likelihood:                -49.120
 No. Observations:                  20   AIC:                             104.2
 Df Residuals:                      17   BIC:                             107.2
 Df Model:                           2                                         
@@ -18479,7 +18528,7 @@ Notes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[330]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[246]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Regression coefficients</span>
@@ -18550,7 +18599,7 @@ Multiple regression equation: y = 46.810 + 0.796*x1 + -1.024*x2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[331]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[247]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># DataFrame形式のANOVA表を作成</span>
@@ -18685,19 +18734,10 @@ Adjusted coefficient of determination: 0.553
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Pruebas-y-estimaciones-sobre-los-par%C3%A1metros-de-regresi%C3%B3n">Pruebas y estimaciones sobre los par&#225;metros de regresi&#243;n<a class="anchor-link" href="#Pruebas-y-estimaciones-sobre-los-par%C3%A1metros-de-regresi%C3%B3n">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.-Pruebas-y-estimaciones-sobre-los-par%C3%A1metros-de-regresi%C3%B3n">2. Pruebas y estimaciones sobre los par&#225;metros de regresi&#243;n<a class="anchor-link" href="#2.-Pruebas-y-estimaciones-sobre-los-par%C3%A1metros-de-regresi%C3%B3n">&#182;</a></h2><p>En la regresión múltiple, la prueba y estimación son las mismas que en la regresión simple cuando no se considera la influencia de otras variables.</p>
-<p>Para la predicción de la ecuación de regresión, se utiliza la <strong>distancia generalizada de Mahalanobis</strong>.</p>
+<h2 id="2.-Pruebas-y-estimaciones-sobre-los-par%C3%A1metros">2. Pruebas y estimaciones sobre los par&#225;metros<a class="anchor-link" href="#2.-Pruebas-y-estimaciones-sobre-los-par%C3%A1metros">&#182;</a></h2><p>回帰母数に関する検定と推定</p>
+<p>En la regresión múltiple, la prueba y estimación son las mismas que en la regresión simple cuando no se considera la influencia de otras variables.</p>
+<p>Para la predicción de la ecuación de regresión, se utiliza la <strong>distancia generalizada de Mahalanobis</strong> マハラノビスの汎距離.</p>
+<p><a href="https://drive.google.com/file/d/1dYEXPVROkpDcYw9uQMg-ELFnFjHKmJvt/view?usp=drive_link">Audio_9</a></p>
 
 </div>
 </div>
@@ -18728,7 +18768,7 @@ Adjusted coefficient of determination: 0.553
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[332]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[248]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -18800,8 +18840,8 @@ Adjusted coefficient of determination: 0.553
 Dep. Variable:                      y   R-squared:                       0.600
 Model:                            OLS   Adj. R-squared:                  0.553
 Method:                 Least Squares   F-statistic:                     12.77
-Date:                Thu, 10 Jul 2025   Prob (F-statistic):           0.000412
-Time:                        18:09:38   Log-Likelihood:                -49.120
+Date:                Tue, 09 Sep 2025   Prob (F-statistic):           0.000412
+Time:                        18:21:52   Log-Likelihood:                -49.120
 No. Observations:                  20   AIC:                             104.2
 Df Residuals:                      17   BIC:                             107.2
 Df Model:                           2                                         
@@ -18849,7 +18889,7 @@ Agregar x1 al modelo es significativo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[333]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># x1 の t値を取り出す</span>
@@ -18905,7 +18945,7 @@ x1: Value p: 0.021
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[334]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Obtener el coeficiente β1 de x1 y su error estándar</span>
@@ -18970,7 +19010,7 @@ x1: Value p: 0.021
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[335]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calcular el valor de y cuando x1 = 30, x2 = 10</span>
@@ -19061,7 +19101,7 @@ Intervalo de confianza del 95%: [51.723 - 69.157]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[336]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -19195,7 +19235,7 @@ Curtosis: -0.436
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[337]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
@@ -19265,7 +19305,7 @@ p-value: 0.243
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[338]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.stats.stattools</span> <span class="kn">import</span> <span class="n">durbin_watson</span>
@@ -19376,7 +19416,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[339]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="kn">import</span> <span class="n">mahalanobis</span>
@@ -19468,7 +19508,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[340]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data</span>
@@ -19552,7 +19592,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[341]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.stats.outliers_influence</span> <span class="kn">import</span> <span class="n">variance_inflation_factor</span>
@@ -19683,7 +19723,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[342]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># スプレッドシートを開く（URLまたはスプレッドシートIDを使用）</span>
@@ -19802,7 +19842,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[343]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">anova</span> <span class="c1"># type: ignore</span>
@@ -19843,7 +19883,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[343]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
@@ -19937,7 +19977,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[344]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">anova</span> <span class="o">=</span> <span class="n">Anova77</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -20054,7 +20094,7 @@ El nuevo punto de datos está dentro del intervalo de confianza del 95%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[345]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span>
@@ -20185,7 +20225,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[346]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
@@ -20236,7 +20276,7 @@ Residual  8.0  21.333333   2.666667        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[347]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;y ~ x&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
@@ -20283,7 +20323,7 @@ Residual  10.0  24.400000   2.440000        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[348]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-9.ipynb&#39;</span>
@@ -20312,7 +20352,7 @@ Residual  10.0  24.400000   2.440000        NaN       NaN
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei1-9.ipynb to html
-[NbConvertApp] Writing 1263946 bytes to QCKentei1-9.html
+[NbConvertApp] Writing 1263012 bytes to QCKentei1-9.html
 </pre>
 </div>
 </div>
@@ -20326,7 +20366,7 @@ Residual  10.0  24.400000   2.440000        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[349]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -20364,7 +20404,7 @@ Residual  10.0  24.400000   2.440000        NaN       NaN
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[350]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span><span class="o">=</span> <span class="s1">&#39;https://drive.google.com/file/d/1Z_fMH2HSQxGAt12XlDOtGaFK-_3TRJQw/view?usp=drive_link&#39;</span>
@@ -20406,7 +20446,7 @@ Residual  10.0  24.400000   2.440000        NaN       NaN
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1Z_fMH2HSQxGAt12XlDOtGaFK-_3TRJQw
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-個人用/Documenten/Python/QCKentei/Graph3/Fig9_2.png
-100%|██████████| 48.4k/48.4k [00:00&lt;00:00, 2.94MB/s]
+100%|██████████| 48.4k/48.4k [00:00&lt;00:00, 3.35MB/s]
 </pre>
 </div>
 </div>
@@ -20430,6 +20470,54 @@ class="
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

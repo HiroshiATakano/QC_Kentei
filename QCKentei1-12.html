@@ -14580,6 +14580,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Dise%C3%B1o-de-par%C3%A1metros-robustos">Dise&#241;o de par&#225;metros robustos<a class="anchor-link" href="#Dise%C3%B1o-de-par%C3%A1metros-robustos">&#182;</a></h1><p>El método Taguchi (ingeniería de calidad), que se desarrolló a partir del diseño de experimentos para el control de calidad, tiene como técnica central parámetros. Este método es una de las herramientas más efectivas para reducir las repeticiones en el diseño y suprimir varios costos, ya que permite incorporar la calidad de antemano.</p>
+<p>En este capítulo, me gustaría que me expliques lo siguiente con respecto al diseño de parámetros:</p>
+<ul>
+<li>Un resumen y la forma de pensar sobre el diseño de parámetros.</li>
+<li>Los pasos para el diseño de parámetros de características estáticas.</li>
+<li>Los pasos para el diseño de parámetros de características dinámicas.</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/14310CVpjW6a4xtwh4NbwupZkQYF88a-g/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14591,18 +14598,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="12-1-Enfoque-del-dise%C3%B1o-de-par%C3%A1metros-robustos">12-1 Enfoque del dise&#241;o de par&#225;metros robustos<a class="anchor-link" href="#12-1-Enfoque-del-dise%C3%B1o-de-par%C3%A1metros-robustos">&#182;</a></h2><h3 id="1.-%C2%BFQu%C3%A9-es-el-dise%C3%B1o-de-par%C3%A1metros?">1. &#191;Qu&#233; es el dise&#241;o de par&#225;metros?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-el-dise%C3%B1o-de-par%C3%A1metros?">&#182;</a></h3><p>El diseño de parámetros es un método de diseño que evalúa la funcionalidad frente al ruido, minimiza los efectos del ruido tanto como sea posible y determina los valores de los parámetros del sistema para lograr la función deseada.</p>
-<p>El diseño de parámetros es la técnica central del <strong>método Taguchi</strong>, desarrollado y concebido por Genichi Taguchi a partir del diseño de experimentos. Este método Taguchi también es conocido como <strong>ingenieria de calidad</strong>.</p>
+<h2 id="12-1-Enfoque-del-dise%C3%B1o-de-par%C3%A1metros-robustos">12-1 Enfoque del dise&#241;o de par&#225;metros robustos<a class="anchor-link" href="#12-1-Enfoque-del-dise%C3%B1o-de-par%C3%A1metros-robustos">&#182;</a></h2><p>パラメータ設計の考え方</p>
+<h3 id="1.-%C2%BFQu%C3%A9-es-el-dise%C3%B1o-de-par%C3%A1metros?">1. &#191;Qu&#233; es el dise&#241;o de par&#225;metros?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-el-dise%C3%B1o-de-par%C3%A1metros?">&#182;</a></h3><p>El diseño de parámetros es un método de diseño que evalúa la funcionalidad frente al ruido, minimiza los efectos del ruido tanto como sea posible y determina los valores de los parámetros del sistema para lograr la función deseada.</p>
+<p>El diseño de parámetros es la técnica central del <strong>método Taguchi</strong>, desarrollado y concebido por Genichi Taguchi a partir del diseño de experimentos. Este método Taguchi también es conocido como <strong>ingeniería de calidad</strong>.</p>
 <p>El diseño de parámetros permite incorporar la calidad al reducir al máximo el impacto de diversas influencias (ruidos), incluso aquellas para las que no se pueden tomar medidas en situaciones reales. Por lo tanto, también se conoce como <strong>diseño robusto</strong>. ya que crea un diseño que es resistente a estos ruidos.</p>
-<h3 id="2.-Diferencias-entre-el-dise%C3%B1o-de-par%C3%A1metros-y-el-dise%C3%B1o-de-experimentos">2. Diferencias entre el dise&#241;o de par&#225;metros y el dise&#241;o de experimentos<a class="anchor-link" href="#2.-Diferencias-entre-el-dise%C3%B1o-de-par%C3%A1metros-y-el-dise%C3%B1o-de-experimentos">&#182;</a></h3><p>En el diseño de experimentos, se realiza una prueba estadística para identificar los factores que afectan los valores de las características y se ajustan los niveles de los factores para cumplir con los objetivos (valores).
+<h3 id="2.-Diferencias-entre-el-dise%C3%B1o-de-par%C3%A1metros-y-el-dise%C3%B1o-de-experimentos">2. Diferencias entre el dise&#241;o de par&#225;metros y el dise&#241;o de experimentos<a class="anchor-link" href="#2.-Diferencias-entre-el-dise%C3%B1o-de-par%C3%A1metros-y-el-dise%C3%B1o-de-experimentos">&#182;</a></h3><p>パラメータ設計と実験計画法の違い</p>
+<p>En el diseño de experimentos, se realiza una prueba estadística para identificar los factores que afectan los valores de las características y se ajustan los niveles de los factores para cumplir con los objetivos (valores).
 Por otro lado, el diseño de parámetros, que se desarrolló a partir del diseño de experimentos, no se enfoca en las pruebas estadísticas, sino que se centra en encontrar los parámetros de diseño que alteran la variabilidad de las características frente al ruido y establecer los valores de los parámetros que minimizan esa variabilidad.</p>
 <p>También hay una diferencia en cómo se manejan las interacciones entra los factores.
 En el diseño de experimentos, las interacciones entre factores también se consideran como causas de cambios en los valores de las características.
 Estas interacciones se asignan a tablas ortogonales y se evalúa estadísticamente la existencia de sus efectos.
-Por otro lado, en el diseño de parámetros, las interacciones entre los factores de control se ingnoran intencionalmente. La razón es que la optimización se vuelve difícil si existen interacciones entre estos factores.
+Por otro lado, en el diseño de parámetros, las interacciones entre los factores de control se ignoran intencionalmente. La razón es que la optimización se vuelve difícil si existen interacciones entre estos factores.
 Por lo tanto, en el diseño de parámetors, las interacciones no se asignan a tablas ortognales.
 Las interacciones entre factores de error y factores de control, o entre factores de error y factores de señal, se cuantifican y evalúan mediante una estadística llamada relación señal/ruido (<strong>SN</strong>).</p>
-<p>La <strong>relación señal/ruido</strong> (SN) es un valor que indica el grado de influencia del ruido en un producto o proceso. Se define como la relación entre la magnitud del efecto de la señal y la magnitud del efecto del ruido en la variación del valor de la característica.</p>
+<p>La <strong>relación señal/ruido</strong> (SN):SN比 es un valor que indica el grado de influencia del ruido en un producto o proceso. Se define como la relación entre la magnitud del efecto de la señal y la magnitud del efecto del ruido en la variación del valor de la característica.</p>
+<p><a href="https://drive.google.com/file/d/1aUOcDZn4SYFjJPNJY-H2p87XrIokLrJc/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -14614,35 +14624,43 @@ Las interacciones entre factores de error y factores de control, o entre factore
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.-Efectos-del-uso-del-dise%C3%B1o-de-par%C3%A1metros">3. Efectos del uso del dise&#241;o de par&#225;metros<a class="anchor-link" href="#3.-Efectos-del-uso-del-dise%C3%B1o-de-par%C3%A1metros">&#182;</a></h3><p>En el diseño de productos y procesos convencionales, primero se crea un prototio, producto o proceso de fabricación que alcanza los valores caracteristicos deseados, y luego se extraen los problemas de calidad para incorporarla. Esto a menudo lleva a un aumento de los costos.
+<h3 id="3.-Efectos-del-uso-del-dise%C3%B1o-de-par%C3%A1metros">3. Efectos del uso del dise&#241;o de par&#225;metros<a class="anchor-link" href="#3.-Efectos-del-uso-del-dise%C3%B1o-de-par%C3%A1metros">&#182;</a></h3><p>パラメータ設計を用いる効果</p>
+<p>En el diseño de productos y procesos convencionales, primero se crea un prototipo, producto o proceso de fabricación que alcanza los valores característicos deseados, y luego se extraen los problemas de calidad para incorporar la. Esto a menudo lleva a un aumento de los costos.
 Por otro lado, el diseño de parámetros permite incorporar la calidad de antemano.
-Esto se logra mediante la experimentación en la etapa de diseño para determinar los valores óptimos de los parámetors que pueden controlarse tecnológicamente (parámetros de diseño), lo que a su vez ayuda a prevenir problemas de calidad.
+Esto se logra mediante la experimentación en la etapa de diseño para determinar los valores óptimos de los parámetoros que pueden controlarse tecnológicamente (parámetros de diseño), lo que a su vez ayuda a prevenir problemas de calidad.
 Al mismo tiempo, permite suprimir al máximo  las repeticiones en el diseño, lo que aumenta la eficiencia del desarrollo.
 Por lo tanto, en comparación con el diseño de productos y procesos convencionales, es posible reducir los costos en varios aspectos.</p>
-<h3 id="4.-Enfoque-del-dise%C3%B1o-de-par%C3%A1metors">4. Enfoque del dise&#241;o de par&#225;metors<a class="anchor-link" href="#4.-Enfoque-del-dise%C3%B1o-de-par%C3%A1metors">&#182;</a></h3><p>En enfoque del diseño de parámetoros a menudo se entiende a través de lo que se conoce como <strong>sistemas de ingeniería</strong> (engineered systems).</p>
-<p>Un sistema de ingenieria (engineered system) se compone de cuatro elementos:</p>
+<h3 id="4.-Enfoque-del-dise%C3%B1o-de-par%C3%A1metoros">4. Enfoque del dise&#241;o de par&#225;metoros<a class="anchor-link" href="#4.-Enfoque-del-dise%C3%B1o-de-par%C3%A1metoros">&#182;</a></h3><p>パラメータ設計の考え方</p>
+<p>En enfoque del diseño de parámetros a menudo se entiende a través de lo que se conoce como <strong>sistemas de ingeniería</strong> (engineered systems).</p>
+<p>Un sistema de ingeniería (engineered system) se compone de cuatro elementos:</p>
 <ul>
 <li>señal de entrada</li>
-<li>caracteristicas de salida</li>
-<li>parámetors de diseño</li>
+<li>características de salida</li>
+<li>parámetros de diseño</li>
 <li>ruido</li>
 </ul>
 <p>Aquí, es crucial diferenciar entre los parámetros de diseño (factores de control) que pueden ser controlados tecnológicamente, y el ruido (factores de error), que no puede serlo.</p>
 <p>Se llama <strong>robustez</strong> de la relación de entrada y salida al grado de resistencia frente al ruido en la relación entre entrada y salida.</p>
-<h3 id="5.-Enfoque-de-la-funci%C3%B3n-b%C3%A1sica-y-funci%C3%B3n-ideal-en-el-dise%C3%B1o-de-par%C3%A1metros">5. Enfoque de la funci&#243;n b&#225;sica y funci&#243;n ideal en el dise&#241;o de par&#225;metros<a class="anchor-link" href="#5.-Enfoque-de-la-funci%C3%B3n-b%C3%A1sica-y-funci%C3%B3n-ideal-en-el-dise%C3%B1o-de-par%C3%A1metros">&#182;</a></h3><p><strong>Función objetivo</strong>: Se refiere a las funciones y rendimientos requeridos por los técnicos o usuarios, y siempre tiene un <strong>valor objetivo</strong>.</p>
+<h3 id="5.-Enfoque-de-la-funci%C3%B3n-b%C3%A1sica-y-funci%C3%B3n-ideal-en-el-dise%C3%B1o-de-par%C3%A1metros">5. Enfoque de la funci&#243;n b&#225;sica y funci&#243;n ideal en el dise&#241;o de par&#225;metros<a class="anchor-link" href="#5.-Enfoque-de-la-funci%C3%B3n-b%C3%A1sica-y-funci%C3%B3n-ideal-en-el-dise%C3%B1o-de-par%C3%A1metros">&#182;</a></h3><p>パラメータ設計における目的機能、基本機能、理想機能の考え方</p>
+<p><strong>Función objetivo</strong>: Se refiere a las funciones y rendimientos requeridos por los técnicos o usuarios, y siempre tiene un <strong>valor objetivo</strong>.</p>
 <p><strong>Función básica</strong>: Se refiere a los principios naturales, fenómenos o las propiedades de los materiales que los técnicos utilizan para lograr el valor objetivo de la función objetivo.</p>
 <p><strong>Función ideal</strong>: Se refiere a la relación ideal entre la entrada y la salida.</p>
-<h3 id="6.-Factores-utilizados-en-el-dise%C3%B1o-de-par%C3%A1metros">6. Factores utilizados en el dise&#241;o de par&#225;metros<a class="anchor-link" href="#6.-Factores-utilizados-en-el-dise%C3%B1o-de-par%C3%A1metros">&#182;</a></h3><p>(1) Factor de error (ruido)</p>
+<h3 id="6.-Factores-utilizados-en-el-dise%C3%B1o-de-par%C3%A1metros">6. Factores utilizados en el dise&#241;o de par&#225;metros<a class="anchor-link" href="#6.-Factores-utilizados-en-el-dise%C3%B1o-de-par%C3%A1metros">&#182;</a></h3><p>パラメータ設計で用いる因子</p>
+<p>(1) Factor de error (ruido)
+誤差因子</p>
 <ul>
 <li><strong>Disturbancia externa</strong>: Ruido que proviene del exterior</li>
 <li><strong>Disturbancia interna</strong>: Ruido generado internamente</li>
 <li><strong>Variabilidad entre productos</strong>: Variabilidad en las piezas o materiales utilizados</li>
 </ul>
-<p>(2) Factor de señal</p>
-<p>En el sistema de ingenieria, la entrada mencionada corresponde a un factor de señal.</p>
-<p>(3) Factor de control</p>
+<p>(2) Factor de señal
+信号因子（入力）</p>
+<p>En el sistema de ingeniería, la entrada mencionada corresponde a un factor de señal.</p>
+<p>(3) Factor de control
+制御因子</p>
 <p>Un factor de control es un parámetro que puede ser controlado por un ingeniero y que se incluye en un experimento.
 Estos parámetros se especifican en planos de productos, especificaciones, y hojas de control de procesos (QC).</p>
+<p><a href="https://drive.google.com/file/d/1dPWdfsjDEhi1c_M7HZYZShJjo1Kevx8q/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -14652,7 +14670,7 @@ Estos parámetros se especifican en planos de productos, especificaciones, y hoj
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14675,7 +14693,7 @@ Estos parámetros se especifican en planos de productos, especificaciones, y hoj
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14702,24 +14720,29 @@ Estos parámetros se especifican en planos de productos, especificaciones, y hoj
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="12-02-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">12-02 Dise&#241;o de par&#225;metros de caracter&#237;sticas est&#225;ticas<a class="anchor-link" href="#12-02-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">&#182;</a></h2><h3 id="1.-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">1. Dise&#241;o de par&#225;metros de caracter&#237;sticas est&#225;ticas<a class="anchor-link" href="#1.-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">&#182;</a></h3><p>Las <strong>características estáticas</strong> se refieren a aquellos casos en los que la entrada del sistema se mantiene fija y el valor objetivo para la salida es constante y no cambia. Dentro de estas, se llama <strong>característica deseada</strong> a aquella cuyo objetivo es un valor constante positivo.</p>
-<p>Además de las caraterísticas deseada, existen las carateriísticas de cuanto más pequeño, mejor y las características de cuanto más grande, mejor, que se clasifican de la siguiente manera:</p>
+<h2 id="12-02-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">12-02 Dise&#241;o de par&#225;metros de caracter&#237;sticas est&#225;ticas<a class="anchor-link" href="#12-02-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">&#182;</a></h2><p>静特性のパラメータ設計</p>
+<h3 id="1.-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">1. Dise&#241;o de par&#225;metros de caracter&#237;sticas est&#225;ticas<a class="anchor-link" href="#1.-Dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">&#182;</a></h3><p>Las <strong>características estáticas</strong> se refieren a aquellos casos en los que la entrada del sistema se mantiene fija y el valor objetivo para la salida es constante y no cambia. Dentro de estas, se llama <strong>característica deseada</strong> a aquella cuyo objetivo es un valor constante positivo.</p>
+<p>Además de las características deseada, existen las caracteriísticas de cuanto más pequeño, mejor y las características de cuanto más grande, mejor, que se clasifican de la siguiente manera:</p>
 <ul>
 <li>Característica deseada: Aquellos cuyo valor objetivo es un valor positivo y constante.</li>
 <li>Característica de mínimo deseado: Cuyo valor objetivo no es negativo y cuanto más pequeño, mejor (el cero es el ideal).</li>
 <li>Característica de máximo deseado: Aquellos cuyo valor objetivo es un valor positivo y cuanto más grande, mejor.</li>
 </ul>
-<h3 id="2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">2. Procedimiento para el dise&#241;o de par&#225;metros de caracter&#237;sticas est&#225;ticas<a class="anchor-link" href="#2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">&#182;</a></h3><p>Paso 1: Establecimiento del método de evaluación de los factores de error y la variabilidad (dispersión) de la salida.</p>
+<h3 id="2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">2. Procedimiento para el dise&#241;o de par&#225;metros de caracter&#237;sticas est&#225;ticas<a class="anchor-link" href="#2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-est%C3%A1ticas">&#182;</a></h3><p>静特性のパラメータ設計の手順</p>
+<p>Paso 1: Establecimiento del método de evaluación de los factores de error y la variabilidad (dispersión) de la salida.
+誤差因子と出力変動（ばらつき）に関する評価方法の設定</p>
 <p>En el diseño de parámetros, es necesario evaluar la magnitud de la variación de la salida, por lo que se cambian los valores de los factores de error para crear forzosamente la variación en la salida.</p>
 <p>Generalmente, se crean de 3 a 5 tipos de ruido diferentes y se combinan para formar factores de error de 2 o 3 niveles.
 A esto se le llama combinación o mezcla (compundaje).</p>
-<p>Paso 2: Establecimiento de los niveles de los factores de control (parámetros de diseño) y la disposición del experimento.</p>
+<p>Paso 2: Establecimiento de los niveles de los factores de control (parámetros de diseño) y la disposición del experimento.
+制御因子（設計パラメータ）の水準値の設定と実験配置</p>
 <p>En el diseño de parámetros, se utilizan <strong>tablas ortogonales</strong> para realizar experimentos de manera eficiente, ya que se maneja un gran número de factores de control.</p>
 <ul>
 <li>Tabla ortogonal del sistema mezclado L18.</li>
 <li>Asignar el factor de error de mezcla N al exterior.</li>
 </ul>
-<p>Paso 3: Cuantificación de la variabilidad de la salida y cálculo de la relación S/N.</p>
+<p>Paso 3: Cuantificación de la variabilidad de la salida y cálculo de la relación S/N.
+出力変動の定量化とSN比の求め方</p>
 <ul>
 <li>Variación de la salida: $ \bigl( \frac{\sigma}{\mu} \bigr)^2 $</li>
 </ul>
@@ -14732,20 +14755,24 @@ A esto se le llama combinación o mezcla (compundaje).</p>
 </ul>
 </li>
 </ul>
-<p>Paso 4: Comprensión de los efectos de los factores.</p>
+<p>Paso 4: Comprensión de los efectos de los factores.
+要因効果の把握</p>
 <ul>
 <li>Cuanto mayor sea el factor que cambie significativamente la relación S/N, mayor será la resistencia al ruido, y cuanto mayor sea el factor que cambie significativamente  el promedio de salida, mejor se controlará la salida.</li>
 </ul>
-<p>Paso 5: Optimización.</p>
+<p>Paso 5: Optimización.
+最適化</p>
 <ul>
 <li>Factor que cambia significativamente la relación S/N</li>
 <li>Factor que cambia significativamente el promedio de salida sin alterar significativamente la relación S/N.</li>
 <li>Diseño de dos etapas</li>
 </ul>
-<p>Paso 6: Verificación de la reproducibilidad.</p>
+<p>Paso 6: Verificación de la reproducibilidad.
+再現性の確認</p>
 <p>Se estima la variación de la salida (relación SN) y el promedio de la salida para las condiciones óptimas y las condiciones de referencia obtenidas en el experimento.
 Posteriormente, se fabrica el producto con ese diseño y se mide bajo las mismas condiciones de ruido.
 Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre las condiciones óptimas y las de referencia es la misma que se obtuvo en la estimación.</p>
+<p><a href="https://drive.google.com/file/d/1mCrvXeN28He3XskdTlbjiH6Gp8Gqpe_L/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -14794,7 +14821,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gspread</span> 
@@ -14853,7 +14880,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -15189,7 +15216,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -15218,7 +15245,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -15247,7 +15274,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tabla 12.3 Promedio de niveles de la relación señal-ruido (SN) y del promedio de salida para cada factor de control&#39;</span><span class="p">)</span>
@@ -15285,7 +15312,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -15447,7 +15474,7 @@ Finalmente, se confirma la reproducibilidad, es decir, si la diferencia entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Transformación de datos</span>
@@ -15522,18 +15549,23 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="12-03-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">12-03 Dise&#241;o de par&#225;metros para caracter&#237;sticas din&#225;micas<a class="anchor-link" href="#12-03-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">&#182;</a></h2><h3 id="1.-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">1. Dise&#241;o de par&#225;metros para caracter&#237;sticas din&#225;micas<a class="anchor-link" href="#1.-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">&#182;</a></h3><p>La <strong>característica dinámica</strong> se refiere a la propiedad en la que el <strong>valor de salida</strong> cambia en respuesta a las variaciones en el <strong>valor de entrada</strong>.
-En general, la mayoría de las tecnologías, productos, equipos de fabricación y procesos de producción tienen caracteristicas dinámicas que involucran entradas y salidas.</p>
+<h2 id="12-03-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">12-03 Dise&#241;o de par&#225;metros para caracter&#237;sticas din&#225;micas<a class="anchor-link" href="#12-03-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">&#182;</a></h2><p>動特性のパラメータ設計</p>
+<h3 id="1.-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">1. Dise&#241;o de par&#225;metros para caracter&#237;sticas din&#225;micas<a class="anchor-link" href="#1.-Dise%C3%B1o-de-par%C3%A1metros-para-caracter%C3%ADsticas-din%C3%A1micas">&#182;</a></h3><p>La <strong>característica dinámica</strong> se refiere a la propiedad en la que el <strong>valor de salida</strong> cambia en respuesta a las variaciones en el <strong>valor de entrada</strong>.
+En general, la mayoría de las tecnologías, productos, equipos de fabricación y procesos de producción tienen características dinámicas que involucran entradas y salidas.</p>
 <p>Por ejemplo, en un grifo de agua, la salida es la <strong>cantidad de agua</strong> y la entrada es el <strong>número de vueltas del grifo</strong>.
-En la configuración de la temperatura de un refigerador, la salida es la <strong>temperatura</strong> y la entrada es el <strong>dial de configuración de temperatura</strong>.</p>
-<p>Es necesario realizar un diseño en <strong>dos etapas</strong> para evitar que se vea <strong>afectaodo por el ruido</strong> dentro del rango de entrada.</p>
+En la configuración de la temperatura de un refrigerador, la salida es la <strong>temperatura</strong> y la entrada es el <strong>dial de configuración de temperatura</strong>.</p>
+<p>Es necesario realizar un diseño en <strong>dos etapas</strong> para evitar que se vea <strong>afectado por el ruido</strong> dentro del rango de entrada.</p>
 <p>Por lo tanto, en el diseño de parámetros de características dinámicas, es crucial examinar la entrada y la salida del sistema, y considerar la <strong>función ideal</strong> que existe entre ellas.
-Con seto, el método de evaluación de la variación de la salida y el cálculo del valor de SN diferen de los del diseño de parámetros de caracteristicas estáticas estátics.
-El resto del procedimiento es el mismo que el del deiseño de parámetros de caracteristicas estáticas.</p>
-<p>【Consideración de la función ideal entre la entrada y la salida】</p>
-<p>① Cuando la relación entre la entrada y la salida es lineal.</p>
+Con esto, el método de evaluación de la variación de la salida y el cálculo del valor de SN difieren de los del diseño de parámetros de características estáticas estáticas.
+El resto del procedimiento es el mismo que el del diseño de parámetros de características estáticas.</p>
+<p>【Consideración de la función ideal entre la entrada y la salida】
+入出力の間にある理想機能の検討</p>
+<p>① Cuando la relación entre la entrada y la salida es lineal.
+入出力が線形関係にある場合</p>
 <ul>
-<li><p>Ecuación de proporcionalidad en el punto cero: Se busca un ideal en el que la entrada y la salida pasen por el punto cero, y la salida $ y $ aumente de manera proporcional a mediada que la entrada $ M $ aumenta.</p>
+<li><p>Ecuación de proporcionalidad en el punto cero:
+ゼロ点比例式
+Se busca un ideal en el que la entrada y la salida pasen por el punto cero, y la salida $ y $ aumente de manera proporcional a medida que la entrada $ M $ aumenta.</p>
 <ul>
 <li><p>$ y = \beta M $</p>
 </li>
@@ -15543,39 +15575,48 @@ El resto del procedimiento es el mismo que el del deiseño de parámetros de car
 </li>
 </ul>
 <ul>
-<li><p>Ecuación de primer grado: Es un ideal en el quel la salida $ y $ aumenta proporcionalmente a medida que la entrada $ M $ aumenta, pero la salida no es cero cuando la entrada es cero, o no se desea que sea cero.</p>
+<li><p>Ecuación de primer grado:
+一次式
+Es un ideal en el que  la salida $ y $ aumenta proporcionalmente a medida que la entrada $ M $ aumenta, pero la salida no es cero cuando la entrada es cero, o no se desea que sea cero.</p>
 <ul>
 <li><p>$ y = \alpha + \beta M $</p>
 </li>
-<li><p>El ruido causa un desplazamiento paralelo en la relación entre la entrada y salida.</p>
+<li><p>El ruido causa un desplazamiento paralelo en la relación entre la entrada y la salida.</p>
 </li>
 </ul>
 </li>
-<li><p>Ecuación de proporcionalidad en el punto de referencia: Se considera ideal que la salida $ y $ aumenta proporcionalmente a medida que la entrada $ M $ aumenta, pero en lugar de pasar por el punto cero, lo hoaga por un punto fijo $ (M_0, y_0 ) $.</p>
+<li><p>Ecuación de proporcionalidad en el punto de referencia:
+基準点比例式
+Se considera ideal que la salida $ y $ aumenta proporcionalmente a medida que la entrada $ M $ aumenta, pero en lugar de pasar por el punto cero, lo haga por un punto fijo $ (M_0, y_0 ) $.</p>
 <ul>
 <li><p>$ y - y_0 = \beta(M - M_0) $</p>
 </li>
-<li><p>El punto de referencia no se ve afectado por el ruido, pero el ruido cambia la pendiente de la relación entre la entrada y salida.</p>
+<li><p>El punto de referencia no se ve afectado por el ruido, pero el ruido cambia la pendiente de la relación entre la entrada y la salida.</p>
 </li>
 </ul>
 </li>
 </ul>
-<p>② Cuando la relación entre la entrada y la salida es no lienal.</p>
+<p>② Cuando la relación entre la entrada y la salida es no lineal.
+入出力が非線形関係にある場合</p>
 <ul>
-<li><p>Aquellos que pueden ser reemplazados por una relación linel meante la transformación de variables.</p>
+<li><p>Aquellos que pueden ser reemplazados por una relación lineal mediante la transformación de variables.</p>
 </li>
 <li><p>Aquellos que, debido a requisitos técnicos, no pueden ser reemplazados por una relación lineal.</p>
 </li>
 </ul>
-<h3 id="2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-din%C3%A1micas">2. Procedimiento para el dise&#241;o de par&#225;metros de caracter&#237;sticas din&#225;micas<a class="anchor-link" href="#2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-din%C3%A1micas">&#182;</a></h3><p>Paso 1: Establecimiento del método de evaluación de los factores de error y la variabilidad de la salida.</p>
+<h3 id="2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-din%C3%A1micas">2. Procedimiento para el dise&#241;o de par&#225;metros de caracter&#237;sticas din&#225;micas<a class="anchor-link" href="#2.-Procedimiento-para-el-dise%C3%B1o-de-par%C3%A1metros-de-caracter%C3%ADsticas-din%C3%A1micas">&#182;</a></h3><p>動特性のパラメータ設計手順</p>
+<p>Paso 1: Establecimiento del método de evaluación de los factores de error y la variabilidad de la salida.
+誤差因子と出力変動（ばらつき）の評価方法の設定</p>
 <ul>
 <li>En el diseño de parámetros de características dinámicas, se combina un diseño de dos factores de entrada y ruido para evaluar el efecto del ruido cuando el valor de la entrada cambia.</li>
 </ul>
-<p>Paso 2: Configuración de los niveles de los parámetros de diseño (factores de control) y disposición del experimento.</p>
+<p>Paso 2: Configuración de los niveles de los parámetros de diseño (factores de control) y disposición del experimento.
+設計パラメータ（制御因子）の水準値の設定と実験配置</p>
 <ul>
 <li>Configura los factores de control y los niveles.</li>
 </ul>
-<p>Paso 3: Cuantificación de la variabilidad de la salida y cálculo de la relación señal-ruido (SN)</p>
+<p>Paso 3: Cuantificación de la variabilidad de la salida y cálculo de la relación señal-ruido (SN)
+出力変動の定量化とSN比の求め方</p>
 <ul>
 <li><p>Calcular la relación <strong>SN</strong> y <strong>sesibilidad</strong> para cada número de experimento.</p>
 <ul>
@@ -15586,6 +15627,7 @@ El resto del procedimiento es el mismo que el del deiseño de parámetros de car
 </ul>
 </li>
 </ul>
+<p><a href="https://drive.google.com/file/d/1_yuaLZvjr3lJPIzd7EObvpxRITshSQwk/view?usp=drive_link">Audio_5</a></p>
 
 </div>
 </div>
@@ -15608,7 +15650,7 @@ El resto del procedimiento es el mismo que el del deiseño de parámetros de car
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos experimentales (N1, N2, N3)</span>
@@ -15653,7 +15695,7 @@ El resto del procedimiento es el mismo que el del deiseño de parámetros de car
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -15735,7 +15777,7 @@ El resto del procedimiento es el mismo que el del deiseño de parámetros de car
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Factor de señal (M1, M2, M3)</span>
@@ -15837,7 +15879,7 @@ Efecto lineal (L3): 4.442
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del efecto de entrada Sβ</span>
@@ -15920,7 +15962,7 @@ Varianza total del error V_N: 2.746
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo de la relación SN</span>
@@ -15967,7 +16009,175 @@ Sensibilidad S: 34.7 (dB)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">import</span> <span class="nn">japanize_matplotlib</span>
+
+<span class="c1"># データ入力</span>
+<span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">([</span><span class="mf">0.14</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.16</span><span class="p">],</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="mf">5.2</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">,</span> <span class="mf">8.3</span><span class="p">,</span>  <span class="c1"># N1</span>
+    <span class="mf">6.8</span><span class="p">,</span> <span class="mf">7.2</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">,</span>  <span class="c1"># N2</span>
+    <span class="mf">8.2</span><span class="p">,</span> <span class="mf">9.8</span><span class="p">,</span><span class="mf">11.4</span>   <span class="c1"># N3</span>
+<span class="p">])</span>
+
+<span class="c1"># 線形回帰</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">residuals</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">resid</span>
+<span class="n">sigma_e2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">residuals</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">sn_ratio</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">sigma_e2</span><span class="p">)</span>
+
+<span class="c1"># 回帰直線用データ</span>
+<span class="n">M_fit</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">M</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">M</span><span class="p">),</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">y_fit</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">M_fit</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="c1"># プロット</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;実測値&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">M_fit</span><span class="p">,</span> <span class="n">y_fit</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;回帰直線: y = </span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">x + </span><span class="si">{</span><span class="n">b</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;電流値 [kA]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;溶け込み量 [mm]&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;溶接条件の動特性</span><span class="se">\n</span><span class="s1">感度 = </span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, SN比 = </span><span class="si">{</span><span class="n">sn_ratio</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> dB&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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tWtXXXHFFTrssMM0ZsyYwv06d+4883FvvPGGevTooddee02vvvpq4fmnTp2qRx55pHB7t27dCgNRAQDAnNVMBee662JFZGmhhbKvcb0l9OnTp7BKY1z2228/HXPMMTOvx21PP/104fsf/vCHmjBhgk499dTCscb8+9//1kYbbaRtt91WvXr10n/+8x/V19fr+uuv19dff61lllmmZU4aAICcq4kKToSZQw6RJk/Oro8dm10PgwfP//Muuuiiuuqqq2YuQf3BBx8Upvj+/ve/L1yPgBKh5IILLtDqq69e2Itjr732KlRoGorwc+mllxYu55xzjjbddFPttttu2mOPPfT+++/rgQcemP8TBQCgxtREBWfIkFnhpiiux/EFHRQaoWafffYpXDbZZBNtscUWM6/HlN8IQTEuZ8MNNyys3RPdUJMmTfrWc918882F8BOeeeaZwtePPvqocP/ozgIAoBp7TkaPbtmek3lVExWcceOad3xe3XHHHYXxNUXFCk5xcbmhQ4fq2GOP1frrr18IOQsvvHDsjN7oOJoDDjigME34888/n3lsxIgRhQHIMRanVjZlAwBUv+vK1HPSHDURcLp1y364jR1fEDvttFPhEiKERAWmXbt2+u1vf6v11ltv5v2iyynG1iy11FKF2VQxviZW2Y3QUtwlPcJPqbjvrrvuWujaKvdW8wAAtFbPCQGnBZ1zzuxJMnTqlB1fUJ999llhfMzVV1+t008/XWussYZ+8YtfFILOoEGDtOWWW+rWW2/VCSecoB//+MeFsHP00Udr4sSJ2nnnnWcGnIbP+etf/7rw/VNPPTXzeMzCiucEAKAWe06aoyYCTjEtRnKMH25UbiLcLGiKjO6kX/3qV4UQc9NNN6lTpCZJN9xwg1566SUNHz68MLX7Rz/6USHIRPiJaeAXXXRRYeDwQQcdpI8//lhHHXXUbM8bA5MbrqcDAECt95w0R00EnBBhpqXLYtGN9I9//KPR2773ve8VLiFmRIWNN9648HXdddctfG04M2r33XefOR4HAIBqdU4Ze07mVU3MomorotsKAIC8GzxYuvJKadVVs+vxNa631vibwCcuAAAoW89JXZ1UidVOqOAAAIDcIeAAAIDcIeC0UZ9++qmefPLJJm9veNvDDz+sL774ohXODACAto8xOAugS5cuhVWKGxPTwF9++eWZ12PNm9tvv322FYljccDNNtts5t5VsWpx0WOPPVaYal6ceh7WXHPNwtYPY8eOLUw1//vf/65p06bpn//8p6699lr95Cc/KWwfceSRR5apxQAAVAcqOAsgws19993X6GXFFVeceb/Sad+x5k1MB4/LdtttN9vzlT7+tttu04wZM2Y7FjuLP/HEE9pll1108skn66c//WlhHZ3YvDN2It9hhx0K92sNsU5PrO8T6/yUip3Tu3fvXghycYlFD4O7F845psxvsMEGuq6RTUlix/SDDz5Ym2++eWHl59K2XHbZZYW9vuKxEe4q0baiV199tbCy9Jz2CHvooYdmW5069h/bc889tdVWWxXaEWskAQDKhwrOAvrwww8LG2sWp4DHhprx4VYqKjXFD/D4oG5YwSk65phjCl+33nprjR8/vrCi8fPPP1/oeooP3dirKi49e/YsrJoclzBs2LDC/UJxH6zWqF796U9/mrmmT9Hbb7+tU045RYcUNx1JIoC9/vrrevzxxwvtiXZHO1dYYYWZ94l9vWJtoZEjR+q9994rBKSoasUiibEz+yOPPFK4Xzwubuvdu3erti1ExSxWop7T3mARZs4666yZ6x6FuB67w0cojU1U49wjqAIAyiMfASeCwbPPzvfDO06fHptBzX5wgw2k1HU0JxFS4oPw8ssvn9kV1ZjoOorwUdyCodS4ceMK1YL4gI+KR2zYef3118+8/eKLL9bUqVNnXj/88MMLu4/H9hDRHRV7VhVXQy59/vgQjg0/l19++ZlVlAgW9957r1ZaaaVCFeXZZ5+dbcPQ+ACO8yk1cOBAnXTSSbMdi0pEY6KqEUEmAkl0p51//vmFqkt0z0XoiZ/DEkssUdi368477yxUbIriPsWFE+P8+vTpUwg1Uck58MAD1b59+8JtsQJ0VLhip/W77rqr8JhLLrlEU6ZM0ZBGtoiPc7rmmmt0xhlnaF401bYQ+4xFdSfGPDUl3ouoVkWoKYotOoohOCpz8bMBAJQPXVStILoq4oP90ksvLQSiqPIUx90899xzhQ/64vdxW3xQx6acxUsMOC4dm/O3v/2tsHN5fOA//fTThYpOfJiedtpphe6h6LYqdhcVw02Ic/j5z39e+LAPMXbn0EMPne1cYyxPPK700jDczEm8fnS/Pfjgg4X27r333po+fXqhDaXnEpWbqGSUauo+TR2PytlCCy1UCDf3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"
+class="
+jp-needs-light-background
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+
+<span class="c1"># データ入力</span>
+<span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">([</span><span class="mf">0.14</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.16</span><span class="p">],</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">5.2</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">,</span> <span class="mf">8.3</span><span class="p">,</span> <span class="mf">6.8</span><span class="p">,</span> <span class="mf">7.2</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">,</span> <span class="mf">8.2</span><span class="p">,</span> <span class="mf">9.8</span><span class="p">,</span> <span class="mf">11.4</span><span class="p">])</span>
+
+<span class="c1"># 回帰モデルの構築</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c1"># 回帰結果の詳細を表示</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.451
+Model:                            OLS   Adj. R-squared:                  0.373
+Method:                 Least Squares   F-statistic:                     5.750
+Date:                Wed, 10 Sep 2025   Prob (F-statistic):             0.0476
+Time:                        16:41:30   Log-Likelihood:                -15.480
+No. Observations:                   9   AIC:                             34.96
+Df Residuals:                       7   BIC:                             35.36
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.4222      9.397     -1.535      0.169     -36.643       7.799
+x1           150.0000     62.556      2.398      0.048       2.079     297.921
+==============================================================================
+Omnibus:                        2.905   Durbin-Watson:                   0.451
+Prob(Omnibus):                  0.234   Jarque-Bera (JB):                0.958
+Skew:                           0.200   Prob(JB):                        0.619
+Kurtosis:                       1.453   Cond. No.                         125.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>/Users/takanohiroshi/.pyenv/versions/3.10.5/lib/python3.10/site-packages/scipy/stats/_axis_nan_policy.py:430: UserWarning: `kurtosistest` p-value may be inaccurate with fewer than 20 observations; only n=9 observations were given.
+  return hypotest_fun_in(*args, **kwds)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-12.ipynb&#39;</span>
@@ -15996,7 +16206,7 @@ Sensibilidad S: 34.7 (dB)
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei1-12.ipynb to html
-[NbConvertApp] Writing 698757 bytes to QCKentei1-12.html
+[NbConvertApp] Writing 754413 bytes to QCKentei1-12.html
 </pre>
 </div>
 </div>

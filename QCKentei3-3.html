@@ -14591,6 +14591,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Las-siete-nuevas-herramientas-de-control-de-calidad">Las siete nuevas herramientas de control de calidad<a class="anchor-link" href="#Las-siete-nuevas-herramientas-de-control-de-calidad">&#182;</a></h1><p>Las siete nuevas herramientas de QC se utilizan ampliamente como métodos para manejar principalmente datos lingüísticos en la resolución de problemas y el logro de objetivos.</p>
+<ul>
+<li><p>Explicación, propósito, creación y uso de las Siete Nuevas Herramientas de Control de Calidad.</p>
+</li>
+<li><p>Interpretación de los diagramas resultantes de las Siete Nuevas Herramientas de Control de Calidad.</p>
+</li>
+<li><p>Método para el despliegue sistemático utilizando el Diagrama de Árbol (o Diagrama Sistemático)</p>
+</li>
+<li><p>Explicación de la predicción previa y el despliegue del proceso del Método PDPC.</p>
+</li>
+<li><p>Cálculo de cada fecha del método de Diagrama de Flechas.</p>
+</li>
+<li><p>Explicación del significado del análisis de datos matriciales (Método de Análisis de Componentes Principales).</p>
+</li>
+</ul>
+<p><a href="https://drive.google.com/file/d/1Y5rVkUSqzdRP9yzE1bsB35zFXM8T9Ans/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -14600,16 +14615,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="k">try</span><span class="p">:</span>
   <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;../Python/QCKentei3&#39;</span><span class="p">)</span>
 <span class="k">except</span><span class="p">:</span>
   <span class="k">pass</span>
 
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;Common&quot;</span><span class="p">)))</span>
 <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 </pre></div>
 
@@ -14623,7 +14639,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14643,16 +14659,26 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-01-M%C3%A9todo-de-afinidad">03-01 M&#233;todo de afinidad<a class="anchor-link" href="#03-01-M%C3%A9todo-de-afinidad">&#182;</a></h2><h3 id="1.-M%C3%A9todos-de-afinidad-y-su-aplicaci%C3%B3n">1. M&#233;todos de afinidad y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todos-de-afinidad-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>El método de afinidad es una técnica que permite capturar hechos, opiniones e ideas a través de datos lingüísticos para abordar problemas inciertos, como aquellos relacionados con el futuro, cuestiones emergentes o problemas desconocidos y no experimentados previamente. Posteriormente se organiza un diagrama integrando estos datos según su afinidad mutua, lo que ayuda a clarificar la naturaleza y ubicación de los problemas que deben resolverse.</p>
+<h2 id="03-01-M%C3%A9todo-de-afinidad">03-01 M&#233;todo de afinidad<a class="anchor-link" href="#03-01-M%C3%A9todo-de-afinidad">&#182;</a></h2><p>親和図法</p>
+<h3 id="1.-M%C3%A9todos-de-afinidad-y-su-aplicaci%C3%B3n">1. M&#233;todos de afinidad y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todos-de-afinidad-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>親和図法とその適用</p>
+<p>El método de afinidad es una técnica que permite capturar hechos, opiniones e ideas a través de datos lingüísticos para abordar problemas inciertos, como aquellos relacionados con el futuro, cuestiones emergentes o problemas desconocidos y no experimentados previamente. Posteriormente se organiza un diagrama integrando estos datos según su afinidad mutua, lo que ayuda a clarificar la naturaleza y ubicación de los problemas que deben resolverse.</p>
 <ol>
-<li>Quisiera organizar la información obtenida de entrevistas con clientes para comprender sus necesidades.</li>
-<li>Quisiera analizar las opiniones de los clientes obtenidas a través de encuestas para utilizarlas en el desarrollo de productos.</li>
-<li>Quisiera consolidar y resumir las ideas generadas en la lluvia de ideas.</li>
-<li>Quisiera recopilar las opiniones de los clientes, como consultas y reclamaciones, y presentarlas de forma clara para su comunicación.</li>
-<li>Quisiera clarificar los puntos fuertes y débiles de la situación actual de las propuestas de mejora internas.</li>
-<li>Los problemas a mejorar y sus asuntos relacionados son diversos y complejos, por lo que quisiera poder comprender y visualizar el panorama general para así revelar la estructura de estos problemas complejos.</li>
-<li>Quisiera resumir el contenido del plan de gestión a medio y largo plazo y las perspectivas futuras de la organización mediante una lluvia de ideas, para poder utilizarlo en la elaboración y despliegue de estrategias futuras.</li>
+<li><p>Quisiera organizar la información obtenida de entrevistas con clientes para comprender sus necesidades.</p>
+</li>
+<li><p>Quisiera analizar las opiniones de los clientes obtenidas a través de encuestas para utilizarlas en el desarrollo de productos.</p>
+</li>
+<li><p>Quisiera consolidar y resumir las ideas generadas en la lluvia de ideas.</p>
+</li>
+<li><p>Quisiera recopilar las opiniones de los clientes, como consultas y reclamaciones, y presentarlas de forma clara para su comunicación.</p>
+</li>
+<li><p>Quisiera clarificar los puntos fuertes y débiles de la situación actual de las propuestas de mejora internas.</p>
+</li>
+<li><p>Los problemas a mejorar y sus asuntos relacionados son diversos y complejos, por lo que quisiera poder comprender y visualizar el panorama general para así revelar la estructura de estos problemas complejos.</p>
+</li>
+<li><p>Quisiera resumir el contenido del plan de gestión a medio y largo plazo y las perspectivas futuras de la organización mediante una lluvia de ideas, para poder utilizarlo en la elaboración y despliegue de estrategias futuras.</p>
+</li>
 </ol>
+<p><a href="https://drive.google.com/file/d/1UVlq8ma6SV3tA22mPvYW-uQ5kvls3pau/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -14664,13 +14690,22 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-C%C3%B3mo-crear-un-diagrama-de-afinidad">2. C&#243;mo crear un diagrama de afinidad<a class="anchor-link" href="#2.-C%C3%B3mo-crear-un-diagrama-de-afinidad">&#182;</a></h3><p>Paso 1: DEfinir el tema</p>
-<p>Paso 2: Recopilar datos lingüísticos</p>
-<p>Paso 3: Crear tarjetas de datos</p>
-<p>Paso 4: Agrupar las tarjetas</p>
-<p>Paso 5: Crear tarjetas de afinidad</p>
-<p>Paso 6: Repetir el proceso de agrupación de tarjetas y creación de tarjetas de afinidad</p>
-<p>Paso 7: Finalizar el diagrama de afinidad</p>
+<h3 id="2.-C%C3%B3mo-crear-un-diagrama-de-afinidad">2. C&#243;mo crear un diagrama de afinidad<a class="anchor-link" href="#2.-C%C3%B3mo-crear-un-diagrama-de-afinidad">&#182;</a></h3><p>親和図のつくり方</p>
+<p>Paso 1: Definir el tema
+テーマを決める</p>
+<p>Paso 2: Recopilar datos lingüísticos
+言語データを収集する</p>
+<p>Paso 3: Crear tarjetas de datos
+データカードを作る</p>
+<p>Paso 4: Agrupar las tarjetas
+カード寄せをする</p>
+<p>Paso 5: Crear tarjetas de afinidad
+親和カードを作る</p>
+<p>Paso 6: Repetir el proceso de agrupación de tarjetas y creación de tarjetas de afinidad
+カード寄せと親和カード作りを繰り返す</p>
+<p>Paso 7: Finalizar el diagrama de afinidad
+親和図を仕上げる</p>
+<p><a href="https://drive.google.com/file/d/1DgY30e6FvIup2u1rJ_NAar8rQdUxfCpN/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -14682,7 +14717,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.1">Figura 3.1<a class="anchor-link" href="#Figura-3.1">&#182;</a></h4><p>Ilustra un caso donde se llevó a cabo una tormenta de ideas para resumir y estandarizar la concepción del estado deseable de las operaciones de venta en un distribuidor de vehículos.</p>
+<h4 id="La-Figura-3.1-ilustra-un-caso-donde-se-llev%C3%B3-a-cabo-una-tormenta-de-ideas-para-resumir-y-estandarizar-la-concepci%C3%B3n-del-estado-deseable-de-las-operaciones-de-venta-en-un-distribuidor-de-veh%C3%ADculos.">La Figura 3.1 ilustra un caso donde se llev&#243; a cabo una tormenta de ideas para resumir y estandarizar la concepci&#243;n del estado deseable de las operaciones de venta en un distribuidor de veh&#237;culos.<a class="anchor-link" href="#La-Figura-3.1-ilustra-un-caso-donde-se-llev%C3%B3-a-cabo-una-tormenta-de-ideas-para-resumir-y-estandarizar-la-concepci%C3%B3n-del-estado-deseable-de-las-operaciones-de-venta-en-un-distribuidor-de-veh%C3%ADculos.">&#182;</a></h4><p><a href="https://drive.google.com/file/d/116AKoY4tv9-Ss3WgageFjTblPZyzoWl8/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -14692,7 +14727,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -14742,14 +14777,20 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-02-M%C3%A9todo-de-diagrama-de-relaciones">03-02 M&#233;todo de diagrama de relaciones<a class="anchor-link" href="#03-02-M%C3%A9todo-de-diagrama-de-relaciones">&#182;</a></h2><h3 id="1.-M%C3%A9todo-de-diagrama-de-relaciones-y-su-aplicaci%C3%B3n">1. M&#233;todo de diagrama de relaciones y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-de-diagrama-de-relaciones-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>El método de diagrama de relaciones es una herramienta para analizar problemas en los que las relaciones de causa-efecto o propósito-medio están intrincadamente entrelazadas. Consiste en conectar lógicamente estas relaciones causales para esclarecer la esencia del problema.</p>
+<h2 id="03-02-M%C3%A9todo-de-diagrama-de-relaciones">03-02 M&#233;todo de diagrama de relaciones<a class="anchor-link" href="#03-02-M%C3%A9todo-de-diagrama-de-relaciones">&#182;</a></h2><p>連関図法</p>
+<h3 id="1.-M%C3%A9todo-de-diagrama-de-relaciones-y-su-aplicaci%C3%B3n">1. M&#233;todo de diagrama de relaciones y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-de-diagrama-de-relaciones-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>連関図法とその適用</p>
+<p>El método de diagrama de relaciones es una herramienta para analizar problemas en los que las relaciones de causa-efecto o propósito-medio están intrincadamente entrelazadas. Consiste en conectar lógicamente estas relaciones causales para esclarecer la esencia del problema.</p>
 <p>El Diagrama de Relaciones se utiliza para encontrar el hilo conductor de la solución. Para usarlo, se extraen las causas y luego se repite la extracción de las causas de esas causas, diagramando las relaciones causales de manera que puedan verse de un vistazo. A diferencia del Diagrama de Causa-Efecto, el Diagrama de Relaciones también permite mostrar las relaciones entre los factores, como causa-efecto u objetivo-medio, mediante flechas.</p>
 <p>El Diagrama de Relaciones se puede aplicar en situaciones donde se desea aclarar la imagen general, comprender los factores, o revelar la estructura, como en la planificación de la estrategia empresarial, el desarrollo de nuevos productos, la identificación de las causas de defectos en el proceso de fabricación, la revisión del sistema de servicio al cliente y el análisis de reclamaciones.</p>
 <ol>
-<li>Quisiera investigar las causas de los defectos o las fallas.</li>
-<li>Quisiera esclarecer la estructura del problema.</li>
-<li>Quisiera esclarecer los medios para alcanzar el objetivo.</li>
+<li><p>Quisiera investigar las causas de los defectos o las fallas.</p>
+</li>
+<li><p>Quisiera esclarecer la estructura del problema.</p>
+</li>
+<li><p>Quisiera esclarecer los medios para alcanzar el objetivo.</p>
+</li>
 </ol>
+<p><a href="https://drive.google.com/file/d/10COHaNAQCOSoHgwROc_AMhuLemTaw0P3/view?usp=drive_link">Audio_5</a></p>
 
 </div>
 </div>
@@ -14761,14 +14802,24 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-C%C3%B3mo-crear-un-diagrama-de-relaciones">2. C&#243;mo crear un diagrama de relaciones<a class="anchor-link" href="#2.-C%C3%B3mo-crear-un-diagrama-de-relaciones">&#182;</a></h3><p>Paso 1: Definir el tema.</p>
-<p>Paso 2: Escribir en tarjetas los elementos relacionados con el tema.</p>
-<p>Paso 3: Determinar los "problemas" basados en el tema y distribuir las tarjetas de datos.</p>
-<p>Paso 4: Identificar las causas primarias.</p>
-<p>Paso 5: Analizar las causas de cada causa primaria.</p>
-<p>Paso 6: Examinar las relaciones causales entre los diferentes faciles.</p>
-<p>Paso 7: Verificar las relaciones causales entre los factores.</p>
-<p>Paso 8: Identificar la causa principal.</p>
+<h3 id="2.-C%C3%B3mo-crear-un-diagrama-de-relaciones">2. C&#243;mo crear un diagrama de relaciones<a class="anchor-link" href="#2.-C%C3%B3mo-crear-un-diagrama-de-relaciones">&#182;</a></h3><p>連関図のつくり方</p>
+<p>Paso 1: Definir el tema.
+テーマを決める</p>
+<p>Paso 2: Escribir en tarjetas los elementos relacionados con el tema.
+テーマに関する項目をカードに書く</p>
+<p>Paso 3: Determinar los "problemas" basados en el tema y distribuir las tarjetas de datos.
+テーマに基づいて「問題点」を決め、データカードを広げる</p>
+<p>Paso 4: Identificar las causas primarias.
+１次原因を考える</p>
+<p>Paso 5: Analizar las causas de cada causa primaria.
+１次原因ごとに原因を追究する</p>
+<p>Paso 6: Examinar las relaciones causales entre los diferentes faciles.
+原因相互の因果関係を追究する</p>
+<p>Paso 7: Verificar las relaciones causales entre los factores.
+原因相互の因果関係を確認する</p>
+<p>Paso 8: Identificar la causa principal.
+主要原因を突き止める</p>
+<p><a href="https://drive.google.com/file/d/1tTjDCi6ueQdpm2wONoePkCFdAQ1fUnqy/view?usp=drive_link">Audio_6</a></p>
 
 </div>
 </div>
@@ -14780,7 +14831,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.2">Figura 3.2<a class="anchor-link" href="#Figura-3.2">&#182;</a></h4><p>Diagrama de relaciones de la imposibilidad de expandir la cuota de mercado</p>
+<h4 id="Figura-3.2-Diagrama-de-relaciones-de-la-imposibilidad-de-expandir-la-cuota-de-mercado">Figura 3.2 Diagrama de relaciones de la imposibilidad de expandir la cuota de mercado<a class="anchor-link" href="#Figura-3.2-Diagrama-de-relaciones-de-la-imposibilidad-de-expandir-la-cuota-de-mercado">&#182;</a></h4><p><a href="https://drive.google.com/file/d/1KCRAiCPXAf1QS9w7IVMlBe-u_jl8GQmU/view?usp=drive_link">Audio_7</a></p>
 
 </div>
 </div>
@@ -14790,7 +14841,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/Relaciones.png&#39;</span><span class="p">)</span>
@@ -14837,12 +14888,16 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-03-M%C3%A9todo-del-diagrama-sistem%C3%A1tico">03-03 M&#233;todo del diagrama sistem&#225;tico<a class="anchor-link" href="#03-03-M%C3%A9todo-del-diagrama-sistem%C3%A1tico">&#182;</a></h2><h3 id="1.-M%C3%A9todo-del-diagrama-sistem%C3%A1tico-y-su-aplicaci%C3%B3n">1. M&#233;todo del diagrama sistem&#225;tico y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-del-diagrama-sistem%C3%A1tico-y-su-aplicaci%C3%B3n">&#182;</a></h3><ul>
+<h2 id="03-03-M%C3%A9todo-del-diagrama-sistem%C3%A1tico">03-03 M&#233;todo del diagrama sistem&#225;tico<a class="anchor-link" href="#03-03-M%C3%A9todo-del-diagrama-sistem%C3%A1tico">&#182;</a></h2><p>系統図法</p>
+<h3 id="1.-M%C3%A9todo-del-diagrama-sistem%C3%A1tico-y-su-aplicaci%C3%B3n">1. M&#233;todo del diagrama sistem&#225;tico y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-del-diagrama-sistem%C3%A1tico-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>系統図法とその運用</p>
+<ul>
 <li>El método del diagrama sistemático es una técnica que aplica el concepto y la elaboración del diagrama funcional utilizado en el análisis funcional de VE. Consiste en establecer objetivos, metas y resultados finales, y desarrollar sistemáticamente los medios y estrategias necesarios para alcanzarlos.</li>
 </ul>
 <ol>
-<li>Quisiera obtener propuestas de soluciones viables para resolver los problemas y desafíos.</li>
-<li>Quisiera especificar las acciones que cada departamento y cada responsable deben llevar a cabo.</li>
+<li><p>Quisiera obtener propuestas de soluciones viables para resolver los problemas y desafíos.</p>
+</li>
+<li><p>Quisiera especificar las acciones que cada departamento y cada responsable deben llevar a cabo.</p>
+</li>
 </ol>
 <ul>
 <li><p>Tipo de desarrollo de estrategias:  Se denomina diagrama estadístico que despliega los objetivos y los medios en múltiples niveles de ramificación para obtener estrategias factibles.</p>
@@ -14850,13 +14905,21 @@ class="
 <li><p>Tipo de desarrollo de elementos constitutivos: Es un diagrama de árbol que clarifica las relaciones de inclusión y las interrelaciones de los elementos de un objeto. Existen diferentes tipos, como el diagrama de árbol de funciones, el diagrama de árbol de calidad y el diagrama de árbol de causa-efecto.</p>
 </li>
 </ul>
-<h3 id="2.-C%C3%B3mo-hacer-un-diagrama-sistem%C3%A1tico">2. C&#243;mo hacer un diagrama sistem&#225;tico<a class="anchor-link" href="#2.-C%C3%B3mo-hacer-un-diagrama-sistem%C3%A1tico">&#182;</a></h3><p>Tipo de desarrollo de estrategias</p>
-<p>Paso 1: Determinar el objetivo principal basado en el tema.</p>
-<p>Paso 2: Considerar los medios de primer nivel.</p>
-<p>Paso 3: Pensar en los medios de segundo nivel y posteriores</p>
-<p>Paso 4: Conectar con líneas la relación entre el objetivo y los medios.</p>
-<p>Paso 5: Finalizar el diagrama sistemático</p>
-<p>Paso 6: Seleccionar los medios viables para su implementación</p>
+<h3 id="2.-C%C3%B3mo-hacer-un-diagrama-sistem%C3%A1tico">2. C&#243;mo hacer un diagrama sistem&#225;tico<a class="anchor-link" href="#2.-C%C3%B3mo-hacer-un-diagrama-sistem%C3%A1tico">&#182;</a></h3><p>系統図のつくり方</p>
+<p>Tipo de desarrollo de estrategias</p>
+<p>Paso 1: Determinar el objetivo principal basado en el tema.
+テーマに基づいて基本目的を決める</p>
+<p>Paso 2: Considerar los medios de primer nivel.
+１次手段を考える</p>
+<p>Paso 3: Pensar en los medios de segundo nivel y posteriores
+２次以降の手段を考える</p>
+<p>Paso 4: Conectar con líneas la relación entre el objetivo y los medios.
+目的と手段の関係を線でつなぐ</p>
+<p>Paso 5: Finalizar el diagrama sistemático
+系統図を仕上げる</p>
+<p>Paso 6: Seleccionar los medios viables para su implementación
+実行可能な手段を絞り込む</p>
+<p><a href="https://drive.google.com/file/d/1y-Ttl4MS33EeGMnodfSBX1ZK_Q75M6TB/view?usp=drive_link">Audio_8</a></p>
 
 </div>
 </div>
@@ -14868,7 +14931,8 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.3-Ejemplo-de-diagrama-sistem%C3%A1tico-para-crear-una-organizaci%C3%B3n-capaz-de-abordar-y-prevenir-problemas-de-calidad">Figura 3.3 Ejemplo de diagrama sistem&#225;tico para crear una organizaci&#243;n capaz de abordar y prevenir problemas de calidad<a class="anchor-link" href="#Figura-3.3-Ejemplo-de-diagrama-sistem%C3%A1tico-para-crear-una-organizaci%C3%B3n-capaz-de-abordar-y-prevenir-problemas-de-calidad">&#182;</a></h4>
+<h4 id="Figura-3.3-Ejemplo-de-diagrama-sistem%C3%A1tico-para-crear-una-organizaci%C3%B3n-capaz-de-abordar-y-prevenir-problemas-de-calidad">Figura 3.3 Ejemplo de diagrama sistem&#225;tico para crear una organizaci&#243;n capaz de abordar y prevenir problemas de calidad<a class="anchor-link" href="#Figura-3.3-Ejemplo-de-diagrama-sistem%C3%A1tico-para-crear-una-organizaci%C3%B3n-capaz-de-abordar-y-prevenir-problemas-de-calidad">&#182;</a></h4><p><a href="https://drive.google.com/file/d/1p37YeCQctvf7WDsHLuQcwCOfm8ib31No/view?usp=drive_link">Audio_9</a></p>
+
 </div>
 </div>
 </div>
@@ -14877,7 +14941,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/Sistemático.png&#39;</span><span class="p">)</span>
@@ -14924,13 +14988,23 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-04-M%C3%A9todo-del-diagrama-de-matriz">03-04 M&#233;todo del diagrama de matriz<a class="anchor-link" href="#03-04-M%C3%A9todo-del-diagrama-de-matriz">&#182;</a></h2><h3 id="1.-M%C3%A9todo-del-diagrama-de-matriz-su-aplicaci%C3%B3n">1. M&#233;todo del diagrama de matriz su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-del-diagrama-de-matriz-su-aplicaci%C3%B3n">&#182;</a></h3><p>El método del diagrama de matriz se utiliza para aclarar los problemas a través del pensamiento multidimensional. Especialmente, se emplea para explorar la ubicación o forma del problema dentro de un diseño binario, o para obtener ideas para la solución del problema. También se usa para organizar las relaciones entre múltiples elementos, como entre causas y resultados, o entre diferentes factores.</p>
-<h3 id="2.-C%C3%B3mo-hacer-un-diagrama-de-matriz">2. C&#243;mo hacer un diagrama de matriz<a class="anchor-link" href="#2.-C%C3%B3mo-hacer-un-diagrama-de-matriz">&#182;</a></h3><p>Paso 1: Determinar el tema</p>
-<p>Paso 2: Decidir los elementos a combinar y considerar</p>
-<p>Paso 3: Elegir el tipo de diagrama de matriz</p>
-<p>Paso 4: Decidir los elementos a ubicar en cada eje</p>
-<p>Paso 5: Determinar la existencia o el grado de relación</p>
-<p>Paso 6: Obtener puntos de enfoque</p>
+<h2 id="03-04-M%C3%A9todo-del-diagrama-de-matriz">03-04 M&#233;todo del diagrama de matriz<a class="anchor-link" href="#03-04-M%C3%A9todo-del-diagrama-de-matriz">&#182;</a></h2><p>マトリックス図法</p>
+<h3 id="1.-M%C3%A9todo-del-diagrama-de-matriz-su-aplicaci%C3%B3n">1. M&#233;todo del diagrama de matriz su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-del-diagrama-de-matriz-su-aplicaci%C3%B3n">&#182;</a></h3><p>マトリックス図法とその運用</p>
+<p>El método del diagrama de matriz se utiliza para aclarar los problemas a través del pensamiento multidimensional. Especialmente, se emplea para explorar la ubicación o forma del problema dentro de un diseño binario, o para obtener ideas para la solución del problema. También se usa para organizar las relaciones entre múltiples elementos, como entre causas y resultados, o entre diferentes factores.</p>
+<h3 id="2.-C%C3%B3mo-hacer-un-diagrama-de-matriz">2. C&#243;mo hacer un diagrama de matriz<a class="anchor-link" href="#2.-C%C3%B3mo-hacer-un-diagrama-de-matriz">&#182;</a></h3><p>マトリックス図のつくり方</p>
+<p>Paso 1: Determinar el tema
+テーマを決める</p>
+<p>Paso 2: Decidir los elementos a combinar y considerar
+組み合わせて考える事柄を決める</p>
+<p>Paso 3: Elegir el tipo de diagrama de matriz
+マトリックス図の型をえらぶ</p>
+<p>Paso 4: Decidir los elementos a ubicar en cada eje
+各軸に配する要素を決める</p>
+<p>Paso 5: Determinar la existencia o el grado de relación
+関連の有無あるいは関連の度合いを決める</p>
+<p>Paso 6: Obtener puntos de enfoque
+着眼点を得る</p>
+<p><a href="https://drive.google.com/file/d/17CQ-jsjgPTAYRSqdqngWQ8eKJZP-A2Yj/view?usp=drive_link">Audio_10</a></p>
 
 </div>
 </div>
@@ -14942,7 +15016,8 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.4-Tabla-de-calidad-del-cortador-de-nuevo-producto-mediante-el-diagrama-de-matriz-en-forma-de-L">Figura 3.4 Tabla de calidad del cortador de nuevo producto mediante el diagrama de matriz en forma de L<a class="anchor-link" href="#Figura-3.4-Tabla-de-calidad-del-cortador-de-nuevo-producto-mediante-el-diagrama-de-matriz-en-forma-de-L">&#182;</a></h4>
+<h4 id="Figura-3.4-Tabla-de-calidad-del-cortador-de-nuevo-producto-mediante-el-diagrama-de-matriz-en-forma-de-L">Figura 3.4 Tabla de calidad del cortador de nuevo producto mediante el diagrama de matriz en forma de L<a class="anchor-link" href="#Figura-3.4-Tabla-de-calidad-del-cortador-de-nuevo-producto-mediante-el-diagrama-de-matriz-en-forma-de-L">&#182;</a></h4><p><a href="https://drive.google.com/file/d/1b5a3D-chDMJPSiGDR5NBacYmwOqePLC3/view?usp=drive_link">Audio_11</a></p>
+
 </div>
 </div>
 </div>
@@ -14951,7 +15026,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/Matrís.png&#39;</span><span class="p">)</span>
@@ -14998,18 +15073,27 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-05-M%C3%A9todo-del-diagrama-de-flechas">03-05 M&#233;todo del diagrama de flechas<a class="anchor-link" href="#03-05-M%C3%A9todo-del-diagrama-de-flechas">&#182;</a></h2><h3 id="1.-M%C3%A9todo-del-diagrama-de-flechas-y-su-aplicaci%C3%B3n">1. M&#233;todo del diagrama de flechas y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-del-diagrama-de-flechas-y-su-aplicaci%C3%B3n">&#182;</a></h3><ul>
-<li>El método del diagrama de flechas es un diagrama que utiliza flechas para representar la planificación del cronograma.</li>
-</ul>
-<p>PERT (Programme Evaluation and Review Technique): Se utiliza para la planificación de cronogramas y la gestión del progreso. Representa las relaciones entre las tareas necesarias para llevar a cabo un plan específico mediante una red, con el fin de establecer una planificación óptima del cronograma y gestionar el progreso de manera eficiente.</p>
+<h2 id="03-05-M%C3%A9todo-del-diagrama-de-flechas">03-05 M&#233;todo del diagrama de flechas<a class="anchor-link" href="#03-05-M%C3%A9todo-del-diagrama-de-flechas">&#182;</a></h2><p>アローダイアグラム</p>
+<h3 id="1.-M%C3%A9todo-del-diagrama-de-flechas-y-su-aplicaci%C3%B3n">1. M&#233;todo del diagrama de flechas y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-del-diagrama-de-flechas-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>アローダイアグラム法とその適用</p>
+<p>El método del diagrama de flechas es un diagrama que utiliza flechas para representar la planificación del cronograma.</p>
+<p>PERT (Programa Evaluation and Review Technique): Se utiliza para la planificación de cronogramas y la gestión del progreso. Representa las relaciones entre las tareas necesarias para llevar a cabo un plan específico mediante una red, con el fin de establecer una planificación óptima del cronograma y gestionar el progreso de manera eficiente.</p>
 <p>El Método del Diagrama de Flechas (ADM) es una técnica que representa las relaciones de precedencia entre las tareas necesarias para llevar a cabo un proyecto mediante flechas y nodos, con el fin de crear una planificación óptima del cronograma, identificar los puntos críticos para la gestión del progreso y administrar eficientemente el avance del plan.</p>
-<h3 id="2.-C%C3%B3mo-hacer-un-diagrama-de">2. C&#243;mo hacer un diagrama de<a class="anchor-link" href="#2.-C%C3%B3mo-hacer-un-diagrama-de">&#182;</a></h3><p>Paso 1: Determinar las tareas necesarias para el plan y la duración requerida.</p>
-<p>Paso 2: Crear tarjetas de tareas.</p>
-<p>Paso 3: Establecer el orden de relación entre las tarjetas de tareas.</p>
-<p>Paso 4: Disponer las tarjetas de tareas.</p>
-<p>Paso 5: Conectar con líneas de unión y flechas.</p>
-<p>Paso 6: Asignar números de los puntos de unión.</p>
-<p>Paso 7: Calcular los tiempos de los puntos de unión más tempranos y más tardíos para determinar la <strong>ruta crítica</strong>.</p>
+<h3 id="2.-C%C3%B3mo-hacer-un-diagrama-de-flechas">2. C&#243;mo hacer un diagrama de flechas<a class="anchor-link" href="#2.-C%C3%B3mo-hacer-un-diagrama-de-flechas">&#182;</a></h3><p>アローダイアグラムのつくり方</p>
+<p>Paso 1: Determinar las tareas necesarias para el plan y la duración requerida.
+計画に必要な作業と所要時間を決める</p>
+<p>Paso 2: Crear tarjetas de tareas.
+作業カードを作る</p>
+<p>Paso 3: Establecer el orden de relación entre las tarjetas de tareas.
+作用カードの相互の順序関係をつける</p>
+<p>Paso 4: Disponer las tarjetas de tareas.
+作業カードを配置する</p>
+<p>Paso 5: Conectar con líneas de unión y flechas.
+結合点を入れて矢印でつなぐ</p>
+<p>Paso 6: Asignar números de los puntos de unión.
+結合点番号を付ける</p>
+<p>Paso 7: Calcular los tiempos de los puntos de unión más tempranos y más tardíos para determinar la <strong>ruta crítica</strong>.
+最早・最遅結合点日程を計算してクリティカルパスを求める</p>
+<p><a href="https://drive.google.com/file/d/1Kr7cvaJM1kK-GFvhYxtY-c2b9D0F0_L9/view?usp=drive_link">Audio_12</a></p>
 
 </div>
 </div>
@@ -15021,7 +15105,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.5">Figura 3.5<a class="anchor-link" href="#Figura-3.5">&#182;</a></h4><p>Diagrama de Flechas del Proceso de Estudio para el Examen de Certificación QC Nivel 3.</p>
+<h4 id="Figura-3.5-Diagrama-de-Flechas-del-Proceso-de-Estudio-para-el-Examen-de-Certificaci%C3%B3n-QC-Nivel-3.">Figura 3.5 Diagrama de Flechas del Proceso de Estudio para el Examen de Certificaci&#243;n QC Nivel 3.<a class="anchor-link" href="#Figura-3.5-Diagrama-de-Flechas-del-Proceso-de-Estudio-para-el-Examen-de-Certificaci%C3%B3n-QC-Nivel-3.">&#182;</a></h4><p><a href="https://drive.google.com/file/d/1tV6e1NbkkAvnI2BBjVBq1BQTKUqDojpO/view?usp=drive_link">Audio_13</a></p>
 
 </div>
 </div>
@@ -15031,7 +15115,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">draw_pert_graph</span>
@@ -15120,7 +15204,7 @@ class="
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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WbJELS0tXpcDoBdo3ICAJEiuX79eV1xxRZ9j//3AThIGDx6sbdu2OSuIoZdKSbffLp1xRvvHixdL557rdVUAQsKu/zl8+HC98sorPCcDAUA4CRCABMnFixdrzpw5zgts0KXTaaVSqUA3oK6vuiUS0gMPSFdc4XU1AELGTgNt/zTPyYD/seIG+DxB0kYL3/e+9+VF02ai0egxTxBss/zWrVudyOp8YuEs3YpGpdLS9nASAMgxG73v6TnZ3mjr/DsAbxV6fHwAeZQgeTJefvll3XPPPfrRj37kjFTax+vWrVM++OQnP+mEslgD3qMA7lsEkN/sjTZz6NAhvf766xph4UkAPEPjBvhQkBMk++Ivf/mL06TaCuN9992nc88919nP98tf/lJz585VkN18881OqIw1pWb37t3Ou9t23xYW8hQMwF9sde2xxx7TX//6V2c/sl3GZdCgQc5r0qxZs/S9733P6xKB0GJUEvChoCdInugFun/2s5+pX79+uummm5ymzS4QW19f71wDLsj27t2rW265RRMmTHA+vv3223Xttddq+vTp+s53vsN17QD4jjVs119/verq6vSVr3xFV111lS644AKNGTNGp512mtflAaFGOAngwwTJlStXav78+c6qTL77xCc+4TRvv/nNb5yPrWF7+OGHtXbtWme16pRTTlGQPfvss86qob1j3dDQ4Kws2j4+27toJ0Kf//znvS4RALr45je/6byBaHtzf/GLX2jFihX6+Mc/rksvvdTr0oBQY8UN8FmCpI2jzJ49OxRNm+3js7Gcf/u3f3M+/tvf/ub8/9uYzj/+4z8Gvmkzttr2yCOPOKuH1qSNHj1aU6ZMcU6A7J1tC2Hh/TMAftARQnLjjTc6z7/nnXee8/z1jW9840jTxvMV4B02WAA+kY8Jksdje7yskbFRnGnTpjnjobFYzPnz5ZdfrnxhTfjdd9/d5YRn0aJFqqysdEZEAcAvYSStra168cUXNWrUKG3YsMF5E23ixIlHPiffx/cBP6NxA3wgbAmSR4/k2AmCjQ9aA2cjhePHj1deaGtrv05bLNblhOeGG25w9o9Y+AoA+ImFJz399NPOG2t//vOf9eqrr3pdEoDD2OMGeMx+BO+9916nebvssstC/26mfT+SyaTz/Qh0OEl9vTRjhvTzn0tveYsUjzs327vZlpxpK6uB/v8DEKrnZHvuKrVrTgLwDHvcAI+FKUGyNycI9j2wQI9f/epXzslCILW2SpddJtl16GzE6OGHpVTqyLvZ1qDTtAEIynOy7cddvHixWlpavC4JCDUaN8DjBMn169c71yyzE/qw62hcbU/FkCFDnJXIwA0FWL3XXis9+mj7x3aiY7cVFHhdGQD06TnZLtNie6/tepSBe04G8giNG+CRsCVInujJwvvf/34nsOXRjgYoKH7yk/bxyA7f+Y704Q97WREAnPRz8owZM5wU3NWrV3tdDhBaNG6AB8KYIHmibGO8NbWbNm3Sc889p0CwkcjPfvaNj+fMkb76VS8rAgBXFBQUaNasWdqyZYvzvAwg92jcgBwLc4LkibJ9YFdeeaUeeugh7dixQ772/PPS7NntKZJm0iRpwQJ7q9rrygDAFfF43HlOXrVqlZMEDCC3aNyAHLK9ATYeaaOR7373u70uJxBsr9sHP/hBp9ltbGyUbxMkP/ABqaGh/eMRI6R775Xy4ALiANBZVVWVE6a1bNky7d+/3+tygFChcQNyiATJvnnb297mXAB2yZIl/kua7EiQ3Lq1/WOL/V++XBo61OvKACArqqur9a53vct5TiZpEsgdGjcgR0iQPDmTJ0/ukjR54MABpwn2VYKkWbzYIti8rAoAsu78888naRLIMS7ADeQoQdKugTNnzhzCSE5yf+CiRYtUWVmp559/3vn9E5/4RK//vT3dNbWmdCDZpnQmo3RGikbsV0T9Y4UqKSo4sZXQH/9Yuv76rgmSX/vaCf5fAUAwpVIp57VtxIgRmjZtmtflAHmv0OsCgHxHgqS7SZNnnXWWVq5c6Xy8e/du58TB0s56atTqEkntOtis+kNJNSbbFLH/rDfr/JZVpH3xLKOMymKFqjwlpqGl/TQ4Huu5kSNBEkDIdSRNLliwwNn7ZqFbALKHxg3IIhIk3bV169YjTZuJRqPOaubRDXEyldb2hoRq9jWpLZ1RW5fBAqdD66rTx/tb2pxf2xsOqTAaUXVFiUaXxxUr6DRZToIkAHRJmly4cKEqKio0cuRIr0sC8hZ73IAsIUHSfaNHj9Yll1yi/v37O6tvra2t+tvf/nbk761J27i7QSu37taWvQfUnEof1bT1nv07+/f2dezr2de1r0+CJAB0RdIkkBvscQOyZM2aNc6FSufOnUsYicvsaeull17SihUrnMZ43rx52ptIav3O15VMp529a26zvXCxaFQTf36rBn3//72RILlmDWEkACDp6aef1saNG53n5OLiYq/LAfIOjRuQpQRJG+mbP3++01gge1LpjJ6ta9SrjQmlcvBsVtDcrFF336UJ3/13Fdy1RPrwh7N/UAAI0KRJIpHQ7NmzuewN4DIaN8BlJEjmTls6rTW1+7S/pTUrq2w9iSZbNKC1RVPOqVZhlIlzAOhA0iSQPZxxAC4iQTK3Tdtjr9bnvGkz6Vix9peWOce3OgAAXZMmbavApk2bvC4HyCs0boBLSJDM7XikrbS1X4/NmxrsuHZ8q8PqAQB0TZpctWqVamtrvS4HyBs0boALSJDMLdvT5sVK29Hs+FaH1QMAeANJk4D7aNwAFzz55JPas2eP8yLFZuzssvRICyLxumnrYHVYPVYXAOAN1dXVete73qUlS5aopaXF63KAwKNxA1xIkFy/fr2uuOIKYv+zzK6jZpH/uUiPPBFWj9XlXOcNAHDE+eef7+z5vueee5zpFAB9R+MGnGSCpI1IWuwxsf/Zt3lPo3OdNj+yuqw+AMAbbAplxowZam5u1urVq70uBwg0Gjegj0iQzK1kKq1tDf4ZkTya1WX1WZ0AgDeQNAm4g8YN6AMSJHNve0NCft89GDlcJwCgK5ImgZNH4wacIBIkvfme1+xr8t3etqNZfVYn+zgA4M1ImgRODo0bcIJIkMy9ukQyMMEfremM9pAwCQDdImkS6DsaN+AEkCDpjV0Hm9WWhVWsJx64R5eOH+b8+sVN33Tla6YyGf29iZMRAOgJSZNA39C4Ab1EgqR36g+5v4JVv2un7rjxqyooLHT/aydo3ACgJyRNAn1D4wb0AgmS3rF3YxuTba5/zZ98+TMaOHiIzr/4ErnN6uVdZADoGUmTwImjcQOOgwRJbzW1phRxOU/ygTvv0PN/Wa/PfP+nKor1k9usXqsbANAzkiaBE0PjBhwDCZLeO5Bsk5sZMK/+7QX9+j+/qyv+9fM67fTsNOJW70GXVwkBIB+RNAn0Ho0bcAwkSHovbSOHLk4drl21Qm2tSf31T2t10/+9Ss+tfcK5/U9/XKVf/fAmdw6SaQ8pAQAcH0mTQO/QuAE9IEHSH9y+CoCtotqvDY//UX957A+q3/V35/a6117V3zb+xbXjBOTqBQDgCyRNAsdH4wZ0gwRJ/4i6vNA5+7rP63cv7Dzy690zZzm3z7hqvm5c/Dvf1g0A+YykSeD4aNyAo5Ag6S9RG1ENWhMUkQoYrQWAE0LSJHBskQzr0UCXBMk777xTY8eO1dSpU70uB9ZIJ9u0etveQO0Zs6btojGDVBpz/xpxAJDvbG/5woULna0KI0eO9LocwDdYcQMOI0HSn0qKCpRxM50kB6xeq/uNGzLS3/8urVol/eEPUopLBQBAT0iaBLpH4wYcRoKkP9l9URawlSurN1JXJ110kTRunDRwoDRsmPRP/yS9973Sd7/rdYkA4GskTQJvRuMGkCDpe5WnxBQklfFi6cMflv74R+nll6WGhq6f8MILXpUGAIFB0iTQFY0bQo8ESf8bWtpPhQFZBbX9baeWFEtDhvT8Sf/7v9Kll0oLF0q2MgcAeBOSJoGuaNwQaiRIBsPgeEyFAcnXL4pGVBWPSXfdJV1wQfefZGM/d98tzZ0rDR0qvfOd0k03Sc89174fDgDgIGkSeAONG0KdILl06VKdffbZOvPMM70uB8d517W6okQFPu/drD6r09kjGYtJjz4qfepTXT+puLjrx9aorV0rfe1r0oQJ0mmnSdddJz38cHuDBwAhF4/HdeWVV2rVqlWqra31uhzAMzRuCCUSJINndHnc99mSmcN1HhGNSv/1X9IXv/jGbbfeKm3ZIt18szRlSvvndLZ9u/TTn0rTp0uDBjFSCQAkTQIOruOGUFqzZo0zdjF37lzCSAJk4+4GbWtIKO3DZy2b5BxTHtc5Q8q7/wRbfbOQkg9+0JYQ37i9vl568EHp/vulhx6SGhu7//f2byZNkj7wgfZftkockH1/AOCWp59+Whs3btS8efNUfPQEA5DnaNwQygTJlStXav78+YSRBExbOqNVL9epOZWW3/QriOrisYNPbi9eMik98UR7E2e/LJGyJ6NHtzdw73+/ZKvGnMAACNHETCKRcELFuHwPwoTGDaFLkFy8eLHmzJlDGElA7U0k9eRr9Upl/LW3bcqISlVaKIlb7KnZLhvQ0cQ99ZSU7qFhLS2VLr64vZG75BJp8GD36gAAn0mlUs5r+YgRIzRt2jSvywFyhsYNoUqQXLBggfMkTxhJsG3Y1aDtjf4YmbQFttFlcZ07tIcRSbcwUgkAR9iKm72mX3jhhU7IGBAGNG4ITYLknXfeqbFjx2rq1Klel4OTlEpn9ERtvfa3tHravFnTNqC4SBeMrFRBLi9XwEglAGjPnj1auHChrrjiCo0cOdLrcoCso3FD3rOH+L333us0b5dddhnz8HmiLZ3WY6/W60CyzZPmzfq0/rFCXTiqUoVHJ0PmEiOVAEKspqZGy5cv19VXX60BAwZ4XQ6QVTRuyHskSOZ387amdl/OV946VtqmjKzwtmnrDiOVAEKGpEmEBY0b8hoJkuEYm3y2rlGvNiZyElhiQSSjyuKaMLgst+ORfcFIJYAQIGkSYUHjhrxFgmT40ibX73xdyXQ6K6tv1qPFolFNHDZQg9xMj8wVRioB5DGSJhEGNG7ISyRIhvc6b5v3NDoX6bb3W91YgbMVNvsydnHtM6vKTu46bX7CSCWAPEPSJPIdjRvyDgmSSKbS2t6QUM2+JrWmM0r14WmuIBJRUTSi6ooSjS6PK1bgs71sbmKkEkCeIGkS+YzGDXmFBEkc/XioSyS1q6lF9YkWNSbbFLH/7GHR+ZnPVtUydlNGZbFCVcaLdWpJsarisfA9hhipBBBwJE0iX9G4Ia+QIIljsae7ptaUDibbnFU42wtnk4+2ulYaK1RJUUH4GrXjYaQSQACRNIl8ROOGvEGCJJBljFQCCAiSJpGPaNyQF0iQBHKMkUoAPkfSJPINjRsCjwRJIGAjleef374Sx0glgCwjaRL5hMYNgUaCJOBDjFQC8BGSJpEvaNwQWCRIAgHASCUAHyBpEvmAxg2B9ac//UkbNmwgQRIIEkYqAXiEpEkEHY0bAsEepp1X1NLptJLJpLPxuKSkxNPaAPQRI5UAcoikSQQdjRt87c9//rP+8R//sdvmDUAeYaQSQA6QNIkgo3GDb33uc5/TsmXL9LWvfU2f+tSnjjzhFhQUeF0agGxjpBJAlpA0iaCicYNvWVrk73//e51yyinOOOStt97qdUkAvMBIJQCXkTSJIKJxg6/DR2666SZ96Utf0q9//Ws1NTWppaVF3/jGN/TWt75V0WjU6xIB5BojlQBcQtIkgobGDb72la98Rdddd53Ky8s1adIk52LbtrH4rLPO8ro0AH7ASCWAk0DSJIKExg2+1BFE8tWvflVvectbtGvXLueabVdddZV++9vf6vbbb9f48eO9LhOAnzBSCeAEkTSJIKFxg6/t2LFD11xzjZ5//nmtWbNGgwcP1vr16zVx4kSvSwPgZ4xUAuglkiYRFDRu8DW7XttvfvMbnXPOOTrTRpsAoC8YqQRwDCRNIgho3ODbhs3eASsqKupyG4EkAE4aI5UAukHSJPyOxg2+Yw9J289mASTjxo1j3hxA9jBSCaATkibhZzRu8B3by7ZlyxbNnTu3y4obAGQdI5VA6JE0Cb+icYOvvPDCC1q5cqXmz5+vsrIyr8sBEGaMVAKhRNIk/IrGDb5hkf+W6jRnzhwNHz7c63IA4A2MVAKhQtIk/IjGDb5gF9a2NCd7ciQ9EoDvMVIJ5D2SJuE3NG7wXFtbm+68806NHTtWU6dO9bocADgxjFQCeYukSfgJjRt8kSBpzdtll13GHDmAYGOkEsg7JE3CL2jc4CkSJAHkNUYqgbxA0iT8gMYNnvFrgqT9SDS1pnQg2aZ0JqN0RopG7FdE/WOFKikqYGUQwIljpBIILJIm4Qc0blDYEyTtR6AukdSug82qP5RUY7JNEfvPnpM7/3RE2qegMsqoLFaoylNiGlraT4PjMZ7AAZwYRiqBwCFpEl6jcUNoEySTqbS2NyRUs69JbemM2vrwo1AYiagwGlF1RYlGl8cVK4hmpVYAeY6RSiAQSJqEl2jcELoESWvSNu9p1LaGhC2iKeXCT0CBrcZJGlMe15lVZU4zBwB9wkgl4GskTcIrNG4IVYLk3kRS63e+rmQ67exdc5v1a7FoVBOHDdSgeMz9AwAIF0YqAV8iaRJeoHFDKBIkU+mMnq1r1KuNCVdW2HqzAjeqLK4Jg8tUwOobALcwUgn4BkmTyDUaN+R9gmRbOq01tfu0v6U1K6tsPbF+bUBxkaaMrFBhlL1vAFzGSCXgKZImkWs0bsjrBElr2h57tf5wtL9yzpo3u4TAhaMqad4AZA8jlYAnSJpELtG4IW8TJG088ona+pyvtPW08nbByErGJgHkBiOVQM6QNIlcoXFD3iZIbtjVoO2NCU+btg7Wr40ui+vcoeVelwIgbBipBLKOpEnkAo0b8jJB0tIjn3ytPidBJCcSWDJ5RCVpkwC8w0glkDUkTSLbaNyQdwmSdp22VS/XqTnVw8mIh/oVRHXx2MFc5w2APzBSCbiKpElkE40b8ipB0mzc3eBcXNsPI5JHs37NLtJ9zhBGJgH4DCOVwEkjaRLZROOGvEmQNMlUWiu37vZl09a5ebtk3BDFCkiZBOBTjFQCfUbSJLKFxg15kSDZoWbfQW3Ze8BXe9u62+t2xqD+qq4o9boUAOgdRiqBE0LSJLKBxg15kSBp7KH84FZ/7m3rbq/b+8YNZoQCQPAwUgn0CkmTcBuNGwKfINlhd1OL1u14XW0BeEgXRCJ65/CBGlzCSQyAAGOkEjgmkibhJho3BDpBsrNNuxu0dX9CQTFuYInOHpz78BYACPJI5Y4dO5wT4JKSEndrB7KEpEm4hcYNgU6Q7OyP2/Zof0ubK1/rgTvv0Orf3aXXXnpR6XRasz59g2Zf93m5aUBxod4zpsrVrwkA+T5S+d73vlebN2/W+eefr0mTJumaa67x/PUHOBaSJuEWYu1wUgmS9kRkT0Jev2jak2Jj0p2mzWz967PqXz5AlUOHKVusXt43AZC3YjHpooukW2+VXnpJ2rJFuvlmacoUKXrU6cf27dJPfypNny4NGiRdemn76t1RbCS/trbWWcGwhu2ll15SY0+reoBPWKM2Y8YMNTc3a/Xq1V6XgwAr9LoABDdB8q677tL73vc+T2L/j9bUmlJE9g6WO43Q9d/7ifP7//v0XO3Z+Zqyweq1uktj/BgCyHO2wnD66e2/vvjFY49UHjwoPfJI+564ozz88MPO72PGjHF+2eobEAQFBQWaNWuWkzRZVVVF0iT6hBU3nDB7x3Pp0qXOk45Xsf9HO5BsC1zitNV70MVVQgAIjMpK6aMflZYuteg96Q9/kK6/Xho7tv3vbeWtpeVN/8xWLOLxuCZOnKgf/ehHaunmcwC/ssfulVdeqVWrVjkrx8CJonFDn+a0bTTy3bYPwSfSNnIYtKnDjJRiVBJA2HU3Uvmtb0ndjOBfeumleuaZZ3T33XfrwQcf1NatWz0pGegrW22bOXOmli1bpv3793tdDgKGxg0n5Mknn3SuS2JPOn7aXJsOaP8T1LoBIKsjldXVx/y0wYMHO8mSr7zyStcwlO9/X3ruufbLFAA+VV1drXe9611asmQJq8Y4ITRuOKEEyfXr1zsXkvQy9r87Uf/0kKGoGwBy7ec//7nuvPNO589PPfWUs2eo0kYuO6xf375/bsIE6bTTpOuus01x3Y5cAl6zVFTLCLjnnnsIKkOv0bghcAmS3Ynau7QuNkF/+O2v9ZMvf0avbHnO+Xj96oecj9f94UH3DhJpvxA3AOD4rEmzk9zTTz9dP/jBD5xgkne84x3tf9nUJP3mN8dOqVy4UKqr86x+oDOSJtEXXMcNvUqQtBSkadOm+SaM5GgW8rF6217X9oxZk/bovcvedLub13Ozpu2iMYNIlQSAE5BKpbRz506NHDnyjRvtuf+ee9rDTrJ04W8gG+zabnaOdeGFF5I0ieOiccNxEyRtNGXs2LGaOnWq/MoexvfV7ArUnjEbk/xQ9VBf7RUEgKCw5/1unz+zdOFvIFssO2DhwoXOVpQub0gAR6FxQ4/soXHvvfc6zdtll13m+wbjj9v2aH9LcOL1BxQX6j1jqrwuAwDyl53ivPDCG03cU09J6XT3n2vXjbv44vZG7pJLLAEl19UixGpqarR8+XJdffXVTvAO0B0aN/RozZo12rJli+bOneu7MJLubNrdoK37EwqKcQNLdPZg/+0XBIC8dawLf3fGSCU88PTTT2vjxo2aN2+eiln9RTdo3NBjguTKlSs1f/58X4aRdGd3U4vW7XhdbQF4SNv+tncOH6jBJTwxA4AnGKmET6+Va/veLAzO75NOyD0aN3SbILl48WLNmTPHiaoNCnsoP7i1Ts2pHsZgfKRfQVTvGzeYJ2UA8ANGKuGj8B07BxsxYoQTCgd0RuOGwCVIHkvNvoPasveAUj5+VBdEpDMG9Vd1RanXpQAAusNIJTxE0iR6QuOGwCVI9qitTcnbf66VF7xP6eJ+8nOa5CXjhihWwGUUAcD3GKmEB0iaRHdo3BDIBMk3sRfVT39aeu45bfz6d7Tt0iuUPiUuPzZtY8rjOmdIudelAABOFCOVyCGSJnE0GjcEMkHyiF27pC98QfrVr47c1NbvFK364zo1VwySH/e2XTx2sAqtgwMABBsjlcgykibRGY0bApkgaWORuu026Zvf7PpCWVLi3Lb3U5/Wk7safbXXzfa2TRlRqcp4zOtSAABuY6QSWUDSJDqjcQu5QCZIdhqL7GLWLOmHP5RGjHA+3LCrQdsbE0r74BFuC2yjy+I6dygjkgCQ9xiphItImkQHGrcQC1yCZDdjkY63vU366U+lo57MUumMnqit1/6WVk+bN2vaBhQX6YKRlSpgRBIAwoeRSpwkkiZhaNxCKlAJkscZi9RnPiPFuh8/bEun9dir9TqQbPOkebM+rX+sUBeOqlRhlBRJAAg9RirRRyRNgsYthAKVINnTWOTll7ePRfbiicuatzW1+3K+8tax0jZlZAVNGwDgzRipxAkiaTLcaNxCKBAJkic4Fnk8Njb5bF2jXm1M5CSwxIJIRpXFNWFwGeORAIDeYaQSvUDSZHjRuIWM7xMkT2Issjf2JpJav/N1JdPprKy+WY8Wi0Y1cdhADSI9EgDQV4xUogckTYYXjVuI+D5B0oWxyN5oS2e0eU+jtjUkZE91bqzA2QqbfRm7uPaZVWVcpw0A4B5GKnEUkibDicYtJHydIOnyWGRvJVNpbW9IqGZfk1rTGaX68KNQEImoKBpRdUWJRpfHFStgLxsAIMsYqQRJk6FE4xYCvk2Q7GksMh5vv+2znz2pscjesh+BukRSu5paVJ9oUWOyTRH7z17bOv902Kpaxm7KqCxWqMp4sU4tKVZVPMaYAgDAG4xUhhpJk+FC45bnfJsgmaOxyL5+z5paUzqYbHNW4WwvnE0+2upaaaxQJUUF/vk+AgDQgZHKUCJpMjxo3PKc7xIkPRqLBAAgdPbubR+lZKQy75E0GQ40bnnMVwmSPhmLBAAglBipzGskTYYDjVue8lWCpI/HIgEACB1GKvMSSZP5j8YtD/kmQZKxSAAA/I+RyrxB0mR+o3HLM75IkGQsEgCAYGKkMvBImsxfNG55xBcJkoxFAgCQHxipDCySJvMTjVseyUWC5M6dOzVs2LA3/0VDg3TttYxFAgCQrxipDBSSJvMPjVueyHaCZFNTk770pS9p3bp1euSRR1Rq76x1dvCgdNpp7U/qhrFIAADyFyOVvkfSZP6Jel0A3EmQtB9M+6HMRtN23333ORtcBw4cqMcff/zNTZspLJRuueWNsUgbrfjSl2jaAADIR/b6ftFF0q23Si+9JG3ZIt18szRlihQ96vRy+/b26Zvp06VBg6RLL5UWLpTq6ryqPhSsUZsxY4aam5u1evVqr8uBC1hxC7hcJEguXbpUX/7yl/XKK68cmZseMmTIm5vEQ4fa97ZNnJiVOgAAQAAwUukrJE3mDxq3AMtlgqS9YzNmzBg1NDQ4aUXpdFrXX3+9c/uRpXd7KPGECwAAOjBS6QskTeYHGreAynWC5PPPP6/p06c7zdoNN9ygn/3sZ85t11xzjcaPH5/VYwMAgDxASqWnSJoMPhq3gMpFguTRduzYoeHDhx/52Fb5vv3tb2uKzbMDAACcCEYqc46kyWAjnCSgCZLr1693lruz1rTZRbRtvKGTzk3bM888o4KCApWXl2fn+AAAIL9ZUMlHP2qb6W2WT/rDH6Trr5fGju36ebbG8PTT0te+Jk2Y0J5ifd110sMPSy0tXlUfSOeff75zPnfPPfc401sIFlbcApgguXjxYs2ZM6dLI5WVi2hPmtSeFHk4RdIeKjYjfe211+rVV191RiZnzZqVnRoAAEA4MVKZValUyjmXHDFihBNuh+CgcQuQrCdI7tolfeELb1xE28YQnn1WOuOMI9G+jY2NWrZsmTMfzfVAAABA1jFS6TqSJoOJxi0gspogaWORt93WfsHszk+GdhHt//ov6aqreOIDAADeI6XSNSRNBg+NW9gTJDvGIu36a53ZRbR/+EOJH2QAAOBHjFSeNJImg4XGLawJkkePRXZ429ukn/xEeu973TkOAABALjBS2SckTQYHjVsAEiRXrlyp+fPnq6ysLLtjkXbbZz8rxWInfxwAAACvMFLZa9YK3H///c6+t9mzZ5Nh4GM0bmFKkGQsEgAAhA0jlcdF0mQw0LiFIUHyWGORP/2pxA8oAAAI00jlgw9KDzzASGUnJE36H41bPidIMhYJAADQM0YquyBp0t9o3PI1QZKxSAAAgN5jpNJB0qR/0bj1kX3bmlpTOpBsUzqTUTojRSP2K6L+sUKVFBX0qek66QRJxiIBAABOXohHKk82aTJb58lhR+PWS/Ztqksktetgs+oPJdWYbFPE/rPHXOfvYKT9DZuMMiqLFarylJiGlvbT4HjsuA/Qk0qQZCwSAAAgO0I2UnmiSZO5OE8GjdtxJVNpbW9IqGZfk9rSGbX14dtVGImoMBpRdUWJRpfHFSuIupsgyVgkAABAboRkpLI3SZO5Ok9GOxq3HtiDb/OeRm1rSNibA0q58F0qsHcZJI0pj+vMqjLnQXpSCZKMRQIAAHgrj0cqe0qazOV5Mt5A49aNvYmk1u98Xcl02pnJdZs9DmPRqCYOG6gBsWjvEiR37pQGDWofd2QsEgAAwH/ycKTy6KTJXJ4nD4pzPtsZjVsnqXRGz9Y16tXGhCvvHPTmnYXUvt1KvfaSLrv00p5ne60Ru/VW6Z3vlG68UbrhBsYiAQAA/CyPRiqdpMkHHtCUyz6qXYfacnaePKosrgmDy1TA6puDxu2wtnRaa2r3aX9La1bePehRJq2B/WK6YFSlCqPdzPQ+/LA0fXrP/56xSAAAAP8L8EilnSevevE1JaNF6qH1zArr1wYUF2nKyIruz5NDhsbt8IPxsVfrD0eW5v749qC0aNQLj27empraf1i3bXvzPyopaR+L/MxnGIsEAAAIkgCNVPr2PDmEQt+42XjkE7X1uV9p6+EdhQtGVr6xHDxnjrRkyZs/edgwae1axiIBAACCzscjlb4+Tw6h0DduG3Y1aHtjwtMHYwd7HI4ui+vcoeXte9gmTOj5k/fsaQ8rAQAAQP7w0Uilb8+TQyrUjZul4jz5Wn1ONlieyEbMySMqNWjDn6QpU7r/pPHjpWeflYqKcl0eAAAAQjBS6evz5Hg4twmFtnGz60+serlOzalcbrHsnX4FUV08drAKv3uT9Ic/SP/wD9K4ce0rbFVV7emSPo2MBQAAQLBHKgNxnhwN38hkaBu3jbsbnIsG+mHp92j2OLSLD54zJLxLwQAAAPBmpJLzZH8KZeOWTKW1cutuXz4YOz8oLxk3RLGCcKfnAAAAIHcjlZwn+1coG7eafQe1Ze8BX83sdjfDe8ag/qquKPW6FAAAAIRkpJLzZP8KXeNm/7sPbvXnzG53M7zvGzdYEY8vuggAAID8H6nMvPOdevD2X6u5yP9ZCv1CeJ4crvVFSXWJpLPhMgha0xntSSS9LgMAAABBZeF2H/uYtHRp++WkLPju+uulsWO7fl4mozoVqi3ZqiBoDeF5cugat10Hm9UWkEXGVCajvze1eF0GAAAA8kEsJl10kXTrrdJLL0lbtkg339x+CapoVLsuvEhtp8QVBKkQnicXKmTqD7nXmf/X1z+nF575k+p37VRhUbGqzz5XV33+6xr11vGuHaM+Ea4HJAAAAHLARgxPP7391xe/6IxU1u9scBo4t/zkS9fr2aefUOPr+3RKSYnGnXm2PnLDVzT2jLNc+fr1ITtPjoZtf1tjss21r7f6f5eopH+5psyYqXhpqTY8/kd9+xMfUbKl2bVjWL0h24YIAH324osv6pxzzjnyq6ysTLfaO8sAEHZ2PrlzZ49BJZnKSjX2c3e1bc/O13TGO87Xey69Qv0HDNTGNY/q5mvnufb1G0N2nhyqcJKDyTat3rbXWVp1w9bNz2rcmROcP9e9Vqv/b9ok58/f/91DGvv29ttPVkEkoovGDFJpLHSLowBwUlKplIYPH65169ZptMVfA0CYzZ0rLVwoveUt0je+Ic2ZIxUWZu08+Wgv//VZfeHS6YpGo1qy6RUVFhWd9NcsCNl5cjj+Lw87kGxrv96gS4/HjqbNtLW2j2BGCwo0sGqIi511Wgdf+JtK0+HafAkAxzVkiDR0aI8Xkl29erXGjRvXtWlra5M2b85djQDgF7/6VfvvtrftX/5F+vrXpeuukz77WaeBc/s8ucPKX/1Cr22t0XNPP+F8/IG5/9eVps1YvdZw0rjlobS9g5CFNxEONTXpp1/9rPPnD3z8kxo42L3GTQcOKPW1L0irVrr3NQEgH9hJx7e+1WPjdtddd+nKK6/seqPFYJ97bm7qAwA/q61t39t2++1OM5et8+S1D6/QX//0tPPnyqGnavx573Dvi2faQ0rCIlR73LJxFYCGffX6t3+5TC9u+LOmXf4RfezzX3f3AJGI0jH/X0sDAPwkmUxq+fLluvzyy70uBQD87ZVXnP1v2bpa1o2Lf6clm17Wl277hV6v260fXP9J1e14zbWvnw5P3xauFbeoy9fnswfdt6++Qju3vawPf/I6JyXHdQUFip56qnT22e5/bQAIMhuT7MGDDz6o8847T0NsnLKzggKeTwGE06ZNb77NnhM/9zlnocDt8+SW5kMqLIqpoKBAseJ+OveCqeoXL1Hi4AHtrt2uwcNHuHKcaHiuvx22xi0iuTi7+7UrP6h9dbs0aNhw58H5i5u+6dx+wfv/WdUTXBrFKSlRwX/+UCrt587XA4AQWLJkyZvHJE15ubRxoxclAYC37I2surr2Pw8Y0L637V//tf3PWThPrtm0Qbd+/tM64x2TVFI2QM//ZZ3TtJVVVGrs2925HIAi7QElYRGqxq1/rNBJQnWLNW1m784dWrFowZHbx4x/u2uNm9Ublg2XAOCGpqYm/f73v9fttm8DANDuv/9b+tnPpAsuaA8lOdywZes8uWLwEA0bM1abnnxCzYmDKhtYqXdO/4BmXfNZlfQvc+UYmZCdJ4fqcgD2v3pfza5AzcLa8u+HqocqEqJ3EwAAAJBbnCf7X6jCSexOLQtYV271huXBCAAAAG9wnux/oWrcTOUpMQVJZZxESQAAAGQf58n+FrrGbWhpPxUGpDO3zZanloTrAQkAAABvcJ7sb6Fr3AbHYyoMSG5oUTSiqniw3vkAAABAMHGe7G+ha9xsDra6okQFPn9MWn1WZ5jmdgEAAOAdzpP9LXSNmxldHnfrEhVZkzlcJwAAAJArnCf7Vygbt1hBVGPK47690rrVZfVZnQAAAECucJ7sX+H7Pz7szKoyxaL+/N+3uqw+AAAAINc4T/Ynf94jOWAbLycOG+i7GV6rZ9KwgYHZGAoAAID8wnmyP4W2cTOD4jGNKvPPUrDVYfVUhiwhBwAAAP7CebL/hLpxMxMGl2lAcZHnD0o7vtVh9QAAAABe4zzZX0LfuBVEI5oyskL9Y4WePSjtuHZ8q8PqAQAAALzGebK/RDKZjN8TP3OiLZ3Wmtp92t/SqnQm9+8g2IOx0KebQAEAABBenCf7A41bJ6l0Rs/WNerVxoRSmdxssLRZXVv2Dfs7CAAAAPAvzpO9R+PWjb2JpNbvfF3JdDor7yrYY8+iTC2txzZ+AgAAAEHAebJ3aNx60JbOaPOeRm1rSMh6fDfeWbB3DuzL2EUD7foTYY0yBQAAQHBxnuwNGrfjSKbS2t6QUM2+JrWmM0r14dtVEImoKBpRdUWJRof0Su8AAADIL5wn5xaNWy/Zt6kukdSuphbVJ1rUmGxTxP6zNwM6fwft3YKM3ZRRWaxQlfFinVpSrKp4TBHnkwEAAID8wXlybtC49ZF925paUzqYbHPeXbAZX1vRtXcNSmOFKikq4AEIAACA0OE8OTto3AAAAADA5xgiBQAAAACfo3EDAAAAAJ+jcQMAAAAAn6NxAwAAAACfo3EDAAAAAJ+jcQMAAAAAn6NxAwAAAACfo3EDAAAAAJ+jcQMAAAAAn6NxAwAAAACfo3EDAAAAAJ+jcQMAAAAAn6NxAwAAAACfo3EDAAAAAJ+jcQMAAAAAn6NxAwAAAACfo3EDAAAAAJ+jcQMAAAAAn6NxAwAAAACfo3EDAAAAAPnb/w+txtvNo5A1jQAAAABJRU5ErkJggg=="
+<img src="data:image/png;base64,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WbJELS0tXpcDoBdo3ICAJEiuX79eV1xxRZ9j//3AThIGDx6sbdu2OSuIoZdKSbffLp1xRvvHixdL557rdVUAQsKu/zl8+HC98sorPCcDAUA4CRCABMnFixdrzpw5zgts0KXTaaVSqUA3oK6vuiUS0gMPSFdc4XU1AELGTgNt/zTPyYD/seIG+DxB0kYL3/e+9+VF02ai0egxTxBss/zWrVudyOp8YuEs3YpGpdLS9nASAMgxG73v6TnZ3mjr/DsAbxV6fHwAeZQgeTJefvll3XPPPfrRj37kjFTax+vWrVM++OQnP+mEslgD3qMA7lsEkN/sjTZz6NAhvf766xph4UkAPEPjBvhQkBMk++Ivf/mL06TaCuN9992nc88919nP98tf/lJz585VkN18881OqIw1pWb37t3Ou9t23xYW8hQMwF9sde2xxx7TX//6V2c/sl3GZdCgQc5r0qxZs/S9733P6xKB0GJUEvChoCdInugFun/2s5+pX79+uummm5ymzS4QW19f71wDLsj27t2rW265RRMmTHA+vv3223Xttddq+vTp+s53vsN17QD4jjVs119/verq6vSVr3xFV111lS644AKNGTNGp512mtflAaFGOAngwwTJlStXav78+c6qTL77xCc+4TRvv/nNb5yPrWF7+OGHtXbtWme16pRTTlGQPfvss86qob1j3dDQ4Kws2j4+27toJ0Kf//znvS4RALr45je/6byBaHtzf/GLX2jFihX6+Mc/rksvvdTr0oBQY8UN8FmCpI2jzJ49OxRNm+3js7Gcf/u3f3M+/tvf/ub8/9uYzj/+4z8Gvmkzttr2yCOPOKuH1qSNHj1aU6ZMcU6A7J1tC2Hh/TMAftARQnLjjTc6z7/nnXee8/z1jW9840jTxvMV4B02WAA+kY8Jksdje7yskbFRnGnTpjnjobFYzPnz5ZdfrnxhTfjdd9/d5YRn0aJFqqysdEZEAcAvYSStra168cUXNWrUKG3YsMF5E23ixIlHPiffx/cBP6NxA3wgbAmSR4/k2AmCjQ9aA2cjhePHj1deaGtrv05bLNblhOeGG25w9o9Y+AoA+ImFJz399NPOG2t//vOf9eqrr3pdEoDD2OMGeMx+BO+9916nebvssstC/26mfT+SyaTz/Qh0OEl9vTRjhvTzn0tveYsUjzs327vZlpxpK6uB/v8DEKrn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"
 class="
 "
 >
@@ -15152,17 +15236,26 @@ Todas las tareas: 27 Semanas
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-06-M%C3%A9todo-PDPC">03-06 M&#233;todo PDPC<a class="anchor-link" href="#03-06-M%C3%A9todo-PDPC">&#182;</a></h2><h3 id="1.-M%C3%A9todo-PDPC-y-su-aplicaci%C3%B3n">1. M&#233;todo PDPC y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-PDPC-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>El método PDPC es un diagrama de planificación de procesos decisionales, que permite prever diversos resultados posibles con antelación y guiar el desarrollo del proceso en la dirección más favorable posible.</p>
+<h2 id="03-06-M%C3%A9todo-PDPC">03-06 M&#233;todo PDPC<a class="anchor-link" href="#03-06-M%C3%A9todo-PDPC">&#182;</a></h2><p>ＰＤＰＣ法</p>
+<h3 id="1.-M%C3%A9todo-PDPC-y-su-aplicaci%C3%B3n">1. M&#233;todo PDPC y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-PDPC-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>ＰＤＰＣ法とその運用</p>
+<p>El método PDPC es un diagrama de planificación de procesos decisionales, que permite prever diversos resultados posibles con antelación y guiar el desarrollo del proceso en la dirección más favorable posible.</p>
 <p>Representa una serie de pasos hasta la resolución de un problema y se utiliza cuando se anticipan posibles obstáculos y se toman las medidas adecuadas de antemano. Es una técnica para prever diversas situaciones en el curso de un proyecto y describir el flujo de las acciones para abordarlas.</p>
 <ol>
 <li>Cuando la situación es fluida y la predicción o la previsión son difíciles, quisiera planificar según el desarrollo de los acontecimientos en el proceso de implementación y alcanzar el objetivo.</li>
 <li>El objetivo es definir acciones preventivas para evitar que se produzca una situación crítica cuando se anticipan resultados desfavorables.</li>
 </ol>
-<h3 id="2.-C%C3%B3mo-elaborar-un-diagrama-PDPC">2. C&#243;mo elaborar un diagrama PDPC<a class="anchor-link" href="#2.-C%C3%B3mo-elaborar-un-diagrama-PDPC">&#182;</a></h3><p>Paso 1: Determinar el tema</p>
-<p>Paso 2: Definir el punto de partida y la meta (objetivo a alcanzar)</p>
-<p>Paso 3: Elaborar un plan de acción en el punto de partida.</p>
-<p>Paso 4: Desarrollar progresivamente el plan.</p>
-<p>Paso 5: Indicar la finalización del plan.</p>
+<h3 id="2.-C%C3%B3mo-elaborar-un-diagrama-PDPC">2. C&#243;mo elaborar un diagrama PDPC<a class="anchor-link" href="#2.-C%C3%B3mo-elaborar-un-diagrama-PDPC">&#182;</a></h3><p>ＰＤＰＣ図のつくり方</p>
+<p>Paso 1: Determinar el tema
+テーマを決める</p>
+<p>Paso 2: Definir el punto de partida y la meta (objetivo a alcanzar)
+出発点とゴール（到達目標）を決める</p>
+<p>Paso 3: Elaborar un plan de acción en el punto de partida.
+出発点での着手計画を立てる</p>
+<p>Paso 4: Desarrollar progresivamente el plan.
+計画を遂次充実する</p>
+<p>Paso 5: Indicar la finalización del plan.
+計画の完了を表示する</p>
+<p><a href="https://drive.google.com/file/d/1XYNdft0eoV_o8rTJOLnMU2EYhVhM9bj6/view?usp=drive_link">Audio_14</a></p>
 
 </div>
 </div>
@@ -15174,7 +15267,7 @@ Todas las tareas: 27 Semanas
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.6">Figura 3.6<a class="anchor-link" href="#Figura-3.6">&#182;</a></h4><p>Diagrama PDPC sobre las formas de regresar a casa en caso de encontrarse con una fuerte lluvia mientras se está fuera</p>
+<h4 id="Figura-3.6-Diagrama-PDPC-sobre-las-formas-de-regresar-a-casa-en-caso-de-encontrarse-con-una-fuerte-lluvia-mientras-se-est%C3%A1-fuera">Figura 3.6 Diagrama PDPC sobre las formas de regresar a casa en caso de encontrarse con una fuerte lluvia mientras se est&#225; fuera<a class="anchor-link" href="#Figura-3.6-Diagrama-PDPC-sobre-las-formas-de-regresar-a-casa-en-caso-de-encontrarse-con-una-fuerte-lluvia-mientras-se-est%C3%A1-fuera">&#182;</a></h4><p><a href="https://drive.google.com/file/d/1WBB4F-7Ywiaw6oAwu9iNUhr_7YM3Yt2E/view?usp=drive_link">Audio_15</a></p>
 
 </div>
 </div>
@@ -15184,7 +15277,7 @@ Todas las tareas: 27 Semanas
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/PDPC.png&#39;</span><span class="p">)</span>
@@ -15231,20 +15324,33 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-07-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales">03-07 M&#233;todo de an&#225;lisis de datos matriciales<a class="anchor-link" href="#03-07-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales">&#182;</a></h2><h3 id="1.-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales-y-su-aplicaci%C3%B3n">1. M&#233;todo de an&#225;lisis de datos matriciales y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales-y-su-aplicaci%C3%B3n">&#182;</a></h3><ul>
+<h3 id="03-07-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales">03-07 M&#233;todo de an&#225;lisis de datos matriciales<a class="anchor-link" href="#03-07-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales">&#182;</a></h3><p>マトリックス・データ解析法</p>
+<h3 id="1.-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales-y-su-aplicaci%C3%B3n">1. M&#233;todo de an&#225;lisis de datos matriciales y su aplicaci&#243;n<a class="anchor-link" href="#1.-M%C3%A9todo-de-an%C3%A1lisis-de-datos-matriciales-y-su-aplicaci%C3%B3n">&#182;</a></h3><p>マトリックス・データ解析法とその適用</p>
+<ul>
 <li>El método de análisis de datos matriciales consiste en analizar datos numéricos dispuestos en una matriz. Es una técnica de análisis multivariante y también se conoce como análisis de componentes principales.</li>
 </ul>
 <ol>
-<li>Se han recopilado datos con numerosas escalas (mediciones), pero no se puede captar la tendencia. No se pueden clasificar. Son difíciles de usar como factores. Son demasiado detallados y no se puede explicar de qué se trata en resumen.</li>
-<li>Quisiera analizar los datos de diversas encuestas para identificar la evaluación y la importancia que los clientes otorgan, así como las posibles vías de mejora.</li>
-<li>Quisiera consolidar los datos de los elementos de calidad de productos y componentes para identificar los puntos problemáticos en la garantía de calidad.</li>
+<li><p>Se han recopilado datos con numerosas escalas (mediciones), pero no se puede captar la tendencia. No se pueden clasificar. Son difíciles de usar como factores. Son demasiado detallados y no se puede explicar de qué se trata en resumen.</p>
+</li>
+<li><p>Quisiera analizar los datos de diversas encuestas para identificar la evaluación y la importancia que los clientes otorgan, así como las posibles vías de mejora.</p>
+</li>
+<li><p>Quisiera consolidar los datos de los elementos de calidad de productos y componentes para identificar los puntos problemáticos en la garantía de calidad.</p>
+</li>
 </ol>
-<h3 id="2.-Procedimiento-de-an%C3%A1lisis-de-datos-matriciales">2. Procedimiento de an&#225;lisis de datos matriciales<a class="anchor-link" href="#2.-Procedimiento-de-an%C3%A1lisis-de-datos-matriciales">&#182;</a></h3><p>Paso 1: Organizar los datos en una matriz.</p>
-<p>Paso 2: Calcular los valores propios y los vectores propios.</p>
-<p>Paso 3: Determinar el número de componentes principales.</p>
-<p>Paso 4: Asignar significado a cada componente principal.</p>
-<p>Paso 5: Calcular las puntuaciones de los componentes principales.</p>
-<p>Paso 6: Representar gráficamente la distribución de las muestras.</p>
+<h3 id="2.-Procedimiento-de-an%C3%A1lisis-de-datos-matriciales">2. Procedimiento de an&#225;lisis de datos matriciales<a class="anchor-link" href="#2.-Procedimiento-de-an%C3%A1lisis-de-datos-matriciales">&#182;</a></h3><p>マトリックス・データ解析の手順</p>
+<p>Paso 1: Organizar los datos en una matriz.
+データをマトリックス状に整理する</p>
+<p>Paso 2: Calcular los valores propios y los vectores propios.
+固有値・固有ベクトルを求める</p>
+<p>Paso 3: Determinar el número de componentes principales.
+主成分の数を決める</p>
+<p>Paso 4: Asignar significado a cada componente principal.
+各主成分の意味付けを行う</p>
+<p>Paso 5: Calcular las puntuaciones de los componentes principales.
+主成分得点を求める</p>
+<p>Paso 6: Representar gráficamente la distribución de las muestras.
+サンプルの散布状況を図示する</p>
+<p><a href="https://drive.google.com/file/d/10aTUtFc9IL1-tWh7GiyYOR-hsPoGMiN5/view?usp=drive_link">Audio_16</a></p>
 
 </div>
 </div>
@@ -15256,7 +15362,8 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Figura-3.7">Figura 3.7<a class="anchor-link" href="#Figura-3.7">&#182;</a></h4><p>A partir del análisis de datos matriciales realizado con los resultados de las pruebas de habilidad en Lengua, Inglés, Matemátaticas y Ciencias de 10 estudiantes, se encontró que el primer componente principal (Componente 1, eje horizontal) representa el rendimiento general de los estudiantes, mientras que el segundo componete principal (Componente 2, eje vertical) refleja la diferencia enter aquellos con fortalezas en ciencias y aquellos con fortalezas en humanidades. Diagram de dispersión de las cargas factoriales y las puntuaciones de los componentes principales.</p>
+<h4 id="Figura-3.7">Figura 3.7<a class="anchor-link" href="#Figura-3.7">&#182;</a></h4><p>A partir del análisis de datos matriciales realizado con los resultados de las pruebas de habilidad en Lengua, Inglés, Matemáticas y Ciencias de 10 estudiantes, se encontró que el primer componente principal (Componente 1, eje horizontal) representa el rendimiento general de los estudiantes, mientras que el segundo componente principal (Componente 2, eje vertical) refleja la diferencia entre aquellos con fortalezas en ciencias y aquellos con fortalezas en humanidades. Diagramas de dispersión de las cargas factoriales y las puntuaciones de los componentes principales.</p>
+<p><a href="https://drive.google.com/file/d/1EBnKtCfJ8sTBG22ja8uhz10IrywD0JQK/view?usp=drive_link">Audio_17</a></p>
 
 </div>
 </div>
@@ -15266,7 +15373,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;Graph3/15_3.png&#39;</span><span class="p">)</span>
@@ -15306,12 +15413,24 @@ class="
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">Por favor, responda a las preguntas del examen de pr&#225;ctica a trav&#233;s del siguiente enlace.<a class="anchor-link" href="#Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">&#182;</a></h2><p><a href="https://forms.gle/ij4yA3imyRaEZv7e8">Simulacro de examne</a></p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei3-3.ipynb&#39;</span>
@@ -15340,13 +15459,29 @@ class="
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei3-3.ipynb to html
-[NbConvertApp] Writing 1815272 bytes to QCKentei3-3.html
+[NbConvertApp] Writing 1820994 bytes to QCKentei3-3.html
 </pre>
 </div>
 </div>
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

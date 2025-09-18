@@ -14597,7 +14597,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14620,7 +14620,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14687,7 +14687,7 @@ Seguir una <strong>distribución hipergeométrica</strong> 超幾何分布</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">hypergeom</span>
@@ -14824,12 +14824,12 @@ Y basándose en los hechos obtenidos sobre la muestra, se <strong>realiza una es
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Parámetros definidos</span>
@@ -14837,24 +14837,56 @@ Y basándose en los hechos obtenidos sobre la muestra, se <strong>realiza una es
 <span class="n">sigma_w</span> <span class="o">=</span> <span class="mf">1.2</span>  <span class="c1"># Variación dentro de las cajas (g)</span>
 <span class="n">k1</span> <span class="o">=</span> <span class="mi">210</span>       <span class="c1"># Costo de abrir y volver a empaquetar una caja (g)</span>
 <span class="n">k2</span> <span class="o">=</span> <span class="mi">15</span>        <span class="c1"># Cost de inspeccionar y volver a empaquetar una caja (yenes)</span>
-<span class="n">total_boxes</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c1"># Número de lotes</span>
-<span class="n">soaps_per_box</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># Número de jabones por caja</span>
-<span class="n">total_soaps</span> <span class="o">=</span> <span class="n">total_boxes</span> <span class="o">*</span> <span class="n">soaps_per_box</span>  <span class="c1"># Número total de jabones (5000 unidades)</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Número total de jabones a inspeccionar</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mi">200</span>        <span class="c1"># Número de cajas en el lote (200)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">25</span>         <span class="c1"># Número de jabones por caja (25)</span>
+<span class="n">total_soaps</span> <span class="o">=</span> <span class="n">M</span> <span class="o">*</span> <span class="n">N</span>  <span class="c1"># Número total de jabones (5000 unidades)</span>
+</pre></div>
 
-<span class="c1"># Varianza del muestreo aleatorio simple</span>
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="1.-Muestreo-aleatorio-simple">1. Muestreo aleatorio simple<a class="anchor-link" href="#1.-Muestreo-aleatorio-simple">&#182;</a></h3><p>$ V(\bar{x}) = \frac{MN - m}{MN -1} \cdot \frac{\sigma_b^2 + \sigma_w^2}{n} $</p>
+<p>$ T_{max} = (k_1 + k_2) n $</p>
+<p>$ T_{min} = k_1 + k_2 \cdot n $</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Varianza</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Número total de jabones a inspeccionar</span>
 <span class="n">var</span> <span class="o">=</span> <span class="p">(</span><span class="n">sigma_b</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">sigma_w</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+
 <span class="c1"># Corrección para población finita</span>
-<span class="n">adj</span> <span class="o">=</span> <span class="p">(</span><span class="n">total_boxes</span><span class="o">*</span><span class="n">soaps_per_box</span> <span class="o">-</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">total_boxes</span><span class="o">*</span><span class="n">soaps_per_box</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">adj</span> <span class="o">=</span> <span class="p">(</span><span class="n">M</span><span class="o">*</span><span class="n">N</span> <span class="o">-</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">M</span><span class="o">*</span><span class="n">N</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
 <span class="c1"># Cálculo de la varianza con la corrección para población finita</span>
 <span class="n">var_finite</span> <span class="o">=</span> <span class="n">var</span> <span class="o">*</span> <span class="n">adj</span>
 <span class="n">var_finite</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">var_finite</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Muestreo aleatorio simple&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Varianza de la media del peso x de un jabón facial: </span><span class="si">{</span><span class="n">var_finite</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> g^2&quot;</span><span class="p">)</span>
 
 <span class="c1"># 1. Cuando todos los jabones faciales se seleccionan de cajas difrentes (selección de 10 cajas)</span>
 <span class="n">sample_size</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">cost_diff_boxes</span> <span class="o">=</span> <span class="p">(</span><span class="n">sample_size</span> <span class="o">*</span> <span class="n">k1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">sample_size</span> <span class="o">*</span> <span class="n">k2</span><span class="p">)</span>
+
 <span class="c1"># 2. Cuando todos los jabones faciales se seleccionan de una sola caja (selección de 10 jabones de una caja)</span>
 <span class="n">cost_same_box</span> <span class="o">=</span> <span class="n">k1</span> <span class="o">+</span> <span class="p">(</span><span class="n">sample_size</span> <span class="o">*</span> <span class="n">k2</span><span class="p">)</span>
 
@@ -14893,24 +14925,37 @@ Costo total cuando todos los jabones faciales se seleccionan de una sola caja: 3
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="2.-Muestreo-en-dos-etapas">2. Muestreo en dos etapas<a class="anchor-link" href="#2.-Muestreo-en-dos-etapas">&#182;</a></h3><p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} + \frac{M-n}{N-1} \cdot \frac{\sigma_w^2}{mn}$</p>
+<p>$ T = k_1 m + k_2 m n $</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Método de muestreo 2: Muestreo en dos etapas</span>
-<span class="c1"># Varianza de la variación entre cajas y dentro de las cajas</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Varianza de la variación entre cajas y dentro de las cajas</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">variance_2stage</span> <span class="o">=</span> <span class="p">(</span><span class="n">sigma_b</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">total_boxes</span> <span class="o">-</span> <span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">total_boxes</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">sigma_w</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="n">m</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">soaps_per_box</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">soaps_per_box</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">variance_2stage</span> <span class="o">=</span> <span class="p">(</span><span class="n">sigma_b</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">M</span> <span class="o">-</span> <span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">M</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">sigma_w</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="n">m</span> <span class="o">*</span> <span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">N</span> <span class="o">-</span> <span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">N</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="n">variance_2stage</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">variance_2stage</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Varianzá de la media en el muestreo en dos etapas: </span><span class="si">{</span><span class="n">variance_2stage</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> g^2&quot;</span><span class="p">)</span>
 
 <span class="c1"># Método de muestreo 2: Muestreo en dos etapas</span>
-<span class="n">sample_size_2stage</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">cost_2stage</span> <span class="o">=</span> <span class="n">k1</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">+</span> <span class="n">k2</span> <span class="o">*</span> <span class="n">sample_size_2stage</span>  <span class="c1"># Costo de apertura + inspección</span>
+<span class="n">sample_size_2stage</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">n</span>
+<span class="n">cost_2stage</span> <span class="o">=</span> <span class="n">k1</span> <span class="o">*</span> <span class="n">m</span> <span class="o">+</span> <span class="n">k2</span> <span class="o">*</span> <span class="n">sample_size_2stage</span>  <span class="c1"># Costo de apertura + inspección</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Costo total de método de muestreo en dos etapas: </span><span class="si">{</span><span class="n">cost_2stage</span><span class="si">}</span><span class="s2"> Yen&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -14951,6 +14996,34 @@ Costo total de método de muestreo en dos etapas: 1200 Yen
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Existen muchas combinaciones de $ m $ y $ n $ que cumplen con la precisión deseada al diseñar un muestreo.
+Por esta razón, es recomendable determinar $ m $ y $ n $ de tal forma que el costo sea mínimo para una misma precisión, o que la precisión sea máxima para un mismo costo.
+A esta forma de determinar $ m $ y $ n $ se le llama <strong>asignación óptima de la muestra</strong>.
+Además, el costo $ T $ que se calcula aquí se denomina <strong>función de costo</strong>.</p>
+<p><a href="https://drive.google.com/file/d/1Owo6uGTo1DdGOCPjhZS66YH8epuwmGBZ/view?usp=drive_link">Audio_4</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">Por favor, responda a las preguntas del examen de pr&#225;ctica a trav&#233;s del siguiente enlace.<a class="anchor-link" href="#Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">&#182;</a></h2><p><a href="https://forms.gle/CGkQ6G8KzEA8B29E8">Simulacro de examen</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="6.1">6.1<a class="anchor-link" href="#6.1">&#182;</a></h2><h3 id="Distribuci%C3%B3n-hipergeom%C3%A9trica">Distribuci&#243;n hipergeom&#233;trica<a class="anchor-link" href="#Distribuci%C3%B3n-hipergeom%C3%A9trica">&#182;</a></h3><p>要素の数 $ N $ 個のうち不適合品が $ M $ 個である有限母集団からランダムに $ n $ 個を抜き取る非復元抽出を行う場合、その中に含まれる不適合品の個数 $ x $ は超幾何分布に従う。</p>
 <p>Cuando se realiza un <strong>muestreo sin reemplazo</strong> de $ n $ elementos de una población finita de $ N $ elementos, en la cual hay $ M $ elementos defectuosos, el número de elementos defectuosos $ x $ en la muestra sigue una <strong>distribución hipergeométrica</strong>.</p>
 
@@ -14980,7 +15053,7 @@ Costo total de método de muestreo en dos etapas: 1200 Yen
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">hypergeom</span>
@@ -15077,6 +15150,17 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Distribuci%C3%B3n-binomial">Distribuci&#243;n binomial<a class="anchor-link" href="#Distribuci%C3%B3n-binomial">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>有限母集団からの復元抽出を行う場合には $ x $ は二項分布に従う。</p>
 <p>Cuando se realiza un <strong>muestreo con reemplazo</strong> de una población finita, $ x $ sigue una <strong>distribución binomial</strong>.</p>
 <p>$ E(x) = nP $</p>
@@ -15090,7 +15174,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">binom</span>
@@ -15234,6 +15318,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Muestreo en dos etapas</strong>: Es un método en el que, cuando la población se divide en unidades primarias, primero se muestran aleatoriamente las unidades primarias y luego, a partir de cada una de las unidades primarias obtenidas, se muestran aleatoriamente las unidades secundarias.</p>
 <p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} + \frac{N-n}{n-1} \cdot \frac{\sigma_w^2}{mn} $</p>
+<p><a href="https://drive.google.com/file/d/19MCMphCJd8lTiNpCh2Dq04whIzblE1hG/view?usp=drive_link">Audio_1</a></p>
 
 </div>
 </div>
@@ -15243,7 +15328,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configuración de constantes</span>
@@ -15300,7 +15385,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Las medias poblacionales de cada caja（distribución normal：Varianza entre cajas σ_b^2）</span>
@@ -15437,6 +15522,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Muestreo por Conglomerados</strong>: Es un método en el que, cuando una población se divide en unidades primarias, se seleccionan aleatoriamente algunas de estas unidades primarias y luego se investigan todas las unidades secundarias contenidas en las unidades primarias seleccionadas.</p>
 <p>$ V(\bar{x}) = \frac{M-m}{M-1} \cdot \frac{\sigma_b^2}{m} $</p>
+<p><a href="https://drive.google.com/file/d/1ig1daLcPoVBZ7eNPDl9Dw9uKSZT6Qxr7/view?usp=drive_link">Audio_2</a></p>
 
 </div>
 </div>
@@ -15446,7 +15532,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">2</span>
@@ -15492,7 +15578,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Se seleccionanaleatoriamente m cajas (o conglomerados)</span>
@@ -15625,6 +15711,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Muestreo estratificado</strong>: Es un método de investigación en el cual, cuando una población está dividida en unidades primarias, se seleccionan aleatoriamente unidades de todas las unidades primarias divididas para su estudio.</p>
 <p>$ V(\bar{x}) = \frac{N -n}{N-1} \cdot \frac{\sigma_w^2}{Mn} $</p>
+<p><a href="https://drive.google.com/file/d/1i3_KZ1TeOovhuE9LyiWoHBwxNIodkfiP/view?usp=drive_link">Audio_3</a></p>
 
 </div>
 </div>
@@ -15634,7 +15721,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
@@ -15680,7 +15767,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#</span>
@@ -15781,6 +15868,7 @@ jp-needs-light-background
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>La principal ventaja del muestreo estratificado es minimizar el impacto de la variabilidad entre las cajas, lo que reduce la dispersión total del la muestra. Esto permite mejorar la precisión incluso con un menor tamaño de muestra.</p>
+<p><a href="https://drive.google.com/file/d/1hw3XScKYB_3CG8SZz-MIXnBW9nCUZv6E/view?usp=drive_link">Audio_33</a></p>
 
 </div>
 </div>
@@ -15822,6 +15910,7 @@ jp-needs-light-background
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Muestreo Aleatorio Simple</strong>: Es un método de investigación en el que todos los elementos que componen una población son seleccionado para la muestra con la misma probabilidad.</p>
 <p>$ V(\bar{x}) = \frac{MN-n}{MN - 1} \cdot (\frac{\sigma_b^2}{n} + \frac{\sigma_w^2}{n}) $</p>
+<p><a href="https://drive.google.com/file/d/1VQOidXLuWkpedWXQzEYL9HWv05mR1t52/view?usp=drive_link">Audio_4</a></p>
 
 </div>
 </div>
@@ -15831,7 +15920,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">240</span>       <span class="c1"># 単純ランダムサンプル数</span>
@@ -15878,7 +15967,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -15948,7 +16037,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-1.ipynb&#39;</span>
@@ -15979,7 +16068,7 @@ jp-needs-light-background
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>QCKentei1-1.ipynb  -&gt;  QCKentei1-1.html
 [NbConvertApp] Converting notebook QCKentei1-1.ipynb to html
-[NbConvertApp] Writing 916146 bytes to QCKentei1-1.html
+[NbConvertApp] Writing 921989 bytes to QCKentei1-1.html
 </pre>
 </div>
 </div>

@@ -14644,11 +14644,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="03-01-Valor-esperado-y-varianza">03-01 Valor esperado y varianza<a class="anchor-link" href="#03-01-Valor-esperado-y-varianza">&#182;</a></h2><p>期待値と分散</p>
-<h3 id="1.-%C2%BFCu%C3%A1l-es-el-valor-esperado?">1. &#191;Cu&#225;l es el <strong>valor esperado</strong>?<a class="anchor-link" href="#1.-%C2%BFCu%C3%A1l-es-el-valor-esperado?">&#182;</a></h3><p>Una variable aleatoria discreta cuya característica de calidad puede expresarse en valores contables (de conteo).</p>
+<h3 id="1.-%C2%BFCu%C3%A1l-es-el-valor-esperado?">1. &#191;Cu&#225;l es el <strong>valor esperado</strong>?<a class="anchor-link" href="#1.-%C2%BFCu%C3%A1l-es-el-valor-esperado?">&#182;</a></h3><p>期待値とは</p>
+<p>Una variable aleatoria discreta cuya característica de calidad puede expresarse en valores contables (de conteo).</p>
 <p>$ E(X) = \sum x_i Pr(X = x_i) $</p>
 <p>Una variable aleatoria continua cuya característica de calidad puede expresarse en valores medibles (cuantitativos).</p>
 <p>$ E(X) = \int x f(x) dx $</p>
-<h3 id="2.-Propiedades-del-valor-esperado">2. Propiedades del valor esperado<a class="anchor-link" href="#2.-Propiedades-del-valor-esperado">&#182;</a></h3><ol>
+<h3 id="2.-Propiedades-del-valor-esperado">2. Propiedades del valor esperado<a class="anchor-link" href="#2.-Propiedades-del-valor-esperado">&#182;</a></h3><p>期待値の性質</p>
+<ol>
 <li>$ E(aX) = aE(X) $</li>
 <li>$ E(aX+C) = aE(X) + C $</li>
 <li><p>$ E(a_1 X_1 + a_2X_2 + ... + a_n X_n) = a_1E(X_1) + a_2 E(X_2) + ... + a_n E(X_n) $</p>
@@ -14700,11 +14702,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.-%C2%BFQu%C3%A9-son-la-varianza-y-la-covarianza?">3. &#191;Qu&#233; son la varianza y la covarianza?<a class="anchor-link" href="#3.-%C2%BFQu%C3%A9-son-la-varianza-y-la-covarianza?">&#182;</a></h3><p>Una variable aleatoria discreta cuya característica de calidad se expresa en valores contables.</p>
+<h3 id="3.-%C2%BFQu%C3%A9-son-la-varianza-y-la-covarianza?">3. &#191;Qu&#233; son la varianza y la covarianza?<a class="anchor-link" href="#3.-%C2%BFQu%C3%A9-son-la-varianza-y-la-covarianza?">&#182;</a></h3><p>分散・共分散とは</p>
+<p>Una variable aleatoria discreta cuya característica de calidad se expresa en valores contables.</p>
 <p>$ V(X) = \sum (x_i - \mu)^2 Pr(X=x_i) $</p>
 <p>Una variable aleatoria continua cuya característica se expresa en valores medibles.</p>
 <p>$ V(X) = \int (x-\mu)^2 f(x) dx $</p>
-<h3 id="4.-Propiedades-de-la-varianza-la-covarianza">4. Propiedades de la varianza la covarianza<a class="anchor-link" href="#4.-Propiedades-de-la-varianza-la-covarianza">&#182;</a></h3><ol>
+<h3 id="4.-Propiedades-de-la-varianza-la-covarianza">4. Propiedades de la varianza la covarianza<a class="anchor-link" href="#4.-Propiedades-de-la-varianza-la-covarianza">&#182;</a></h3><p>分散・共分散の性質</p>
+<ol>
 <li>$ V(aX) = a^2 V(X) $</li>
 <li>V(aX + C) = a^2 V(X) $</li>
 <li><p>X_1, X_2, ... X_n son independientes entre si.</p>
@@ -14714,7 +14718,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </li>
 </ol>
 <ul>
-<li><strong>Adición de varianzas</strong></li>
+<li><strong>Adición de varianzas</strong>（分散の加法性）</li>
 </ul>
 <p><a href="https://drive.google.com/file/d/1jSU9O5mqyArcMpWT0WXl20SoHGAHagFS/view?usp=drive_link">Audio_3</a></p>
 
@@ -14925,12 +14929,14 @@ Varianza V(M)  = 4.0
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="03-02-Distribuci%C3%B3n-normal">03-02 Distribuci&#243;n normal<a class="anchor-link" href="#03-02-Distribuci%C3%B3n-normal">&#182;</a></h2><p>正規分布</p>
-<h3 id="1.-%C2%BFQu%C3%A9-es-la-distribuci%C3%B3n-normal?">1. &#191;Qu&#233; es la distribuci&#243;n normal?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-la-distribuci%C3%B3n-normal?">&#182;</a></h3><p>En cuanto a las variables cuantitativas, la distribución normal es la más importante y común. La distribución normal presenta una forma de campana simétrica.</p>
+<h3 id="1.-%C2%BFQu%C3%A9-es-la-distribuci%C3%B3n-normal?">1. &#191;Qu&#233; es la distribuci&#243;n normal?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-la-distribuci%C3%B3n-normal?">&#182;</a></h3><p>正規分布とは</p>
+<p>En cuanto a las variables cuantitativas, la distribución normal es la más importante y común. La distribución normal presenta una forma de campana simétrica.</p>
 <p>$ f(x) = \frac{1}{\sqrt{2 \ pi \sigma}} exp\bigl(-\frac{(x -\mu)^2}{2 \sigma^2} \bigr)$</p>
 <p>$ E(X) = \mu $</p>
 <p>$ V(X) = \sigma^2 $</p>
-<h3 id="2.-Probabilidad-de-la-distribuci%C3%B3n-normal">2. Probabilidad de la distribuci&#243;n normal<a class="anchor-link" href="#2.-Probabilidad-de-la-distribuci%C3%B3n-normal">&#182;</a></h3><ul>
-<li><p>Estandarización</p>
+<h3 id="2.-Probabilidad-de-la-distribuci%C3%B3n-normal">2. Probabilidad de la distribuci&#243;n normal<a class="anchor-link" href="#2.-Probabilidad-de-la-distribuci%C3%B3n-normal">&#182;</a></h3><p>正規分布の確率</p>
+<ul>
+<li><p>Estandarización（標準化）</p>
 <ul>
 <li><p>$ u = \frac{x - \mu}{\sigma} $</p>
 </li>
@@ -14938,7 +14944,7 @@ Varianza V(M)  = 4.0
 </li>
 </ul>
 </li>
-<li><p>Distribución normal estándar</p>
+<li><p>Distribución normal estándar（標準正規分布）</p>
 </li>
 </ul>
 <p><a href="https://drive.google.com/file/d/1YHEXsMRnyVs_bJnM-po7M8HHC01H9tON/view?usp=drive_link">Audio_4</a></p>
@@ -15093,9 +15099,11 @@ Kp for P = 0.10: -1.282
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="03-03-Distribuci%C3%B3n-binomial">03-03 Distribuci&#243;n binomial<a class="anchor-link" href="#03-03-Distribuci%C3%B3n-binomial">&#182;</a></h2><p>二項分布</p>
-<h3 id="1.-Distribuci%C3%B3n-binomial">1. Distribuci&#243;n binomial<a class="anchor-link" href="#1.-Distribuci%C3%B3n-binomial">&#182;</a></h3><p>Las tasas de productos defectuosos y el número de productos defectuosos, que son valores discretos (o datos de conteo), siguen una <strong>distribución binomial</strong>. Cuando se extraen aleatoriamente $ n $ muestras de un proceso con una proporción de productos defectuosos de la población $ P $, la probabilidad $ P_x $ de que haya $ x $ productos defectuosos en la muestra es:</p>
+<h3 id="1.-Distribuci%C3%B3n-binomial">1. Distribuci&#243;n binomial<a class="anchor-link" href="#1.-Distribuci%C3%B3n-binomial">&#182;</a></h3><p>二項分布</p>
+<p>Las tasas de productos defectuosos y el número de productos defectuosos, que son valores discretos (o datos de conteo), siguen una <strong>distribución binomial</strong>. Cuando se extraen aleatoriamente $ n $ muestras de un proceso con una proporción de productos defectuosos de la población $ P $, la probabilidad $ P_x $ de que haya $ x $ productos defectuosos en la muestra es:</p>
 <p>$ P_r (X = x ) = {}_n C_x P^x (1-P)^{n-x} = \frac{n!}{x!(n-x)!} P^x (1-P)^{n-x}$</p>
-<p>La media (valor esperado) y la varianza de la distribución binomial son:</p>
+<p>La media (valor esperado) y la varianza de la distribución binomial son:
+二項分布の平均と分散は</p>
 <p>$ E(X) = np $</p>
 <p>$ V(X) = np(1-P) $</p>
 <p><a href="https://drive.google.com/file/d/1S_ZXw85iQSCMw0iq_X7SLLxtPk9yfZ3Y/view?usp=drive_link">Audio_5</a></p>
@@ -15192,7 +15200,8 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Probabilidad-de-la-distribuci%C3%B3n-binomial">2. Probabilidad de la distribuci&#243;n binomial<a class="anchor-link" href="#2.-Probabilidad-de-la-distribuci%C3%B3n-binomial">&#182;</a></h3><p>Calcular la probabilidad de que hay 3 productos defectuosos en una muestra de 20, tomaba de un proceso con una tasa de productos defectuosos (proporción de no conformes) $ P = 0.10 $</p>
+<h3 id="2.-Probabilidad-de-la-distribuci%C3%B3n-binomial">2. Probabilidad de la distribuci&#243;n binomial<a class="anchor-link" href="#2.-Probabilidad-de-la-distribuci%C3%B3n-binomial">&#182;</a></h3><p>２項分布の確率</p>
+<p>Calcular la probabilidad de que hay 3 productos defectuosos en una muestra de 20, tomaba de un proceso con una tasa de productos defectuosos (proporción de no conformes) $ P = 0.10 $</p>
 <p><a href="https://drive.google.com/file/d/1cCwtrN7wQ64vq2k21KCJfiQBEsxih1x5/view?usp=drive_link">Audio_6</a></p>
 
 </div>
@@ -15351,10 +15360,12 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="03-04-Distribuci%C3%B3n-de-Poisson">03-04 Distribuci&#243;n de Poisson<a class="anchor-link" href="#03-04-Distribuci%C3%B3n-de-Poisson">&#182;</a></h2><p>ポワソン分布</p>
-<h3 id="1.-Distribuci%C3%B3n-de-Poisson">1. Distribuci&#243;n de Poisson<a class="anchor-link" href="#1.-Distribuci%C3%B3n-de-Poisson">&#182;</a></h3><p>La <strong>distribución de Poisson</strong> es la distribución que se obtiene cuando, en una distribución binomial, se mantiene el producto $ nP = \lambda $ constante y el tamaño de la muestra $ n $ tiende a infinito. El número de defectos encontrados en un producto de tamaño constante o el número de accidentes por día, por ejemplo, siguen una distribución de Poisson.</p>
+<h2 id="03-04-Distribuci%C3%B3n-de-Poisson">03-04 Distribuci&#243;n de Poisson<a class="anchor-link" href="#03-04-Distribuci%C3%B3n-de-Poisson">&#182;</a></h2><p>ポアソン分布</p>
+<h3 id="1.-Distribuci%C3%B3n-de-Poisson">1. Distribuci&#243;n de Poisson<a class="anchor-link" href="#1.-Distribuci%C3%B3n-de-Poisson">&#182;</a></h3><p>ポアソン分布</p>
+<p>La <strong>distribución de Poisson</strong> es la distribución que se obtiene cuando, en una distribución binomial, se mantiene el producto $ nP = \lambda $ constante y el tamaño de la muestra $ n $ tiende a infinito. El número de defectos encontrados en un producto de tamaño constante o el número de accidentes por día, por ejemplo, siguen una distribución de Poisson.</p>
 <p>$ P(X=x) = exp^{-λ} \frac{\lambda x}{x!}$</p>
-<p>La <strong>media (valor esperado)</strong> y la <strong>varianza</strong> de la distribución de Poisson son:</p>
+<p>La <strong>media (valor esperado)</strong> y la <strong>varianza</strong> de la distribución de Poisson son:
+ポアソン分布の平均と分散は</p>
 <p>$ E(x) = \lambda $</p>
 <p>$ V(x) = \lambda $</p>
 <p>En la distribución binomial, si $ P \leq 0.1 $, se considera que, a efectos prácticos, se puede tratar como una distribución de Poisson. En este caso, la media y la probabilidad de la distribución binomial se expresan mediante las siguientes fórmulas:</p>
@@ -15448,7 +15459,8 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Probabilidad-de-la-distribuci%C3%B3n-de-Poisson">2. Probabilidad de la distribuci&#243;n de Poisson<a class="anchor-link" href="#2.-Probabilidad-de-la-distribuci%C3%B3n-de-Poisson">&#182;</a></h3><p>La probabilidad de la distribución de Poisson se calcula utilizando la siguiente fórmula:</p>
+<h3 id="2.-Probabilidad-de-la-distribuci%C3%B3n-de-Poisson">2. Probabilidad de la distribuci&#243;n de Poisson<a class="anchor-link" href="#2.-Probabilidad-de-la-distribuci%C3%B3n-de-Poisson">&#182;</a></h3><p>ポアソン分布の確率</p>
+<p>La probabilidad de la distribución de Poisson se calcula utilizando la siguiente fórmula:</p>
 <p>$ Pr(X=x) = exp(-\lambda) \frac{\lambda^{\lambda}}{x!} \qquad (x = 0, 1, 2, ...; \lambda &gt; 0 )$</p>
 <p><a href="https://drive.google.com/file/d/1V4JFABAD3znXwNkAZnQDFz-MXa6SvaoA/view?usp=drive_link">Audio_8</a></p>
 
@@ -15557,7 +15569,7 @@ jp-needs-light-background
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="03-05-Distribuci%C3%B3n-de-las-estad%C3%ADsticas">03-05 Distribuci&#243;n de las estad&#237;sticas<a class="anchor-link" href="#03-05-Distribuci%C3%B3n-de-las-estad%C3%ADsticas">&#182;</a></h2><p>統計量の分布</p>
-<p>Las medias y varianzas de los datos obtenidos al tomar muestras de una población que sigue una distribución normal (población normal) no son valores constantes, sino que varían con cada muestra. A estas cantidades se les llama <strong>estadísticos</strong>.</p>
+<p>Las medias y varianzas de los datos obtenidos al tomar muestras de una población que sigue una distribución normal (población normal) no son valores constantes, sino que varían con cada muestra. A estas cantidades se les llama <strong>estadísticos</strong>（統計量）.</p>
 <p>Si las muestras se extraen mediante muestreo aleatorio de manera probabilísticamente justa, el estadístico también sigue una distribución de probabilidad.</p>
 <h3 id="1.-Distribuci%C3%B3n-de-la-media-muestral-(-$-%5Csigma-$-conocido)">1. Distribuci&#243;n de la media muestral ( $ \sigma $ conocido)<a class="anchor-link" href="#1.-Distribuci%C3%B3n-de-la-media-muestral-(-$-%5Csigma-$-conocido)">&#182;</a></h3><p>サンプルの平均 $ \bar{x} $の分布（σ既知）</p>
 <p>$ E(\bar{x}) = \mu $</p>
@@ -16295,7 +16307,7 @@ F(6, 10: 0.95) = 0.246
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="03-06-Ley-de-los-logaritmos-y-Teorema-Central-del-L%C3%ADmite">03-06 Ley de los logaritmos y Teorema Central del L&#237;mite<a class="anchor-link" href="#03-06-Ley-de-los-logaritmos-y-Teorema-Central-del-L%C3%ADmite">&#182;</a></h2><p>大数の法則と中心極限定理</p>
-<h3 id="1.-Ley-de-los-logar%C3%ADtmos">1. Ley de los logar&#237;tmos<a class="anchor-link" href="#1.-Ley-de-los-logar%C3%ADtmos">&#182;</a></h3><p>Cuando se toma una muestra $ X = (X_1, X_2,...,X_n) $ de tamaño $ n $ de una población con media poblacional $ E(\bar{X}) = \mu $ y varianza poblacional $ V(\bar{X}) =  \sigma^2 $ (no necesariamente una distribución normal) donde los elementos de la muestra son mutuamente independientes, el valor esperado y la varianza de la media muestral $ \bar{X} $ son</p>
+<h3 id="1.-Ley-de-los-logaritmos">1. Ley de los logaritmos<a class="anchor-link" href="#1.-Ley-de-los-logaritmos">&#182;</a></h3><p>Cuando se toma una muestra $ X = (X_1, X_2,...,X_n) $ de tamaño $ n $ de una población con media poblacional $ E(\bar{X}) = \mu $ y varianza poblacional $ V(\bar{X}) =  \sigma^2 $ (no necesariamente una distribución normal) donde los elementos de la muestra son mutuamente independientes, el valor esperado y la varianza de la media muestral $ \bar{X} $ son</p>
 <ul>
 <li>$ E(\bar{X}) = \mu $ y $ V(\bar{X}) = \frac{1}{n} \sigma^2 $.</li>
 </ul>
@@ -16313,6 +16325,18 @@ Se puede aplicar la ley de los grandes números a $ p_n $, y se puede decir que 
 <h3 id="2.-Teorema-Central-del-L%C3%ADmite">2. Teorema Central del L&#237;mite<a class="anchor-link" href="#2.-Teorema-Central-del-L%C3%ADmite">&#182;</a></h3><p><strong>El Teorema Central del Límite</strong> que la suma de variables aleatorias que siguen cualquier distribución puede aproximarse a una distribución normal.</p>
 <p>El Teorema del Límite Central demuestra que, incluso si la distribución de la población original no es normal, la distribución de probabilidad de la media muestral $ \bar{X} $ puede aproximarse a una distribución normal. Esto también se cumple para distribuciones discretas como la distribución binomial y la distribución de Poisson. Es la base para utilizar la aproximación normal en el análisis estadístico de estas distribuciones en pruebas de hipótesis y estimaciones.</p>
 <p><a href="https://drive.google.com/file/d/1YbbnLV-JdCne-uj9KADJxmTTsz82CTne/view?usp=drive_link">Audio_13</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">Por favor, responda a las preguntas del examen de pr&#225;ctica a trav&#233;s del siguiente enlace.<a class="anchor-link" href="#Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">&#182;</a></h2><p><a href="https://forms.gle/5eTDxEe7vE48ka9h7">Simulacro de examne</a></p>
 
 </div>
 </div>
@@ -17952,7 +17976,7 @@ La nueva varianza poblacional del producto líquido: 2.15^2 (ml)^2
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;matplotlib.legend.Legend at 0x136414f10&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x163bb04c0&gt;</pre>
 </div>
 
 </div>
@@ -18524,7 +18548,7 @@ jp-needs-light-background
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei2-3.ipynb to html
-[NbConvertApp] Writing 2536304 bytes to QCKentei2-3.html
+[NbConvertApp] Writing 2530363 bytes to QCKentei2-3.html
 </pre>
 </div>
 </div>
@@ -18576,12 +18600,12 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span><span class="o">=</span> <span class="s1">&#39;https://drive.google.com/file/d/1qOB04nzA8Xo7XubZN6Rqrk5ETFCT1g4T/view?usp=drive_link&#39;</span>
 <span class="n">out</span> <span class="o">=</span> <span class="s1">&#39;./Graph2/norm3.png&#39;</span>
-<span class="n">get_file_id</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">out</span><span class="p">)</span>
+<span class="c1">#get_file_id(url,out)</span>
 </pre></div>
 
      </div>
@@ -18618,7 +18642,7 @@ jp-needs-light-background
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1qOB04nzA8Xo7XubZN6Rqrk5ETFCT1g4T
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-個人用/Documenten/Python/QCKentei2/Graph2/norm3.png
-100%|██████████| 210k/210k [00:00&lt;00:00, 1.77MB/s]
+100%|██████████| 210k/210k [00:00&lt;00:00, 4.03MB/s]
 </pre>
 </div>
 </div>

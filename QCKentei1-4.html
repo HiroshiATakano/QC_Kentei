@@ -14599,7 +14599,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14622,7 +14622,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14646,13 +14646,23 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="04-01-Prueba-y-Estimaci%C3%B3n">04-01 Prueba y Estimaci&#243;n<a class="anchor-link" href="#04-01-Prueba-y-Estimaci%C3%B3n">&#182;</a></h2><p>検定と推定</p>
-<h3 id="1.-%C2%BFQu%C3%A9-es-una-prueba?">1. &#191;Qu&#233; es una prueba?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-una-prueba?">&#182;</a></h3><p>La prueba de hipótesis consiste en establecer una <strong>proposición (hipótesis) sobre una población</strong> de acuerdo con un objetivo específico, y luego usar los datos obtenidos de una muestra para determinar si es razonable considerar que dicha proposición es válida.</p>
-<p>En una proeba de <strong>hipótesis alternativa: H1</strong>, y la hipótesis que niega esta afirmación se denomina <strong>hipótesis nula: H0</strong>.</p>
-<p>En cuanto a la hipótesis alternativa, existen la <strong>hipótesis bilateral</strong> y la <strong>hipótesisi unilateral</strong>.
+<h3 id="1.-%C2%BFQu%C3%A9-es-una-prueba?">1. &#191;Qu&#233; es una prueba?<a class="anchor-link" href="#1.-%C2%BFQu%C3%A9-es-una-prueba?">&#182;</a></h3><p>検定とは</p>
+<p>La prueba de hipótesis consiste en establecer una <strong>proposición (hipótesis) sobre una población</strong> de acuerdo con un objetivo específico, y luego usar los datos obtenidos de una muestra para determinar si es razonable considerar que dicha proposición es válida.</p>
+<p>En una proeba de <strong>hipótesis alternativa: H1</strong>（対立仮説）, y la hipótesis que niega esta afirmación se denomina <strong>hipótesis nula: H0</strong>（帰無仮説).</p>
+<p>En cuanto a la hipótesis alternativa, existen la <strong>hipótesis bilateral</strong>（両側仮説） y la <strong>hipótesisi unilateral</strong>（片側仮説）.
 Los tests correspondientes para cada caso se denominan test bilateral y test unilateral, respectivamente.</p>
 <p>Se conoce como <strong>error de Tipo I</strong> al error de rechazar la hipótesis nula a pesar de que esta sea correcta.
 La probabilidad de cometer este error se denomina nivel de significancia o riesgo, y  el símbolo <strong>$ \alpha $</strong>.</p>
+<ul>
+<li>慌て者の誤り</li>
+</ul>
 <p>El error de no rechazar la hipótesis nula a pesar de que la hipótesis alternativa es correcta se denomina <strong>error de Tipo II</strong>, y su probabilidad se representa con el símbolo <strong>$ \beta $</strong>.</p>
+<ul>
+<li><p>ぼんやり者の誤り</p>
+</li>
+<li><p>検出力（$ 1 - \beta $)</p>
+</li>
+</ul>
 <p><a href="https://drive.google.com/file/d/1o8MbmJXfYo-XhtGnZOVhIfyI9y5SMkMZ/view?usp=drive_link">Audio_2</a></p>
 
 </div>
@@ -14663,7 +14673,7 @@ La probabilidad de cometer este error se denomina nivel de significancia o riesg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -14770,7 +14780,8 @@ El límite superior del intervalo de confianza se llama límite superior de conf
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="04-02-Pruebas-y-estimaciones-basadas-en-datos-de-valores-medibles">04-02 Pruebas y estimaciones basadas en datos de valores medibles<a class="anchor-link" href="#04-02-Pruebas-y-estimaciones-basadas-en-datos-de-valores-medibles">&#182;</a></h2>
+<h2 id="04-02-Pruebas-y-estimaciones-basadas-en-datos-de-valores-medibles">04-02 Pruebas y estimaciones basadas en datos de valores medibles<a class="anchor-link" href="#04-02-Pruebas-y-estimaciones-basadas-en-datos-de-valores-medibles">&#182;</a></h2><p>計量値データに基づく検定と推定</p>
+
 </div>
 </div>
 </div>
@@ -14917,7 +14928,7 @@ En estos casos, la <strong>hipótesis nula</strong> (H0) es que <strong>todas la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de varianza</span>
@@ -15026,13 +15037,12 @@ Pundo cirtico de C（nivel de significancia 0.05）: 0.4291
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>① Poder de la prueba $ (1 - \beta) $</p>
-<p>$ u(2 \alpha)\sqrt{\sigma^2/n} + u(2 \beta)\sqrt{\sigma^2/n} = \mu - \mu_0 $</p>
-<p>$ \sqrt{\sigma^2/n} | u(2 \alpha) + u(2 \beta)| = \mu - \mu_0 $</p>
-<p>$ u(2 \alpha) + u(2 \beta) = \frac{\mu - \mu_0}{\sqrt{\sigma^2/n}} $</p>
-<p>$ u(2 \beta) = \frac{\mu - \mu_0}{\sqrt{\sigma^2/n}} - u(2 \alpha) $</p>
-<p>$ \qquad = \frac{53.0 - 50.0}{\sqrt{3.0^2/9}} - 1.645 = 1.36 $</p>
-<p>$ \beta = 0.0869 $</p>
-<p>$ 1 - \beta = 0.913 $</p>
+<p>$ SE = \sqrt{\sigma^2/n} $</p>
+<p>$ z(\alpha) = $ stat.norm.ppf($ 1 - \alpha $)</p>
+<p>$ z(\beta) = \frac{\mu_1 - \mu_0}{SE} - z(\alpha) $</p>
+<p>$ \qquad = \frac{53.0 - 50.0}{\sqrt{3.0^2/9}}  - 1.645 = 1.36 $</p>
+<p>$ \beta = $ stats.norm.ppf($ -z(\beta)) = 0.088 $</p>
+<p>$ 1 - \beta = 0.912 $</p>
 
 </div>
 </div>
@@ -15042,10 +15052,12 @@ Pundo cirtico de C（nivel de significancia 0.05）: 0.4291
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Condiciones establecidas</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+
+<span class="c1"># 1. Condiciones establecidas</span>
 <span class="n">mu_0</span> <span class="o">=</span> <span class="mf">50.0</span>  <span class="c1"># Media de la hipótesis nula</span>
 <span class="n">sigma</span> <span class="o">=</span> <span class="mf">3.0</span>  <span class="c1"># Desviación estándar de la población</span>
 <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span>  <span class="c1"># Nivel de significancia</span>
@@ -15055,10 +15067,10 @@ Pundo cirtico de C（nivel de significancia 0.05）: 0.4291
 <span class="n">n</span> <span class="o">=</span> <span class="mi">9</span>  <span class="c1"># Tamaño de la muestra</span>
 
 <span class="c1"># Error estándar y valor crítico</span>
-<span class="n">standard_error</span> <span class="o">=</span> <span class="n">sigma</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">SE</span> <span class="o">=</span> <span class="n">sigma</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="n">z_alpha</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">)</span>
-<span class="n">z_beta</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu_0</span> <span class="o">+</span> <span class="n">z_alpha</span> <span class="o">*</span> <span class="n">standard_error</span> <span class="o">-</span> <span class="n">mu_1</span><span class="p">)</span> <span class="o">/</span> <span class="n">standard_error</span>
-<span class="n">beta</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">z_beta</span><span class="p">)</span>
+<span class="n">z_beta</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu_1</span> <span class="o">-</span> <span class="n">mu_0</span><span class="p">)</span> <span class="o">/</span> <span class="n">SE</span> <span class="o">-</span> <span class="n">z_alpha</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="o">-</span><span class="n">z_beta</span><span class="p">)</span>
 <span class="n">power</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Potencia (1 - β) cuando la media del producto es 53.0: </span><span class="si">{</span><span class="n">power</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -15097,7 +15109,7 @@ Pundo cirtico de C（nivel de significancia 0.05）: 0.4291
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Crear el gráfico</span>
@@ -15106,7 +15118,7 @@ Pundo cirtico de C（nivel de significancia 0.05）: 0.4291
 <span class="n">alternative_dist</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mu_1</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
 
 <span class="c1"># Calcular el valor crítico</span>
-<span class="n">critical_value</span> <span class="o">=</span> <span class="n">mu_0</span> <span class="o">+</span> <span class="n">z_alpha</span> <span class="o">*</span> <span class="n">standard_error</span>
+<span class="n">critical_value</span> <span class="o">=</span> <span class="n">mu_0</span> <span class="o">+</span> <span class="n">z_alpha</span> <span class="o">*</span> <span class="n">SE</span>
 
 <span class="c1"># Rellenar la región de detección</span>
 <span class="n">beta_area_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">critical_value</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="mi">400</span><span class="p">)</span>
@@ -15159,25 +15171,12 @@ jp-needs-light-background
 
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>② El tamaño de la muestra (n)</p>
-<p>$ n= \bigl( \frac{\sigma}{\mu - \mu_0} \bigr)^2 \{u(2 \alpha) + u(\beta) \}^2 = 19.3 -&gt; 20 $</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2. Cálculo del tamaño de muestra necesario para un apotencia de 0.90 cuando la media es 52.0</span>
@@ -15222,6 +15221,64 @@ jp-needs-light-background
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Tamaño de muestra necesario para una potencia de 0.90 con una media de 52.0: 20
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>② El tamaño de la muestra (n)</p>
+<p>$ n= \bigl( \frac{\sigma}{\mu - \mu_0} \bigr)^2 \{u(2 \alpha) + u(\beta) \}^2 = 19.3 -&gt; 20 $</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mu</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">mu_0</span> <span class="o">=</span> <span class="mi">52</span>
+<span class="n">z_beta</span> <span class="o">=</span> <span class="mf">1.282</span>
+<span class="n">z_alpha</span> <span class="o">=</span> <span class="mf">1.645</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">sigma</span><span class="o">/</span><span class="p">(</span><span class="n">mu</span> <span class="o">-</span><span class="n">mu_0</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">z_alpha</span> <span class="o">+</span> <span class="n">z_beta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tamaño de la muestra (n): </span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Tamaño de la muestra (n): 19.3
 </pre>
 </div>
 </div>
@@ -15312,12 +15369,25 @@ jp-needs-light-background
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>chi2_critical = chi2_critical = stats.chi2.ppf(alpha, df)</p>
+<p>beta = 1 - stats.chi2.cdf(chi2_critical, df, scale=sigma1_sq/sigma0_sq)</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Varianza Poblacional (Hipótesis Nula y Hipótesis Alternativa)</span>
@@ -15384,7 +15454,7 @@ Poder estadístico（1 - β）: 0.8933
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configuración de parámetros</span>
@@ -15471,12 +15541,24 @@ jp-needs-light-background
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Se desea detectar la varianza de la población mejorada, con un valor $ \sigma^2 = 1.8^2 $, y una potencia estadística ($ 1 - \beta $) de 0.90 o superior. Se busca el tamaño de muestra $ n $ necesario para este propósito.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># パラメータ設定</span>
@@ -15604,7 +15686,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -15673,12 +15755,31 @@ Día                                      10  20  30  40  0
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Paso1: Establecimiento de la hipótesis</p>
+<p>$ H_0 $ : El número de paros cortos por día sigue una distribución de Poiisson.</p>
+<p>$ H_1 $ : El número de paros cortos por unidad de tiempo no sigue una distribución de Poisson.</p>
+<p>Paso 2: Establecimiento del nivel de significancia y la región de rechazo</p>
+<p>$ \alpha = 0.05 $</p>
+<p>$ R: \chi_0^2 \geq \chi^2 (\phi: \alpha) $</p>
+<p>$ \phi = k - p - 1 = 3 $</p>
+<p>Paso 3: Cálculo de las frecuencias esperadas y del estadístico de prueba.</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
@@ -15708,7 +15809,7 @@ Día                                      10  20  30  40  0
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
 
 
 
@@ -15803,7 +15904,122 @@ Día                                      10  20  30  40  0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Poisson distribution: lambda=2</span>
+<span class="c1"># Compute PMF for x=0..6 and the probability P(X &gt;= 4) = 1 - P(X &lt;= 3)</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span><span class="p">,</span> <span class="n">exp</span>
+
+<span class="n">lam</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="k">def</span> <span class="nf">poisson_pmf</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">lam</span><span class="o">=</span><span class="n">lam</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">lam</span><span class="o">**</span><span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">lam</span><span class="p">)</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+
+<span class="n">pmf_values</span> <span class="o">=</span> <span class="p">[(</span><span class="n">k</span><span class="p">,</span> <span class="n">poisson_pmf</span><span class="p">(</span><span class="n">k</span><span class="p">))</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span>
+<span class="n">cum_le_3</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">p</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">p</span> <span class="ow">in</span> <span class="n">pmf_values</span> <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">prob_ge_4</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cum_le_3</span>
+
+<span class="c1"># Display results nicely</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Poisson distribution with λ = </span><span class="si">{</span><span class="n">lam</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;k</span><span class="se">\t</span><span class="s2">PMF P(X=k)&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">pmf_values</span><span class="p">[:</span><span class="mi">8</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">P(X &gt;= 4) = 1 - P(X &lt;= 3)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;P(X &lt;= 3) = </span><span class="si">{</span><span class="n">cum_le_3</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;P(X &gt;= 4) = </span><span class="si">{</span><span class="n">prob_ge_4</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Also show a short program that the user can copy-paste</span>
+<span class="n">example_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1"># Example: compute P(X &gt;= 4) for Poisson(lambda=2)</span>
+<span class="s1">import math</span>
+<span class="s1">def poisson_pmf(k, lam=2):</span>
+<span class="s1">    return (lam**k) * math.exp(-lam) / math.factorial(k)</span>
+
+<span class="s1"># cumulative P(X &lt;= 3)</span>
+<span class="s1">p_le_3 = sum(poisson_pmf(k, lam=2) for k in range(0,4))</span>
+<span class="s1">p_ge_4 = 1 - p_le_3</span>
+<span class="s1">print(&quot;P(X &gt;= 4) =&quot;, p_ge_4)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Copy-paste ready example:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">example_code</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Poisson distribution with λ = 2.0
+
+k	PMF P(X=k)
+0	0.13533528
+1	0.27067057
+2	0.27067057
+3	0.18044704
+4	0.09022352
+5	0.03608941
+6	0.01202980
+7	0.00343709
+
+P(X &gt;= 4) = 1 - P(X &lt;= 3)
+P(X &lt;= 3) = 0.85712346
+P(X &gt;= 4) = 0.14287654
+
+Copy-paste ready example:
+
+# Example: compute P(X &gt;= 4) for Poisson(lambda=2)
+import math
+def poisson_pmf(k, lam=2):
+    return (lam**k) * math.exp(-lam) / math.factorial(k)
+
+# cumulative P(X &lt;= 3)
+p_le_3 = sum(poisson_pmf(k, lam=2) for k in range(0,4))
+p_ge_4 = 1 - p_le_3
+print(&#34;P(X &gt;= 4) =&#34;, p_ge_4)
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Paso 4: Determinación y conclusión</p>
+<p>$ \chi_0^2 = 45.82 &gt; \chi^2(3,0.05) = 7.81 $</p>
+<p>La hipótesis nula fue rechazada y resultó significativa. Es decir, se puede afirmar que el número de paros cortos por día no sigue una distribución de Poisson.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Definición de los datos</span>
@@ -15883,7 +16099,7 @@ Estos datos no se consideran que siguen una distribución de Poisson
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#</span>
@@ -15942,6 +16158,18 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">Por favor, responda a las preguntas del examen de pr&#225;ctica a trav&#233;s del siguiente enlace.<a class="anchor-link" href="#Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">&#182;</a></h2><p><a href="https://forms.gle/6JUj9MMogkfLcLG4A">Simulacro de examen</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="9.1-1">9.1-1<a class="anchor-link" href="#9.1-1">&#182;</a></h3><p>Q社の2つのラインA、Bで製造される特殊繊維の強度の母平均は、$ \mu_A $、$ \mu_B $ である。また、母分散 $ \sigma_A^2 $、$ \sigma_B^2 $ は不明であるが、同程度の値であることが分かっている。2つのラインの特殊繊維の強度に差があるかどうかを検定するため、各ラインからランダムに5つのサンプルを採取した。</p>
 <ul>
 <li>帰無仮説、</li>
@@ -15990,7 +16218,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Generación de datos de muestra</span>
@@ -16035,7 +16263,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
 
 
 
@@ -16131,7 +16359,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del estadístico de prueba</span>
@@ -16203,7 +16431,7 @@ Valor p: 0.0404
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo de los grados de libertad</span>
@@ -16260,7 +16488,7 @@ Dado que no cae dentro de la región de rechazo, no se puede rechazar la hipóte
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Parámetros</span>
@@ -16384,7 +16612,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Datos de muestra de la fábrica A y la fábrica B</span>
@@ -16438,7 +16666,7 @@ Datos de muestra de la fábrica B: [46.  55.2 50.3 45.9 48.1 47.3 55.5 43.6 47.2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calcular la media y la varianza de la muestra de cada fábrica</span>
@@ -16516,7 +16744,7 @@ Varianza muestral de la fábrica B: 56.84
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo de la estadística de prueba de Welch</span>
@@ -16641,7 +16869,7 @@ La media poblacional de la ductilidad de la fábrica A es meyor que la de la fá
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Generación de datos de muestra</span>
@@ -16674,7 +16902,7 @@ La media poblacional de la ductilidad de la fábrica A es meyor que la de la fá
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 
 
 
@@ -16717,7 +16945,7 @@ La media poblacional de la ductilidad de la fábrica A es meyor que la de la fá
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Media muestral y desviación estándar de la muestra</span>
@@ -16846,7 +17074,7 @@ Existe una diferencia significativa entre la media poblacional del horno A y la 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Generación de datos de muestra</span>
@@ -16923,7 +17151,7 @@ Datos de muestra del horno B: [6.307 9.646 7.738 7.821 8.711]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cálculo del estadístico de prueba</span>
@@ -16988,7 +17216,7 @@ Dado que no cayó en la región de rechazo, no podemos rechazar la hipótesis nu
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configuración del x</span>
@@ -17097,7 +17325,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Varianza de los valores medidos en cada laboratorio (usando números aleatrios como ejemplo)</span>
@@ -17178,7 +17406,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">variances</span><span class="p">)</span>    <span class="c1"># 試験所の数</span>
@@ -17332,7 +17560,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configuración de parámetros</span>
@@ -17397,7 +17625,7 @@ No podemos rechazar la hipótesis nula.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_crit</span> <span class="o">=</span> <span class="n">critical_value</span> <span class="c1"># Estadístico de preba Z</span>
@@ -17499,7 +17727,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Parámetros</span>
@@ -17609,7 +17837,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Potencia objetivo</span>
@@ -17695,7 +17923,7 @@ Se asume que el diámetro de los orificios sigue una distribución normal.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data</span>
@@ -17765,7 +17993,7 @@ Intervalo de confianza del 95% para la media poblacional: (13.0, 17.0)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Estimación puntual de la varianza poblacional</span>
@@ -17871,7 +18099,7 @@ Se desea investigar si la mejora ha sido efectiva.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Valores conocidos</span>
@@ -17956,7 +18184,7 @@ Rechazamos la hipótesis nula: Se considera que hay un efecto de mejora.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 母欠点数の推定</span>
@@ -18004,7 +18232,7 @@ Intervalo de confianza del 95%: (0.380, 1.620)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Valores conocidos</span>
@@ -18134,7 +18362,7 @@ Recientemente, han revisado su proceso de fabricación para reducir costos.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data</span>
@@ -18220,7 +18448,7 @@ Conclusión: No podemos rechazar la hipótesis nula (se considera que no hay dif
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estimación puntual (de la proporción de artículos defectuosos): </span><span class="si">{</span><span class="n">p_hat</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -18282,7 +18510,7 @@ Intervalo de confianza del 95%: (0.0392, 0.0808)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="p">[</span><span class="mi">140</span><span class="p">,</span> <span class="mi">60</span><span class="p">]])</span>
@@ -18321,7 +18549,7 @@ Intervalo de confianza del 95%: (0.0392, 0.0808)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[87]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[92]:</div>
 
 
 
@@ -18421,7 +18649,7 @@ Intervalo de confianza del 95%: (0.0392, 0.0808)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Definición de los datos</span>
@@ -18506,7 +18734,7 @@ Coclusión: Rechazamos la hipótesis nula (se considera que hay una diferencia e
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chi2_contingency</span>
@@ -18587,7 +18815,7 @@ Es significativo: Es decir, hay una diferencia en la aprición de productos conf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">36</span><span class="p">]])</span>  <span class="c1"># 観測度数</span>
@@ -18625,7 +18853,7 @@ Es significativo: Es decir, hay una diferencia en la aprición de productos conf
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[90]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
 
 
 
@@ -18722,7 +18950,7 @@ Es significativo: Es decir, hay una diferencia en la aprición de productos conf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data</span>
@@ -18797,7 +19025,7 @@ Conclusión: Rechazamos la hipótesis nula (se consider que hay una diferencia e
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
@@ -18835,7 +19063,7 @@ Conclusión: Rechazamos la hipótesis nula (se consider que hay una diferencia e
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 対象のURL</span>
@@ -18879,7 +19107,7 @@ Conclusión: Rechazamos la hipótesis nula (se consider que hay una diferencia e
 <pre>Downloading...
 From: https://drive.google.com/uc?id=1E1ZF7XXqVFLDD5U4U1wppdPyGUuqrc2U
 To: /Users/takanohiroshi/Library/CloudStorage/OneDrive-個人用/Documenten/Python/QCKentei/Graph3/Fig_4_1.png
-100%|██████████| 85.2k/85.2k [00:00&lt;00:00, 1.33MB/s]
+100%|██████████| 85.2k/85.2k [00:00&lt;00:00, 1.26MB/s]
 </pre>
 </div>
 </div>
@@ -18910,7 +19138,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-4.ipynb&#39;</span>
@@ -18941,7 +19169,7 @@ class="
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>QCKentei1-4.ipynb  -&gt;  QCKentei1-4.html
 [NbConvertApp] Converting notebook QCKentei1-4.ipynb to html
-[NbConvertApp] Writing 1439061 bytes to QCKentei1-4.html
+[NbConvertApp] Writing 1444216 bytes to QCKentei1-4.html
 </pre>
 </div>
 </div>

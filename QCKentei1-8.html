@@ -14603,13 +14603,13 @@ Esta técnica se utiliza a menudo en la evaluación de la calidad y la percepci�
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="08-01-M%C3%A9todo-no-param%C3%A9trico-de-an%C3%A1lisis">08-01 M&#233;todo no param&#233;trico de an&#225;lisis<a class="anchor-link" href="#08-01-M%C3%A9todo-no-param%C3%A9trico-de-an%C3%A1lisis">&#182;</a></h2><p>ノンパラメトリック法</p>
-<p>Los métodos estadísticos convencionales suponen que la distribución de la población sigue una distribución específica (métodos paramétricos), mientras que los <strong>métodos no paramétricos</strong> se utilizan cuando <strong>no se puede asumir que la distribución de la población sigue una distribución particular</strong>.</p>
-<p>Un buen ejemplo de los tipos de datos a los que se puede aplicar la estadística no paramétrica son los <strong>datos de clasificación</strong> y los datos <strong>nominales</strong>.</p>
-<p>Este método no solo es aplicable cuando no se puede suponer una distribución específica, sino también en los casos en los que <strong>se rechaza la normalidad de una distribución</strong>.</p>
-<p>Debido a que el método no paramétrico realiza inferencias estadísticas basándose en el número de elementos que cumplen ciertas condiciones, en lugar de en los valores exactos, es <strong>menos susceptible</strong> a la influencia de los valores atípicos.
-A esta característica se la denomina <strong>robustez</strong> frente a los valores atípicos.</p>
+<p>Los métodos estadísticos convencionales suponen que la distribución de la población sigue una distribución específica (métodos paramétricos), mientras que los <strong>métodos no paramétricos</strong> se utilizan cuando <strong>no se puede asumir que la distribución de la población sigue una distribución particular</strong>（母集団の分布が特定の分布であることを仮定できない）.</p>
+<p>Un buen ejemplo de los tipos de datos a los que se puede aplicar la estadística no paramétrica son los <strong>datos de clasificación</strong>（順位データ） y los datos <strong>nominales</strong>（分類データ）.</p>
+<p>Este método no solo es aplicable cuando no se puede suponer una distribución específica, sino también en los casos en los que <strong>se rechaza la normalidad de una distribución</strong>（正規性が否定された分布）.</p>
+<p>Debido a que el método no paramétrico realiza inferencias estadísticas basándose en el número de elementos que cumplen ciertas condiciones, en lugar de en los valores exactos, es <strong>menos susceptible</strong>（その影響をあまり受けない） a la influencia de los valores atípicos.
+A esta característica se la denomina <strong>robustez</strong>（ロバストネス） frente a los valores atípicos.</p>
 <h3 id="Tipos-de-m%C3%A9todos-no-param%C3%A9tricos">Tipos de m&#233;todos no param&#233;tricos<a class="anchor-link" href="#Tipos-de-m%C3%A9todos-no-param%C3%A9tricos">&#182;</a></h3><h4 id="(1)-Inferencia-sobre-dos-poblaciones-(para-datos-no-pareados)">(1) Inferencia sobre dos poblaciones (para datos no pareados)<a class="anchor-link" href="#(1)-Inferencia-sobre-dos-poblaciones-(para-datos-no-pareados)">&#182;</a></h4><p>２つの母集団に関する推測（対応のないデータの場合）</p>
-<p>Utiliza datos de clasificación para evaluar la posición central y la dispersión de una distribución, e incluye pruebas como la <strong>prueba de Wilcoxon</strong> y la <strong>prueba de Mood</strong>.</p>
+<p>Utiliza datos de clasificación para evaluar la posición central y la dispersión de una distribución, e incluye pruebas como la <strong>prueba de Wilcoxon</strong>（ウィルコクソン検定） y la <strong>prueba de Mood</strong>（ムッドの検定）.</p>
 <ul>
 <li><p>Prueba de Wilcoxon: Para la posición central de la distribución de dos poblaciones:</p>
 <ul>
@@ -14627,8 +14627,8 @@ A esta característica se la denomina <strong>robustez</strong> frente a los val
 </li>
 </ul>
 <h4 id="(2)-Inferencia-sobre-una-poblaci%C3%B3n">(2) Inferencia sobre una poblaci&#243;n<a class="anchor-link" href="#(2)-Inferencia-sobre-una-poblaci%C3%B3n">&#182;</a></h4><p>ひとつの母集団に関する推測</p>
-<p>Es una técnica que infiere sobre la posición central de la distribución de una población, e incluye la <strong>prueba de rangos con signo de Wilcoxon</strong>.
-Además, como un método de prueba más simple que no utiliza rangos, existe la <strong>pruba de signos</strong>.</p>
+<p>Es una técnica que infiere sobre la posición central de la distribución de una población, e incluye la <strong>prueba de rangos con signo de Wilcoxon</strong>（ウィルコクソンの符号付き順位検定）.
+Además, como un método de prueba más simple que no utiliza rangos, existe la <strong>pruba de signos</strong>（符号検定）.</p>
 <ul>
 <li><p>Prueba de rangos con signo de Wilcoxon: En relación con la posición central de la distribución $ \theta $ de una población:</p>
 <ul>
@@ -14652,9 +14652,9 @@ Además, como un método de prueba más simple que no utiliza rangos, existe la 
 <h4 id="(4)-An%C3%A1lisis-de-varianza-(ANOVA)">(4) An&#225;lisis de varianza (ANOVA)<a class="anchor-link" href="#(4)-An%C3%A1lisis-de-varianza-(ANOVA)">&#182;</a></h4><p>分散分析法</p>
 <p>También es posible realizar un análisis de varianza utilizando la suma de los cuadrados de los rangos.</p>
 <ul>
-<li><strong>Prueba de Kruskal-Wallis</strong>: Corresponde al análisis de varianza de un factor (ANOVA de un factor).</li>
-<li><strong>Prueba de Friedman</strong>: Corresponde al análisis de varianza de dos factores y al diseño de bloques aleatorizados.</li>
-<li><strong>Coeficiente de concordancia de Kendall</strong>: Se utiliza para determinar si las clasificaciones dadas por los jueces a los sujetos de evaluación tienden a ser consistentes, y equivale al coeficiente de correlación múltiple de los métodos paramétricos.</li>
+<li><strong>Prueba de Kruskal-Wallis</strong>（クラスカル・ウォリス検定）: Corresponde al análisis de varianza de un factor (ANOVA de un factor).</li>
+<li><strong>Prueba de Friedman</strong>（フリードマン検定）: Corresponde al análisis de varianza de dos factores y al diseño de bloques aleatorizados.</li>
+<li><strong>Coeficiente de concordancia de Kendall</strong>（ケンドールの一致係数）: Se utiliza para determinar si las clasificaciones dadas por los jueces a los sujetos de evaluación tienden a ser consistentes, y equivale al coeficiente de correlación múltiple de los métodos paramétricos.</li>
 </ul>
 <p><a href="https://drive.google.com/file/d/108DKF-k0ElsnxBiYpdudRNB5WIx1pGQa/view?usp=drive_link">Aidop_2</a></p>
 
@@ -14666,7 +14666,7 @@ Además, como un método de prueba más simple que no utiliza rangos, existe la 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -14689,7 +14689,7 @@ Además, como un método de prueba más simple que no utiliza rangos, existe la 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14724,7 +14724,7 @@ Además, como un método de prueba más simple que no utiliza rangos, existe la 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 認証情報の設定</span>
@@ -14787,7 +14787,7 @@ Además, como un método de prueba más simple que no utiliza rangos, existe la 
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -14874,7 +14874,7 @@ Además, como un método de prueba más simple que no utiliza rangos, existe la 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
@@ -14965,7 +14965,7 @@ Es decir, <strong>no se puede afirmar</strong> que haya una diferencia en la res
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">rankdata</span><span class="p">,</span> <span class="n">mannwhitneyu</span>
@@ -15001,15 +15001,15 @@ Es decir, <strong>no se puede afirmar</strong> que haya una diferencia en la res
 <span class="c1"># 3. Calcular la estadística de prueba w</span>
 <span class="n">W</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">T_A</span><span class="p">,</span> <span class="n">T_B</span><span class="p">)</span>
 
-<span class="c1"># 4. Prueba de Mann-Whitney U  (Ejectar automáticamente con Scipy)</span>
+<span class="c1"># 4. Prueba de Mann-Whitney U  (Ejecutar automáticamente con Scipy)</span>
 <span class="n">stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s1">&#39;two-sided&#39;</span><span class="p">)</span>
 
 <span class="c1"># Salida de resultados</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Suma de rangos T_A:&quot;</span><span class="p">,</span> <span class="n">T_A</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma de rangos T_B:&quot;</span><span class="p">,</span> <span class="n">T_B</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadística de la prueba W:&quot;</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadística de la pureba de Mann-Whitney U :&quot;</span><span class="p">,</span> <span class="n">stat</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p値:&quot;</span><span class="p">,</span> <span class="n">p_value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadística de la prueba de Mann-Whitney U :&quot;</span><span class="p">,</span> <span class="n">stat</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valor p:&quot;</span><span class="p">,</span> <span class="n">p_value</span><span class="p">)</span>
 
 <span class="c1"># Tomar una decisión basada en el value p</span>
 <span class="k">if</span> <span class="n">p_value</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
@@ -15067,23 +15067,43 @@ No existe una diferencia estadísticamente significativa entre A y B
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="08-02-Calidad-sensorial">08-02 Calidad sensorial<a class="anchor-link" href="#08-02-Calidad-sensorial">&#182;</a></h2><p>感性品質</p>
-<h3 id="1.-Calidad-sensorial">1. Calidad sensorial<a class="anchor-link" href="#1.-Calidad-sensorial">&#182;</a></h3><p>El término <strong>calidad sensorial</strong> se refiere a los elementos de calidad que apelan a la sensibilidad humana.</p>
-<h3 id="2.-M%C3%A9todo-de-evaluaci%C3%B3n-sensorial">2. M&#233;todo de evaluaci&#243;n sensorial<a class="anchor-link" href="#2.-M%C3%A9todo-de-evaluaci%C3%B3n-sensorial">&#182;</a></h3><p>官能評価手法</p>
-<p>La evaluación sensorial es un método para evaluar la calidad utilizando los sentidos humanos.</p>
+<h3 id="1.-Calidad-sensorial%EF%BC%9A%E6%84%9F%E6%80%A7%E5%93%81%E8%B3%AA">1. Calidad sensorial&#65306;&#24863;&#24615;&#21697;&#36074;<a class="anchor-link" href="#1.-Calidad-sensorial%EF%BC%9A%E6%84%9F%E6%80%A7%E5%93%81%E8%B3%AA">&#182;</a></h3><p>El término <strong>calidad sensorial</strong> se refiere a los elementos de calidad que apelan a la sensibilidad humana.</p>
+<h3 id="2.-M%C3%A9todo-de-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E8%A9%95%E4%BE%A1%E6%89%8B%E6%B3%95">2. M&#233;todo de evaluaci&#243;n sensorial&#65306;&#23448;&#33021;&#35413;&#20385;&#25163;&#27861;<a class="anchor-link" href="#2.-M%C3%A9todo-de-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E8%A9%95%E4%BE%A1%E6%89%8B%E6%B3%95">&#182;</a></h3><p>La evaluación sensorial es un método para evaluar la calidad utilizando los sentidos humanos.（人間の感覚を使って品質評価を行う）</p>
 <ul>
 <li>Cinco sentidos: Vista, Audición, Olfato, Gusto, Tacto</li>
 </ul>
-<h4 id="(1)-Datos-en-la-evaluaci%C3%B3n-sensorial">(1) Datos en la evaluaci&#243;n sensorial<a class="anchor-link" href="#(1)-Datos-en-la-evaluaci%C3%B3n-sensorial">&#182;</a></h4><p>官能検査におけるデータ</p>
-<p>La calidad (valores característicos) en la evaluación sensorial se expresa utilizando datos de orden, datos nominales, lenguaje, gráficos, fotografías y muestras de inspección, que se usan en el método no paramétrico.</p>
-<h4 id="(2)-Importancia-de-los-evaluadores-(jueces)-en-la-evaluaci%C3%B3n-sensorial">(2) Importancia de los evaluadores (jueces) en la evaluaci&#243;n sensorial<a class="anchor-link" href="#(2)-Importancia-de-los-evaluadores-(jueces)-en-la-evaluaci%C3%B3n-sensorial">&#182;</a></h4><p>官能評価における評価（検査）者の重要性</p>
-<p>Al utilizar a las personas como instrumentos de medición y expresar los resultados a través del lenguaje, la variabilidad aumenta. Por lo tanto, es crucial establecer muestras de inspección para estabilizar el juicio, contratar evaluadores que se ajusten al propósito de la evaluación considerando el método de evaluación y las propiedades de las muestras, e investigar las diferencias individuales entre los evaluadores.</p>
-<h4 id="(3)-Tipos-de-evaluaci%C3%B3n-sensorial">(3) Tipos de evaluaci&#243;n sensorial<a class="anchor-link" href="#(3)-Tipos-de-evaluaci%C3%B3n-sensorial">&#182;</a></h4><p>官能評価手法の種類</p>
+<h4 id="(1)-Datos-en-la-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E6%A4%9C%E6%9F%BB%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF">(1) Datos en la evaluaci&#243;n sensorial&#65306;&#23448;&#33021;&#26908;&#26619;&#12395;&#12362;&#12369;&#12427;&#12487;&#12540;&#12479;<a class="anchor-link" href="#(1)-Datos-en-la-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E6%A4%9C%E6%9F%BB%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF">&#182;</a></h4><p>La calidad (valores característicos) en la evaluación sensorial se expresa utilizando datos de orden, datos nominales, lenguaje, gráficos, fotografías y muestras de inspección, que se usan en el método no paramétrico.（順序データ、分類データ、言語、図、写真、検査見本）</p>
+<h4 id="(2)-Importancia-de-los-evaluadores-(jueces)-en-la-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E8%A9%95%E4%BE%A1%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E8%A9%95%E4%BE%A1%EF%BC%88%E6%A4%9C%E6%9F%BB%EF%BC%89%E8%80%85%E3%81%AE%E9%87%8D%E8%A6%81%E6%80%A7">(2) Importancia de los evaluadores (jueces) en la evaluaci&#243;n sensorial&#65306;&#23448;&#33021;&#35413;&#20385;&#12395;&#12362;&#12369;&#12427;&#35413;&#20385;&#65288;&#26908;&#26619;&#65289;&#32773;&#12398;&#37325;&#35201;&#24615;<a class="anchor-link" href="#(2)-Importancia-de-los-evaluadores-(jueces)-en-la-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E8%A9%95%E4%BE%A1%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E8%A9%95%E4%BE%A1%EF%BC%88%E6%A4%9C%E6%9F%BB%EF%BC%89%E8%80%85%E3%81%AE%E9%87%8D%E8%A6%81%E6%80%A7">&#182;</a></h4><p>Al utilizar a las personas como instrumentos de medición y expresar los resultados a través del lenguaje, la variabilidad aumenta. Por lo tanto, es crucial establecer muestras de inspección para estabilizar el juicio, contratar evaluadores que se ajusten al propósito de la evaluación considerando el método de evaluación y las propiedades de las muestras, e investigar las diferencias individuales entre los evaluadores.</p>
+<h4 id="(3)-Tipos-de-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E8%A9%95%E4%BE%A1%E6%89%8B%E6%B3%95%E3%81%AE%E7%A8%AE%E9%A1%9E">(3) Tipos de evaluaci&#243;n sensorial&#65306;&#23448;&#33021;&#35413;&#20385;&#25163;&#27861;&#12398;&#31278;&#39006;<a class="anchor-link" href="#(3)-Tipos-de-evaluaci%C3%B3n-sensorial%EF%BC%9A%E5%AE%98%E8%83%BD%E8%A9%95%E4%BE%A1%E6%89%8B%E6%B3%95%E3%81%AE%E7%A8%AE%E9%A1%9E">&#182;</a></h4><ul>
+<li><p>Método de prueba de discriminación:
+識別試験法
+Determinar si hay una diferencia entre dos muestras.</p>
+</li>
+<li><p>Método de prueba utilizando escalas y categorías:
+尺度及びカテゴリーを用いる試験方法
+Se utiliza para evaluar el orden de las diferencias, su magnitud, las categorías correspondientes y la clasificación.</p>
 <ul>
-<li>Método de prueba de discriminación: Determinar si hay una diferencia entre dos muestras.</li>
-<li>Método de prueba utilizando escalas y categorías: Se utiliza para evaluar el orden de las diferencias, su magnitud, las categorías correspondientes y la clasificación.</li>
-<li>Método de prueba de clasificación o prueba descriptiva: Se utiliza para capturar cualitativa y cuantitativamente las características de una o más propiedades sensoriales.</li>
+<li>ケンドールの一致性の係数W</li>
+</ul>
+</li>
+<li><p>Método de prueba de clasificación o prueba descriptiva:
+分類型試験法または記述的試験法
+Se utiliza para capturar cualitativa y cuantitativamente las características de una o más propiedades sensoriales.</p>
+</li>
 </ul>
 <p><a href="https://drive.google.com/file/d/1B_POvyyaFfeVoqhS0FTHE2u-J_aHgNl4/view?usp=drive_link">Audio_3</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">Por favor, responda a las preguntas del examen de pr&#225;ctica a trav&#233;s del siguiente enlace.<a class="anchor-link" href="#Por-favor,-responda-a-las-preguntas-del-examen-de-pr%C3%A1ctica-a-trav%C3%A9s-del-siguiente-enlace.">&#182;</a></h2><p><a href="https://forms.gle/QFy3D1PgG5mk6kPc9">Simulacro de examen</a></p>
 
 </div>
 </div>
@@ -15093,7 +15113,7 @@ No existe una diferencia estadísticamente significativa entre A y B
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">notebook_name</span> <span class="o">=</span> <span class="s1">&#39;QCKentei1-8.ipynb&#39;</span>
@@ -15122,7 +15142,7 @@ No existe una diferencia estadísticamente significativa entre A y B
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[NbConvertApp] Converting notebook QCKentei1-8.ipynb to html
-[NbConvertApp] Writing 625198 bytes to QCKentei1-8.html
+[NbConvertApp] Writing 628624 bytes to QCKentei1-8.html
 </pre>
 </div>
 </div>
